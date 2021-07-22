@@ -1,7 +1,8 @@
 # dotfiles
 My shitty dotfiles
 
-# Important Softwares I like
+# Important Softwares I like 
+## *Not really needed anymore since I've added package lists.
 
 ## Terminal
 * Alacritty
