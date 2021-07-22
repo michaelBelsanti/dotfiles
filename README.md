@@ -1,8 +1,18 @@
 # dotfiles
 My shitty dotfiles
 
+# How to use package lists:
+* Pacman: 
+```
+sudo pacman -S --needed - < pacmanpckgs.txt
+```
+* Yay:
+```
+yay -s --needed - < yaypckgs.txt
+```
+
 # Important Softwares I like 
-## *Not really needed anymore since I've added package lists.
+*Not really needed anymore since I've added package lists.
 
 ## Terminal
 * Alacritty
