@@ -1,0 +1,10 @@
+brave-bin
+chrome-gnome-shell
+grapejuice-git
+libstrangle-git
+noisetorch-bin
+notepadqq-git
+obsidian
+paru
+snapd
+yadm-git
