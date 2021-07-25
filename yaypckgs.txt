@@ -1,7 +1,0 @@
-alacritty-themes
-grapejuice-git
-libstrangle-git
-notepadqq-git
-obsidian
-snapd
-yadm-git
