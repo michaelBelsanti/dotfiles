@@ -6,10 +6,11 @@ My shitty dotfiles
 ```
 sudo pacman -S --needed - < pacmanpckgs.txt
 ```
-* Yay:
+* AUR:
 ```
-yay -s --needed - < yaypckgs.txt
+paru -s --needed - < yaypckgs.txt
 ```
+* Paru is used for example, replace it with whatever AUR helper you use of course.
 
 # Important Softwares I like 
 *Not really needed anymore since I've added package lists.
@@ -42,7 +43,7 @@ yay -s --needed - < yaypckgs.txt
 * Thunderbird
 
 ## Productivity
-* Visual Studio Code
+* VSCodium
 * Micro
 * Libre Office
 * Gimp
