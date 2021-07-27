@@ -7,7 +7,7 @@ SETUVAR __tf_func:function\x20__tf_alias\x20\x2dd\x20\x22Correct\x20your\x20prev
 SETUVAR __tf_vers:The\x20Fuck\x203\x2e31\x20using\x20Python\x203\x2e9\x2e6\x20and\x20Fish\x20Shell\x203\x2e3\x2e1
 SETUVAR fish_color_autosuggestion:BD93F9
 SETUVAR fish_color_cancel:\x2dr
-SETUVAR fish_color_command:F8F8F2
+SETUVAR fish_color_command:FF79C6
 SETUVAR fish_color_comment:6272A4
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
@@ -20,7 +20,7 @@ SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:00a6b2
-SETUVAR fish_color_param:FF79C6
+SETUVAR fish_color_param:FFB86C
 SETUVAR fish_color_quote:F1FA8C
 SETUVAR fish_color_redirection:8BE9FD
 SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack

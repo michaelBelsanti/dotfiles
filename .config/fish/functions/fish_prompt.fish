@@ -1,26 +1,14 @@
 function fish_prompt
-    if not set -q VIRTUAL_ENV_DISABLE_PROMPT
-        set -g VIRTUAL_ENV_DISABLE_PROMPT true
+    if test -n "$SSH_TTY"
+        echo -n (set_color brred)"$USER"(set_color white)'@'(set_color yellow)(prompt_hostname)' '
     end
-    set_color yellow
-    printf '%s' $USER
-    set_color normal
-    printf ' at '
 
-    set_color magenta
-    echo -n (prompt_hostname)
-    set_color normal
-    printf ' in '
+    echo -n (set_color blue)(prompt_pwd)' '
 
-    set_color $fish_color_cwd
-    printf '%s' (prompt_pwd)
-    set_color normal
-
-    # Line 2
-    echo
-    if test -n "$VIRTUAL_ENV"
-        printf "(%s) " (set_color blue)(basename $VIRTUAL_ENV)(set_color normal)
+    set_color -o
+    if fish_is_root_user
+        echo -n (set_color red)'# '
     end
-    printf '↪ '
+    echo -n (set_color red)'❯'(set_color yellow)'❯'(set_color green)'❯ '
     set_color normal
 end

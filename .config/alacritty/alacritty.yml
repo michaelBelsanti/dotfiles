@@ -1,3 +1,6 @@
+# Opacity
+background_opacity: .9
+
 # Colors (Dracula)
 colors:
   # Default colors
