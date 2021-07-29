@@ -1,10 +1,10 @@
 brave-bin
 colorpicker
 goverlay-bin
-grapejuice-git
+grapejuice
 mangohud
 noisetorch-bin
-notepadqq-git
+notepadqq
 obsidian
 paru-bin
 proton-ge-custom-bin
