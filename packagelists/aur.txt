@@ -1,0 +1,16 @@
+brave-bin
+colorpicker
+goverlay-bin
+grapejuice-git
+mangohud
+noisetorch-bin
+notepadqq-git
+obsidian
+paru-bin
+proton-ge-custom-bin
+replay-sorcery
+spotify-tui
+vscodium-bin
+vscodium-bin-marketplace
+xorg-transset
+yadm
