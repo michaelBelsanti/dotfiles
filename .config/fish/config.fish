@@ -2,6 +2,7 @@
 # Hide welcome message
 set fish_greeting
 set VIRTUAL_ENV_DISABLE_PROMPT "1"
+set EDITOR vscodium
 
 # ~/.config/fish/config.fish
 
@@ -24,6 +25,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias dir='dir --color=auto'
+alias broot='broot -h'
 alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -31,14 +33,9 @@ alias egrep='egrep --color=auto'
 alias hw='hwinfo --short'                                   # Hardware Info
 alias big="expac -H M '%m\t%n' | sort -h | nl"              # Sort installed packages according to size in MB (expac must be installed)
 alias code='vscodium'
-
-# Fun
 alias please='sudo'
-
-# Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
-
-alias yay ='paru'
+alias yay='paru'
 
 set -x TERM alacritty
 
