@@ -1,0 +1,7 @@
+Looking for git in: git
+Using git 2.32.0 from git
+> git rev-parse --git-dir
+Open repository: /home/quasigod
+> git status -z -u
+> git check-ignore -v -z --stdin
+Opening repository for path='/home/quasigod/.local/share/yadm/repo.git' failed; ex=Canceled: Canceled

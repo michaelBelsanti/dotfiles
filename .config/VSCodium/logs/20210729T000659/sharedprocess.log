@@ -1,0 +1,23 @@
+[2021-07-29 00:07:02.314] [sharedprocess] [info] Installing extension: ms-dotnettools.csharp
+[2021-07-29 00:07:02.314] [sharedprocess] [info] Installing extension: ms-python.vscode-pylance
+[2021-07-29 00:07:02.315] [sharedprocess] [info] Installing extension: zhuangtongfa.material-theme
+[2021-07-29 00:07:03.014] [sharedprocess] [info] Downloaded extension: ms-python.vscode-pylance /home/quasigod/.config/VSCodium/CachedExtensionVSIXs/ms-python.vscode-pylance-2021.7.7
+[2021-07-29 00:07:03.052] [sharedprocess] [info] Downloaded extension: zhuangtongfa.material-theme /home/quasigod/.config/VSCodium/CachedExtensionVSIXs/zhuangtongfa.material-theme-3.11.2
+[2021-07-29 00:07:03.069] [sharedprocess] [info] Downloaded extension: ms-dotnettools.csharp /home/quasigod/.config/VSCodium/CachedExtensionVSIXs/ms-dotnettools.csharp-1.23.14
+[2021-07-29 00:07:03.120] [sharedprocess] [info] Extracted extension to /home/quasigod/.vscode-oss/extensions/.04b42163-9250-48f2-88d2-5bb8e36e926c: ms-dotnettools.csharp
+[2021-07-29 00:07:03.125] [sharedprocess] [info] Renamed to /home/quasigod/.vscode-oss/extensions/ms-dotnettools.csharp-1.23.14
+[2021-07-29 00:07:03.128] [sharedprocess] [info] Installation completed. ms-dotnettools.csharp
+[2021-07-29 00:07:03.134] [sharedprocess] [info] Extensions installed successfully: ms-dotnettools.csharp
+[2021-07-29 00:07:03.144] [sharedprocess] [info] Extracted extension to /home/quasigod/.vscode-oss/extensions/.32824631-0ef5-4ac8-a9b2-4ae63c25e262: zhuangtongfa.material-theme
+[2021-07-29 00:07:03.147] [sharedprocess] [info] Renamed to /home/quasigod/.vscode-oss/extensions/zhuangtongfa.material-theme-3.11.2
+[2021-07-29 00:07:03.149] [sharedprocess] [info] Installation completed. zhuangtongfa.material-theme
+[2021-07-29 00:07:03.149] [sharedprocess] [info] Extensions installed successfully: zhuangtongfa.material-theme
+[2021-07-29 00:07:04.644] [sharedprocess] [info] Extracted extension to /home/quasigod/.vscode-oss/extensions/.92aaa513-a01d-4b41-baf2-f15c9549de80: ms-python.vscode-pylance
+[2021-07-29 00:07:04.647] [sharedprocess] [info] Renamed to /home/quasigod/.vscode-oss/extensions/ms-python.vscode-pylance-2021.7.7
+[2021-07-29 00:07:04.648] [sharedprocess] [info] Installation completed. ms-python.vscode-pylance
+[2021-07-29 00:07:04.650] [sharedprocess] [info] Extensions installed successfully: ms-python.vscode-pylance
+[2021-07-29 00:07:10.603] [sharedprocess] [info] [logs cleanup]: Starting to clean up old logs.
+[2021-07-29 00:07:10.603] [sharedprocess] [info] [logs cleanup]: Removing log folders '20210728T025504'
+[2021-07-29 00:07:30.603] [sharedprocess] [info] [code cache cleanup]: Starting to clean up old code cache folders.
+[2021-07-29 00:07:30.603] [sharedprocess] [info] [storage cleanup]: Starting to clean up storage folders.
+[2021-07-29 00:07:30.604] [sharedprocess] [info] [storage cleanup]: Deleting storage folder 1627461329611.

@@ -1,7 +1,32 @@
 {
     "telemetry.machineId": "8978fe3bad12ba9b3893deb49ce51b2c5ed46cc02cfc17d1631defb957bacb59",
     "openedPathsList": {
-        "entries": []
+        "entries": [
+            {
+                "fileUri": "file:///home/quasigod/.config/instantos/autostart.sh"
+            },
+            {
+                "fileUri": "file:///etc/X11/xorg.conf"
+            },
+            {
+                "fileUri": "file:///home/quasigod/Documents/xorg.conf"
+            },
+            {
+                "fileUri": "file:///home/quasigod/.instantsession"
+            },
+            {
+                "fileUri": "file:///var/tmp/xorgXXluKey7.conf"
+            },
+            {
+                "fileUri": "file:///home/quasigod/.config/fish/config.fish"
+            },
+            {
+                "fileUri": "file:///home/quasigod/.instantrc"
+            },
+            {
+                "fileUri": "file:///var/tmp/xorgXXFfEAZz.conf"
+            }
+        ]
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -44,6 +69,108 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/quasigod/.local/share/yadm/repo.git/COMMIT_EDITMSG",
+                                        "path": "/home/quasigod/.local/share/yadm/repo.git/COMMIT_EDITMSG",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.local/share/yadm/repo.git/COMMIT_EDITMSG"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/quasigod/.config/instantos/autostart.sh",
+                                        "path": "/home/quasigod/.config/instantos/autostart.sh",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/instantos/autostart.sh"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///etc/X11/xorg.conf",
+                                        "path": "/etc/X11/xorg.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/etc/X11/xorg.conf"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/quasigod/Documents/xorg.conf",
+                                        "path": "/home/quasigod/Documents/xorg.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/xorg.conf"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/quasigod/.instantsession",
+                                        "path": "/home/quasigod/.instantsession",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.instantsession"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///var/tmp/xorgXXluKey7.conf",
+                                        "path": "/var/tmp/xorgXXluKey7.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/var/tmp/xorgXXluKey7.conf"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/quasigod/.config/fish/config.fish",
+                                        "path": "/home/quasigod/.config/fish/config.fish",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/fish/config.fish"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/quasigod/.instantrc",
+                                        "path": "/home/quasigod/.instantrc",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.instantrc"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///var/tmp/xorgXXFfEAZz.conf",
+                                        "path": "/var/tmp/xorgXXFfEAZz.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/var/tmp/xorgXXFfEAZz.conf"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "workbench.action.openRecent",
                                     "label": "&&More..."
                                 },
@@ -77,13 +204,11 @@
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "&&Save",
-                        "enabled": false
+                        "label": "&&Save"
                     },
                     {
                         "id": "workbench.action.files.saveAs",
-                        "label": "Save &&As...",
-                        "enabled": false
+                        "label": "Save &&As..."
                     },
                     {
                         "id": "saveAll",
@@ -155,13 +280,11 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "Re&&vert File",
-                        "enabled": false
+                        "label": "Re&&vert File"
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
-                        "label": "&&Close Editor",
-                        "enabled": false
+                        "label": "&&Close Editor"
                     },
                     {
                         "id": "workbench.action.closeFolder",
@@ -211,13 +334,11 @@
                     },
                     {
                         "id": "actions.find",
-                        "label": "&&Find",
-                        "enabled": false
+                        "label": "&&Find"
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "&&Replace",
-                        "enabled": false
+                        "label": "&&Replace"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -364,8 +485,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar",
-                                    "checked": true
+                                    "label": "Show &&Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -532,8 +652,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap",
-                        "enabled": false
+                        "label": "&&Word Wrap"
                     },
                     {
                         "id": "editor.action.toggleMinimap",
@@ -570,8 +689,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1463,19 +1581,19 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 286,
+            "sideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/quasigod/.config/VSCodium/Backups/1627371805657",
+            "backupPath": "/home/quasigod/.config/VSCodium/Backups/1627553145551",
             "uiState": {
                 "mode": 1,
-                "x": 1920,
-                "y": 1060,
-                "width": 1146,
+                "x": 1923,
+                "y": 36,
+                "width": 1050,
                 "height": 1041
             }
         },

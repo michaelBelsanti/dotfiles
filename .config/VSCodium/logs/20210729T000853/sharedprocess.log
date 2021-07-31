@@ -1,0 +1,5 @@
+[2021-07-29 00:08:54.707] [sharedprocess] [info] Deleted from disk ms-dotnettools.csharp /home/quasigod/.vscode-oss/extensions/ms-dotnettools.csharp-1.23.13
+[2021-07-29 00:08:54.712] [sharedprocess] [info] Deleted from disk zhuangtongfa.material-theme /home/quasigod/.vscode-oss/extensions/zhuangtongfa.material-theme-3.11.1
+[2021-07-29 00:08:54.813] [sharedprocess] [info] Deleted from disk ms-python.vscode-pylance /home/quasigod/.vscode-oss/extensions/ms-python.vscode-pylance-2021.7.5
+[2021-07-29 00:09:04.463] [sharedprocess] [info] [logs cleanup]: Starting to clean up old logs.
+[2021-07-29 00:09:04.463] [sharedprocess] [info] [logs cleanup]: Removing log folders '20210728T030405'
