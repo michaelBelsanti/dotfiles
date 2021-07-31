@@ -53,7 +53,6 @@ libxft-bgra
 lightdm
 lightdm-gtk-greeter
 linux-firmware
-linux-zen
 linux-zen-headers
 lshw
 lutris
@@ -100,7 +99,6 @@ udiskie
 unrar
 unzip
 usbutils
-virt-manager
 vulkan-tools
 wine-staging
 winetricks
