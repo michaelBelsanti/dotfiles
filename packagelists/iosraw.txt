@@ -11,7 +11,6 @@ broot
 cups
 deluge-gtk
 dialog
-discord
 dkms
 dnsmasq
 engrampa
@@ -67,9 +66,11 @@ nitrogen
 nitroshare
 noto-fonts
 noto-fonts-emoji
+npm
 nss-mdns
 ntfs-3g
 nvidia
+nvidia-dkms
 nvidia-settings
 obs-studio
 ocl-icd

@@ -3,6 +3,12 @@
     "openedPathsList": {
         "entries": [
             {
+                "folderUri": "file:///home/quasigod/.local/share/Steam/steamapps/common/Valheim"
+            },
+            {
+                "fileUri": "file:///home/quasigod/.cache/.fr-yK3DD8/node-v14.17.4-linux-x64/README.md"
+            },
+            {
                 "fileUri": "file:///home/quasigod/.config/instantos/autostart.sh"
             },
             {
@@ -69,15 +75,28 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "openRecentFile",
+                                    "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/quasigod/.local/share/yadm/repo.git/COMMIT_EDITMSG",
-                                        "path": "/home/quasigod/.local/share/yadm/repo.git/COMMIT_EDITMSG",
+                                        "path": "/home/quasigod/.local/share/Steam/steamapps/common/Valheim",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.local/share/yadm/repo.git/COMMIT_EDITMSG"
+                                    "label": "~/.local/share/Steam/steamapps/common/Valheim"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/quasigod/.cache/.fr-yK3DD8/node-v14.17.4-linux-x64/README.md",
+                                        "path": "/home/quasigod/.cache/.fr-yK3DD8/node-v14.17.4-linux-x64/README.md",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.cache/.fr-yK3DD8/node-v14.17.4-linux-x64/README.md"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -652,7 +671,8 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap"
+                        "label": "&&Word Wrap",
+                        "checked": true
                     },
                     {
                         "id": "editor.action.toggleMinimap",
@@ -679,8 +699,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -689,7 +708,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1588,10 +1608,10 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/quasigod/.config/VSCodium/Backups/1627553145551",
+            "backupPath": "/home/quasigod/.config/VSCodium/Backups/1627881685222",
             "uiState": {
                 "mode": 1,
-                "x": 1923,
+                "x": 3,
                 "y": 36,
                 "width": 1050,
                 "height": 1041
