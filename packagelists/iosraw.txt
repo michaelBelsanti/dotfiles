@@ -3,6 +3,7 @@ alacritty
 alsa-utils
 alttab
 amd-ucode
+baobab
 base
 bat
 bc
@@ -13,6 +14,8 @@ deluge-gtk
 dialog
 dkms
 dnsmasq
+dosbox
+easyeffects
 engrampa
 exa
 exfat-utils
@@ -27,6 +30,7 @@ gedit
 gimp
 git
 gnome-font-viewer
+gparted
 granite
 grub
 gvfs-mtp
@@ -39,10 +43,13 @@ instantdepend
 instantos
 iptables-nft
 kdeconnect
+lib32-gamemode
+lib32-giflib
 lib32-gst-plugins-base-libs
 lib32-gtk3
 lib32-libxslt
 lib32-mesa
+lib32-mpg123
 lib32-nvidia-utils
 lib32-ocl-icd
 lib32-v4l-utils
@@ -83,6 +90,7 @@ pipewire-alsa
 pipewire-pulse
 qemu
 reflector
+ripgrep
 samba
 spotifyd
 starship
@@ -100,8 +108,9 @@ udiskie
 unrar
 unzip
 usbutils
+virt-manager
 vulkan-tools
-wine-staging
+wine-mono
 winetricks
 wqy-microhei
 xdg-desktop-portal-gtk
