@@ -2,7 +2,7 @@
 # Hide welcome message
 set fish_greeting
 set VIRTUAL_ENV_DISABLE_PROMPT "1"
-set EDITOR vscodium
+set EDITOR "micro"
 
 # ~/.config/fish/config.fish
 
@@ -33,15 +33,18 @@ alias egrep='egrep --color=auto'
 alias hw='hwinfo --short'                                   # Hardware Info
 alias big="expac -H M '%m\t%n' | sort -h | nl"              # Sort installed packages according to size in MB (expac must be installed)
 alias code='vscodium'
+alias vim='nvim'
 alias please='sudo'
-alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
+alias cleanup='paru -Rns (paru -Qtdq)'
+alias rmcache='paru -Scc'
 alias yay='paru'
 
 set -x TERM alacritty
 
 ## Run neofetch if session is interactive
 if status --is-interactive
-   neofetch
+   fet.sh 
+   pokemon-colorscripts -r
 end
 
 set thefuck fuck --hard
