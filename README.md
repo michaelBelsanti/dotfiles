@@ -2,6 +2,7 @@
 My shitty dotfiles
 
 # How to use package lists:
+WARNING: This shit doesn't even work for like the guide I followed said it would, but have fun trying it ig.
 * Pacman: 
 ```
 sudo pacman -S --needed - < pacmanpckgs.txt
@@ -11,60 +12,3 @@ sudo pacman -S --needed - < pacmanpckgs.txt
 paru -s --needed - < yaypckgs.txt
 ```
 * Paru is used for example, replace it with whatever AUR helper you use of course.
-
-# Important Softwares I like 
-*Not really needed anymore since I've added package lists.
-
-## Terminal
-* Alacritty
-* Fish
-
-## Utility
-* Gnome Tweaks / Latte
-* Timeshift
-* Stacer
-* CoreCtrl
-* NoiseTorch
-* Piper
-* Octopi
-* Flameshot
-* Bpytop
-* NitroShare
-
-## Browser of Choice
-* Brave
-
-## Media
-* Fluent Reader
-* MPV
-* Deluge
-* Spotify-Tui
-* Spotifyd
-* Thunderbird
-
-## Productivity
-* VSCodium
-* Micro
-* Libre Office
-* Gimp
-* Obsidian
-* NotepadQQ
-
-## Gaming (A LOT OF EM)
-* Steam
-* Discord
-* Wine
-* WineGE
-* ProtonGE
-* Winetricks
-* Lutris
-* Heroic Games Launcher
-* Minigalaxy
-* Proton GE
-* DXVK
-* GOVerlay
-* ReplaySorcery
-* MangoHud
-* Gamemode
-* Grapejuice
-* NVidia Drivers (If not preinstalled)
