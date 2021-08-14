@@ -8,6 +8,9 @@ This command will install my config directly into your config files.
 yadm clone https://github.com/quasigod-io/dotfiles.git
 ```
 
+# Neovim Config
+I just use [doom-nvim](https://github.com/NTBBloodbath/doom-nvim).
+
 # How to use package lists:
 * Pacman: 
 ```
