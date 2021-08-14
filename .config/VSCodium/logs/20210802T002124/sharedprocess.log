@@ -1,8 +1,0 @@
-[2021-08-02 00:21:27.694] [sharedprocess] [info] Installing extension: vscode-icons-team.vscode-icons
-[2021-08-02 00:21:28.471] [sharedprocess] [info] Downloaded extension: vscode-icons-team.vscode-icons /home/quasigod/.config/VSCodium/CachedExtensionVSIXs/vscode-icons-team.vscode-icons-11.6.0
-[2021-08-02 00:21:29.050] [sharedprocess] [info] Extracted extension to /home/quasigod/.vscode-oss/extensions/.db8c9f40-0fb0-459c-984b-f4821503afad: vscode-icons-team.vscode-icons
-[2021-08-02 00:21:29.052] [sharedprocess] [info] Renamed to /home/quasigod/.vscode-oss/extensions/vscode-icons-team.vscode-icons-11.6.0
-[2021-08-02 00:21:29.053] [sharedprocess] [info] Installation completed. vscode-icons-team.vscode-icons
-[2021-08-02 00:21:29.056] [sharedprocess] [info] Extensions installed successfully: vscode-icons-team.vscode-icons
-[2021-08-02 00:21:35.853] [sharedprocess] [info] [logs cleanup]: Starting to clean up old logs.
-[2021-08-02 00:21:35.853] [sharedprocess] [info] [logs cleanup]: Removing log folders '20210728T031555'
