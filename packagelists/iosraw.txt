@@ -9,6 +9,7 @@ bat
 bc
 bpytop
 broot
+calibre
 cups
 deluge-gtk
 dialog
@@ -24,12 +25,14 @@ fd
 firefox
 fish
 flameshot
+freetype2
 fzf
 gamemode
 gedit
 gimp
 git
 gnome-font-viewer
+go
 gparted
 granite
 grub
@@ -91,6 +94,7 @@ pipewire-pulse
 qemu
 reflector
 ripgrep
+ruby
 samba
 spotifyd
 starship
@@ -100,7 +104,6 @@ sushi
 system-config-printer
 systemd-swap
 thefuck
-thunderbird
 trash-cli
 ttf-joypixels
 ttf-liberation
