@@ -36,6 +36,8 @@ alias code='vscodium'
 alias vim='nvim'
 alias please='sudo'
 alias cleanup='paru -Rns (paru -Qtdq)'
+alias update='paru -Syu'
+alias upgrade='paru -Syu'
 alias rmcache='paru -Scc'
 alias yay='paru'
 
@@ -47,6 +49,8 @@ if status --is-interactive
    pokemon-colorscripts -r
 end
 
-set thefuck fuck --hard
+set thefuck fuck -hard 
 
 thefuck --alias | source
+
+navi widget fish | source
