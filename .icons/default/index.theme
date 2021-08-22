@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+# This file is written by LXAppearance. Do not edit.
+[Icon Theme]
+Name=Default
+Comment=Default Cursor Theme
+Inherits=onedark-cursor
+=======
+# This file is written by instantthemes. Do not edit.
+[Icon Theme]
+Name=Default
+Comment=Default Cursor Theme
+Inherits=elementary-instantos
+>>>>>>> 533d15dc3345b0b569f67b89fed81b0c115d820f
