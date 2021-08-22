@@ -7,7 +7,7 @@ This command will install my config directly into your config files.
 ```
 yadm clone https://github.com/quasigod-io/dotfiles.git
 ```
-
+* The awesome rofi scripts were not made by me, I am not that talented. Find the originals here https://github.com/ntcarlson/dotfiles .
 # Neovim Config
 I just use [doom-nvim](https://github.com/NTBBloodbath/doom-nvim).
 
