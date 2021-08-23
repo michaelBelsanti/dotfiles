@@ -1,0 +1,136 @@
+{
+   "400": {
+      "message": "سرور گفت که این درخواست نامعتبر است"
+   },
+   "409": {
+      "message": "این قبلاً ثبت شده است"
+   },
+   "Dismiss": {
+      "message": "رد کردن"
+   },
+   "Hide": {
+      "message": "هرگز نمایش نده"
+   },
+   "Loading": {
+      "message": "درحال بارگذاری..."
+   },
+   "Options": {
+      "message": "گزینه‌ها"
+   },
+   "Segment": {
+      "message": "بخش"
+   },
+   "Segments": {
+      "message": "بخش"
+   },
+   "SubmitTimes": {
+      "message": "ثبت بخش‌ها"
+   },
+   "Unknown": {
+      "message": "اشکالی در ثبت کردن زمان های ارسالی شما پیش آمد. لطفا بعداً دوباره تلاش کنید."
+   },
+   "channelWhitelisted": {
+      "message": "کانال در لیست سفید قرار گرفت!"
+   },
+   "clearThis": {
+      "message": "مطمئن هستید که میخواهید این را حذف کنید؟\n\n"
+   },
+   "clearTimes": {
+      "message": "پاک‌نمودن بخش‌ها"
+   },
+   "clearTimesButton": {
+      "message": "حذف دفعات"
+   },
+   "closePopup": {
+      "message": "بستن پنجره"
+   },
+   "connectionError": {
+      "message": "خطای شبکه رخ داده است. کد خطا: "
+   },
+   "fullName": {
+      "description": "Name of the extension.",
+      "message": "اسپانسربلاک برای یوتیوب - اسپانسر ها را رد کنید"
+   },
+   "hideButtons": {
+      "message": "مخفی‌سازی کلید ها در پخش‌کننده یوتیوب"
+   },
+   "hideThis": {
+      "message": "مخفی‌سازی"
+   },
+   "hitGoBack": {
+      "message": "کلید عدم رد کردن را بزنید تا به جایی که بودید برگردید."
+   },
+   "longDescription": {
+      "description": "Full description of the extension on the store pages.",
+      "message": "افزونه اسپانسر بلاک به شما امکان رد کردن بخش‌های تبلیغاتی (اسپانسر شده)، قسمت‌های شروع و پایان ویدیو، درخواست ساب‌اسکرایب و سایر قسمت‌های آزار دهنده یوتیوب را می‌دهد. اسپانسر بلاک یک افزونه مرورگر است که به هر کسی امکان ثبت زمان شروع و پایان بخش های اسپانسر شده و سایر بخش های ویدیو های یوتیوب را می‌دهد. پس از اینکه هر کاربر این اطلاعات را ثبت کرده و گزارش دهد، بقیه کاربرانی که از این افزونه استفاده می‌کنند مستقیماً بخش اسپانسر شده ویدیو را رد خواهند کرد. شما همچنین می‌توانید در ویدیو های نماهنگ (موزیک ویدیو)، قسمت‌های غیر موسیقی ویدیو را رد کنید."
+   },
+   "manualPaused": {
+      "message": "شمارنده متوقف شد"
+   },
+   "noticeUpdate2": {
+      "description": "The second line of the message displayed after the notice was upgraded.",
+      "message": "اگر همچنان این را نمی‌پسندید، گزینه هرگز نمایش نده را انتخاب کنید."
+   },
+   "openPopup": {
+      "message": "نمایش پنجره اسپانسر بلاک"
+   },
+   "paused": {
+      "message": "وقفه شده"
+   },
+   "reportButtonTitle": {
+      "message": "گزارش"
+   },
+   "reskip": {
+      "message": "دوباره رد کردن"
+   },
+   "serverDown": {
+      "message": "به‌نظر می‌رسد که ارتباط سرور قطع شده است. با توسعه‌دهنده سریعاً تماس بگیرید."
+   },
+   "setUsername": {
+      "message": "تنظیم نام کاربری"
+   },
+   "showButtons": {
+      "message": "نمایش کلید ها در پخش‌کننده یوتیوب"
+   },
+   "sourceCode": {
+      "description": "Used on Firefox Store Page",
+      "message": "سورس کد"
+   },
+   "sponsor404": {
+      "message": "هیچ بخشی پیدا نشد"
+   },
+   "sponsorEnd": {
+      "message": "بخش اینجا پایان می‌یابد"
+   },
+   "sponsorStart": {
+      "message": "بخش اینجا شروع می‌شود"
+   },
+   "submitCheck": {
+      "message": "مطمئن هستید که میخواهید این را ثبت کنید؟"
+   },
+   "submitTimesButton": {
+      "message": "ثبت دفعات"
+   },
+   "success": {
+      "message": "موفقیت!"
+   },
+   "unskip": {
+      "message": "عدم رد کردن"
+   },
+   "upvoteButtonInfo": {
+      "message": "امتیاز دادن به این گزارش ثبت‌شده"
+   },
+   "voteOnTime": {
+      "message": "رأی دهی به یک بخش"
+   },
+   "voted": {
+      "message": "گزارش داده شد!"
+   },
+   "wantToSubmit": {
+      "message": "آی می‌خواهید که گزارش را ثبت کنید برای ویدیوی"
+   },
+   "website": {
+      "description": "Used on Firefox Store Page",
+      "message": "وب‌سایت"
+   }
+}

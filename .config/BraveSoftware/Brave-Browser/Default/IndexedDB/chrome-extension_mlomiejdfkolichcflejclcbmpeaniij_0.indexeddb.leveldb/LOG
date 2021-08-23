@@ -1,0 +1,14 @@
+2021/08/23-01:06:49.183 a5a7 Reusing MANIFEST /home/quasigod/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/chrome-extension_mlomiejdfkolichcflejclcbmpeaniij_0.indexeddb.leveldb/MANIFEST-000001
+2021/08/23-01:06:49.183 a5a7 Recovering log #114
+2021/08/23-01:06:49.184 a5a7 Reusing old log /home/quasigod/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/chrome-extension_mlomiejdfkolichcflejclcbmpeaniij_0.indexeddb.leveldb/000114.log 
+2021/08/23-01:06:49.184 a5a7 Delete type=2 #112
+2021/08/23-01:06:49.218 a5ac Level-0 table #119: started
+2021/08/23-01:06:49.220 a5ac Level-0 table #119: 87491 bytes OK
+2021/08/23-01:06:49.221 a5ac Delete type=0 #114
+2021/08/23-01:06:49.221 a5ac Manual compaction at level-0 from '\x00$\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00%\x00\x00\x00' @ 0 : 0; will stop at '\x00$\x01\x02\x01\x03\x00f\x00o\x00o' @ 116389 : 1
+2021/08/23-01:06:49.221 a5ac Compacting 1@0 + 1@1 files
+2021/08/23-01:06:49.246 a5ac Generated table #120@0: 32053 keys, 785698 bytes
+2021/08/23-01:06:49.246 a5ac Compacted 1@0 + 1@1 files => 785698 bytes
+2021/08/23-01:06:49.247 a5ac compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/08/23-01:06:49.247 a5ac Delete type=2 #119
+2021/08/23-01:06:49.247 a5ac Manual compaction at level-0 from '\x00$\x01\x02\x01\x03\x00f\x00o\x00o' @ 116389 : 1 .. '\x00%\x00\x00\x00' @ 0 : 0; will stop at (end)

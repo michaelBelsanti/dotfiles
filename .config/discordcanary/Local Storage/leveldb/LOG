@@ -1,0 +1,5 @@
+2021/08/17-08:56:25.956 afe0 Creating DB /home/quasigod/.config/discordcanary/Local Storage/leveldb since it was missing.
+2021/08/17-08:56:25.959 afe0 Reusing MANIFEST /home/quasigod/.config/discordcanary/Local Storage/leveldb/MANIFEST-000001
+2021/08/17-08:59:29.160 afe0 Level-0 table #5: started
+2021/08/17-08:59:29.161 afe0 Level-0 table #5: 18814 bytes OK
+2021/08/17-08:59:29.162 afe0 Delete type=0 #3

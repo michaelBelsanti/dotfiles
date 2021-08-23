@@ -1,0 +1,26 @@
+2021/08/23-01:07:03.546 a70d Reusing MANIFEST /home/quasigod/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/08/23-01:07:03.546 a70d Recovering log #280
+2021/08/23-01:07:03.547 a70d Reusing old log /home/quasigod/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000280.log 
+2021/08/23-01:07:05.356 a5aa Level-0 table #286: started
+2021/08/23-01:07:05.358 a5aa Level-0 table #286: 166229 bytes OK
+2021/08/23-01:07:05.360 a5aa Delete type=0 #280
+2021/08/23-01:07:05.361 a5aa Manual compaction at level-0 from '\x00_\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00`\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/08/23-01:07:05.361 a5aa Manual compaction at level-1 from '\x00_\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00`\x00\x00\x00' @ 0 : 0; will stop at '\x00`\x02\x02\x01\x14\x00s\x00h\x00e\x00l\x00l\x00_\x00i\x00d\x00e\x00n\x00t\x00i\x00f\x00i\x00e\x00r\x00_\x00k\x00e\x00y' @ 95001 : 1
+2021/08/23-01:07:05.361 a5aa Compacting 1@1 + 1@2 files
+2021/08/23-01:07:05.362 a5aa Generated table #287@1: 329 keys, 28281 bytes
+2021/08/23-01:07:05.362 a5aa Compacted 1@1 + 1@2 files => 28281 bytes
+2021/08/23-01:07:05.364 a5aa compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/08/23-01:07:05.364 a5aa Manual compaction at level-1 from '\x00`\x02\x02\x01\x14\x00s\x00h\x00e\x00l\x00l\x00_\x00i\x00d\x00e\x00n\x00t\x00i\x00f\x00i\x00e\x00r\x00_\x00k\x00e\x00y' @ 95001 : 1 .. '\x00`\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/08/23-01:07:05.371 a583 Level-0 table #289: started
+2021/08/23-01:07:05.372 a583 Level-0 table #289: 1667 bytes OK
+2021/08/23-01:07:05.373 a583 Delete type=2 #283
+2021/08/23-01:07:05.373 a583 Delete type=0 #285
+2021/08/23-01:07:05.373 a583 Delete type=2 #286
+2021/08/23-01:07:05.373 a583 Manual compaction at level-0 from '\x00`\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00a\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/08/23-01:07:05.374 a583 Manual compaction at level-1 from '\x00`\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00a\x00\x00\x00' @ 0 : 0; will stop at '\x00a\x00\x00\xc8\x0b\x00S\x00W\x00H\x00e\x00a\x00l\x00t\x00h\x00L\x00o\x00g' @ 95961 : 1
+2021/08/23-01:07:05.374 a583 Compacting 1@1 + 1@2 files
+2021/08/23-01:07:05.375 a583 Generated table #290@1: 311 keys, 22006 bytes
+2021/08/23-01:07:05.375 a583 Compacted 1@1 + 1@2 files => 22006 bytes
+2021/08/23-01:07:05.376 a583 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/08/23-01:07:05.376 a583 Delete type=2 #289
+2021/08/23-01:07:05.376 a583 Manual compaction at level-1 from '\x00a\x00\x00\xc8\x0b\x00S\x00W\x00H\x00e\x00a\x00l\x00t\x00h\x00L\x00o\x00g' @ 95961 : 1 .. '\x00a\x00\x00\x00' @ 0 : 0; will stop at (end)

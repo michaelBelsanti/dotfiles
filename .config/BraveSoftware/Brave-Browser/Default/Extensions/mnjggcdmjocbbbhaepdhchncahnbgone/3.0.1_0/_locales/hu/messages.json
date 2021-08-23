@@ -1,0 +1,601 @@
+{
+   "0": {
+      "message": "Kapcsolati időtúllépés. Ellenőrizze az internetkapcsolatot. Ha az internet működik, a kiszolgáló valószínűleg túlterhelt vagy leállt."
+   },
+   "400": {
+      "message": "Szerver: Ez a kérés érvénytelen"
+   },
+   "409": {
+      "message": "Ez már korábban be lett küldve"
+   },
+   "429": {
+      "message": "Túl sok szponzoridőt jelölt be ezen a videón. Biztos benne, hogy van ennyi?"
+   },
+   "502": {
+      "message": "Úgy tűnik, hogy a szerver túlterhelt. Néhány másodperc múlva próbálkozzon újra."
+   },
+   "Description": {
+      "description": "Description of the extension.",
+      "message": "Szponzorok, feliratkozás-kérelmek és több átugrása a YouTube videókon. Jelöljön meg szponzorokat videókon amiket néz, hogy mások idejét is megtakarítsa."
+   },
+   "Dismiss": {
+      "message": "Elvetés"
+   },
+   "Hide": {
+      "message": "Ne mutassa többé"
+   },
+   "Loading": {
+      "message": "Betöltés..."
+   },
+   "Options": {
+      "message": "Beállítások"
+   },
+   "Segment": {
+      "message": "szegmens"
+   },
+   "Segments": {
+      "message": "szegmensek"
+   },
+   "Submissions": {
+      "message": "Beküldések"
+   },
+   "SubmitTimes": {
+      "message": "Szegmens beküldése"
+   },
+   "Unknown": {
+      "message": "Hiba történt a szponzoridők bejelentésekor. Kérjük, próbálja újra."
+   },
+   "Username": {
+      "message": "Felhasználónév"
+   },
+   "acceptPermission": {
+      "message": "Engedély jóváhagyása"
+   },
+   "add": {
+      "message": "Hozzáadás"
+   },
+   "addInvidiousInstanceError": {
+      "message": "Érvénytelen domain. CSAK a domain részt tartalmazhatja. Például: invidious.ajay.app"
+   },
+   "areYouSureReset": {
+      "message": "Biztosan vissza szeretné állítani?"
+   },
+   "audioNotification": {
+      "message": "Hangjelzés átugráskor"
+   },
+   "audioNotificationDescription": {
+      "message": "A hangjelzés átugráskor lejátszik egy hangot minden alkalommal amikor átugrik egy szegmenst. Ha kikapcsolja (vagy az auto átugrás ki van kapcsolva) nem lesz hangjelzés lejátszva."
+   },
+   "autoHideInfoButton": {
+      "message": "Automatikus elrejtése az Információ Gombnak"
+   },
+   "autoSkip": {
+      "message": "Auto átugrás"
+   },
+   "bracketEnd": {
+      "message": "(Vége)"
+   },
+   "bracketNow": {
+      "message": "(Most)"
+   },
+   "cancel": {
+      "message": "Mégse"
+   },
+   "category": {
+      "message": "Kategória"
+   },
+   "categoryUpdate1": {
+      "message": "Itt vannak a kategóriák!"
+   },
+   "categoryUpdate2": {
+      "message": "Nyissa meg a beállításokat, hogy átugorhasson introkat, outrokat stb."
+   },
+   "category_interaction": {
+      "message": "Emlékeztető (Feliratkozás)"
+   },
+   "category_interaction_description": {
+      "message": "Egy rövid emlékeztető arról, hogy likeoljunk, iratkozzunk fel, vagy kövessük a tartalom közben. Ha hosszabb szakasz, vagy egy adott témáról van, inkább a az ön-promóció alá tartozik."
+   },
+   "category_interaction_short": {
+      "message": "Emlékeztető"
+   },
+   "category_intro": {
+      "message": "Megszakítás/Intro animáció"
+   },
+   "category_intro_description": {
+      "message": "Egy részlet tartalom nélkül. Lehet szünet, álló képkocka, vagy ismétlődő animáció. Nem használandó információt tartalmazó átmeneteknél."
+   },
+   "category_intro_short": {
+      "message": "Megszakítás"
+   },
+   "category_livestream_messages": {
+      "message": "Élő adás: Adomány / üzenet olvasások"
+   },
+   "category_livestream_messages_short": {
+      "message": "Üzenet beolvasása"
+   },
+   "category_music_offtopic": {
+      "message": "Zene: nem-zene szegmens"
+   },
+   "category_music_offtopic_short": {
+      "message": "Nem-Zene"
+   },
+   "category_outro": {
+      "message": "Záróképernyő/ Stáblista"
+   },
+   "category_outro_description": {
+      "message": "Stáblista, vagy amikor megjelennek a YouTube zárókártyák. Nem használandó információt tartalmazó következtetésekkor."
+   },
+   "category_selfpromo": {
+      "message": "Nem fizetett/ön-promóció"
+   },
+   "category_selfpromo_description": {
+      "message": "Hasonló a szponzorhoz, de nem fizetett vagy ön-promóció. Beletartozik a saját ruhaáru, adományok, vagy infó arról hogy kivel működtek együtt."
+   },
+   "category_sponsor": {
+      "message": "Szponzor"
+   },
+   "category_sponsor_description": {
+      "message": "Fizetett promóció, vagy közvetlen reklám. Nem ön-promóció vagy ingyenes ajánlat (/shoutout) emberekről/termékekről/weboldalakról amik tetszenek nekik."
+   },
+   "changeUserID": {
+      "message": "UserID importálása / exportálása"
+   },
+   "channelWhitelisted": {
+      "message": "A csatorna az engedélyezőlistára került!"
+   },
+   "chooseACategory": {
+      "message": "Válasszon kategóriát"
+   },
+   "clearThis": {
+      "message": "Biztosan törölni akarja?\n\n"
+   },
+   "clearTimes": {
+      "message": "Szegmensek törlése"
+   },
+   "clearTimesButton": {
+      "message": "Időpontok törlése"
+   },
+   "closePopup": {
+      "message": "Felugró ablak bezárása"
+   },
+   "colorFormatIncorrect": {
+      "message": "A szín helytelenül van formázva. Egy 3 vagy 6 számjegyből álló hex kódnak kell lennie egy kettőskereszttel az elején."
+   },
+   "confirmMSG": {
+      "message": "Ahhoz, hogy értékeket szerkesszen, vagy töröljön kattintson az info gombra, vagy nyissa meg a bővítmény felugró ablakát a bővítmény ikonjával a jobb felső sarokban."
+   },
+   "confirmNoticeTitle": {
+      "message": "Szegmens beküldése"
+   },
+   "connectionError": {
+      "message": "Kapcsolódási probléma merült fel. Error kód: "
+   },
+   "copyDebugInformation": {
+      "message": "Hibakeresési információ másolása a vágólapra"
+   },
+   "copyDebugInformationComplete": {
+      "message": "A hibakeresési információ másolva lett a vágólapjára. Nyugodtan távolítson el belőle olyan információkat, amiket nem szívesen osztana meg. Mentse el szöveges fájlként, vagy másolja a hibajelentésbe."
+   },
+   "copyDebugInformationFailed": {
+      "message": "Hiba a vágólapra másoláskor"
+   },
+   "copyDebugInformationOptions": {
+      "message": "Információt másol a vágólapra, amit megadhat egy fejlesztőnek, ha bejelent egy hibát, vagy egy fejlesztő kéri öntől. Az érzékeny információkat, például a felhasználói azonosítót, az engedélyezőlistán szereplő csatornákat és az egyéni szerver címét eltávolítottuk. Azonban tartalmaz olyan információkat, mint a böngésző, az operációs rendszer és a bővítmény verziószáma. "
+   },
+   "createdBy": {
+      "message": "Készítette"
+   },
+   "currentInstances": {
+      "message": "Jelenlegi példányok:"
+   },
+   "customAddressError": {
+      "message": "A cím helytelenül van formázva. Győződjön meg róla, hogy http:// vagy https:// van az elején, és nem fordított perjeleket használ."
+   },
+   "customServerAddress": {
+      "message": "SponsorBlock szerver címe"
+   },
+   "customServerAddressDescription": {
+      "message": "A SponsorBlock által használt cím a szerverre történő hívások kezdeményezésére szolgál.\nHacsak nincs saját szerverpéldánya, ezt nem szabad megváltoztatni."
+   },
+   "delete": {
+      "message": "Törlés"
+   },
+   "disable": {
+      "message": "Kikapcsol"
+   },
+   "disableAutoSkip": {
+      "message": "Auto átugrás kikapcsolása"
+   },
+   "disableSkipping": {
+      "message": "Átugrás bekapcsolva"
+   },
+   "discordAdvert": {
+      "message": "Csatlakozzon a hivatalos discord szerverhez, hogy javaslatokat és visszajelzést adhasson!"
+   },
+   "downvoteDescription": {
+      "message": "Helytelen/rossz időzítés"
+   },
+   "edit": {
+      "message": "Szerkesztés"
+   },
+   "enableAutoSkip": {
+      "message": "Auto átugrás bekapcsolása"
+   },
+   "enableQueryByHashPrefix": {
+      "message": "Lekérdezés Hash előtaggal"
+   },
+   "enableRefetchWhenNotFound": {
+      "message": "Szegmensek újrakeresése új videókon"
+   },
+   "enableSkipping": {
+      "message": "Átugrás kikapcsolva"
+   },
+   "enableTestingServer": {
+      "message": "Bétateszt szerver bekapcsolása"
+   },
+   "enableViewTracking": {
+      "message": "Átugrás-számláló követés bekapcsolása"
+   },
+   "errorCode": {
+      "message": "Hibakód: "
+   },
+   "exportOptions": {
+      "message": "Összes beállítás importálása / exportálása"
+   },
+   "exportOptionsWarning": {
+      "message": "Figyelem: Az beállítások megváltoztatása végleges, és tönkreteheti a bővítményét. Biztosan meg szeretné tenni? Készítsen egy biztonsági mentést a régi beállításairól, biztos, ami biztos."
+   },
+   "forceChannelCheck": {
+      "message": "Csatorna ellenőrzése átugrás előtt"
+   },
+   "forceChannelCheckPopup": {
+      "message": "Gondolja át a \"Csatorna ellenőrzése átugrás előtt\" bekapcsolását"
+   },
+   "fullName": {
+      "description": "Name of the extension.",
+      "message": "SponorBlock YouTube-ra - Szponzorok átugrására"
+   },
+   "guidelines": {
+      "message": "Irányelvek"
+   },
+   "help": {
+      "message": "Segítség"
+   },
+   "hiddenDueToDownvote": {
+      "message": "elrejtve: leszavazva"
+   },
+   "hiddenDueToDuration": {
+      "message": "elrejtve: túl rövid"
+   },
+   "hideButtons": {
+      "message": "Gombok elrejtése a YouTube lejátszón"
+   },
+   "hideButtonsDescription": {
+      "message": "Ez elrejti az átugrandó szegmensek megjelöléséhez használt gombokat a YouTube lejátszón."
+   },
+   "hideDeleteButton": {
+      "message": "Törlés gomb elrejtése a YouTube lejátszón"
+   },
+   "hideInfoButton": {
+      "message": "Info gomb elrejtése a YouTube lejátszón"
+   },
+   "hideThis": {
+      "message": "Elrejtés"
+   },
+   "hitGoBack": {
+      "message": "Kattintson a visszaugrásra, hogy visszakerüljön oda, ahonnan ugrott."
+   },
+   "hourLower": {
+      "message": "óra"
+   },
+   "hoursLower": {
+      "message": "óra"
+   },
+   "incorrectCategory": {
+      "message": "Hibás kategória"
+   },
+   "incorrectlyFormattedOptions": {
+      "message": "Ez a JSON helytelenül van formázva. A beállításai nem lettek megváltoztatva."
+   },
+   "inspect": {
+      "message": "Megvizsgál"
+   },
+   "keyAlreadyUsed": {
+      "message": "már máshoz van állítva. Kérem, válasszon egy másik billentyűt."
+   },
+   "keybindCurrentlySet": {
+      "message": ". Jelenleg erre van állítva:"
+   },
+   "keybindDescription": {
+      "message": "Válasszon billentyűt azzal, hogy lenyomja"
+   },
+   "keybindDescriptionComplete": {
+      "message": "A funkció erre a billentyűre lett állítva: "
+   },
+   "longDescription": {
+      "description": "Full description of the extension on the store pages.",
+      "message": "A SponsorBlock-al átugorhatja a szponzorokat, introkat, outrokat, feliratkozás emlékeztetőket és a YouTube videók többi idegesítő részeit. A SponsorBlock egy közösség által vezérelt böngészőbővítmény, ami lehetővé tesz bárkit arra, hogy megjelölhesse egy szponzor vagy más szegmens kezdő és végpontjait. Ha megosztja ezt az információt, mindenki más ennek a bővítménynek a birtokában egyenesen átugorja majd ezt a szponzorszegmenst. Emellett például a zene videók nem-zene részei is átugorhatóak."
+   },
+   "manualPaused": {
+      "message": "Időzítő megállítva"
+   },
+   "manualSkip": {
+      "message": "Átugrás manuálisan"
+   },
+   "minDuration": {
+      "message": "Minimális időtartam (másodpercekben):"
+   },
+   "minDurationDescription": {
+      "message": "A beállított értéknél rövidebb szegmenseket nem ugorja át és nem jeleníti meg a lejátszó."
+   },
+   "minLower": {
+      "message": "perc"
+   },
+   "minsLower": {
+      "message": "perc"
+   },
+   "mobileUpdateInfo": {
+      "message": "az m.youtube.com már támogatott"
+   },
+   "moreCategories": {
+      "message": "További kategóriák"
+   },
+   "multipleSegments": {
+      "message": "Több szegmens"
+   },
+   "noVideoID": {
+      "message": "Nem találtunk YouTube videót.\nHa ez helytelen, frissítsd a lapot."
+   },
+   "nonMusicCategoryOnMusic": {
+      "message": "Ez a videó zeneként van kategorizálva. Biztos benne, hogy ennek van szponzora? Ha ez valójában egy \"nem-zene szegmens\", nyissa meg a bővítmény beállításait és kapcsolja be azt a kategóriát. Ezt követően elküldheti ezt a szegmenst \"nem-zene\"-ként szponzor helyett. Amennyiben nem érti, kérjük olvassa el az irányelveket."
+   },
+   "noticeUpdate": {
+      "description": "The first line of the message displayed after the notice was upgraded.",
+      "message": "Az értesítést frissítettük!"
+   },
+   "noticeUpdate2": {
+      "description": "The second line of the message displayed after the notice was upgraded.",
+      "message": "Ha még mindig nem tetszik, kattintson a ne mutassa többé gombra."
+   },
+   "openPopup": {
+      "message": "SponsorBlock felugró ablak megnyitása"
+   },
+   "optionsInfo": {
+      "message": "Invidious támogatás engedélyezése, autoátugrás kikapcsolása, gombok eltűntetése és több."
+   },
+   "paused": {
+      "message": "Szüneteltetve"
+   },
+   "popupHint": {
+      "message": "Tipp: A beállításokban készíthetsz gyorsbillentyűket a közzétetelhez"
+   },
+   "preview": {
+      "message": "Előnézet"
+   },
+   "publicStats": {
+      "message": "Ezt használja a nyilvános ranglistán, hogy megmutassa mennyit járult hozzá. Nézze meg"
+   },
+   "readTheGuidelines": {
+      "description": "Show the first time they submit or if they are \"high risk\"",
+      "message": "Olvassa el az irányelveket!!"
+   },
+   "recordTimesDescription": {
+      "message": "Küldés"
+   },
+   "refreshSegments": {
+      "message": "Szegmensek frissítése"
+   },
+   "removeFromWhitelist": {
+      "message": "Csatorna törlése fehérlistáról"
+   },
+   "reportButtonInfo": {
+      "message": "Szegmens jelentése helytelenként."
+   },
+   "reportButtonTitle": {
+      "message": "Jelentés"
+   },
+   "reset": {
+      "message": "Visszaállítás"
+   },
+   "resetInvidiousInstance": {
+      "message": "Invidious példányok listájának visszaállítása"
+   },
+   "resetInvidiousInstanceAlert": {
+      "message": "Épp visszaállítja az Invidious példányok listát"
+   },
+   "reskip": {
+      "message": "Újra-átugrás"
+   },
+   "save": {
+      "message": "Mentés"
+   },
+   "savedPeopleFrom": {
+      "message": "Megspóroltál másoknak "
+   },
+   "seekBarColor": {
+      "message": "Keresősáv színe"
+   },
+   "serverDown": {
+      "message": "Úgy tűnik a szerver nem működik. Kérjük, mihamarabb értesítse a fejlesztőket."
+   },
+   "setOptions": {
+      "message": "Beállítások"
+   },
+   "setSkipShortcut": {
+      "message": "Billentyű beállítása szegmens átugráshoz"
+   },
+   "setSubmitKeybind": {
+      "message": "Billentyű beállítása a beküldés gombhoz"
+   },
+   "setUserID": {
+      "message": "UserID beállítása"
+   },
+   "setUsername": {
+      "message": "Felhasználónév megadása"
+   },
+   "shortCheck": {
+      "message": "A következő szegmens rövidebb, mint az Ön által beállított minimális időtartam. Ez azt jelentheti, hogy már beküldhették, csak emiatt az opció miatt Önnek figyelmen kívül marad. Biztosan beküldi?"
+   },
+   "showButtons": {
+      "message": "Gombok mutatása a YouTube lejátszón"
+   },
+   "showDeleteButton": {
+      "message": "Törlés gomb mutatása a YouTube lejátszón"
+   },
+   "showInfoButton": {
+      "message": "Info gomb mutatása a YouTube lejátszón"
+   },
+   "showNotice": {
+      "message": "Értesítés megjelenítése ismét"
+   },
+   "showOverlay": {
+      "message": "Megjelenítés a keresősávban"
+   },
+   "showSkipNotice": {
+      "message": "Jelezzen, ha egy szegmens át lett ugorva"
+   },
+   "showTimeWithSkips": {
+      "message": "Idő megtekintése az átugrandók nélkül"
+   },
+   "showTimeWithSkipsDescription": {
+      "message": "Ez az idő zárójelben jelenik meg az aktuális idő mellett a keresősáv alatt. Megmutatja a videó teljes időtartamát, levonva a szegmenseket. Beletartoznak a csak \"Megjelenítés a keresősávban\" jelöléssel ellátott szegmensek is."
+   },
+   "showUploadButton": {
+      "message": "Feltöltés gomb megjelenítése"
+   },
+   "skip": {
+      "message": "Átugrás"
+   },
+   "skip_category": {
+      "message": "Átugorja ezt: {0}?"
+   },
+   "sourceCode": {
+      "description": "Used on Firefox Store Page",
+      "message": "Forráskód"
+   },
+   "sponsor404": {
+      "message": "Nem találhatóak szegmensek"
+   },
+   "sponsorCancel": {
+      "message": "Szegmens Készítés Visszavonása"
+   },
+   "sponsorEnd": {
+      "message": "Szegmens vége"
+   },
+   "sponsorFound": {
+      "message": "Ennek a videónak már vannak szegmensei az adatbázisban!"
+   },
+   "sponsorStart": {
+      "message": "Szegmens eleje"
+   },
+   "statusReminder": {
+      "message": "A szerver állapotához tekintse meg a status.sponsor.ajay.app oldalt."
+   },
+   "submissionEditHint": {
+      "description": "Appears in the popup to inform them that editing has been moved to the video player.",
+      "message": "A szegmens szerkesztés azután fog megjelenni miután a közzétételre kattintasz"
+   },
+   "submit": {
+      "message": "Beküld"
+   },
+   "submitCheck": {
+      "message": "Biztosan be akarja küldeni?"
+   },
+   "submitTimesButton": {
+      "message": "Időpontok megadása"
+   },
+   "success": {
+      "message": "Siker!"
+   },
+   "supportOtherSites": {
+      "message": "Harmadik fél Youtube oldalainak támogatása"
+   },
+   "testingServerWarning": {
+      "message": "Az összes hozzájárulás/szavazat NEM FOG SZÁMÍTANI a fő szerverhez, amíg a tesztszerverhez kapcsolódik. Győződjön meg róla, hogy ki van kapcsolva, ha valódi hozzájárulásokat szeretne megosztani."
+   },
+   "theKey": {
+      "message": "A billentyű"
+   },
+   "to": {
+      "description": "Used between segments. Example: 1:20 to 1:30",
+      "message": "-tól eddig:"
+   },
+   "unskip": {
+      "message": "Visszaugrás"
+   },
+   "upvoteButtonInfo": {
+      "message": "Részlet felszavazása"
+   },
+   "userIDChangeWarning": {
+      "message": "Figyelem: A UserID megváltoztatása végleges. Biztosan szeretné megtenni? Minden esetben készítsen biztonsági másolatot a régiről."
+   },
+   "viewLeaderboard": {
+      "message": "Ranglista"
+   },
+   "voteOnTime": {
+      "message": "Szavazzon a szegmensről"
+   },
+   "voted": {
+      "message": "Szavazott!"
+   },
+   "wantToSubmit": {
+      "message": "Szeretné beküldeni a szegmenst ehhez a videóhoz:"
+   },
+   "website": {
+      "description": "Used on Firefox Store Page",
+      "message": "Weboldal"
+   },
+   "whatChangeUserID": {
+      "message": "Ezt titokban kell tartani. Olyan, mint egy jelszó, nem szabad senkivel megosztania. Ha valakinek megvan, megszemélyesítheti Önt."
+   },
+   "whatDeleteButton": {
+      "message": "Ez egy gomb a lejátszón, ami törli az összes beküldetlen szegmensét a jelenlegi videón."
+   },
+   "whatEnableTestingServer": {
+      "message": "A hozzájárulásai/szavazatai NEM FOGNAK SZÁMÍTANI a fő szerveren. Csak tesztelésre használja."
+   },
+   "whatExportOptions": {
+      "message": "Ez az össze beállítása JSON-ban. Ebbe bele tartozik a userID-ja, szóval csak ésszel ossza meg."
+   },
+   "whatForceChannelCheck": {
+      "message": "Alapértelmezett állapotban, a bővítmény átugorhat szegmenseket, mielőtt tudná melyik csatornán van. Alapból ezért, néhány szegmens, ami a videók legelején van, engedélyezett csatornákon is átugródhat. Ennek a bekapcsolásával ez elkerülhető, de minden átugrás előtt lesz egy kis késleltetés, hiszen a channelID megszerzéséhez elkell egy kis idő. Ez a késleltetés akár észrevehetetlen is lehet, ha elég gyors a kapcsolata."
+   },
+   "whatInfoButton": {
+      "message": "Ez a gomb felhoz egy felugró dobozt a YouTube oldalon."
+   },
+   "whatQueryByHashPrefix": {
+      "message": "A szerverről videoID helyett, a videoID hash első négy karaktere lesz elküldve szegmenslekéréskor. A szerver visszaküldi az összes hasonló hashel rendelkező videó adatait."
+   },
+   "whatRefetchWhenNotFound": {
+      "message": "Ha a videó új, és még nem találhatóak szegmensek, a bővítmény pár percenkét újra keresi őket, miközben nézi."
+   },
+   "whatUploadButton": {
+      "message": "Ez a gomb a YouTube lejátszón jelenik meg, miután kiválasztott egy időtartamot és készen áll a beküldésre."
+   },
+   "whatViewTracking": {
+      "message": "Ez a funkció követi, mely szegmenseket ugrotta át, hogy más felhasználók megtudhassák mennyit segítettek a bejelentéseik és a szavazatokkal együtt egy mértékegységként van használva, hogy ne kerülhessen spam az adatbázisba. A bővítmény küld egy üzenetet a szervernek, minden alkalommal, mikor átugrik egy szegmenst. Remélhetőleg nem sokan állítják át ezt a beállítást, hogy a számok pontosak maradhassanak. :)"
+   },
+   "whitelistChannel": {
+      "message": "Csatorna fehérlistára tétele"
+   },
+   "youHaveSaved": {
+      "message": "Megtakarított magának "
+   },
+   "youHaveSavedTime": {
+      "message": "Megspóroltál másoknak"
+   },
+   "youHaveSavedTimeEnd": {
+      "message": " az életükből"
+   },
+   "youHaveSkipped": {
+      "message": "Átugrottál "
+   },
+   "youMustSelectACategory": {
+      "message": "Minden szegmenshez kategóriát kell választania beküldés előtt!"
+   },
+   "yourWork": {
+      "description": "Used to describe the section that will show you the statistics from your submissions.",
+      "message": "Te munkád"
+   }
+}

@@ -1,0 +1,6 @@
+2021/08/17-09:12:08.584 9849 Creating DB /home/quasigod/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.zdnet.com_0.indexeddb.leveldb since it was missing.
+2021/08/17-09:12:08.586 9849 Reusing MANIFEST /home/quasigod/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.zdnet.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/08/17-09:12:11.400 9849 Level-0 table #5: started
+2021/08/17-09:12:11.401 9849 Level-0 table #5: 813 bytes OK
+2021/08/17-09:12:11.402 9849 Delete type=0 #3
+2021/08/17-09:12:11.402 9849 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

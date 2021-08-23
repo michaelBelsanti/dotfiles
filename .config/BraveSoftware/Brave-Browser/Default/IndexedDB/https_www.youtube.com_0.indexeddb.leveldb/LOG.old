@@ -1,0 +1,25 @@
+2021/08/23-00:49:45.914 9cdf Reusing MANIFEST /home/quasigod/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/08/23-00:49:45.914 9cdf Recovering log #274
+2021/08/23-00:49:45.915 9cdf Reusing old log /home/quasigod/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000274.log 
+2021/08/23-00:49:45.915 9cdf Delete type=2 #273
+2021/08/23-00:49:48.050 9b4e Level-0 table #279: started
+2021/08/23-00:49:48.052 9b4e Level-0 table #279: 173906 bytes OK
+2021/08/23-00:49:48.054 9b4e Delete type=0 #274
+2021/08/23-00:49:48.054 9b4e Manual compaction at level-0 from '\x00]\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00^\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/08/23-00:49:48.208 9b4e Level-0 table #281: started
+2021/08/23-00:49:48.209 9b4e Level-0 table #281: 34875 bytes OK
+2021/08/23-00:49:48.211 9b4e Delete type=0 #278
+2021/08/23-00:49:48.211 9b4e Manual compaction at level-0 from '\x00^\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00_\x00\x00\x00' @ 0 : 0; will stop at '\x00_\x00\x00\xc8\x0b\x00S\x00W\x00H\x00e\x00a\x00l\x00t\x00h\x00L\x00o\x00g' @ 94712 : 1
+2021/08/23-00:49:48.211 9b4e Compacting 1@0 + 1@1 files
+2021/08/23-00:49:48.213 9b4e Generated table #282@0: 391 keys, 18223 bytes
+2021/08/23-00:49:48.213 9b4e Compacted 1@0 + 1@1 files => 18223 bytes
+2021/08/23-00:49:48.214 9b4e compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/08/23-00:49:48.214 9b4e Delete type=2 #281
+2021/08/23-00:49:48.214 9b4e Manual compaction at level-0 from '\x00_\x00\x00\xc8\x0b\x00S\x00W\x00H\x00e\x00a\x00l\x00t\x00h\x00L\x00o\x00g' @ 94712 : 1 .. '\x00_\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/08/23-00:51:26.556 9ce0 Compacting 1@1 + 1@2 files
+2021/08/23-00:51:26.558 9ce0 Generated table #283@1: 306 keys, 21785 bytes
+2021/08/23-00:51:26.558 9ce0 Compacted 1@1 + 1@2 files => 21785 bytes
+2021/08/23-00:51:26.559 9ce0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/08/23-00:51:26.559 9ce0 Delete type=2 #276
+2021/08/23-00:51:26.559 9ce0 Delete type=2 #279
+2021/08/23-00:51:26.559 9ce0 Delete type=2 #282

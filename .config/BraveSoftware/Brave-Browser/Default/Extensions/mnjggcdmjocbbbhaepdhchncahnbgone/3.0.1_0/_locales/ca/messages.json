@@ -1,0 +1,46 @@
+{
+   "400": {
+      "message": "El server ha dit que aquesta sol·licitud es invalida"
+   },
+   "409": {
+      "message": "Això ja s'ha enviat abans"
+   },
+   "429": {
+      "message": "Heu enviat massa vegades patrocinadors per a aquest vídeo, esteu segur que n'hi ha tants?"
+   },
+   "Description": {
+      "description": "Description of the extension.",
+      "message": "Omet els sponsorships, pregant per una subscripció i mes en videos de YouTube. Informa dels patrocinadors a els vídeos que mires per estalviar temps als altres."
+   },
+   "Dismiss": {
+      "message": "Omet"
+   },
+   "Hide": {
+      "message": "No mostris mai"
+   },
+   "Loading": {
+      "message": "Carregant..."
+   },
+   "Segment": {
+      "message": "segment"
+   },
+   "Segments": {
+      "message": "segments"
+   },
+   "channelWhitelisted": {
+      "message": "El canal és a la llista blanca!"
+   },
+   "fullName": {
+      "description": "Name of the extension.",
+      "message": "SponsorBlock per YouTube - Omet els Sponsorships"
+   },
+   "reportButtonInfo": {
+      "message": "Notifiqueu que aquest enviament és incorrecte."
+   },
+   "reportButtonTitle": {
+      "message": "Informa"
+   },
+   "upvoteButtonInfo": {
+      "message": "Voteu millor aquesta submissió"
+   }
+}

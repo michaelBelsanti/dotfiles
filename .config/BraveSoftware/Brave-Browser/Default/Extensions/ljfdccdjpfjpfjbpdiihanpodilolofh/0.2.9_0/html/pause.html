@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <script type="module" src="/js/pause.js"></script>
+        <title>Currently Pausing</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/images/pause_icon_48.png" />
+        <style type="text/css">
+            body {
+                background-color: #6ec05d;
+                color: white;
+                font-family: "avenir-light", "Avenir", "Segoe UI", "Trebuchet MS", "Arial";
+                font-size: 28px;
+            }
+            a, a:visited, a:active {
+                color: white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="notificationarea" class="centered">
+            <div id="btn-back-wrapper" class="hidden">
+                &larr; <a href="#" id="btn-back" class="link">Go Back</a>
+            </div>
+            <img id="freedom-logo" src="/images/logo.svg" width="200" height="192" style="display:none;"/>
+
+            <div id="message-pause" style="display:none;" >Pause for a <span id="pause-timeout-desc">few seconds</span>. <div class="feel-good-text hidden">You're doing amazing!</div></div>
+            <div id="message-ready" class="hidden">
+                <a href="#" class="link" id="btn-continue">Continue to <span class="page-name">your site</span></a>
+                <div id="extra-buttons-wrapper" class="hidden">
+                    <a href="https://freedom.to?utm_source=pausepage" id="btn-close">Get Freedom</a>
+                    <a class="link" href="#" id="btn-allow-domain">Don't pause <span class="page-name">this page</span> for 24 hours</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class='survey-link-wrapper'>
+            <a class="link" href="https://freedom-app.typeform.com/to/kkx1Tl">Help us improve Pause</a>
+        </div>
+    </body>
+</html>

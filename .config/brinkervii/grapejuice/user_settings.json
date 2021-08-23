@@ -1,0 +1,12 @@
+{
+  "show_fast_flag_warning": true,
+  "wine_binary": "",
+  "dll_overrides": "ucrtbase=n,b;api-ms-win-crt-private-l1-1-0=n,b;dxdiagn=;winemenubuilder.exe=",
+  "no_daemon_mode": true,
+  "release_channel": "master",
+  "env": {},
+  "enabled_tweaks": [
+    "rbxfpsunlocker"
+  ],
+  "disable_updates": false
+}

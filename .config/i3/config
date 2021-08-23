@@ -1,3 +1,13 @@
+##=============================== Applications ================================#
+#---------------------------- Default applications ----------------------------#
+set $terminal       alacritty
+set $files          thunar
+set $browser        brave
+set $applauncher    $HOME/.config/rofi/scripts/rofi-wrapper.sh run
+set $gamelauncher   $HOME/.config/rofi/scripts/rofi-wrapper.sh games
+set $windowsearch   $HOME/.config/rofi/scripts/rofi-wrapper.sh windows
+set $optionsmenu    $HOME/.config/rofi/scripts/rofi-wrapper.sh options
+set $taskman        alacritty -e vtop
 # mod key
 set $mod Mod4
 # font
@@ -17,11 +27,18 @@ smart_gaps on
 
 # wallpaper
 exec_always --no-startup-id nitrogen --restore
+
 # compositor
 exec_always --no-startup-id picom -experimental-backends
+bindsym $mod+c exec picom -experimental-backends
+bindsym --release $mod+shift+c exec pkill picom
+
 # flashfocus
 exec_always --no-startup-id flashfocus
-bindsym $mod+o exec --no-startup-id flash_window
+bindsym $mod+p exec --no-startup-id flash_window
+
+# spotifyd
+exec_always --no-startup-id spotifyd
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -37,23 +54,26 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec alacritty
-# open files
-bindsym $mod+n exec thunar
-# launch browser
-bindsym $mod+b exec brave
+# app shortcuts
+bindsym $mod+Return exec $terminal
+bindsym $mod+n exec $files
+bindsym $mod+b exec $browser
+bindsym $mod+v exec $taskman
 
-# kill focused window
+# kill app
 bindsym $mod+q kill
+# xkill
+bindsym --release $mod+shift+q exec xkill
 
-# start rofi (run)
-bindsym $mod+space exec --no-startup-id rofi -show run "System San Francisco Display 18"
-# start rofi (window)
-bindsym $mod+Tab exec --no-startup-id rofi -show window
-# alttab
-# bindsym mod1+Tab exec --no-startup-id alttab -fg "#d58681" -bg "#4a4a4a" -frame "#eb564d" -t 128x150 -i 127x64
-bindsym Mod1+Tab exec --no-startup-id rofi -modi combi -combi-modi window -show combi
+# screenshot
+bindsym $mod+shift+s exec --no-startup-id flameshot gui
+
+# start rofi shit
+bindsym $mod+space exec --no-startup-id $applauncher
+bindsym $mod+Tab exec --no-startup-id $windowsearch
+bindsym Mod1+Tab exec --no-startup-id $windowsearch
+bindsym $mod+g exec --no-startup-id $gamelauncher
+bindsym $mod+o exec --no-startup-id $optionsmenu
 
 # change focus
 bindsym $mod+h focus left
@@ -106,16 +126,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Browser"
-set $ws2 "2: Terminal "
-set $ws3 "3: Misc"
-set $ws4 "4: Steam"
-set $ws5 "5: Gaming"
-set $ws6 "6: Misc"
-set $ws7 "7: Misc"
-set $ws8 "8: Misc"
-set $ws9 "9: Discord"
-set $ws10 "10: Spotify"
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: ?"
+set $ws4 "4: "
+set $ws5 "5: "
+set $ws6 "6: ?"
+set $ws7 "7: ?"
+set $ws8 "8: ?"
+set $ws9 "9: "
+set $ws10 "10: "
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -166,12 +186,10 @@ bindsym $mod+mod1+8 move container to workspace number $ws8; workspace $ws8
 bindsym $mod+mod1+9 move container to workspace number $ws9; workspace $ws9
 bindsym $mod+mod1+10 move container to workspace number $ws10; workspace $ws10
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec --no-startup-id SDL_VIDEO_FULLSCREEN_HEAD=0 i3lock -i /home/quasigod/Pictures/Wallpapers/lockscreen.png -e -f
+bindsym $mod+Shift+e exec --no-startup-id betterlockscreen -l
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -214,6 +232,6 @@ client.focused_inactive $iancative-bg-color $inactive-bg-color $inactive-text-co
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
 
 # assigning applications to workspaces
-assign [class="Steam"] $ws3
+assign [class="Steam"] $ws4
 assign [class="lightcord"] $ws9
-assign [class="psst-gui"] $ws10
+assign [class="spt"] $ws10

@@ -1,0 +1,121 @@
+{
+   "400": {
+      "message": "Serveren sagde at denne efterspørgsel var ugyldig"
+   },
+   "409": {
+      "message": "Dette er allerede blevet indsendt"
+   },
+   "429": {
+      "message": "Du har indsendt for mange reklamesegmenter til den her video, er du helt sikker på at der er så mange?"
+   },
+   "Description": {
+      "description": "Description of the extension.",
+      "message": "Fjern reklamer, subscriber tiggeri og mere i youtube videoer. Rapporter reklamer på de videoer du ser for at spare folks tid."
+   },
+   "Dismiss": {
+      "message": "Afvis"
+   },
+   "Hide": {
+      "message": "Vis aldrig"
+   },
+   "Loading": {
+      "message": "Indlæser..."
+   },
+   "Segment": {
+      "message": "seg"
+   },
+   "Segments": {
+      "message": "segmenter"
+   },
+   "SubmitTimes": {
+      "message": "Indsend Segmenter"
+   },
+   "Unknown": {
+      "message": "Der skete en fejl da du prøvede at indsende dine reklame tider, prøv lige igen."
+   },
+   "channelWhitelisted": {
+      "message": "Kanal whitelisted!"
+   },
+   "clearThis": {
+      "message": "Er du sikker på, at du vil fjerne dette?\n\n"
+   },
+   "clearTimes": {
+      "message": "Ryd Segmenter"
+   },
+   "closePopup": {
+      "message": "Luk Pop-op"
+   },
+   "confirmMSG": {
+      "message": "For at redigere eller slette individuelle værdier, så skal du klikke på info knappen eller åbne udvidelses popupet ved at klikke på udvidelses ikonet i øverste højre hjørne."
+   },
+   "connectionError": {
+      "message": "Der opstod en forbindelsesfejl. Fejlkode: "
+   },
+   "fullName": {
+      "description": "Name of the extension.",
+      "message": "SponsorBlock til YouTube - Fjern reklamer"
+   },
+   "hitGoBack": {
+      "message": "Tryk på unskip for at gå tilbage til hvor du kom fra."
+   },
+   "manualPaused": {
+      "message": "Sat på pause"
+   },
+   "noVideoID": {
+      "message": "Ingen YouTube-video fundet.\nHvis dette er forkert, så genindlæs siden."
+   },
+   "openPopup": {
+      "message": "Åbn SponsorBloker Pop-op"
+   },
+   "paused": {
+      "message": "Sat på pause"
+   },
+   "refreshSegments": {
+      "message": "Opdater segmenter"
+   },
+   "reportButtonInfo": {
+      "message": "Anmeld dette forslag som forkert."
+   },
+   "reportButtonTitle": {
+      "message": "Anmeld"
+   },
+   "reskip": {
+      "message": "Spring over"
+   },
+   "serverDown": {
+      "message": "Det ser ud til at serveren er nede. Kontakt udvikleren straks."
+   },
+   "sponsor404": {
+      "message": "Ingen segmenter fundet"
+   },
+   "sponsorCancel": {
+      "message": "Annuller Oprettelse Af Segment"
+   },
+   "sponsorEnd": {
+      "message": "Segment Slutter Nu"
+   },
+   "sponsorFound": {
+      "message": "Denne video har segmenter i databasen!"
+   },
+   "sponsorStart": {
+      "message": "Segment Begynder Nu"
+   },
+   "submitCheck": {
+      "message": "Er du sikker på, at du vil indsende dette?"
+   },
+   "success": {
+      "message": "Succes!"
+   },
+   "unskip": {
+      "message": "Annuller spring over"
+   },
+   "upvoteButtonInfo": {
+      "message": "Stem for dette forslag"
+   },
+   "voteOnTime": {
+      "message": "Stem På Et Segment"
+   },
+   "voted": {
+      "message": "Stemt!"
+   }
+}

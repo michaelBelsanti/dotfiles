@@ -1,0 +1,654 @@
+/* ===========================================================================
+	Dark mode colors
+   =========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+	body {
+		--color: #fff;
+		--background: #202124;
+	}
+
+	h1 {
+		--color: #efefef;
+	}
+
+	h1.quickey::before {
+		--background-image: url(/img/icon-300-inverted.png);
+	}
+
+	h2 {
+		--color: #ccc;
+		--border-color: #555;
+	}
+
+	kbd, button {
+		--color: #333;
+		--background: #cecac9;
+		--shadow-color-1: rgba(0, 0, 0, 0.25);
+		--shadow-color-2: rgba(0, 0, 0, 0.1);
+		--shadow-color-3: rgba(0, 0, 0, 0.6);
+		--shadow-color-4: rgba(255, 255, 255, 0.55);
+	}
+
+	button.key:hover {
+		--background: #eee;
+	}
+
+	.history.icon, .window.icon, .clear.icon {
+		--fill: #aaa;
+	}
+
+	.inprivate.icon {
+		filter: none !important;
+		opacity: .8 !important;
+	}
+
+	.help-button {
+		--color: #666;
+		--background: #ccc;
+	}
+
+	.help-button:hover {
+		--color: #000;
+		--background: #fff;
+	}
+
+	.update-message {
+		--color: #efefef;
+		--background: #333;
+	}
+
+	.update-message h4 {
+		--color: #aaa;
+	}
+
+	.control .indicator {
+		--background: #555;
+	}
+
+	.control label:hover input:not([disabled]) ~ .indicator {
+		--background: #666;
+	}
+
+	.control input:checked ~ .indicator,
+	.control input:checked:focus ~ .indicator,
+	.control label:hover input:not([disabled]):checked ~ .indicator {
+		--background: #e6e6e7;
+	}
+
+	.control input:disabled ~ .indicator {
+		--background: #333;
+	}
+
+	.control input[type="checkbox"] ~ .indicator:after {
+		--border-color: #000;
+	}
+
+	.control input[type="checkbox"]:disabled ~ .indicator:after {
+		--border-color: #ccc;
+	}
+
+	.control input[type="radio"] ~ .indicator:after {
+		--background: #000;
+	}
+
+	.control input[type="radio"]:disabled ~ .indicator:after {
+		--background: #ccc;
+	}
+
+	.control .subtitle {
+		--color: #aaa;
+	}
+
+	.shortcut-setting .label b {
+		--opacity: .8;
+	}
+
+	.shortcut-display {
+		--background: #333;
+	}
+
+	.shortcut-display:hover {
+		--background: #383838;
+	}
+
+	.shortcut-display:focus {
+		--color: #aaa;
+		--background: #666;
+		--shadow-color: hsl(240, 100%, 88%);
+	}
+
+	.clear-button:hover {
+		--background: #505154;
+	}
+
+	.clear-button:hover:active {
+		--background: #666;
+	}
+
+	.shortcut-picker .error {
+		--color: rgb(193, 0, 0);
+	}
+
+	.incognito-screenshot {
+		content: url("/img/incognito-option-dark.png");
+	}
+
+	.edge .incognito-screenshot {
+		content: url("/img/inprivate-option-dark.png");
+	}
+}
+
+
+/* ===========================================================================
+	Base
+   =========================================================================== */
+
+* {
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+		sans-serif, "Apple Color Emoji", "Segoe UI Symbol", "Segoe UI Emoji";
+}
+
+:root {
+	font-size: 16px;
+}
+
+body {
+	background: var(--background, #fff);
+	color: var(--color, #000);
+	font-size: 1em;
+	user-select: none;
+	cursor: default;
+	position: relative;
+	margin: 0;
+	padding: 10em 0;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+}
+
+
+/* ===========================================================================
+	Page
+   =========================================================================== */
+
+section {
+	margin: auto;
+	position: relative;
+}
+
+h1 {
+	font-size: 2em;
+	color: var(--color, #333);
+	margin: 0 0 1.5em 0;
+	position: relative;
+}
+
+h1.quickey::before {
+	content: '';
+	background-image: var(--background-image, url(/img/icon-300.png));
+	background-size: cover;
+	left: -115px;
+	top: -55px;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	display: inline-block;
+}
+
+h2 {
+	font-size: 1.3em;
+	line-height: 2;
+	color: var(--color, #666);
+	margin: 2.75em 0 1.2em 0;
+	border-bottom: 1px solid var(--border-color, #ddd);
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+kbd, button {
+	font-size: smaller;
+	font-weight: bold;
+	color: var(--color, #ccc);
+	padding: 0.2em 0.5em 0.35em 0.5em;
+	vertical-align: baseline;
+	box-shadow:
+		0.07em 0.07em 0.125em var(--shadow-color-1, rgba(0, 0, 0, 0.25)),
+		0 0 0 0.04em var(--shadow-color-2, rgba(0, 0, 0, 0.3)),
+		0.02em 0.02em 0.1em var(--shadow-color-3, rgba(0, 0, 0, 0.4)) inset,
+		0.05em 0.05em 0.1em var(--shadow-color-4, rgba(255, 255, 255, 0.35)) inset;
+	border-radius: 0.25em;
+	background-color: var(--background, #313536);
+	display: inline-block;
+}
+
+button.key {
+	padding: 0.2em 0.75em 0.35em 0.75em;
+	margin: 1em 1em 0 0;
+	border-radius: 0.25em;
+}
+
+button.key:hover {
+	background: var(--background, #000);
+}
+
+button.key:active {
+	opacity: .5;
+}
+
+main {
+	width: 35em;
+	position: relative;
+}
+
+.help-button {
+	color: var(--color, #ccc);
+	font-size: .8em;
+	font-weight: bold;
+	line-height: 100%;
+	text-align: center;
+	padding: 0 0 0 .05em;
+	width: 1.1em;
+	height: 1.1em;
+	border-radius: 50%;
+	background: var(--background, #333);
+	bottom: -.5em;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+
+.mac .help-button {
+	font-size: .7em;
+	padding: .1em 0 0 .05em;
+	width: 1.2em;
+	height: 1.2em;
+}
+
+.help-button:hover {
+	color: var(--color, #fff);
+	background: var(--background, #000);
+}
+
+
+/* ===========================================================================
+	Icons
+   =========================================================================== */
+
+.clear.icon {
+	fill: var(--fill, #888);
+}
+
+.history.icon, .window.icon {
+	fill: var(--fill, #999);
+}
+
+.incognito.icon {
+	fill: var(--fill, #a9a9a9);
+}
+
+.inprivate.icon {
+	filter: invert(1);
+	opacity: .6;
+}
+
+.history.icon, .window.icon, .incognito.icon, .inprivate.icon {
+	height: 1.2em;
+	vertical-align: bottom;
+}
+
+
+/* ===========================================================================
+	Update message
+   =========================================================================== */
+
+.update-message {
+	text-align: center;
+	color: var(--color, #333);
+	background: var(--background, #efefef);
+	padding: 2em 2em;
+	margin: -7em 0 7em 0;
+	border-radius: .25em;
+}
+
+.update-message h3 {
+	font-size: 1.2em;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+
+.update-message h4 {
+	color: var(--color, #777);
+	font-size: .9em;
+	font-weight: normal;
+	padding: 0 6em;
+	margin: 1em 0 0 0;
+}
+
+
+/* ===========================================================================
+	Controls
+   =========================================================================== */
+
+.control {
+	margin-bottom: .5em;
+}
+
+.control label {
+	position: relative;
+	padding-left: 1.7em;
+	line-height: 1.4em;
+	display: inline-block;
+}
+
+	/* don't use display: none so the control can still get focus */
+.control input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+
+.control .indicator {
+	position: absolute;
+	top: .1em;
+	left: 0;
+	height: 1.25em;
+	width: 1.25em;
+	border-radius: .25em;
+	background: var(--background, #efefef);
+	transition: background 0.15s ease-in-out;
+}
+
+.control .indicator:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+.control label:hover input:not([disabled]) ~ .indicator {
+	background: var(--background, #ebebeb);
+}
+
+.control input:checked ~ .indicator,
+.control input:checked:focus ~ .indicator,
+.control label:hover input:not([disabled]):checked ~ .indicator {
+	background: var(--background, #313536);
+}
+
+.control input:disabled ~ .indicator {
+	background: var(--background, #e6e6e6);
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+.control input:checked ~ .indicator:after {
+	display: block;
+}
+
+.control input[type="checkbox"] ~ .indicator:after {
+	left: 30%;
+	top: 11%;
+	width: 20%;
+	height: 46%;
+	border: solid var(--border-color, #fff);
+	border-width: 0 .2em .2em 0;
+	transform: rotate(45deg);
+}
+
+.control input[type="checkbox"]:disabled ~ .indicator:after {
+	border-color: var(--border-color, #666);
+}
+
+.control input[type="radio"] ~ .indicator {
+	border-radius: 50%;
+}
+
+.control input[type="radio"] ~ .indicator:after {
+	left: 25%;
+	top: 25%;
+	height: 50%;
+	width: 50%;
+	border-radius: 50%;
+	background: var(--background, #fff);
+}
+
+.control input[type="radio"]:disabled ~ .indicator:after {
+	background: var(--background, #7b7b7b);
+}
+
+.control .subtitle {
+	color: var(--color, #666);
+	font-size: .9em;
+}
+
+.control-group {
+	margin: 1em 0 2em 0;
+}
+
+.control-group label {
+	margin-left: 1.25em;
+}
+
+.control-group .label {
+	line-height: 1.5;
+	margin-bottom: .5em;
+}
+
+.control-group .label kbd {
+	line-height: 1.2;
+}
+
+.chrome-shortcuts {
+	cursor: pointer;
+}
+
+.incognito-screenshot {
+	width: 100%;
+	margin: 0;
+	cursor: pointer;
+}
+
+.new-setting {
+	display: flex;
+	align-items: baseline;
+}
+
+.new-setting > .control-group {
+	margin: 0;
+}
+
+.new-indicator {
+	color: #d70000;
+	font-weight: bold;
+	font-size: .7em;
+	text-indent: -3.5em;
+	animation: red-fade 3s infinite ease-out;
+}
+
+@keyframes red-fade {
+    0% { color: #f33; }
+    100% { color: #d70000; }
+}
+
+
+/* ===========================================================================
+	Shortcut setting
+   =========================================================================== */
+
+.shortcut-setting {
+	display: flex;
+	margin-bottom: .5em;
+}
+
+.shortcut-setting .label {
+	padding: .35em 0;
+	margin-right: 1em;
+	line-height: 1.1em;
+	flex: 1;
+}
+
+.shortcut-setting .label b {
+	opacity: var(--opacity, .65);
+}
+
+
+/* ===========================================================================
+	Shortcut picker
+   =========================================================================== */
+
+.shortcut-picker {
+	flex: 0.85;
+}
+
+.shortcut-display {
+	font-size: 30px;
+	padding: .25em;
+	position: relative;
+	border-radius: 6px;
+	background: var(--background, #efefef);
+	box-shadow: none;
+	transition: box-shadow 0.15s ease-out;
+}
+
+.shortcut-display:hover {
+	background: var(--background, #ebebeb);
+}
+
+.shortcut-display:focus {
+	color: var(--color, #777);
+	background: var(--background, #ddd);
+	box-shadow: 0 -0.1em 0 var(--shadow-color, #228) inset;
+	outline: none;
+}
+
+.disabled .shortcut-display, .disabled .shortcut-display:hover, .disabled .shortcut-display:focus {
+	background: none !important;
+	box-shadow: none !important;
+	opacity: .6;
+}
+
+.shortcut-display .placeholder {
+	font-size: .5em;
+	top: 0;
+	padding-left: .5em;
+	line-height: 3em;
+	position: absolute;
+}
+
+.clear-button {
+	width: 20px;
+	height: 20px;
+	right: 6px;
+	top: 50%;
+	margin-top: -10px;
+	background-size: 10px 16px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: none;
+	border-radius: 100%;
+	opacity: .6;
+	position: absolute;
+	display: block;
+}
+
+.clear-button:hover {
+	background-color: var(--background, #ccc);
+	opacity: 1;
+}
+
+.clear-button:hover:active {
+	background-color: var(--background, #bbb);
+}
+
+.clear-button .clear.icon {
+	width: 16px;
+	height: 16px;
+	top: 2px;
+	left: 2px;
+	position: absolute;
+}
+
+.shortcut-picker .error {
+	font-size: smaller;
+	color: var(--color, hsl(0, 100%, 45%));
+	padding: .35em 2.15em 0;
+	position: relative;
+}
+
+.shortcut-picker .error .alert.icon {
+	fill: var(--color, hsl(0, 100%, 45%));
+	left: .5em;
+	top: .5em;
+	position: absolute;
+}
+
+	/* on macOS and a standard def monitor, the error icon is a little low and
+	   so its bottom gets cut off.  so move it a little higher on Mac. */
+.mac .shortcut-picker .error .alert.icon {
+	left: .5em;
+	top: .4em;
+}
+
+
+/* ===========================================================================
+	Keyboard shortcuts
+   =========================================================================== */
+
+.shortcut {
+	font-size: 30px;
+	height: 1em;
+}
+
+.shortcut kbd, .key {
+	height: inherit;
+	border: 0;
+	border-radius: 0.125em;
+	font-size: inherit;
+	text-align: center;
+	outline: 0;
+	position: relative;
+	vertical-align: top;
+	margin-right: .25em;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+}
+
+.shortcut kbd > span, .key > span {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 0.5em;
+	line-height: 2;
+	width: 100%;
+}
+
+.width1 {
+	width: 1.15em;
+}
+
+.width2 {
+	width: 1.65em;
+}
+
+.width3 {
+	width: 1.95em;
+}
+
+.width4 {
+	width: 3em;
+}

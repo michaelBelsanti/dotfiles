@@ -1,0 +1,432 @@
+[Modules] Modules initializing
+[Modules] Distribution: remote
+[Modules] Host updates: enabled
+[Modules] Module updates: enabled
+[Modules] Module install path: /home/quasigod/.config/discordcanary/0.0.126/modules
+[Modules] Module installed file path: /home/quasigod/.config/discordcanary/0.0.126/modules/installed.json
+[Modules] Module download path: /home/quasigod/.config/discordcanary/0.0.126/modules/pending
+[Modules] Bootstrapping...
+[Modules] Installing discord_desktop_core@0 from /opt/discord-canary/resources/bootstrap/discord_desktop_core.zip
+[Modules] Failed installing discord_desktop_core@0: Error: ENOENT: no such file or directory, open '/opt/discord-canary/resources/bootstrap/discord_desktop_core.zip'
+[Modules] Installing discord_erlpack@0 from /opt/discord-canary/resources/bootstrap/discord_erlpack.zip
+[Modules] Failed installing discord_erlpack@0: Error: ENOENT: no such file or directory, open '/opt/discord-canary/resources/bootstrap/discord_erlpack.zip'
+[Modules] Installing discord_spellcheck@0 from /opt/discord-canary/resources/bootstrap/discord_spellcheck.zip
+[Modules] Failed installing discord_spellcheck@0: Error: ENOENT: no such file or directory, open '/opt/discord-canary/resources/bootstrap/discord_spellcheck.zip'
+[Modules] Installing discord_utils@0 from /opt/discord-canary/resources/bootstrap/discord_utils.zip
+[Modules] Failed installing discord_utils@0: Error: ENOENT: no such file or directory, open '/opt/discord-canary/resources/bootstrap/discord_utils.zip'
+[Modules] Installing discord_voice@0 from /opt/discord-canary/resources/bootstrap/discord_voice.zip
+[Modules] Failed installing discord_voice@0: Error: ENOENT: no such file or directory, open '/opt/discord-canary/resources/bootstrap/discord_voice.zip'
+[Modules] Finished module installations. [success: 0] [failure: 5]
+[Modules] Checking for host updates.
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discord.com/api/modules/canary/versions.json
+[Modules] Module update available: discord_desktop_core@78 [installed: 0]
+[Modules] Module update available: discord_erlpack@78 [installed: 0]
+[Modules] Module update available: discord_spellcheck@78 [installed: 0]
+[Modules] Module update available: discord_utils@78 [installed: 0]
+[Modules] Module update available: discord_voice@47 [installed: 0]
+[Modules] Fetching discord_desktop_core@78 from https://discord.com/api/modules/canary/discord_desktop_core/78
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 2%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 4%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 7%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 8%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 12%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 14%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 17%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 20%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 23%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 28%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 31%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 33%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 37%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 39%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 43%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 47%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 50%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 55%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 56%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 57%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 60%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 63%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 67%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 70%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 74%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 77%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 78%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 81%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 82%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 85%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 91%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 93%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 96%
+[Modules] Streaming discord_desktop_core@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip: 100%
+[Modules] Fetching discord_erlpack@78 from https://discord.com/api/modules/canary/discord_erlpack/78
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 4%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 8%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 12%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 17%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 21%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 25%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 29%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 33%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 36%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 38%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 40%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 42%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 43%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 45%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 46%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 48%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 50%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 51%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 53%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 54%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 55%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 57%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 59%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 61%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 63%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 64%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 66%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 69%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 71%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 73%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 75%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 79%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 88%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 94%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 98%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 99%
+[Modules] Streaming discord_erlpack@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip: 100%
+[Modules] Fetching discord_spellcheck@78 from https://discord.com/api/modules/canary/discord_spellcheck/78
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 1%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 3%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 4%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 5%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 6%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 7%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 8%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 9%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 10%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 11%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 12%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 13%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 14%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 15%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 16%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 17%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 18%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 19%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 20%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 21%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 22%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 23%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 24%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 25%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 26%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 27%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 28%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 29%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 30%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 31%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 32%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 33%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 34%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 36%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 37%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 40%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 41%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 42%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 44%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 45%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 46%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 47%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 48%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 49%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 50%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 51%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 53%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 54%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 55%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 56%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 57%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 58%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 59%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 60%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 61%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 62%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 64%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 66%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 67%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 69%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 70%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 71%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 72%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 73%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 74%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 75%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 76%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 77%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 78%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 79%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 80%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 81%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 82%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 83%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 84%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 85%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 86%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 87%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 88%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 89%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 90%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 91%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 92%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 93%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 94%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 95%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 96%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 97%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 98%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 99%
+[Modules] Streaming discord_spellcheck@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip: 100%
+[Modules] Fetching discord_utils@78 from https://discord.com/api/modules/canary/discord_utils/78
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 2%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 4%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 7%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 9%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 11%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 12%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 14%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 17%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 18%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 19%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 21%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 23%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 25%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 27%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 29%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 30%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 31%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 32%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 33%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 36%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 38%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 40%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 41%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 42%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 43%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 44%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 45%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 46%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 47%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 49%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 50%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 51%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 53%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 54%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 55%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 56%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 57%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 59%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 60%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 61%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 62%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 63%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 64%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 65%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 67%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 68%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 69%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 70%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 71%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 72%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 73%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 75%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 76%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 77%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 78%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 79%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 80%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 82%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 83%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 84%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 86%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 87%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 89%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 90%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 92%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 93%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 94%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 95%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 97%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 98%
+[Modules] Streaming discord_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip: 100%
+[Modules] Fetching discord_voice@47 from https://discord.com/api/modules/canary/discord_voice/47
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 1%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 2%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 3%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 4%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 5%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 6%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 7%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 8%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 9%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 10%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 11%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 12%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 13%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 14%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 15%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 16%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 17%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 18%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 19%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 20%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 21%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 22%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 23%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 24%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 25%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 27%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 28%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 29%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 30%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 31%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 32%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 33%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 34%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 35%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 36%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 37%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 38%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 39%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 40%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 41%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 42%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 43%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 44%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 45%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 46%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 47%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 48%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 49%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 50%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 51%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 52%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 53%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 54%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 55%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 56%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 57%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 58%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 59%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 60%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 61%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 62%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 63%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 64%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 65%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 66%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 67%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 68%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 69%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 70%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 71%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 72%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 73%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 74%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 75%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 76%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 77%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 78%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 79%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 80%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 81%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 82%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 83%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 84%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 85%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 86%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 87%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 88%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 89%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 90%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 91%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 92%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 93%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 94%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 95%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 96%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 97%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 98%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 99%
+[Modules] Streaming discord_voice@47 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip: 100%
+[Modules] Finished module downloads. [success: 5] [failure: 0]
+[Modules] Installing updates...
+[Modules] Installing discord_desktop_core@78 from /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_desktop_core-78.zip
+[Modules] Installing discord_erlpack@78 from /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_erlpack-78.zip
+[Modules] Installing discord_spellcheck@78 from /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_spellcheck-78.zip
+[Modules] Installing discord_utils@78 from /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_utils-78.zip
+[Modules] Installing discord_voice@47 from /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_voice-47.zip
+[Modules] Finished module installations. [success: 5] [failure: 0]
+[Modules] Checking for host updates.
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discord.com/api/modules/canary/versions.json
+[Modules] No module updates available.
+[Modules] Starting to install discord_game_utils...
+[Modules] Fetching discord_game_utils@78 from https://discord.com/api/modules/canary/discord_game_utils/78
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 2%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 8%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 10%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 11%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 13%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 16%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 19%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 22%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 25%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 28%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 30%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 33%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 36%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 39%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 42%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 45%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 47%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 50%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 53%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 56%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 59%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 61%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 64%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 67%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 70%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 73%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 76%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 78%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 79%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 82%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 85%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 87%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 89%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 90%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 92%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 95%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 98%
+[Modules] Streaming discord_game_utils@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip: 100%
+[Modules] Finished module downloads. [success: 1] [failure: 0]
+[Modules] Installing discord_game_utils@78 from /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_game_utils-78.zip
+[Modules] Finished module installations. [success: 1] [failure: 0]
+[Modules] Starting to install discord_rpc...
+[Modules] Fetching discord_rpc@78 from https://discord.com/api/modules/canary/discord_rpc/78
+[Modules] Streaming discord_rpc@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_rpc-78.zip
+[Modules] Streaming discord_rpc@78 to /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_rpc-78.zip: 100%
+[Modules] Finished module downloads. [success: 1] [failure: 0]
+[Modules] Installing discord_rpc@78 from /home/quasigod/.config/discordcanary/0.0.126/modules/pending/discord_rpc-78.zip
+[Modules] Finished module installations. [success: 1] [failure: 0]

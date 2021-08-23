@@ -1,0 +1,190 @@
+html {
+  color-scheme: dark;
+}
+
+.bigText {
+  font-size: 50px;
+}
+
+body {
+  background-color: #333333;
+  font-family: sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  max-width: 60%;
+  margin: auto;
+}
+
+.projectPreview {
+  position: relative;
+}
+
+.projectPreviewImage {
+  position: absolute;
+  left: -90px;
+  width: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.projectPreviewImageLarge {
+  position: absolute;
+  left: -210px;
+  width: 200px;
+  top: 50%;
+  transform: translateY(-20%);
+}
+
+.projectPreviewImageLargeRight {
+  position: absolute;
+  right: -210px;
+  width: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.createdBy {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#title {
+  background-color: #636363;
+
+  text-align: center;
+  vertical-align: middle;
+
+  font-size: 50px;
+  color: #212121;
+
+  padding: 20px;
+  
+  text-decoration: none;
+
+  transition: font-size 1s;
+}
+
+.subtitle {
+  font-size: 40px;
+  color: #dad8d8;
+
+  padding-top: 10px;
+
+  transition: font-size 0.4s;
+}
+
+.subtitle:hover {
+  font-size: 45px;
+
+  transition: font-size 0.4s;
+}
+
+.profilepic {
+  background-color: #636363 !important;
+  vertical-align: middle;
+}
+
+.profilepiccircle {
+  vertical-align: middle;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.link {
+  padding: 20px;
+
+  height: 80px;
+
+  transition: height 0.2s;
+}
+
+.link:hover {
+  height: 95px;
+
+  transition: height 0.2s;
+}
+
+#contact,.smalllink {
+  font-size: 25px;
+  color: #e8e8e8;
+
+  text-align: center;
+  
+  padding: 10px;
+}
+
+#contact {
+  text-decoration: none;
+}
+
+p,li {
+  font-size: 16px;
+}
+
+p,li,a {
+  color: #c4c4c4;
+}
+
+p,li,code,a {
+	text-align: left;
+	overflow-wrap: break-word;
+}
+
+@media screen and (orientation:portrait) {
+  p,li,code,a {
+	max-width: 100%;
+  }
+  
+  .projectPreviewImage {
+    position: unset;
+    width: 130px;
+    display: block;
+    margin: auto;
+    transform: none;
+  }
+}
+
+.previewImage {
+	max-height: 200px;
+}
+
+img {
+	max-width: 100%;
+
+	text-align: center;
+}
+
+#recentPostTitle {
+  font-size: 30px;
+  color: #dad8d8;
+}
+
+#recentPostDate {
+  font-size: 15px;
+  color: #dad8d8;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #dad8d8;
+  text-align: center;
+}
+
+svg {
+ text-decoration: none; 
+}
+
+#sbDonate {
+  font-size: 10px;
+}

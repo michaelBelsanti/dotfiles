@@ -1,0 +1,19 @@
+game:
+  arch: win64
+  args: --exec="launch Pro"
+  exe: drive_c/Program Files (x86)/Battle.net/Battle.net.exe
+  prefix: /home/quasigod/Games/overwatch
+system:
+  env:
+    DXVK_CONFIG_FILE: /home/quasigod/Games/overwatch/dxvk.conf
+    DXVK_STATE_CACHE_PATH: /home/quasigod/Games/overwatch
+    STAGING_SHARED_MEMORY: '1'
+    __GL_DXVK_OPTIMIZATIONS: '1'
+    __GL_SHADER_DISK_CACHE: '1'
+    __GL_SHADER_DISK_CACHE_PATH: /home/quasigod/Games/overwatch
+  exclude_processes: Agent.exe "Battle.net Helper.exe"
+  manual_command: /home/quasigod/Games/overwatch/state-cache-merge/state-cache-update.sh
+wine:
+  dxvk: true
+  esync: true
+  version: lutris-fshack-6.14-3-x86_64

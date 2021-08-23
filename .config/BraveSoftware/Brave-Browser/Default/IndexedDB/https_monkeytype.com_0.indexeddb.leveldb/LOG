@@ -1,0 +1,7 @@
+2021/08/22-23:01:02.050 2bf3 Reusing MANIFEST /home/quasigod/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_monkeytype.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/08/22-23:01:02.050 2bf3 Recovering log #6
+2021/08/22-23:01:02.050 2bf3 Reusing old log /home/quasigod/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_monkeytype.com_0.indexeddb.leveldb/000006.log 
+2021/08/22-23:01:03.619 2bf3 Level-0 table #11: started
+2021/08/22-23:01:03.620 2bf3 Level-0 table #11: 1051 bytes OK
+2021/08/22-23:01:03.621 2bf3 Delete type=0 #6
+2021/08/22-23:01:03.621 2bf3 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
