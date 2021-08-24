@@ -1,9 +1,0 @@
-2021/08/23-03:35:28.592 430 Reusing MANIFEST /home/quasigod/.config/Lightcord/Local Storage/leveldb/MANIFEST-000001
-2021/08/23-03:35:28.592 430 Recovering log #12
-2021/08/23-03:35:28.593 430 Reusing old log /home/quasigod/.config/Lightcord/Local Storage/leveldb/000012.log 
-2021/08/23-03:40:29.082 be0 Level-0 table #17: started
-2021/08/23-03:40:29.083 be0 Level-0 table #17: 10888 bytes OK
-2021/08/23-03:40:29.084 be0 Delete type=0 #12
-2021/08/23-04:44:29.082 be0 Level-0 table #19: started
-2021/08/23-04:44:29.083 be0 Level-0 table #19: 10682 bytes OK
-2021/08/23-04:44:29.084 be0 Delete type=0 #16
