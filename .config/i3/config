@@ -24,7 +24,6 @@ exec_always --no-startup-id albert
 exec_always --no-startup-id spotifyd
 exec_always --no-startup-id easyeffects --gapplication-service
 exec_always --no-startup-id flashfocus
-exec_always --no-startup-id xss-lock --transfer-sleep-lock -- $lockscreen -nofork
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
@@ -168,7 +167,7 @@ bindsym $mod+a focus parent
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec loginctl lock-session
+bindsym $mod+Shift+e exec $lockscreen 
 
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
