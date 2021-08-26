@@ -3,140 +3,85 @@
 set $terminal       alacritty
 set $files          thunar
 set $browser        brave
-set $applauncher    $HOME/.config/rofi/scripts/rofi-wrapper.sh run
+set $applauncher    albert show
 set $gamelauncher   $HOME/.config/rofi/scripts/rofi-wrapper.sh games
 set $windowsearch   $HOME/.config/rofi/scripts/rofi-wrapper.sh windows
 set $optionsmenu    $HOME/.config/rofi/scripts/rofi-wrapper.sh options
 set $taskman        alacritty -e vtop
-# mod key
-set $mod Mod4
-# font
-font pango:System San Francisco Display 12
-# remove titlebars
+set $taskbar        $HOME/.config/polybar/launch.sh 
+set $wallpaper      nitrogen --restore
+set $compositor     picom
+set $lockscreen     betterlockscreen -l
+set $screenshot     flameshot -gui
+#-----------------------------------------------------------------------------#
+
+#----------------------------- Startup applications --------------------------#
+exec_always --no-startup-id $taskbar
+exec_always --no-startup-id $wallpaper
+exec        --no-startup-id $compositor -experimental-backends
+
+exec_always --no-startup-id albert
+exec_always --no-startup-id spotifyd
+exec_always --no-startup-id easyeffects --gapplication-service
+exec_always --no-startup-id flashfocus
+exec_always --no-startup-id xss-lock --transfer-sleep-lock -- $lockscreen -nofork
+#-----------------------------------------------------------------------------#
+#=============================================================================#
+
+
+#================================= Appearance ================================#
+#------------------------------- Colors & font -------------------------------#
+set $bg-color 	         #1E222A
+set $inactive-bg-color   #1E222A
+set $text-color          #f3f4f5
+set $inactive-text-color #3E4451
+set $urgent-bg-color     #D472A9
+
+#                       border              background         text                 indicator
+client.focused          $bg-color           $bg-color          $text-color          #00ff00
+client.unfocused        $iancative-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $iancative-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+
+font pango:JetBrains Mono 10
+#-----------------------------------------------------------------------------#
+
+#----------------------------- Window appearance -----------------------------#
+# Removes titlebars
 for_window [class="^.*"] border pixel 1
-# move bar to top
-bar { 
-    position top 
-    status_command i3status
-}
-# hide edge borders
 hide_edge_borders both
-# gaps
 gaps inner 6
 smart_gaps on
+#-----------------------------------------------------------------------------#
+#=============================================================================#
 
-# wallpaper
-exec_always --no-startup-id nitrogen --restore
 
-# compositor
-exec_always --no-startup-id picom -experimental-backends
-bindsym $mod+c exec picom -experimental-backends
-bindsym --release $mod+shift+c exec pkill picom
-
-# flashfocus
-exec_always --no-startup-id flashfocus
-bindsym $mod+p exec --no-startup-id flash_window
-
-# spotifyd
-exec_always --no-startup-id spotifyd
-
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
-# Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-
-# Use Mouse+$mod to drag floating windows to their wanted position
+#================================= Controls ==================================#
+set $mod Mod4
 floating_modifier $mod
-
-# app shortcuts
+#------------------------------- Applications --------------------------------#
 bindsym $mod+Return exec $terminal
 bindsym $mod+n exec $files
 bindsym $mod+b exec $browser
 bindsym $mod+v exec $taskman
+bindsym $mod+shift+s exec --no-startup-id $screenshot
 
-# kill app
-bindsym $mod+q kill
-# xkill
-bindsym --release $mod+shift+q exec xkill
+# flash active window with flashfocus
+bindsym $mod+p exec --no-startup-id flash_window
 
-# screenshot
-bindsym $mod+shift+s exec --no-startup-id flameshot gui
+# start and kill compositor (for fps when gaming)
+bindsym $mod+c exec picom -experimental-backends
+bindsym --release $mod+shift+c exec pkill picom
 
-# start rofi shit
+# start launcher shit
 bindsym $mod+space exec --no-startup-id $applauncher
 bindsym $mod+Tab exec --no-startup-id $windowsearch
 bindsym Mod1+Tab exec --no-startup-id $windowsearch
 bindsym $mod+g exec --no-startup-id $gamelauncher
 bindsym $mod+o exec --no-startup-id $optionsmenu
+#-----------------------------------------------------------------------------#
 
-# change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
-# move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
-# split in horizontal orientation
-bindsym $mod+x split h
-
-# split in vertical orientation
-bindsym $mod+z split v
-
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
-
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-
-# toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
-
-# change focus between tiling / floating windows
-bindsym $mod+semicolon focus mode_toggle
-
-# focus the parent container
-bindsym $mod+a focus parent
-
-# focus the child container
-#bindsym $mod+d focus child
-
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: "
-set $ws2 "2: "
-set $ws3 "3: ?"
-set $ws4 "4: "
-set $ws5 "5: "
-set $ws6 "6: ?"
-set $ws7 "7: ?"
-set $ws8 "8: ?"
-set $ws9 "9: "
-set $ws10 "10: "
-
+#---------------------------- Workspace navigation ---------------------------#
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -149,18 +94,6 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
-# Settings workspaces to specific monitors
-workspace $ws1 output DP-4
-workspace $ws2 output DP-4
-workspace $ws3 output DP-4
-workspace $ws4 output DP-4
-workspace $ws5 output DP-4
-
-workspace $ws6 output HDMI-0
-workspace $ws7 output HDMI-0
-workspace $ws8 output HDMI-0
-workspace $ws9 output HDMI-0
-workspace $ws10 output HDMI-0
 # move focused container to workspace
 bindsym $mod+s layout stacking
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -185,13 +118,58 @@ bindsym $mod+mod1+7 move container to workspace number $ws7; workspace $ws7
 bindsym $mod+mod1+8 move container to workspace number $ws8; workspace $ws8
 bindsym $mod+mod1+9 move container to workspace number $ws9; workspace $ws9
 bindsym $mod+mod1+10 move container to workspace number $ws10; workspace $ws10
+#-----------------------------------------------------------------------------#
 
+#--------------------------- Container manipulation --------------------------#
+# kill focused application
+bindsym $mod+q kill
+# xkill
+bindsym --release $mod+shift+q exec xkill
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+# split in horizontal orientation
+bindsym $mod+x split h
+# split in vertical orientation
+bindsym $mod+z split v
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+# change focus between tiling / floating windows
+bindsym $mod+semicolon focus mode_toggle
+# focus the parent container
+bindsym $mod+a focus parent
+# focus the child container
+#bindsym $mod+d focus child
+#-----------------------------------------------------------------------------#
+
+#------------------------------ Miscellaneous --------------------------------#
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec --no-startup-id betterlockscreen -l
+bindsym $mod+Shift+e exec loginctl lock-session
 
-# resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -216,22 +194,52 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 bindsym $mod+r mode "resize"
+#-----------------------------------------------------------------------------#
+#=============================================================================#
 
-#Colors
 
-set $bg-color 	         #1E222A
-set $inactive-bg-color   #1E222A
-set $text-color          #f3f4f5
-set $inactive-text-color #3E4451
-set $urgent-bg-color     #D472A9
+#================================ Workspaces =================================#
+#-----------------------------------------------------------------------------#
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
-#                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $iancative-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $iancative-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+# Settings workspaces to specific monitors
+workspace $ws1 output DP-4
+workspace $ws2 output DP-4
+workspace $ws3 output DP-4
+workspace $ws4 output DP-4
+workspace $ws5 output DP-4
+
+workspace $ws6 output HDMI-0
+workspace $ws7 output HDMI-0
+workspace $ws8 output HDMI-0
+workspace $ws9 output HDMI-0
+workspace $ws10 output HDMI-0
 
 # assigning applications to workspaces
 assign [class="Steam"] $ws4
 assign [class="lightcord"] $ws9
-assign [class="spt"] $ws10
+assign [class="*spt*"] $ws10
+assign [class="*.exe"] $ws5
+#-----------------------------------------------------------------------------#
+#=============================================================================#
+
+
+#=================================== Shit ====================================#
+#-----------------------------------------------------------------------------#
+# # set $refresh_i3status killall -SIGUSR1 i3status
+# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+# bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+# bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+#-----------------------------------------------------------------------------#
+#=============================================================================#
+

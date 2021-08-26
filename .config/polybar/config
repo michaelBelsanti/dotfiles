@@ -1,0 +1,240 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+background = #1e222a
+foreground = #adb1b9   
+
+color0 = #1e222a
+color1 = #e06c75
+color2 = #98c379
+color3 = #e5c07b
+color4 = #61afef
+color5 = #c678dd
+color6 = #56b6c2
+color7 = #abb2bf
+color8 = #545862
+color9 = #e06c75
+color10 = #98c379
+color11 = #e5c07b
+color12 = #61afef
+color13 = #c678dd
+color14 = #56b6c2
+color15 = #c8ccd4
+dark-light = #272A2B 
+active-light = #313435
+
+[bar/main]
+tray-position = right
+monitor = DP-4
+width =  100%
+height = 26
+padding-left = 1
+padding-right = 0 
+background = ${colors.background}
+foreground = ${colors.foreground}
+bottom = false
+border-top-size = 4
+border-bottom-size = 2
+border-top-color = ${colors.background}
+border-bottom-color = ${colors.background}
+
+line-size = 3
+
+modules-left = round-left i3 round-right 
+modules-center = alsa  
+modules-right = cpu mem round-left time round-right  powermenu
+
+font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=13;3
+font-1 = JetBrainsMono Nerd Font:size=18;5
+font-2 = Material Design Icons:style=Bold:size=13;3
+font-3 = Font Awesome 5 Brands:size=13;3
+font-4 = Font Awesome 5 Free:size=13;3
+font-5 = unifont:fontformat=truetype:size=13:antialias=true;
+
+
+[bar/secondary]
+tray-position = right
+monitor = HDMI-0
+width =  100%
+height = 26
+padding-left =1
+padding-right =4
+background = ${colors.background}
+foreground = ${colors.foreground}
+bottom = false
+border-top-size = 4
+border-bottom-size = 2
+border-top-color = ${colors.background}
+border-bottom-color = ${colors.background}
+
+line-size = 3
+
+modules-left = round-left i3 round-right 
+modules-center = alsa  
+modules-right = cpu mem round-left time round-right  powermenu
+
+font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=12;3
+font-1 = JetBrainsMono Nerd Font:size=14;5
+font-2 = Font Awesome 5 Brands:pixelsize=12;2
+font-3 = Font Awesome 5 Free Solid:size=12;2
+font-4 = Font Awesome 5 Free:size=12;2
+font-5 = Material Design Icons:style=Bold:size=13;3
+font-6 = unifont:fontformat=truetype:size=13:antialias=true;
+
+[module/round-left]
+type = custom/text
+content = %{T3}%{T-}
+content-foreground = #2b2f37
+
+[module/round-right]
+type = custom/text
+content = %{T3}%{T-}
+content-foreground = #2b2f37
+
+[module/i3]
+type = internal/i3
+; index-sort = true
+pin-workspaces = true
+; inline-mode = true
+enable-click = true
+enable-scroll = true
+reverse-scroll = false
+
+format = <label-state> <label-mode> 
+label-mode-background = #2b2f37
+
+label-separator = " | "
+label-separator-background = #2b2f37
+
+label-focused = %icon%  
+label-focused-foreground = ${colors.foreground}
+label-focused-underline =  #565c64
+label-focused-background = #2b2f37
+
+label-unfocused = %icon%  
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-background = #2b2f37
+
+label-visible = %icon%
+label-visible-foreground = ${colors.foreground}
+label-visible-background = #2b2f37
+
+label-empty = %icon%  
+label-empty-foreground = ${colors.foreground}
+label-empty-background = #2b2f37
+
+label-occupied = %icon%
+label-occupied-foreground = ${colors.foreground}
+label-occupied-background = #2b2f37
+
+label-urgent = %icon%
+label-urgent-foreground = #DE6E80
+label-urgent-background = #2b2f37
+
+ws-icon-0 = "1; " 
+ws-icon-1 = "2;"  
+ws-icon-2 = "3;?"  
+ws-icon-3 = "4; "
+ws-icon-4 = "5; "
+
+ws-icon-5 = "6;?"  
+ws-icon-6 = "7;?"  
+ws-icon-7 = "8;?" 
+ws-icon-8 = "9; "
+ws-icon-9 = "10; "  
+
+[module/alsa]
+type = internal/alsa
+format-volume = <label-volume> <bar-volume>
+label-volume = " "  
+label-volume-foreground = ${colors.foreground}
+
+format-muted-foreground = ${colors.foreground}
+label-muted = 󰚙
+
+format-muted-padding = 1
+format-muted-background = #2b2f37
+
+bar-volume-width = 10
+bar-volume-foreground-0 = #61afef
+bar-volume-foreground-1 = #61afef
+bar-volume-foreground-2 = #61afef
+bar-volume-foreground-3 = #61afef
+bar-volume-foreground-4 = #61afef
+bar-volume-foreground-5 = #61afef
+bar-volume-foreground-6 = #61afef
+bar-volume-gradient = false
+bar-volume-indicator = 
+bar-volume-indicator-foreground = #61afef
+bar-volume-indicator-font = 2
+bar-volume-fill = ━ 
+bar-volume-fill-foreground = #61afef
+bar-volume-fill-font = 2
+bar-volume-empty = ━
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground}
+format-volume-padding = 1
+
+[module/time]
+type = internal/date
+interval = 60
+format = <label>
+format-background = #2b2f37
+date = %{F#888e96}󰥔 %H:%M%{F-}
+time-alt = %{F#61afef}󰃭 %a, %b %d%{F-}
+
+label = %date%%time%
+label-padding = 0
+
+[module/mem]
+type = custom/script
+exec = free -m | sed -n 's/^Mem:\s\+[0-9]\+\s\+\([0-9]\+\)\s.\+/\1/p'
+format = <label>
+format-prefix = "  ﬙" 
+label = %output% MB
+label-padding = 1
+format-prefix-foreground = #E5C07B
+
+[module/powermenu]
+type = custom/text 
+content ="" 
+content-padding =1
+click-left = /home/quasigod/.config/rofi/scripts/rofi-options-menu.sh &
+content-foreground =  #DB6F8A
+
+[module/volume]
+type = custom/script
+exec = amixer get Master | awk '$0~/%/{print $4}' | tr -d '[]'
+format = <label>
+internal = 5.0
+label = %output% 
+label-foreground = #BF616A
+label-padding = 1
+
+[module/cpu]
+type = internal/cpu
+interval = 2.5
+
+format-prefix = " " 
+format = <label> 
+
+label = CPU %percentage%%
+
+format-background = ${colors.background}
+format-foreground = #61AFEF

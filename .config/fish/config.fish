@@ -40,6 +40,7 @@ alias update='paru -Syu'
 alias upgrade='paru -Syu'
 alias rmcache='paru -Scc'
 alias yay='paru'
+alias nnn='nnn -H'
 
 set -x TERM alacritty
 
