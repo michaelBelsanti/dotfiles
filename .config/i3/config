@@ -12,7 +12,7 @@ set $taskbar        $HOME/.config/polybar/launch.sh
 set $wallpaper      nitrogen --restore
 set $compositor     picom
 set $lockscreen     betterlockscreen -l
-set $screenshot     flameshot -gui
+set $screenshot     flameshot gui
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
@@ -63,7 +63,7 @@ bindsym $mod+Return exec $terminal
 bindsym $mod+n exec $files
 bindsym $mod+b exec $browser
 bindsym $mod+v exec $taskman
-bindsym $mod+shift+s exec --no-startup-id $screenshot
+bindsym $mod+Shift+s exec $screenshot
 
 # flash active window with flashfocus
 bindsym $mod+p exec --no-startup-id flash_window
@@ -228,6 +228,7 @@ assign [class="Steam"] $ws4
 assign [class="lightcord"] $ws9
 assign [class="*spt*"] $ws10
 assign [class="*.exe"] $ws5
+assign [class="PortalWars*"] $ws5
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 

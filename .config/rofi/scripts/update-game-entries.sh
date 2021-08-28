@@ -11,12 +11,7 @@ APP_PATH=$HOME/.cache/rofi-game-launcher/applications
 # Fetch all Steam library folders.
 steam-libraries() {
     echo "$STEAM_ROOT"
-
-    # Additional library folders are recorded in libraryfolders.vdf
-    libraryfolders=$STEAM_ROOT/steamapps/libraryfolders.vdf
-    if [ -e "$libraryfolders" ]; then
-        awk -F\" '/^[[:space:]]*"[[:digit:]]+"/ {print $4}' "$libraryfolders"
-    fi
+    echo "/run/media/quasigod/LinuxGames/Games/SteamLibrary/steamapps/"
 }
 
 # Generate the contents of a .desktop file for a Steam game.
