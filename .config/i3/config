@@ -13,11 +13,13 @@ set $wallpaper      nitrogen --restore
 set $compositor     picom
 set $lockscreen     betterlockscreen -l
 set $screenshot     flameshot gui
+set $notifications  dunst
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
 exec_always --no-startup-id $taskbar
 exec_always --no-startup-id $wallpaper
+exec_always --no-startup-id $notifications
 exec        --no-startup-id $compositor -experimental-backends
 
 exec_always --no-startup-id albert
@@ -59,25 +61,25 @@ smart_gaps on
 set $mod Mod4
 floating_modifier $mod
 #------------------------------- Applications --------------------------------#
-bindsym $mod+Return exec $terminal
-bindsym $mod+n exec $files
-bindsym $mod+b exec $browser
-bindsym $mod+v exec $taskman
-bindsym $mod+Shift+s exec $screenshot
+bindsym $mod+Return     exec $terminal
+bindsym $mod+n          exec $files
+bindsym $mod+b          exec $browser
+bindsym $mod+v          exec $taskman
+bindsym $mod+Shift+s    exec $screenshot
 
 # flash active window with flashfocus
-bindsym $mod+p exec --no-startup-id flash_window
+bindsym $mod+p          exec --no-startup-id flash_window
 
 # start and kill compositor (for fps when gaming)
-bindsym $mod+c exec picom -experimental-backends
+bindsym $mod+c          exec picom -experimental-backends
 bindsym --release $mod+shift+c exec pkill picom
 
 # start launcher shit
-bindsym $mod+space exec --no-startup-id $applauncher
-bindsym $mod+Tab exec --no-startup-id $windowsearch
-bindsym Mod1+Tab exec --no-startup-id $windowsearch
-bindsym $mod+g exec --no-startup-id $gamelauncher
-bindsym $mod+o exec --no-startup-id $optionsmenu
+bindsym $mod+space      exec --no-startup-id $applauncher
+bindsym $mod+Tab        exec --no-startup-id $windowsearch
+bindsym Mod1+Tab        exec --no-startup-id $windowsearch
+bindsym $mod+g          exec --no-startup-id $gamelauncher
+bindsym $mod+o          exec --no-startup-id $optionsmenu
 #-----------------------------------------------------------------------------#
 
 #---------------------------- Workspace navigation ---------------------------#
@@ -211,17 +213,17 @@ set $ws9 "9"
 set $ws10 "10"
 
 # Settings workspaces to specific monitors
-workspace $ws1 output DP-4
-workspace $ws2 output DP-4
-workspace $ws3 output DP-4
-workspace $ws4 output DP-4
-workspace $ws5 output DP-4
+workspace $ws1 output   DP-4
+workspace $ws2 output   DP-4
+workspace $ws3 output   DP-4
+workspace $ws4 output   DP-4
+workspace $ws5 output   DP-4
 
-workspace $ws6 output HDMI-0
-workspace $ws7 output HDMI-0
-workspace $ws8 output HDMI-0
-workspace $ws9 output HDMI-0
-workspace $ws10 output HDMI-0
+workspace $ws6 output   HDMI-0
+workspace $ws7 output   HDMI-0
+workspace $ws8 output   HDMI-0
+workspace $ws9 output   HDMI-0
+workspace $ws10 output  HDMI-0
 
 # assigning applications to workspaces
 assign [class="Steam"] $ws4
