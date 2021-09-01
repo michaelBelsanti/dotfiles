@@ -25,6 +25,7 @@ exec        --no-startup-id $compositor -experimental-backends
 exec_always --no-startup-id albert
 exec_always --no-startup-id replay-sorcery
 exec_always --no-startup-id spotifyd
+exec_always kill easyeffects
 exec_always --no-startup-id easyeffects --gapplication-service
 exec_always --no-startup-id flashfocus
 #-----------------------------------------------------------------------------#
@@ -81,6 +82,8 @@ bindsym $mod+Tab        exec --no-startup-id $windowsearch
 bindsym Mod1+Tab        exec --no-startup-id $windowsearch
 bindsym $mod+g          exec --no-startup-id $gamelauncher
 bindsym $mod+o          exec --no-startup-id $optionsmenu
+
+for_window [instance="origin.exe"] floating enable
 #-----------------------------------------------------------------------------#
 
 #---------------------------- Workspace navigation ---------------------------#
@@ -119,7 +122,7 @@ bindsym $mod+mod1+6 move container to workspace number $ws6; workspace $ws6
 bindsym $mod+mod1+7 move container to workspace number $ws7; workspace $ws7
 bindsym $mod+mod1+8 move container to workspace number $ws8; workspace $ws8
 bindsym $mod+mod1+9 move container to workspace number $ws9; workspace $ws9
-bindsym $mod+mod1+10 move container to workspace number $ws10; workspace $ws10
+bindsym $mod+mod1+0 move container to workspace number $ws10; workspace $ws10
 #-----------------------------------------------------------------------------#
 
 #--------------------------- Container manipulation --------------------------#
@@ -228,9 +231,10 @@ workspace $ws10 output  HDMI-0
 
 # assigning applications to workspaces
 assign [class="Steam"] $ws4
+assign [class="lutris"] $ws4
 assign [class="lightcord"] $ws9
 assign [class="*spt*"] $ws10
-assign [class="*.exe"] $ws5
+assign [class="*exe"] $ws5
 assign [class="PortalWars*"] $ws5
 #-----------------------------------------------------------------------------#
 #=============================================================================#

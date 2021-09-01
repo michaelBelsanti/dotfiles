@@ -160,7 +160,7 @@ ws-icon-9 = "10; "
 [module/alsa]
 type = internal/alsa
 format-volume = <label-volume> <bar-volume>
-label-volume = " "  
+label-volume = ""  
 label-volume-foreground = ${colors.Magenta}
 
 format-muted-foreground = ${colors.Red}
@@ -195,7 +195,7 @@ interval = 60
 format = <label>
 format-background = ${colors.roundFG}
 date = %{F#888e96}󰥔 %H:%M%{F-}
-time-alt = %{F${colors.Blue}}󰃭 %a, %b %d%{F-}
+time-alt = %{F${colors.Blue}󰃭 %a, %b %d%{F-}
 
 label = %date%%time%
 label-padding = 0
@@ -241,9 +241,10 @@ format-foreground = ${colors.Blue}
 type = custom/script
 exec = ~/.config/polybar/scripts/updates-pacman-aurhelper.sh
 interval = 600
-format-prefix = ""
+format-prefix = ""
 label-padding = 1
 click-left = alacritty -e paru
+format-foreground = ${colors.Green}
 
 [module/kdeconnect]  
 type = custom/script  
