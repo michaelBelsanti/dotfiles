@@ -19,11 +19,11 @@ list_icons() {
 handle_option() {
     case "$1" in
         "$LOCK")
-            betterlockscreen -l
+            multilockscreen --lock blur
             ;;
         "$SLEEP")
             if $($SCRIPT_DIR/rofi-confirm.sh "Confirm suspend"); then
-                multilockscreen -l -b &
+                multilockscreen --lock blur &
                 systemctl suspend
             fi
             ;;

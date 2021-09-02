@@ -231,7 +231,7 @@ workspace $ws10 output  HDMI-0
 
 # assigning applications to workspaces
 assign [class="Steam"] $ws4
-assign [class="lutris"] $ws4
+assign [class="Lutris"] $ws4
 assign [class="lightcord"] $ws9
 assign [class="*spt*"] $ws10
 assign [class="*exe"] $ws5
