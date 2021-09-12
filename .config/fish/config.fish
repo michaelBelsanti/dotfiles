@@ -2,7 +2,8 @@
 # Hide welcome message
 set fish_greeting
 set VIRTUAL_ENV_DISABLE_PROMPT "1"
-set EDITOR "nvim"
+export EDITOR=nvim
+export VISUAL=nvim
 
 # ~/.config/fish/config.fish
 
@@ -41,6 +42,8 @@ alias upgrade='paru -Syu'
 alias rmcache='paru -Scc'
 alias yay='paru'
 alias nnn='nnn -H'
+alias aura='sudo aura'
+alias wing++='i686-w64-mingw32-g++ -static-libgcc -static-libstdc++ -static'
 
 set -x TERM alacritty
 
