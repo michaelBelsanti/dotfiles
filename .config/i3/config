@@ -25,9 +25,9 @@ exec        --no-startup-id $compositor -experimental-backends
 exec_always --no-startup-id albert
 exec_always --no-startup-id replay-sorcery
 exec_always --no-startup-id spotifyd
-exec_always kill easyeffects
-exec_always --no-startup-id easyeffects --gapplication-service
-exec_always --no-startup-id flashfocus
+exec_always --no-startup-id $HOME/.config/i3/scripts/ee.sh 
+exec_always --no-startup-id $HOME/.config/i3/scripts/ff.sh 
+exec        --no-startup-id tilda 
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
@@ -53,7 +53,7 @@ font pango:JetBrains Mono 10
 # Removes titlebars
 for_window [class="^.*"] border pixel 1
 hide_edge_borders both
-gaps inner 6
+gaps inner 8
 smart_gaps on
 #-----------------------------------------------------------------------------#
 #=============================================================================#
@@ -83,7 +83,10 @@ bindsym Mod1+Tab        exec --no-startup-id $windowsearch
 bindsym $mod+g          exec --no-startup-id $gamelauncher
 bindsym $mod+o          exec --no-startup-id $optionsmenu
 
+# floating applications 
 for_window [instance="origin.exe"] floating enable
+for_window [instance="pavucontrol"] floating enable
+for_window [instance="tilda"] floating enable
 #-----------------------------------------------------------------------------#
 
 #---------------------------- Workspace navigation ---------------------------#
@@ -230,12 +233,13 @@ workspace $ws9 output   HDMI-0
 workspace $ws10 output  HDMI-0
 
 # assigning applications to workspaces
-assign [class="Steam"] $ws4
-assign [class="Lutris"] $ws4
-assign [class="lightcord"] $ws9
-assign [class="*spt*"] $ws10
-assign [class="*exe"] $ws5
-assign [class="PortalWars*"] $ws5
+# assign [class="Steam"] $ws4
+# assign [class="Lutris"] $ws4
+# assign [class="heroic"] $ws4
+# assign [class="lightcord"] $ws9
+# assign [class="*spt*"] $ws10
+# assign [class="*exe"] $ws5
+# assign [class="PortalWars*"] $ws5
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
