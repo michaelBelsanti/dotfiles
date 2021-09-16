@@ -10,24 +10,25 @@ set $optionsmenu    $HOME/.config/rofi/scripts/rofi-wrapper.sh options
 set $taskman        alacritty -e vtop
 set $taskbar        $HOME/.config/polybar/launch.sh 
 set $wallpaper      nitrogen --restore
-set $compositor     picom
+set $compositor     picom  --experimental-backends --unredir-if-possible
 set $lockscreen     betterlockscreen -l
 set $screenshot     flameshot gui
 set $notifications  dunst
+set $scratchpad     tilda
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
 exec_always --no-startup-id $taskbar
 exec_always --no-startup-id $wallpaper
 exec_always --no-startup-id $notifications
-exec        --no-startup-id $compositor -experimental-backends
+exec        --no-startup-id $compositor
 
 exec_always --no-startup-id albert
 exec_always --no-startup-id replay-sorcery
 exec_always --no-startup-id spotifyd
 exec_always --no-startup-id $HOME/.config/i3/scripts/ee.sh 
 exec_always --no-startup-id $HOME/.config/i3/scripts/ff.sh 
-exec        --no-startup-id tilda 
+exec        --no-startup-id $scratchpad 
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
@@ -42,8 +43,8 @@ set $urgent-bg-color     #D472A9
 
 #                       border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $iancative-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $iancative-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
 
 font pango:JetBrains Mono 10
@@ -67,13 +68,13 @@ bindsym $mod+Return     exec $terminal
 bindsym $mod+n          exec $files
 bindsym $mod+b          exec $browser
 bindsym $mod+v          exec $taskman
-bindsym $mod+Shift+s    exec $screenshot
+bindsym $mod+s          exec $screenshot
 
 # flash active window with flashfocus
 bindsym $mod+p          exec --no-startup-id flash_window
 
 # start and kill compositor (for fps when gaming)
-bindsym $mod+c          exec picom -experimental-backends
+bindsym $mod+c          exec $compositor
 bindsym --release $mod+shift+c exec pkill picom
 
 # start launcher shit
@@ -86,7 +87,7 @@ bindsym $mod+o          exec --no-startup-id $optionsmenu
 # floating applications 
 for_window [instance="origin.exe"] floating enable
 for_window [instance="pavucontrol"] floating enable
-for_window [instance="tilda"] floating enable
+for_window [instance="$scratchpad"] floating enable
 #-----------------------------------------------------------------------------#
 
 #---------------------------- Workspace navigation ---------------------------#
@@ -103,7 +104,7 @@ bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
 # move focused container to workspace
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
