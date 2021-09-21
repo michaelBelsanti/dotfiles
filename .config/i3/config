@@ -25,10 +25,11 @@ exec        --no-startup-id $compositor
 
 exec_always --no-startup-id albert
 exec_always --no-startup-id replay-sorcery
-exec_always --no-startup-id spotifyd
 exec_always --no-startup-id $HOME/.config/i3/scripts/ee.sh 
-exec_always --no-startup-id $HOME/.config/i3/scripts/ff.sh 
+exec_always --no-startup-id flashfocus 
+exec        --no-startup-id spotifyd
 exec        --no-startup-id $scratchpad 
+exec        --no-startup-id flameshot
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
@@ -88,6 +89,8 @@ bindsym $mod+o          exec --no-startup-id $optionsmenu
 for_window [instance="origin.exe"] floating enable
 for_window [instance="pavucontrol"] floating enable
 for_window [instance="$scratchpad"] floating enable
+for_window [instance="TeamViewer"] floating enable
+
 #-----------------------------------------------------------------------------#
 
 #---------------------------- Workspace navigation ---------------------------#
