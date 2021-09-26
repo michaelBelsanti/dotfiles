@@ -4,7 +4,7 @@ SCRIPT_DIR=$(dirname $(realpath $0))
 
 LOCK=""
 SLEEP=""
-LOGOUT=""
+LOGOUT=""
 RESTART=""
 SHUTDOWN=""
 

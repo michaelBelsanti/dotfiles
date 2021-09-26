@@ -222,7 +222,7 @@ format-prefix = " ﬙"
 label = %output% MB
 label-padding = 1
 format-prefix-foreground = ${colors.Yellow}
-click-left = alacritty -e vtop
+click-left = alacritty -e btop
 format-foreground = ${colors.Yellow} 
 
 [module/powermenu]
@@ -244,7 +244,7 @@ label-padding = 1
 [module/cpu]
 type = internal/cpu
 interval = 2.5
-click-left = alacritty -e vtop
+click-left = alacritty -e btop
 format-prefix = " " 
 format = <label> 
 label = CPU %percentage%%

@@ -1,13 +1,14 @@
-##=============================== Applications ================================#
+#=============================== Applications ================================#
 #---------------------------- Default applications ----------------------------#
 set $terminal       alacritty
 set $files          pcmanfm
 set $browser        brave
+set $texteditor     emacs
 set $applauncher    albert show
 set $gamelauncher   $HOME/.config/rofi/scripts/rofi-wrapper.sh games
 set $windowsearch   $HOME/.config/rofi/scripts/rofi-wrapper.sh windows
 set $optionsmenu    $HOME/.config/rofi/scripts/rofi-wrapper.sh options
-set $taskman        alacritty -e vtop
+set $taskman        alacritty -e btop
 set $taskbar        $HOME/.config/polybar/launch.sh 
 set $wallpaper      nitrogen --restore
 set $compositor     picom  --experimental-backends --unredir-if-possible
@@ -15,6 +16,7 @@ set $lockscreen     betterlockscreen -l
 set $screenshot     flameshot gui
 set $notifications  dunst
 set $scratchpad     tilda
+set $polkit         lxpolkit
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
@@ -22,6 +24,7 @@ exec_always --no-startup-id $taskbar
 exec_always --no-startup-id $wallpaper
 exec_always --no-startup-id $notifications
 exec        --no-startup-id $compositor
+exec        --no-startup-id lxpolkit
 
 exec_always --no-startup-id albert
 exec_always --no-startup-id replay-sorcery
@@ -70,6 +73,7 @@ bindsym $mod+n          exec $files
 bindsym $mod+b          exec $browser
 bindsym $mod+v          exec $taskman
 bindsym $mod+s          exec $screenshot
+bindsym $mod+e          exec $texteditor
 
 # flash active window with flashfocus
 bindsym $mod+p          exec --no-startup-id flash_window
@@ -163,9 +167,6 @@ bindsym $mod+x split h
 bindsym $mod+z split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
