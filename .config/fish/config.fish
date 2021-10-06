@@ -44,6 +44,7 @@ alias yay='paru'
 alias nnn='nnn -H'
 alias aura='sudo aura'
 alias wing++='i686-w64-mingw32-g++ -static-libgcc -static-libstdc++ -static'
+alias LinuxGames='cd /run/media/quasigod/LinuxGames'
 
 set -x TERM alacritty
 

@@ -36,9 +36,9 @@
         "url": "https://www.wolframalpha.com/input/?i=%s"
     },
     {
-        "iconPath": ":duckduckgo",
-        "name": "DuckDuckGo",
-        "trigger": "dd ",
-        "url": "https://duckduckgo.com/?q=%s"
+        "iconPath": "/home/quasigod/.config/albert/org.albert.extension.websearch/{735c2c66-f742-4ff5-8025-5940428156d8}.",
+        "name": "Brave",
+        "trigger": "bs",
+        "url": "https://search.brave.com/search?q=%s"
     }
 ]

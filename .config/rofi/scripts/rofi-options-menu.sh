@@ -2,14 +2,12 @@
 
 SCRIPT_DIR=$(dirname $(realpath $0))
 
-LOCK=""
 SLEEP=""
 LOGOUT=""
 RESTART=""
 SHUTDOWN=""
 
 list_icons() {
-    echo $LOCK
     echo $SLEEP
     echo $LOGOUT
     echo $RESTART
@@ -18,12 +16,9 @@ list_icons() {
 
 handle_option() {
     case "$1" in
-        "$LOCK")
-            multilockscreen --lock blur
-            ;;
         "$SLEEP")
             if $($SCRIPT_DIR/rofi-confirm.sh "Confirm suspend"); then
-                multilockscreen --lock blur &
+                betterlockscsreen -l &
                 systemctl suspend
             fi
             ;;
@@ -49,9 +44,6 @@ handle_option() {
     SELECTION="$(list_icons | rofi -dmenu -theme options-menu)"
     handle_option $SELECTION &
     sleep 0.05
-    ~/.config/conky/conky-wrapper.sh show
     wait $!
-    ~/.config/conky/conky-wrapper.sh hide
 } &
 sleep 0.05
-~/.config/conky/conky-wrapper.sh show

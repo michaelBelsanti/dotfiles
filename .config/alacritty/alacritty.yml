@@ -1,10 +1,10 @@
 # Opacity
-background_opacity: 0.75
+background_opacity: 0.5
 
 # JetBrains Mono best terminal font (https://www.jetbrains.com/lp/mono/)
 font:
     normal:
-        family: JetBrains Mono
+      family: JetBrains Mono Nerd Font
 
 # Alacritty-themes
 # Colors (One Dark - https://github.com/atom/atom/tree/master/packages/one-dark-syntax)

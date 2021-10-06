@@ -9,7 +9,7 @@ set $gamelauncher   $HOME/.config/rofi/scripts/rofi-wrapper.sh games
 set $windowsearch   $HOME/.config/rofi/scripts/rofi-wrapper.sh windows
 set $optionsmenu    $HOME/.config/rofi/scripts/rofi-wrapper.sh options
 set $taskman        alacritty -e btop
-set $taskbar        $HOME/.config/polybar/launch.sh 
+set $taskbar        $HOME/.config/polybar/launch.sh
 set $wallpaper      nitrogen --restore
 set $compositor     picom  --experimental-backends --unredir-if-possible
 set $lockscreen     betterlockscreen -l
@@ -17,21 +17,24 @@ set $screenshot     flameshot gui
 set $notifications  dunst
 set $scratchpad     tilda
 set $polkit         lxpolkit
+set $discordClient  lightcord
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
 exec_always --no-startup-id $taskbar
 exec_always --no-startup-id $wallpaper
 exec_always --no-startup-id $notifications
+exec_always --no-startup-id pamixer --source 74 --set-volume 40
 exec        --no-startup-id $compositor
 exec        --no-startup-id lxpolkit
+exec        --no-startup-id teamviewer -daemon start
 
 exec_always --no-startup-id albert
 exec_always --no-startup-id replay-sorcery
-exec_always --no-startup-id $HOME/.config/i3/scripts/ee.sh 
-exec_always --no-startup-id flashfocus 
-exec        --no-startup-id spotifyd
-exec        --no-startup-id $scratchpad 
+exec_always --no-startup-id $HOME/.config/i3/scripts/ee.sh
+exec_always --no-startup-id flashfocus
+exec_always --no-startup-id spotifyd
+exec        --no-startup-id $scratchpad
 exec        --no-startup-id flameshot
 #-----------------------------------------------------------------------------#
 #=============================================================================#
@@ -39,7 +42,7 @@ exec        --no-startup-id flameshot
 
 #================================= Appearance ================================#
 #------------------------------- Colors & font -------------------------------#
-set $bg-color 	         #1E222A
+set $bg-color            #1E222A
 set $inactive-bg-color   #1E222A
 set $text-color          #f3f4f5
 set $inactive-text-color #3E4451
@@ -47,8 +50,8 @@ set $urgent-bg-color     #D472A9
 
 #                       border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color  #00ff00
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color  #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
 
 font pango:JetBrains Mono 10
@@ -74,6 +77,7 @@ bindsym $mod+b          exec $browser
 bindsym $mod+v          exec $taskman
 bindsym $mod+s          exec $screenshot
 bindsym $mod+e          exec $texteditor
+bindsym $mod+d          exec $discordClient
 
 # flash active window with flashfocus
 bindsym $mod+p          exec --no-startup-id flash_window
@@ -89,11 +93,12 @@ bindsym Mod1+Tab        exec --no-startup-id $windowsearch
 bindsym $mod+g          exec --no-startup-id $gamelauncher
 bindsym $mod+o          exec --no-startup-id $optionsmenu
 
-# floating applications 
+# floating applications
 for_window [instance="origin.exe"] floating enable
 for_window [instance="pavucontrol"] floating enable
 for_window [instance="$scratchpad"] floating enable
 for_window [instance="TeamViewer"] floating enable
+for_window [instance="qalculate-gtk"] floating enable
 
 #-----------------------------------------------------------------------------#
 
@@ -181,7 +186,7 @@ bindsym $mod+a focus parent
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec $lockscreen 
+bindsym $mod+Shift+e exec $lockscreen
 
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -258,4 +263,3 @@ workspace $ws10 output  HDMI-0
 # bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 #-----------------------------------------------------------------------------#
 #=============================================================================#
-
