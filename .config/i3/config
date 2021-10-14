@@ -99,6 +99,9 @@ for_window [instance="pavucontrol"] floating enable
 for_window [instance="$scratchpad"] floating enable
 for_window [instance="TeamViewer"] floating enable
 for_window [instance="qalculate-gtk"] floating enable
+for_window [instance="yuzu"] floating enable
+for_window [instance="steam"] floating enable
+for_window [instance="steamwebhelper"] floating enable
 
 #-----------------------------------------------------------------------------#
 

@@ -1,10 +1,12 @@
 # Opacity
 background_opacity: 0.5
 
-# JetBrains Mono best terminal font (https://www.jetbrains.com/lp/mono/)
+## JetBrains Mono best terminal font (https://www.jetbrains.com/lp/mono/)
+# Ok now it's Iosevka (https://typeof.net/Iosevka/)
 font:
     normal:
-      family: JetBrains Mono Nerd Font
+      family: Iosevka 
+    size: 12
 
 # Alacritty-themes
 # Colors (One Dark - https://github.com/atom/atom/tree/master/packages/one-dark-syntax)

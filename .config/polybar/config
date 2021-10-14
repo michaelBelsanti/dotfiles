@@ -52,7 +52,7 @@ line-size = 3
 
 enable-ipc = true
 
-modules-left = i3 
+modules-left = i3 title
 modules-center = alsa 
 modules-right = updates cpu mem time powermenu
 
@@ -264,3 +264,10 @@ format-foreground = ${colors.Green}
 type = custom/script  
 exec = "/home/quasigod/.config/polybar/scripts/polybar-kdeconnect.sh -d"  
 tail = true
+
+[module/title]
+type = internal/xwindow
+format-padding = 2
+
+label = %title%
+label-maxlen = 50
