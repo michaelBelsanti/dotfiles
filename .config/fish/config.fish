@@ -45,7 +45,8 @@ alias nnn='nnn -H'
 alias aura='sudo aura'
 alias wing++='i686-w64-mingw32-g++ -static-libgcc -static-libstdc++ -static'
 alias LinuxGames='cd /run/media/quasigod/LinuxGames'
-alias gitup='git add . && git commit -m "Update"'
+alias gitup='git add . && git commit -m "Update" && git push'
+alias untar='tar xvf'
 
 set -x TERM alacritty
 
