@@ -207,7 +207,7 @@ type = internal/date
 interval = 60
 format = <label>
 format-background = ${colors.roundFG}
-date = %{F#888e96}󰥔 %H:%M%{F-}
+date = %{F$(colors.Blue)}󰥔 %H:%M%{F-}
 time-alt = %{F${colors.Blue}󰃭 %a, %b %d%{F-}
 format-padding = 1 
 

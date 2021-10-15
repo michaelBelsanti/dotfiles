@@ -1,7 +1,7 @@
 #=============================== Applications ================================#
 #---------------------------- Default applications ----------------------------#
 set $terminal       alacritty
-set $files          pcmanfm
+set $files          nautilus
 set $browser        brave
 set $texteditor     emacs
 set $applauncher    albert show
@@ -102,6 +102,7 @@ for_window [instance="qalculate-gtk"] floating enable
 for_window [instance="yuzu"] floating enable
 for_window [instance="steam"] floating enable
 for_window [instance="steamwebhelper"] floating enable
+for_window [instance="pensela"] floating enable
 
 #-----------------------------------------------------------------------------#
 

@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/quasigod/.gtkrc-2.0.mine"
-gtk-theme-name="WhiteSur-dark-solid"
+gtk-theme-name="Qogir-dark"
 gtk-icon-theme-name="OneDark"
 gtk-font-name="Sans 10"
 gtk-cursor-theme-name="onedark-cursor"
