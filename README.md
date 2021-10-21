@@ -8,10 +8,47 @@ This command will install my config directly into your config files.
 yadm clone https://github.com/quasigod-io/dotfiles.git
 ```
 * The awesome rofi scripts were not made by me, I am not that talented. Find the originals here https://github.com/ntcarlson/dotfiles .
-# Neovim Config
-I just use [doom-nvim](https://github.com/NTBBloodbath/doom-nvim).
+
+# Applications Used
+Many of these are mentioned in my i3 config, if you choose not to use one, be sure to remove or change it.
+- Alacritty
+- Doom Emacs
+- Dunst
+- Fish
+- Flashfocus
+- Goverlay
+- i3-gaps
+- Paru
+- Picom
+- Polybar
+- Rofi
+- Tilda
+- Replay Sorcery
+
+```
+paru -S alacritty dunst fish flashfocus goverlay i3-gaps picom polybar rofi tilda replay-sorcery
+```
+
+# Optional Dependency
+These are programs that are executed in my i3 or fish config.
+
+- brave-bin
+- albert
+- btop
+- nitrogen
+- betterlockscreen
+- flameshot
+- lxpolkit
+- lightcord
+
+```
+paru -S brave-bin albert btop nitrogen betterlockscreen flameshot lxpolkit lightcord
+```
+# Neovim and Emacs
+Both of these configs are premade ones. [NvChad](https://github.com/NvChad/NvChad) and [Doom Emacs](https://github.com/hlissner/doom-emacs) respectively.
 
 # How to use package lists:
+
 * Pacman: 
 ```
 sudo pacman -S --needed - < pacmanpckgs.txt
