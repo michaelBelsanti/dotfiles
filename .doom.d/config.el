@@ -61,3 +61,7 @@
 (global-set-key (kbd "C-j") 'evil-window-down)
 (global-set-key (kbd "C-k") 'evil-window-up)
 (global-set-key (kbd "C-l") 'evil-window-right)
+(global-set-key (kbd "C-S-H") '+evil/window-move-left)
+(global-set-key (kbd "C-S-J") '+evil/window-move-down)
+(global-set-key (kbd "C-S-K") '+evil/window-move-up)
+(global-set-key (kbd "C-S-L") '+evil/window-move-right)

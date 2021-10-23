@@ -54,7 +54,7 @@ enable-ipc = true
 
 modules-left = i3 title
 modules-center = alsa 
-modules-right = updates cpu mem time powermenu
+modules-right = cpu mem time powermenu
 
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=12;3
 font-1 = JetBrainsMono Nerd Font:size=14;5
@@ -85,7 +85,7 @@ enable-ipc = true
 
 modules-left = i3 
 modules-center = alsa  
-modules-right = updates cpu mem time powermenu
+modules-right = cpu mem time powermenu
 
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=12;3
 font-1 = JetBrainsMono Nerd Font:size=16;5
@@ -251,16 +251,7 @@ label = CPU %percentage%%
 format-background = ${colors.background}
 format-foreground = ${colors.Blue} 
 
-[module/updates]
-type = custom/script
-exec = ~/.config/polybar/scripts/updates-pacman-aurhelper.sh
-interval = 600
-format-prefix = ""
-label-padding = 1
-click-left = alacritty -e paru
-format-foreground = ${colors.Green}
-
-[module/kdeconnect]  
+[module/kdeconnect]
 type = custom/script  
 exec = "/home/quasigod/.config/polybar/scripts/polybar-kdeconnect.sh -d"  
 tail = true
