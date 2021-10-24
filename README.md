@@ -19,7 +19,7 @@ Many of these are mentioned in my i3 config, if you choose not to use one, be su
 - Goverlay
 - i3-gaps
 - Paru
-- Picom
+- Jonaburg Picom Fork
 - Polybar
 - Rofi
 - Tilda

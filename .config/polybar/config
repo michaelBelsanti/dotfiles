@@ -37,14 +37,14 @@ roundFG     = #2b2f37
 [bar/main]
 monitor = DP-4
 width =  100%
-height = 20
-padding-left = 0
-padding-right = 0 
+height = 22
+padding-left = 1
+padding-right = 1
 background = ${colors.background}
 foreground = ${colors.foreground}
 bottom = false
-border-top-size = 4
-border-bottom-size = 2
+border-top-size = 1
+border-bottom-size = 1
 border-top-color = ${colors.background}
 border-bottom-color = ${colors.background}
 
@@ -53,29 +53,26 @@ line-size = 3
 enable-ipc = true
 
 modules-left = i3 title
-modules-center = alsa 
+modules-center = alsa
 modules-right = cpu mem time powermenu
 
-font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=12;3
-font-1 = JetBrainsMono Nerd Font:size=14;5
-font-2 = Font Awesome 5 Brands:pixelsize=10;2
-font-3 = Font Awesome 5 Free Solid:size=10;2
-font-4 = Font Awesome 5 Free:size=10;2
-font-5 = Material Design Icons:style=Bold:size=10;3
-font-6 = unifont:fontformat=truetype:size=10:antialias=true;
+font-0 = Cascadia Code:style=Bold:pixelsize=13;3
+font-1 = Font Awesome 5 Free Solid:size=12;3
+font-2 = Material Design Icons:style=Bold:size=13;3
+font-3 = unifont:fontformat=truetype:size=13:antialias=true;3
 
 [bar/secondary]
 tray-position = right
 monitor = HDMI-0
 width =  100%
-height = 20
-padding-left = 0
-padding-right = 0
+height = 22
+padding-left = 1
+padding-right = 1
 background = ${colors.background}
 foreground = ${colors.foreground}
 bottom = false
-border-top-size = 4
-border-bottom-size = 2
+border-top-size = 1
+border-bottom-size = 1
 border-top-color = ${colors.background}
 border-bottom-color = ${colors.background}
 
@@ -83,17 +80,14 @@ line-size = 3
 
 enable-ipc = true
 
-modules-left = i3 
-modules-center = alsa  
+modules-left = i3 title
+modules-center = alsa
 modules-right = cpu mem time powermenu
 
-font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=12;3
-font-1 = JetBrainsMono Nerd Font:size=16;5
-font-2 = Font Awesome 5 Brands:pixelsize=12;2
-font-3 = Font Awesome 5 Free Solid:size=11;2
-font-4 = Font Awesome 5 Free:size=12;2
-font-5 = Material Design Icons:style=Bold:size=13;3
-font-6 = unifont:fontformat=truetype:size=13:antialias=true;
+font-0 = Cascadia Code:style=Bold:pixelsize=13;3
+font-1 = Font Awesome 5 Free Solid:size=12;3
+font-2 = Material Design Icons:style=Bold:size=13;3
+font-3 = unifont:fontformat=truetype:size=13:antialias=true;3
 
 [module/round-left]
 type = custom/text
@@ -107,15 +101,17 @@ content-foreground = ${colors.roundFG}
 
 [module/i3]
 type = internal/i3
-; index-sort = true
+index-sort = true
 pin-workspaces = true
-; inline-mode = true
+inline-mode = true
 enable-click = true
 enable-scroll = true
 reverse-scroll = false
 
 format = <label-state> <label-mode> 
 label-mode-background = ${colors.roundFG}
+label-mode-foreground = ${colors.Red}
+label-mode-padding = 1
 
 #label-separator = "|"
 #label-separator-background = ${colors.roundFG}
@@ -145,17 +141,17 @@ label-urgent = %icon%
 label-urgent-foreground = #DE6E80
 #label-urgent-background = ${colors.roundFG}
 
-ws-icon-0 = "1;  " 
-ws-icon-1 = "2;  "  
-ws-icon-2 = "3;  "  
-ws-icon-3 = "4;  "
-ws-icon-4 = "5;  "
+ws-icon-0 = "1; "
+ws-icon-1 = "2; "
+ws-icon-2 = "3; "
+ws-icon-3 = "4; "
+ws-icon-4 = "5; "
 
-ws-icon-5 = "6;  "  
-ws-icon-6 = "7;  "  
-ws-icon-7 = "8;  " 
-ws-icon-8 = "9;  "
-ws-icon-9 = "10;  " 
+ws-icon-5 = "6; "
+ws-icon-6 = "7; "
+ws-icon-7 = "8; "
+ws-icon-8 = "9; "
+ws-icon-9 = "10; "
 
 #ws-icon-0 = "1; " 
 #ws-icon-1 = "2;"  
@@ -172,12 +168,12 @@ ws-icon-9 = "10;  "
 [module/alsa]
 type = internal/alsa
 format-volume = <label-volume> <bar-volume>
-label-volume = " "  
+label-volume = ""
 label-volume-foreground = ${colors.Magenta}
 format-volume-background = ${colors.roundFG}
 
 format-muted-foreground = ${colors.Red}
-label-muted = 󰚙
+label-muted = "    "
 
 format-muted-padding = 1
 format-muted-background = ${colors.roundFG}
@@ -200,26 +196,26 @@ bar-volume-fill-font = 2
 bar-volume-empty = ━
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground}
-format-volume-padding = 1
+format-volume-padding = 2
 
 [module/time]
 type = internal/date
-interval = 60
-format = <label>
+interval = 1
+format = "<label>"
 format-background = ${colors.roundFG}
-date = %{F$(colors.Blue)}󰥔 %H:%M%{F-}
-time-alt = %{F${colors.Blue}󰃭 %a, %b %d%{F-}
-format-padding = 1 
+date = %{F${colors.Blue}󰥔 %H:%M%{F-}
+time-alt = %{F${colors.Blue} %a, %b %d%{F-}
+format-padding = 0
 
 label = %date%%time%
-label-padding = 0
+label-padding = 1
 
 [module/mem]
 type = custom/script
 exec = free -m | sed -n 's/^Mem:\s\+[0-9]\+\s\+\([0-9]\+\)\s.\+/\1/p'
 format = <label>
-format-prefix = " ﬙" 
-label = %output% MB
+format-prefix = "  "
+label = "%output% MB "
 label-padding = 1
 format-prefix-foreground = ${colors.Yellow}
 click-left = alacritty -e btop
@@ -227,10 +223,11 @@ format-foreground = ${colors.Yellow}
 
 [module/powermenu]
 type = custom/text 
-content ="" 
-content-padding =1
+content ="  "
+content-padding =0
 click-left = /home/quasigod/.config/rofi/scripts/rofi-options-menu.sh &
-content-foreground = ${colors.Red} 
+content-foreground = ${colors.Red}
+content-background = ${colors.roundFG}
 
 [module/volume]
 type = custom/script
@@ -245,11 +242,11 @@ label-padding = 1
 type = internal/cpu
 interval = 2.5
 click-left = alacritty -e btop
-format-prefix = " " 
+format-prefix = " " 
 format = <label> 
 label = CPU %percentage%%
 format-background = ${colors.background}
-format-foreground = ${colors.Blue} 
+format-foreground = ${colors.Blue}
 
 [module/kdeconnect]
 type = custom/script  

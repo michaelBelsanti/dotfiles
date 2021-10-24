@@ -24,7 +24,7 @@ set $discordClient  lightcord
 exec_always --no-startup-id $taskbar
 exec_always --no-startup-id $wallpaper
 exec_always --no-startup-id $notifications
-exec_always --no-startup-id pamixer --source 74 --set-volume 40
+exec_always --no-startup-id pamixer --source 70 --set-volume 40
 exec        --no-startup-id $compositor
 exec        --no-startup-id lxpolkit
 exec        --no-startup-id teamviewer -daemon start
@@ -63,7 +63,7 @@ font pango:JetBrains Mono 10
 # Removes titlebars
 for_window [class="^.*"] border pixel 1
 hide_edge_borders both
-gaps inner 4
+gaps inner 6
 smart_gaps on
 #-----------------------------------------------------------------------------#
 #=============================================================================#

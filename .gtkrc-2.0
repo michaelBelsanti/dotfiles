@@ -4,7 +4,7 @@
 include "/home/quasigod/.gtkrc-2.0.mine"
 gtk-theme-name="Qogir-dark"
 gtk-icon-theme-name="OneDark"
-gtk-font-name="System San Francisco 10"
+gtk-font-name="Inter 11"
 gtk-cursor-theme-name="Vimix-cursors"
 gtk-cursor-theme-size=0
 gtk-toolbar-style=GTK_TOOLBAR_BOTH
