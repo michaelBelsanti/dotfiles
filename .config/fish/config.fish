@@ -59,5 +59,3 @@ end
 set thefuck fuck -hard 
 
 thefuck --alias | source
-
-navi widget fish | source

@@ -19,20 +19,20 @@
 [colors]
 background      = #1e222a
 foreground      = #adb1b9   
-lightBack       = #2b2f37
 
-darkGrey        = #1e222a
-red             = #e06c75
-green           = #98c379
-yellow          = #e5c07b
-blue            = #61afef
-magenta         = #c678dd
-teal            = #56b6c2
-Lgray           = #abb2bf
-gray            = #545862
-LLgray          = #c8ccd4
-darkLight       = #272A2B 
-activeLight     = #313435
+DarkGray    = #1e222a
+Red         = #e06c75
+Green       = #98c379
+Yellow      = #e5c07b
+Blue        = #61afef
+Magenta     = #c678dd
+Teal        = #56b6c2
+LGray       = #abb2bf
+Gray        = #545862
+LLGray      = #c8ccd4
+darkLight   = #272A2B 
+activeLight = #313435
+roundFG     = #2b2f37
 
 [bar/main]
 monitor = DP-4
@@ -92,17 +92,17 @@ font-3 = unifont:fontformat=truetype:size=11:antialias=true;3
 [module/round-left]
 type = custom/text
 content = %{T3}%{T-}
-content-foreground = ${colors.lightBack}
+content-foreground = ${colors.roundFG}
 
 [module/round-right]
 type = custom/text
 content = %{T3}%{T-}
-content-foreground = ${colors.lightBack}
+content-foreground = ${colors.roundFG}
 
 [module/seperator]
 type = custom/text
 content = |
-content-foreground = ${colors.lightBack}
+content-foreground = ${colors.roundFG}
 
 [module/i3]
 type = internal/i3
@@ -114,37 +114,37 @@ enable-scroll = true
 reverse-scroll = false
 
 format = <label-state> <label-mode> 
-label-mode-background = ${colors.lightBack}
-label-mode-foreground = ${colors.red}
+label-mode-background = ${colors.roundFG}
+label-mode-foreground = ${colors.Red}
 label-mode-padding = 1
 
 #label-separator = "|"
-#label-separator-background = ${colors.lightBack}
+#label-separator-background = ${colors.roundFG}
 
 label-padding = 2
 label-focused = %icon%  
-label-focused-foreground = ${colors.magenta}
-#label-focused-background = ${colors.lightBack}
+label-focused-foreground = ${colors.Magenta}
+#label-focused-background = ${colors.roundFG}
 
 label-unfocused = %icon%  
 label-unfocused-foreground = ${colors.foreground}
-#label-unfocused-background = ${colors.lightBack}
+#label-unfocused-background = ${colors.roundFG}
 
 label-visible = %icon%
 label-visible-foreground = ${colors.foreground}
-#label-visible-background = ${colors.lightBack}
+#label-visible-background = ${colors.roundFG}
 
 label-empty = %icon%  
 label-empty-foreground = ${colors.foreground}
-#label-empty-background = ${colors.lightBack}
+#label-empty-background = ${colors.roundFG}
 
 label-occupied = %icon%
 label-occupied-foreground = ${colors.foreground}
-#label-occupied-background = ${colors.lightBack}
+#label-occupied-background = ${colors.roundFG}
 
 label-urgent = %icon%
 label-urgent-foreground = #DE6E80
-#label-urgent-background = ${colors.lightBack}
+#label-urgent-background = ${colors.roundFG}
 
 ws-icon-0 = "1; "
 ws-icon-1 = "2; "
@@ -174,29 +174,29 @@ ws-icon-9 = "10; "
 type = internal/alsa
 format-volume = <label-volume> <bar-volume>
 label-volume = ""
-label-volume-foreground = ${colors.magenta}
-format-volume-background = ${colors.lightBack}
+label-volume-foreground = ${colors.Magenta}
+format-volume-background = ${colors.roundFG}
 
-format-muted-foreground = ${colors.red}
+format-muted-foreground = ${colors.Red}
 label-muted = 
 
 format-muted-padding = 2
-format-muted-background = ${colors.lightBack}
+format-muted-background = ${colors.roundFG}
 
 bar-volume-width = 10
-bar-volume-foreground-0 = ${colors.magenta}
-bar-volume-foreground-1 = ${colors.magenta}
-bar-volume-foreground-2 = ${colors.magenta}
-bar-volume-foreground-3 = ${colors.magenta}
-bar-volume-foreground-4 = ${colors.magenta}
-bar-volume-foreground-5 = ${colors.magenta}
-bar-volume-foreground-6 = ${colors.magenta}
+bar-volume-foreground-0 = ${colors.Magenta}
+bar-volume-foreground-1 = ${colors.Magenta}
+bar-volume-foreground-2 = ${colors.Magenta}
+bar-volume-foreground-3 = ${colors.Magenta}
+bar-volume-foreground-4 = ${colors.Magenta}
+bar-volume-foreground-5 = ${colors.Magenta}
+bar-volume-foreground-6 = ${colors.Magenta}
 bar-volume-gradient = false
 bar-volume-indicator = 
-bar-volume-indicator-foreground = ${colors.magenta}
+bar-volume-indicator-foreground = ${colors.Magenta}
 bar-volume-indicator-font = 2
 bar-volume-fill = ━ 
-bar-volume-fill-foreground = ${colors.magenta}
+bar-volume-fill-foreground = ${colors.Magenta}
 bar-volume-fill-font = 2
 bar-volume-empty = ━
 bar-volume-empty-font = 2
@@ -207,9 +207,9 @@ format-volume-padding = 2
 type = internal/date
 interval = 1
 format = "<label>"
-format-background = ${colors.lightBack}
-date = %{F${colors.blue}󰥔 %H:%M%{F-}
-time-alt = %{F${colors.blue} %a, %b %d%{F-}
+format-background = ${colors.roundFG}
+date = %{F${colors.Blue}󰥔 %H:%M%{F-}
+time-alt = %{F${colors.Blue} %a, %b %d%{F-}
 format-padding = 0
 
 label = %date%%time%
@@ -222,17 +222,17 @@ format = <label>
 format-prefix = "  "
 label = "%output% MB "
 label-padding = 1
-format-prefix-foreground = ${colors.yellow}
+format-prefix-foreground = ${colors.Yellow}
 click-left = alacritty -e btop
-format-foreground = ${colors.yellow} 
+format-foreground = ${colors.Yellow} 
 
 [module/powermenu]
 type = custom/text 
 content ="  "
 content-padding =0
 click-left = /home/quasigod/.config/rofi/scripts/rofi-options-menu.sh &
-content-foreground = ${colors.red}
-content-background = ${colors.lightBack}
+content-foreground = ${colors.Red}
+content-background = ${colors.roundFG}
 
 [module/volume]
 type = custom/script
@@ -251,7 +251,7 @@ format-prefix = " "
 format = <label> 
 label = CPU %percentage%%
 format-background = ${colors.background}
-format-foreground = ${colors.blue}
+format-foreground = ${colors.Blue}
 
 [module/kdeconnect]
 type = custom/script  
