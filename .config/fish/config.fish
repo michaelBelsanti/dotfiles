@@ -5,10 +5,6 @@ set VIRTUAL_ENV_DISABLE_PROMPT "1"
 export EDITOR=nvim
 export VISUAL=nvim
 
-# ~/.config/fish/config.fish
-
-starship init fish | source
-
 # exa > ls
 alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
 alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
