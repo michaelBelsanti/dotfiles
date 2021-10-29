@@ -10,7 +10,8 @@ yadm clone https://github.com/quasigod-io/dotfiles.git
 * The awesome rofi scripts were not made by me, I am not that talented. Find the originals here https://github.com/ntcarlson/dotfiles .
 
 # Applications Used
-Many of these are mentioned in my i3 config, if you choose not to use one, be sure to remove or change it.
+Applications that I have made or edited configs for.
+
 - Alacritty
 - Doom Emacs
 - Dunst
@@ -25,18 +26,16 @@ Many of these are mentioned in my i3 config, if you choose not to use one, be su
 - Tilda
 - Replay Sorcery
 
-## Optional Fish Dependencies
-
 ``` sh
 paru -S --needed alacritty dunst fish flashfocus-git goverlay i3-gaps picom-jonaburg-git polybar rofi tilda replay-sorcery
 ```
 
-# Optional Dependency
-These are programs that are executed in my i3 or fish config.
+# Optional Dependencies
+These are programs that are used in my i3 or fish config.
 
 - Brave
 - Albert
-- Btop
+- Btop++
 - Nitrogen
 - Betterlockscreen
 - Flameshot
@@ -46,6 +45,18 @@ These are programs that are executed in my i3 or fish config.
 
 ``` sh
 paru -S --needed brave-bin albert btop nitrogen betterlockscreen flameshot lxpolkit lightcord-bin thefuck 
+```
+
+## Optional Fish Dependencies
+- Oh My Fish (this is used to install thefuck in fish)
+
+ ``` sh
+curl -L https://get.oh-my.fish | fish 
+ ```
+
+- Fisher (used to install tide)
+``` sh
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 ```
 
 # Neovim and Emacs
