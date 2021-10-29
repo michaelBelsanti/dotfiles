@@ -43,8 +43,8 @@ padding-right = 1
 background = ${colors.background}
 foreground = ${colors.foreground}
 bottom = false
-border-top-size = 1
-border-bottom-size = 1
+border-top-size = 0
+border-bottom-size = 0
 border-top-color = ${colors.background}
 border-bottom-color = ${colors.background}
 
@@ -54,25 +54,26 @@ enable-ipc = true
 
 modules-left = i3 title
 modules-center = alsa
-modules-right = cpu mem time powermenu
+modules-right = updates cpu mem time powermenu
 
 font-0 = Cascadia Code:style=Bold:pixelsize=12;3
 font-1 = Font Awesome 5 Free Solid:size=11;2
 font-2 = Material Design Icons:style=Bold:size=11;3
 font-3 = unifont:fontformat=truetype:size=11:antialias=true;3
+font-4 = Weather Icons:size=12;1
+
 
 [bar/secondary]
 tray-position = right
 monitor = HDMI-0
-width =  100%
 height = 24
 padding-left = 1
 padding-right = 1
 background = ${colors.background}
 foreground = ${colors.foreground}
 bottom = false
-border-top-size = 1
-border-bottom-size = 1
+border-top-size = 0
+border-bottom-size = 0
 border-top-color = ${colors.background}
 border-bottom-color = ${colors.background}
 
@@ -82,12 +83,14 @@ enable-ipc = true
 
 modules-left = i3 title
 modules-center = alsa
-modules-right = cpu mem time powermenu
+modules-right = updates cpu mem time powermenu
 
 font-0 = Cascadia Code:style=Bold:pixelsize=12;3
 font-1 = Font Awesome 5 Free Solid:size=11;2
 font-2 = Material Design Icons:style=Bold:size=11;3
 font-3 = unifont:fontformat=truetype:size=11:antialias=true;3
+font-4 = Weather Icons:size=12;1
+
 
 [module/round-left]
 type = custom/text
@@ -219,9 +222,9 @@ label-padding = 1
 type = custom/script
 exec = free -m | sed -n 's/^Mem:\s\+[0-9]\+\s\+\([0-9]\+\)\s.\+/\1/p'
 format = <label>
-format-prefix = "  "
+format-prefix = "   "
 label = "%output% MB "
-label-padding = 1
+label-padding = 0
 format-prefix-foreground = ${colors.yellow}
 click-left = alacritty -e btop
 format-foreground = ${colors.yellow} 
@@ -264,3 +267,14 @@ format-padding = 0
 
 label = %title%
 label-maxlen = 50
+
+[module/weather]
+type = custom/script
+exec = ~/.config/polybar/scripts/openweathermap-fullfeatured.sh
+interval = 600
+label-font = 4
+
+[module/updates]
+type = custom/script
+exec = ~/.config/polybar/scripts/updates-pacman-aurhelper.sh
+interval = 600

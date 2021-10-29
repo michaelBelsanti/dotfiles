@@ -48,7 +48,7 @@ set -x TERM alacritty
 
 ## Run neofetch if session is interactive
 if status --is-interactive
-   fet.sh 
+#   fet.sh 
    pokemon-colorscripts -r
 end
 
