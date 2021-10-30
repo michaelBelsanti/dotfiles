@@ -7,7 +7,7 @@ configuration {
     background:                     #2E3440;
     background-transparent:         #2E3440A0;
     text-color:                     #adb1b9;
-    primary:                        #e06c75;
+    primary:                        #D572A2;
     secondary:                      #3B4252;
     urgent:                         #BF616A;
 }
