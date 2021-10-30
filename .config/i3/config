@@ -18,26 +18,27 @@ set $notifications  dunst
 set $scratchpad     tilda
 set $polkit         lxpolkit
 set $discordClient  lightcord
+set $polkit         lxpolkit
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
-exec_always --no-startup-id $taskbar
 exec_always --no-startup-id $wallpaper
+exec_always --no-startup-id $taskbar
+exec_always --no-startup-id $applauncher
 exec_always --no-startup-id $notifications
+exec        --no-startup-id $scratchpad
+exec        --no-startup-id $compositor
+exec        --no-startup-id $polkit
+exec        --no-startup-id $screenshot
+
 # Sets volume using pamixer. Replace 'Blue' with a unique portion of your mikes 
 exec_always --no-startup-idpamixer --source $(pamixer --list-sources | awk '/Blue/ {print $1}') --set-volume 40 
-exec        --no-startup-id $compositor
-exec        --no-startup-id lxpolkit
-exec        --no-startup-id teamviewer -daemon start
 
-exec_always --no-startup-id albert
-exec_always --no-startup-id replay-sorcery
+exec        --no-startup-id teamviewer -daemon start
+exec        --no-startup-id replay-sorcery
 exec_always --no-startup-id $HOME/.scripts/easyeffects.sh
-exec_always --no-startup-id $HOME/.scripts/tablet.sh
 exec_always --no-startup-id flashfocus
 exec_always --no-startup-id spotifyd
-exec        --no-startup-id $scratchpad
-exec        --no-startup-id flameshot
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
@@ -90,7 +91,7 @@ bindsym $mod+c          exec $compositor
 bindsym --release $mod+shift+c exec pkill picom
 
 # start launcher shit
-bindsym $mod+space      exec --no-startup-id $applauncher
+bindsym $mod+space      exec --no-startup-id $applauncher show
 bindsym $mod+Tab        exec --no-startup-id $windowsearch
 bindsym Mod1+Tab        exec --no-startup-id $windowsearch
 bindsym $mod+g          exec --no-startup-id $gamelauncher
@@ -106,7 +107,9 @@ for_window [instance="qalculate-gtk"] floating enable
 for_window [instance="yuzu"] floating enable
 for_window [instance="steam"] floating enable
 for_window [instance="steamwebhelper"] floating enable
-for_window [instance="pensela"] floating enable
+for_window [instance="nvidia-settings"] floating enable
+for_window [instance="lxappearance"] floating enable
+for_window [instance="vibrantLinux"] floating enable
 
 #-----------------------------------------------------------------------------#
 
