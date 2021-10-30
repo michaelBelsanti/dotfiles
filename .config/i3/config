@@ -4,7 +4,7 @@ set $terminal       alacritty
 set $files          nautilus
 set $browser        brave
 set $texteditor     emacs
-set $applauncher    albert show
+set $applauncher    albert
 set $gamelauncher   $HOME/.config/rofi/scripts/rofi-wrapper.sh games
 set $windowsearch   $HOME/.config/rofi/scripts/rofi-wrapper.sh windows
 set $optionsmenu    $HOME/.config/rofi/scripts/rofi-wrapper.sh options
