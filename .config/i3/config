@@ -189,7 +189,7 @@ bindsym $mod+semicolon focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 # focus the child container
-bindsym $mod+d focus child
+bindsym $mod+Shift+a focus child
 #-----------------------------------------------------------------------------#
 
 #------------------------------ Miscellaneous --------------------------------#
@@ -216,7 +216,7 @@ mode "resize" {
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
-  e     # back to normal: Enter or Escape or $mod+r
+        # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
