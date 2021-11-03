@@ -1,5 +1,5 @@
 #=============================== Applications ================================#
-#---------------------------- Default applications ----------------------------#
+#---------------------------- Default applications ---------------------------#
 set $terminal       alacritty
 set $files          nautilus
 set $browser        brave
@@ -86,11 +86,11 @@ bindsym $mod+d          exec $discordClient
 # flash active window with flashfocus
 bindsym $mod+p          exec --no-startup-id flash_window
 
-# start and kill compositor (for fps when gaming)
+# start and kill compositor 
 bindsym $mod+c          exec $compositor
 bindsym --release $mod+shift+c exec pkill picom
 
-# start launcher shit
+# popup launcher binds
 bindsym $mod+space      exec --no-startup-id $applauncher show
 bindsym $mod+Tab        exec --no-startup-id $windowsearch
 bindsym Mod1+Tab        exec --no-startup-id $windowsearch
@@ -126,6 +126,7 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
+
 # move focused container to workspace
 # bindsym $mod+s layout stacking
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -153,16 +154,15 @@ bindsym $mod+mod1+0 move container to workspace number $ws10; workspace $ws10
 #-----------------------------------------------------------------------------#
 
 #--------------------------- Container manipulation --------------------------#
-# kill focused application
+# app killers
 bindsym $mod+q kill
-# xkill
 bindsym --release $mod+shift+q exec xkill
-# change focus
+# change focused window
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-# alternatively, you can use the cursor keys:
+# alternatively, you can use the cursor keys (why would you tho)
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
@@ -177,26 +177,25 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-# split in horizontal orientation
+# horizontal and vertical splits
 bindsym $mod+x split h
-# split in vertical orientation
 bindsym $mod+z split v
-# enter fullscreen mode for the focused container
+# toggle fullscreen
 bindsym $mod+f fullscreen toggle
-# toggle tiling / floating
+# toggle floating
 bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+semicolon focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+d focus child
 #-----------------------------------------------------------------------------#
 
 #------------------------------ Miscellaneous --------------------------------#
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+# refresh i3
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
+# lock i3
 bindsym $mod+Shift+e exec $lockscreen
 
 mode "resize" {
@@ -217,7 +216,7 @@ mode "resize" {
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
+  e     # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
@@ -240,13 +239,14 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-# Settings workspaces to specific monitors
+# monitor 1 workspaces
 workspace $ws1 output   DP-4
 workspace $ws2 output   DP-4
 workspace $ws3 output   DP-4
 workspace $ws4 output   DP-4
 workspace $ws5 output   DP-4
 
+# monitor 2 workspaces
 workspace $ws6 output   HDMI-0
 workspace $ws7 output   HDMI-0
 workspace $ws8 output   HDMI-0
