@@ -89,14 +89,83 @@
 (global-set-key (kbd "C-j") 'evil-window-down)
 (global-set-key (kbd "C-k") 'evil-window-up)
 (global-set-key (kbd "C-l") 'evil-window-right)
-(global-set-key (kbd "C-S-H") '+evil/window-move-left)
-(global-set-key (kbd "C-S-J") '+evil/window-move-down)
-(global-set-key (kbd "C-S-K") '+evil/window-move-up)
-(global-set-key (kbd "C-S-L") '+evil/window-move-right)
+(global-set-key (kbd "C-S-h") '+evil/window-move-left)
+(global-set-key (kbd "C-S-j") '+evil/window-move-down)
+(global-set-key (kbd "C-S-k") '+evil/window-move-up)
+(global-set-key (kbd "C-S-l") '+evil/window-move-right)
 
 (require 'company-tabnine)
 (add-to-list 'company-backends #'company-tabnine)
-(setq company-idle-delay 0)
-(setq lsp-completion-mode :enabled)
+;; (setq lsp-completion-mode :enabled)
 (setq company-idle-delay 0)
 (setq company-show-quick-access t)
+;; ;; workaround for company-transformers
+;; (setq company-tabnine--disable-next-transform nil)
+;; (defun my-company--transform-candidates (func &rest args)
+;;   (if (not company-tabnine--disable-next-transform)
+;;       (apply func args)
+;;     (setq company-tabnine--disable-next-transform nil)
+;;     (car args)))
+
+;; (defun my-company-tabnine (func &rest args)
+;;   (when (eq (car args) 'candidates)
+;;     (setq company-tabnine--disable-next-transform t))
+;;   (apply func args))
+
+;; (advice-add #'company--transform-candidates :around #'my-company--transform-candidates)
+;; (advice-add #'company-tabnine :around #'my-company-tabnine)
+
+
+;; finish completions with tab
+(global-company-mode)
+(global-set-key (kbd "TAB") #'company-indent-or-complete-common)
+
+(use-package company-tabnine
+  :defer 1
+  :custom
+  (company-tabnine-max-num-results 9)
+  :bind
+  (("M-q" . company-other-backend))
+  :init
+  (defun company//sort-by-tabnine (candidates)
+    "Integrate company-tabnine with lsp-mode"
+    (if (or (functionp company-backend)
+            (not (and (listp company-backend) (memq 'company-tabnine company-backends))))
+        candidates
+      (let ((candidates-table (make-hash-table :test #'equal))
+            candidates-lsp
+            candidates-tabnine)
+        (dolist (candidate candidates)
+          (if (eq (get-text-property 0 'company-backend candidate)
+                  'company-tabnine)
+              (unless (gethash candidate candidates-table)
+                (push candidate candidates-tabnine))
+            (push candidate candidates-lsp)
+            (puthash candidate t candidates-table)))
+        (setq candidates-lsp (nreverse candidates-lsp))
+        (setq candidates-tabnine (nreverse candidates-tabnine))
+        (nconc (seq-take candidates-tabnine 3)
+               (seq-take candidates-lsp 6)))))
+  (defun lsp-after-open-tabnine ()
+    "Hook to attach to `lsp-after-open'."
+    (setq-local company-tabnine-max-num-results 3)
+    (add-to-list 'company-transformers 'company//sort-by-tabnine t)
+    (add-to-list 'company-backends '(company-capf :with company-tabnine :separate)))
+  (defun company-tabnine-toggle (&optional enable)
+    "Enable/Disable TabNine. If ENABLE is non-nil, definitely enable it."
+    (interactive)
+    (if (or enable (not (memq 'company-tabnine company-backends)))
+        (progn
+          (add-hook 'lsp-after-open-hook #'lsp-after-open-tabnine)
+          (add-to-list 'company-backends #'company-tabnine)
+          (when (bound-and-true-p lsp-mode) (lsp-after-open-tabnine))
+          (message "TabNine enabled."))
+      (setq company-backends (delete 'company-tabnine company-backends))
+      (setq company-backends (delete '(company-capf :with company-tabnine :separate) company-backends))
+      (remove-hook 'lsp-after-open-hook #'lsp-after-open-tabnine)
+      (company-tabnine-kill-process)
+      (message "TabNine disabled.")))
+  :hook
+  (kill-emacs . company-tabnine-kill-process)
+  :config
+  (company-tabnine-toggle t))

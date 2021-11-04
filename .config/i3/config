@@ -187,9 +187,9 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+semicolon focus mode_toggle
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+Shift+a focus parent
 # focus the child container
-bindsym $mod+Shift+a focus child
+bindsym $mod+a focus child
 #-----------------------------------------------------------------------------#
 
 #------------------------------ Miscellaneous --------------------------------#
