@@ -124,6 +124,16 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+bindsym $mod+ctrl+1 workspace number $ws11
+bindsym $mod+ctrl+2 workspace number $ws12
+bindsym $mod+ctrl+3 workspace number $ws13
+bindsym $mod+ctrl+4 workspace number $ws14
+bindsym $mod+ctrl+5 workspace number $ws15
+bindsym $mod+ctrl+6 workspace number $ws16
+bindsym $mod+ctrl+7 workspace number $ws17
+bindsym $mod+ctrl+8 workspace number $ws18
+bindsym $mod+ctrl+9 workspace number $ws19
+bindsym $mod+ctrl+0 workspace number $ws20
 
 
 # move focused container to workspace
@@ -138,6 +148,16 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
+bindsym $mod+ctrl+Shift+1 move container to workspace number $ws11
+bindsym $mod+ctrl+Shift+2 move container to workspace number $ws12
+bindsym $mod+ctrl+Shift+3 move container to workspace number $ws13
+bindsym $mod+ctrl+Shift+4 move container to workspace number $ws14
+bindsym $mod+ctrl+Shift+5 move container to workspace number $ws15
+bindsym $mod+ctrl+Shift+6 move container to workspace number $ws16
+bindsym $mod+ctrl+Shift+7 move container to workspace number $ws17
+bindsym $mod+ctrl+Shift+8 move container to workspace number $ws18
+bindsym $mod+ctrl+Shift+9 move container to workspace number $ws19
+bindsym $mod+ctrl+Shift+0 move container to workspace number $ws20
 
 # move focused container and stay focues
 bindsym $mod+mod1+1 move container to workspace number $ws1; workspace $ws1
@@ -150,6 +170,16 @@ bindsym $mod+mod1+7 move container to workspace number $ws7; workspace $ws7
 bindsym $mod+mod1+8 move container to workspace number $ws8; workspace $ws8
 bindsym $mod+mod1+9 move container to workspace number $ws9; workspace $ws9
 bindsym $mod+mod1+0 move container to workspace number $ws10; workspace $ws10
+bindsym $mod+ctrl+mod1+1 move container to workspace number $ws11; workspace $ws11
+bindsym $mod+ctrl+mod1+2 move container to workspace number $ws12; workspace $ws12
+bindsym $mod+ctrl+mod1+3 move container to workspace number $ws13; workspace $ws13
+bindsym $mod+ctrl+mod1+4 move container to workspace number $ws14; workspace $ws14
+bindsym $mod+ctrl+mod1+5 move container to workspace number $ws15; workspace $ws15
+bindsym $mod+ctrl+mod1+6 move container to workspace number $ws16; workspace $ws16
+bindsym $mod+ctrl+mod1+7 move container to workspace number $ws17; workspace $ws17
+bindsym $mod+ctrl+mod1+8 move container to workspace number $ws18; workspace $ws18
+bindsym $mod+ctrl+mod1+9 move container to workspace number $ws19; workspace $ws19
+bindsym $mod+ctrl+mod1+0 move container to workspace number $ws20; workspace $ws20
 #-----------------------------------------------------------------------------#
 
 #--------------------------- Container manipulation --------------------------#
@@ -237,29 +267,41 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+set $ws11 "11"
+set $ws12 "12"
+set $ws13 "13"
+set $ws14 "14"
+set $ws15 "15"
+set $ws16 "16"
+set $ws17 "17"
+set $ws18 "18"
+set $ws19 "19"
+set $ws20 "20"
 
 # monitor 1 workspaces
-workspace $ws1 output   DP-4
-workspace $ws2 output   DP-4
-workspace $ws3 output   DP-4
-workspace $ws4 output   DP-4
-workspace $ws5 output   DP-4
+workspace $ws1  output  DP-4
+workspace $ws2  output  DP-4
+workspace $ws3  output  DP-4
+workspace $ws4  output  DP-4
+workspace $ws5  output  DP-4
+workspace $ws11 output  DP-4
+workspace $ws12 output  DP-4
+workspace $ws13 output  DP-4
+workspace $ws14 output  DP-4
+workspace $ws15 output  DP-4
 
 # monitor 2 workspaces
-workspace $ws6 output   HDMI-0
-workspace $ws7 output   HDMI-0
-workspace $ws8 output   HDMI-0
-workspace $ws9 output   HDMI-0
+workspace $ws6  output  HDMI-0
+workspace $ws7  output  HDMI-0
+workspace $ws8  output  HDMI-0
+workspace $ws9  output  HDMI-0
 workspace $ws10 output  HDMI-0
+workspace $ws16 output  HDMI-0
+workspace $ws17 output  HDMI-0
+workspace $ws18 output  HDMI-0
+workspace $ws19 output  HDMI-0
+workspace $ws20 output  HDMI-0
 
-# assigning applications to workspaces
-# assign [class="Steam"] $ws4
-# assign [class="Lutris"] $ws4
-# assign [class="heroic"] $ws4
-# assign [class="lightcord"] $ws9
-# assign [class="*spt*"] $ws10
-# assign [class="*exe"] $ws5
-# assign [class="PortalWars*"] $ws5
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
