@@ -36,8 +36,8 @@ activeLight     = #313435
 [bar/main]
 monitor = DP-4
 height = 24
-padding-left = 1
-padding-right = 1
+padding-left = 0
+padding-right = 0
 background = ${colors.background}
 foreground = ${colors.foreground}
 bottom = false
@@ -50,7 +50,7 @@ line-size = 3
 
 enable-ipc = true
 
-modules-left = i3 title
+modules-left = spacer i3 title
 modules-center = alsa
 modules-right = updates cpu mem time powermenu
 
@@ -64,8 +64,8 @@ font-4 = Weather Icons:size=12;1
 tray-position = right
 monitor = HDMI-0
 height = 24
-padding-left = 1
-padding-right = 1
+padding-left = 0
+padding-right = 0
 background = ${colors.background}
 foreground = ${colors.foreground}
 bottom = false
@@ -78,7 +78,7 @@ line-size = 3
 
 enable-ipc = true
 
-modules-left = i3 title
+modules-left = spacer i3 title
 modules-center = alsa
 modules-right = updates cpu mem time powermenu
 
@@ -87,6 +87,11 @@ font-1 = Font Awesome 5 Free Solid:size=11;2
 font-2 = Material Design Icons:style=Bold:size=11;3
 font-3 = unifont:fontformat=truetype:size=11:antialias=true;3
 font-4 = Weather Icons:size=12;1
+
+[module/spacer]
+type = custom/text
+content = " "
+content-foreground = ${colors.lightBack}
 
 [module/round-left]
 type = custom/text
@@ -226,7 +231,7 @@ format-foreground = ${colors.yellow}
 
 [module/powermenu]
 type = custom/text 
-content ="  "
+content =" "
 content-padding =0
 click-left = /home/quasigod/.config/rofi/scripts/rofi-options-menu.sh &
 content-foreground = ${colors.red}

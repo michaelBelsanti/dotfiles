@@ -1,9 +1,10 @@
 
 configuration {
     show-icons:                     false;
-    font:                           "Fira Sans 20";
+    font:                           "Font Awesome 5 Free Solid 13";
 }
-@import "colors.rasi"
+
+@import "colors-options.rasi"
 
 mainbox {
     children:                       [message, listview];

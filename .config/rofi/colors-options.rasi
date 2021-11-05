@@ -1,5 +1,5 @@
 configuration {
-    font:                           "Inter 13";
+    font:                           "Font Awesome 5 Free Solid 13";
 }
 
 * {

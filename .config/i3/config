@@ -12,33 +12,32 @@ set $taskman        alacritty -e btop
 set $taskbar        $HOME/.config/polybar/launch.sh
 set $wallpaper      nitrogen --restore
 set $compositor     picom  --experimental-backends --unredir-if-possible
-set $lockscreen     betterlockscreen -l
+set $lockscreen     betterlockscreen -l 
 set $screenshot     flameshot
 set $notifications  dunst
 set $scratchpad     tilda
 set $polkit         lxpolkit
 set $discordClient  lightcord
-set $polkit         lxpolkit
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
-exec_always --no-startup-id $wallpaper
 exec_always --no-startup-id $taskbar
 exec_always --no-startup-id $applauncher
-exec_always --no-startup-id $notifications
+exec        --no-startup-id $wallpaper
+exec        --no-startup-id $notifications
 exec        --no-startup-id $scratchpad
 exec        --no-startup-id $compositor
 exec        --no-startup-id $polkit
 exec        --no-startup-id $screenshot
 
 # Sets volume using pamixer. Replace 'Blue' with a unique portion of your mikes 
-exec_always --no-startup-idpamixer --source $(pamixer --list-sources | awk '/Blue/ {print $1}') --set-volume 40 
-
 exec        --no-startup-id teamviewer -daemon start
 exec        --no-startup-id replay-sorcery
+exec        --no-startup-id nyrna
+exec        --no-startup-id flashfocus
+exec        --no-startup-id spotifyd
 exec_always --no-startup-id $HOME/.scripts/easyeffects.sh
-exec_always --no-startup-id flashfocus
-exec_always --no-startup-id spotifyd
+exec_always --no-startup-id pamixer --source $(pamixer --list-sources | awk '/Blue/ {print $1}') --set-volume 40
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
@@ -84,7 +83,7 @@ bindsym $mod+e          exec $texteditor
 bindsym $mod+d          exec $discordClient
 
 # flash active window with flashfocus
-bindsym $mod+p          exec --no-startup-id flash_window
+bindsym $mod+y          exec --no-startup-id flash_window
 
 # start and kill compositor 
 bindsym $mod+c          exec $compositor

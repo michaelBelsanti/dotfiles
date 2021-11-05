@@ -33,18 +33,19 @@ paru -S --needed alacritty dunst fish flashfocus-git goverlay i3-gaps picom-jona
 # Optional Dependencies
 These are programs that are used in my i3 or fish config.
 
-- Brave
 - Albert
+- Betterlockscreen
+- Brave
 - Btop++
 - Nitrogen
-- Betterlockscreen
+- Nyrna
 - Flameshot
-- Lxpolkit
 - Lightcord
+- Lxpolkit
 - TheFuck
 
 ``` sh
-paru -S --needed brave-bin albert btop nitrogen betterlockscreen flameshot lxpolkit lightcord-bin thefuck 
+paru -S --needed albert betterlockscreen brave-bin btop nitrogen nyrna flameshot lightcord-bin lxpolkit thefuck 
 ```
 
 ## Optional Fish Dependencies

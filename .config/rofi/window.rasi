@@ -34,7 +34,7 @@ inputbar {
 }
 
 textbox-prompt {
-    font:                           "Font Awesome 18";
+    font:                           "Font Awesome 5 Free Solid 18";
     text-color:                     @background;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
