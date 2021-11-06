@@ -8,7 +8,6 @@ set $applauncher    albert
 set $gamelauncher   $HOME/.config/rofi/scripts/rofi-wrapper.sh games
 set $windowsearch   $HOME/.config/rofi/scripts/rofi-wrapper.sh windows
 set $optionsmenu    $HOME/.config/rofi/scripts/rofi-wrapper.sh options
-set $taskman        alacritty -e btop
 set $taskbar        $HOME/.config/polybar/launch.sh
 set $wallpaper      nitrogen --restore
 set $compositor     picom  --experimental-backends --unredir-if-possible
@@ -77,7 +76,6 @@ floating_modifier $mod
 bindsym $mod+Return     exec $terminal
 bindsym $mod+n          exec $files
 bindsym $mod+b          exec $browser
-bindsym $mod+v          exec $taskman
 bindsym $mod+s          exec $screenshot gui
 bindsym $mod+e          exec $texteditor
 bindsym $mod+d          exec $discordClient

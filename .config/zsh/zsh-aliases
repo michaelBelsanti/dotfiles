@@ -1,10 +1,3 @@
-﻿## Set values
-# Hide welcome message
-set fish_greeting
-set VIRTUAL_ENV_DISABLE_PROMPT "1"
-export EDITOR=nvim
-export VISUAL=nvim
-
 # exa > ls
 alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
 alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
@@ -43,17 +36,3 @@ alias wing++='i686-w64-mingw32-g++ -static-libgcc -static-libstdc++ -static'
 alias LinuxGames='cd /run/media/quasigod/LinuxGames'
 alias gitup='git add . && git commit -m "Update" && git push'
 alias untar='tar xvf'
-
-set -x TERM alacritty
-
-## Run neofetch if session is interactive
-if status --is-interactive
-#   fet.sh 
-   pokemon-colorscripts -r
-end
-
-set thefuck fuck -hard 
-
-thefuck --alias | source
-
-export ZDOTDIR="$HOME/.config/zsh"

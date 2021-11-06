@@ -115,11 +115,6 @@
 ;; (advice-add #'company--transform-candidates :around #'my-company--transform-candidates)
 ;; (advice-add #'company-tabnine :around #'my-company-tabnine)
 
-
-;; finish completions with tab
-(global-company-mode)
-(global-set-key (kbd "TAB") #'company-indent-or-complete-common)
-
 (use-package company-tabnine
   :defer 1
   :custom

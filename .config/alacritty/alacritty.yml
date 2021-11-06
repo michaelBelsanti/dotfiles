@@ -5,8 +5,13 @@ background_opacity: 0.8
 # Ok now it's Iosevka (https://typeof.net/Iosevka/)
 font:
     normal:
-      family: Iosevka 
+        family: Iosevka
     size: 12
+
+window:
+    padding:
+        x: 6
+        y: 2
 
 # Alacritty-themes
 # Colors (One Dark - https://github.com/atom/atom/tree/master/packages/one-dark-syntax)

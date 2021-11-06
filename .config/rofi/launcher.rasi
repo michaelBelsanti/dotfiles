@@ -1,4 +1,4 @@
-@import "colors.rasi"
+@import "colors-options.rasi"
 
 window {
     height:                         240;

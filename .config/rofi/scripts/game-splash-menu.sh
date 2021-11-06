@@ -16,8 +16,8 @@ BACK=""
 APPID=$1
 
 list-icons() {
-    echo $PLAY Play
-    echo $LIBRARY Open in library
+    echo $PLAY Launch
+    echo $LIBRARY View in library
     echo $ACHIEVEMENTS Achievements
     echo $NEWS News
     echo $BACK Back
