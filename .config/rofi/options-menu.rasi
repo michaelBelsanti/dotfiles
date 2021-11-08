@@ -4,7 +4,7 @@ configuration {
     font:                           "Font Awesome 5 Free Solid 13";
 }
 
-@import "colors-options.rasi"
+@import "colors.rasi"
 
 mainbox {
     children:                       [message, listview];

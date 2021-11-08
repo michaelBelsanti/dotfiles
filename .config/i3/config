@@ -28,6 +28,7 @@ exec        --no-startup-id $scratchpad
 exec        --no-startup-id $compositor
 exec        --no-startup-id $polkit
 exec        --no-startup-id $screenshot
+exec        --no-startup-id $texteditor --daemon
 
 # Sets volume using pamixer. Replace 'Blue' with a unique portion of your mikes 
 exec        --no-startup-id teamviewer -daemon start
@@ -77,7 +78,7 @@ bindsym $mod+Return     exec $terminal
 bindsym $mod+n          exec $files
 bindsym $mod+b          exec $browser
 bindsym $mod+s          exec $screenshot gui
-bindsym $mod+e          exec $texteditor
+bindsym $mod+e          exec emacsclient -c -a $texteditor
 bindsym $mod+d          exec $discordClient
 
 # flash active window with flashfocus
