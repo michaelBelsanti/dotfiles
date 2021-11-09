@@ -5,6 +5,7 @@ set $files          nautilus
 set $browser        brave
 set $texteditor     emacs
 set $applauncher    albert
+set $applaunchersh  $HOME/.scripts/albert.sh
 set $gamelauncher   $HOME/.config/rofi/scripts/rofi-wrapper.sh games
 set $windowsearch   $HOME/.config/rofi/scripts/rofi-wrapper.sh windows
 set $optionsmenu    $HOME/.config/rofi/scripts/rofi-wrapper.sh options
@@ -89,7 +90,7 @@ bindsym $mod+c          exec $compositor
 bindsym --release $mod+shift+c exec pkill picom
 
 # popup launcher binds
-bindsym $mod+space      exec --no-startup-id $applauncher show
+bindsym $mod+space      exec --no-startup-id $applaunchersh
 bindsym $mod+Tab        exec --no-startup-id $windowsearch
 bindsym Mod1+Tab        exec --no-startup-id $windowsearch
 bindsym $mod+g          exec --no-startup-id $gamelauncher
