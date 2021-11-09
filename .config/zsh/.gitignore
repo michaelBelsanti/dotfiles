@@ -1,4 +1,4 @@
 .zcompdump
-.zsh_history
+.histfile
 zsh_prompt-bak
 plugins/
