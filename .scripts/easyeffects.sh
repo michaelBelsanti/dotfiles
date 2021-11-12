@@ -1,13 +1,6 @@
 #!/bin/sh
-#
-bool=1
-while [ $bool -eq 1 ]
-do
-    running=$(pgrep -l pipewire | awk '/pipewire$/ {printf $2}')
-    if [[ $running == 'pipewire' ]]
-    then
-        bool=0
-    fi
-done
 
-easyeffects --gapplication-service
+sleep 3
+
+easyeffects --gapplication-service &
+pamixer --source $(pamixer --list-sources | awk '/Blue/ {print $1}') --set-volume 40

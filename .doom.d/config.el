@@ -94,26 +94,13 @@
 (global-set-key (kbd "C-S-k") '+evil/window-move-up)
 (global-set-key (kbd "C-S-l") '+evil/window-move-right)
 
+(setenv "SHELL" shell-file-name)
+
 (require 'company-tabnine)
 (add-to-list 'company-backends #'company-tabnine)
-;; (setq lsp-completion-mode :enabled)
+(setq lsp-completion-mode :enabled)
 (setq company-idle-delay 0)
 (setq company-show-quick-access t)
-;; ;; workaround for company-transformers
-;; (setq company-tabnine--disable-next-transform nil)
-;; (defun my-company--transform-candidates (func &rest args)
-;;   (if (not company-tabnine--disable-next-transform)
-;;       (apply func args)
-;;     (setq company-tabnine--disable-next-transform nil)
-;;     (car args)))
-
-;; (defun my-company-tabnine (func &rest args)
-;;   (when (eq (car args) 'candidates)
-;;     (setq company-tabnine--disable-next-transform t))
-;;   (apply func args))
-
-;; (advice-add #'company--transform-candidates :around #'my-company--transform-candidates)
-;; (advice-add #'company-tabnine :around #'my-company-tabnine)
 
 (use-package company-tabnine
   :defer 1
