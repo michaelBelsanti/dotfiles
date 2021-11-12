@@ -1,4 +1,4 @@
-#=============================== Applications ================================#
+#=============================== Applications ================================#GG
 #---------------------------- Default applications ---------------------------#
 set $terminal       alacritty
 set $files          nautilus
@@ -35,7 +35,7 @@ exec        --no-startup-id $texteditor --daemon
 exec        --no-startup-id teamviewer -daemon start
 exec        --no-startup-id replay-sorcery
 exec        --no-startup-id nyrna
-exec        --no-startup-id flashfocus
+#exec        --no-startup-id flashfocus
 exec        --no-startup-id spotifyd
 exec_always --no-startup-id $HOME/.scripts/easyeffects.sh
 exec_always --no-startup-id pamixer --source $(pamixer --list-sources | awk '/Blue/ {print $1}') --set-volume 40
@@ -45,7 +45,7 @@ exec_always --no-startup-id pamixer --source $(pamixer --list-sources | awk '/Bl
 
 #================================= Appearance ================================#
 #------------------------------- Colors & font -------------------------------#
-set $bg-color            #1E222A
+set $bg-color            #e06c75
 set $inactive-bg-color   #1E222A
 set $text-color          #f3f4f5
 set $inactive-text-color #3E4451
@@ -64,8 +64,8 @@ font pango:JetBrains Mono 10
 #----------------------------- Window appearance -----------------------------#
 # Removes titlebars
 for_window [class="^.*"] border pixel 1
-hide_edge_borders both
-gaps inner 6
+ hide_edge_borders both
+gaps inner 8
 smart_gaps on
 #-----------------------------------------------------------------------------#
 #=============================================================================#
@@ -79,7 +79,7 @@ bindsym $mod+Return     exec $terminal
 bindsym $mod+n          exec $files
 bindsym $mod+b          exec $browser
 bindsym $mod+s          exec $screenshot gui
-bindsym $mod+e          exec emacsclient -c -a $texteditor
+bindsym $mod+e          exec emacsclient -c -a ''
 bindsym $mod+d          exec $discordClient
 
 # flash active window with flashfocus

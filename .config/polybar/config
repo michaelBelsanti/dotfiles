@@ -17,7 +17,7 @@
 
 [colors]
 background      = #1e222a
-foreground      = #adb1b9   
+foreground      = #adb1b9
 lightBack       = #2b2f37
 
 darkGrey        = #1e222a
@@ -278,3 +278,14 @@ interval = 300
 format-padding = 2
 format-foreground = ${colors.green} 
 click-left = alacritty -e paru
+
+[module/pipewire]
+type = custom/script
+label = "%output%"
+label-font = 2
+interval = 2.0
+exec = ~/.config/polybar/scripts/pipewire.sh
+click-right = exec pavucontrol &
+click-left = ~/.config/polybar/scripts/pipewire.sh mute &
+scroll-up = ~/.config/polybar/scripts/pipewire.sh up &
+scroll-down = ~/.config/polybar/scripts/pipewire.sh down &
