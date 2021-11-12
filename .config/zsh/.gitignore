@@ -1,4 +1,3 @@
 .zcompdump
-.histfile
-zsh_prompt-bak
+.zsh_history
 plugins/

@@ -36,3 +36,6 @@ alias wing++='i686-w64-mingw32-g++ -static-libgcc -static-libstdc++ -static'
 alias LinuxGames='cd /run/media/quasigod/LinuxGames'
 alias gitup='git add . && git commit -m "Update" && git push'
 alias untar='tar xvf'
+alias e="emacsclient -c -a ''"
+alias e="emacsclient -c -a ''"
+alias ed="emacsclient -t -c -a ''"

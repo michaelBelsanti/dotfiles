@@ -1,1 +1,0 @@
-/home/quasigod/.local/share/broot/launcher/fish/br.fish

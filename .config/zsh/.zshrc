@@ -1,7 +1,10 @@
 #!/bin/sh
 
 export ZDOTDIR=$HOME/.config/zsh
-setopt appendhistory
+HISTFILE=~/.config/zsh/.zsh_history
+HISTSIZE=10000
+SAVEHIST=1000
+setopt SHARE_HISTORY
 
 # some useful options (man zshoptions)
 setopt autocd extendedglob nomatch menucomplete
@@ -18,16 +21,16 @@ autoload -Uz colors && colors
 # functions
 source "$ZDOTDIR/zsh-functions"
 
-# sourced files
-zsh_add_file "zsh-aliases"
-zsh_add_file "zsh-exports"
-zsh_add_file "zsh-prompt"
-
 # plugins
 # zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "marlonrichert/zsh-autocomplete"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 # zsh_add_plugin "chitoku-k/fzf-zsh-completions"
+
+# sourced files
+zsh_add_file "zsh-aliases"
+zsh_add_file "zsh-exports"
+zsh_add_file "zsh-prompt"
 
 # completions
 # autoload -Uz compinit
@@ -48,6 +51,7 @@ export VISUAL=nvim
 export BROWSER="brave"
 
 # startup
-pokemon-colorscripts -r
+#pokemon-colorscripts -r
+colorscript -r
 
 eval "$(zoxide init zsh)"
