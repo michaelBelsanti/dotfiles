@@ -1,4 +1,4 @@
-#=============================== Applications ================================#GG
+#=============================== Applications ================================#
 #---------------------------- Default applications ---------------------------#
 set $terminal       alacritty
 set $files          nautilus
@@ -17,7 +17,7 @@ set $screenshot     flameshot
 set $notifications  dunst
 set $scratchpad     tilda
 set $polkit         lxpolkit
-set $discordClient  lightcord
+set $discordClient  discord-canary
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
@@ -29,15 +29,20 @@ exec        --no-startup-id $scratchpad
 exec        --no-startup-id $compositor
 exec        --no-startup-id $polkit
 exec        --no-startup-id $screenshot
-exec        --no-startup-id $texteditor --daemon
+#exec        --no-startup-id $texteditor --daemon
+# Currently disabled because tabnine is using too much ram.
+# Might find a way to deal with this or might just leave the server off and let it start when I first use emacs.
 
-# Sets volume using pamixer. Replace 'Blue' with a unique portion of your mikes 
 exec        --no-startup-id teamviewer -daemon start
 exec        --no-startup-id replay-sorcery
 exec        --no-startup-id nyrna
-#exec        --no-startup-id flashfocus
+# program for increasing saturation in csgo
+exec        --no-startup-id vibrantLinux
+#exec       --no-startup-id flashfocus
 exec        --no-startup-id spotifyd
-exec_always --no-startup-id $HOME/.scripts/easyeffects.sh
+# Script that delays easy effects launch to prevent it from breaking
+exec        --no-startup-id $HOME/.scripts/easyeffects.sh
+# Sets volume using pamixer. Replace 'Blue' with a unique portion of your mikes
 exec_always --no-startup-id pamixer --source $(pamixer --list-sources | awk '/Blue/ {print $1}') --set-volume 40
 #-----------------------------------------------------------------------------#
 #=============================================================================#
@@ -82,6 +87,9 @@ bindsym $mod+s          exec $screenshot gui
 bindsym $mod+e          exec emacsclient -c -a ''
 bindsym $mod+d          exec $discordClient
 
+bindsym $mod+shift+d    exec $HOME/.scripts/discover.sh
+# bind to reset easy effects in case of breakage
+bindsym $mod+ctrl+shift+e       exec $HOME/.scripts/eerestart.sh
 # flash active window with flashfocus
 bindsym $mod+y          exec --no-startup-id flash_window
 
