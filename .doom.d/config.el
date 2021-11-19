@@ -85,6 +85,11 @@
 (setq
  projectile-project-search-path '("~/projects/"))
 
+(unbind-key (kbd "C-h"))
+(unbind-key (kbd "C-j"))
+(unbind-key (kbd "C-k"))
+(unbind-key (kbd "C-l"))
+
 (global-set-key (kbd "C-h") 'evil-window-left)
 (global-set-key (kbd "C-j") 'evil-window-down)
 (global-set-key (kbd "C-k") 'evil-window-up)
@@ -96,11 +101,11 @@
 
 (setenv "SHELL" shell-file-name)
 
-(require 'company-tabnine)
-(add-to-list 'company-backends #'company-tabnine)
-(setq lsp-completion-mode :enabled)
-(setq company-idle-delay 0)
-(setq company-show-quick-access t)
+;; (require 'company-tabnine)
+;; (add-to-list 'company-backends #'company-tabnine)
+;; (setq lsp-completion-mode :enabled)
+;; (setq company-idle-delay 0)
+;; (setq company-show-quick-access t)
 
 (use-package company-tabnine
   :defer 1
@@ -151,3 +156,17 @@
   (kill-emacs . company-tabnine-kill-process)
   :config
   (company-tabnine-toggle t))
+(use-package! websocket
+    :after org-roam)
+
+;; (use-package! org-roam-ui
+;;     ;; :after org-roam ;; or :after org
+;; ;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
+;; ;;         a hookable mode anymore, you're advised to pick something yourself
+;; ;;         if you don't care about startup time,
+;;     :hook (after-init . org-roam-ui-mode)
+;;     :config
+;;     (setq org-roam-ui-sync-theme t
+;;           org-roam-ui-follow t
+;;           org-roam-ui-update-on-save t
+;;           org-roam-ui-open-on-start t))

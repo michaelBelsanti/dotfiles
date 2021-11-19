@@ -80,7 +80,7 @@ enable-ipc = true
 
 modules-left = spacer i3 title
 modules-center = alsa
-modules-right = updates cpu mem time powermenu
+modules-right = cpu mem time powermenu
 
 font-0 = Cascadia Code:style=Bold:pixelsize=12;3
 font-1 = Font Awesome 5 Free Solid:size=11;2
@@ -277,7 +277,7 @@ exec = ~/.config/polybar/scripts/updates-pacman-aurhelper.sh
 interval = 300
 format-padding = 2
 format-foreground = ${colors.green} 
-click-left = alacritty -e paru
+click-left = ~/.config/polybar/scripts/runupdate.sh
 
 [module/pipewire]
 type = custom/script

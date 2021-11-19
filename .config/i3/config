@@ -37,7 +37,7 @@ exec        --no-startup-id teamviewer -daemon start
 exec        --no-startup-id replay-sorcery
 exec        --no-startup-id nyrna
 # program for increasing saturation in csgo
-exec        --no-startup-id vibrantLinux
+exec        --no-startup-id vibrantLinux --hidden
 #exec       --no-startup-id flashfocus
 exec        --no-startup-id spotifyd
 # Script that delays easy effects launch to prevent it from breaking

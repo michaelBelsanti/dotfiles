@@ -5,6 +5,7 @@ HISTFILE=~/.config/zsh/.zsh_history
 HISTSIZE=10000
 SAVEHIST=1000
 setopt SHARE_HISTORY
+bindkey -e
 
 # some useful options (man zshoptions)
 setopt autocd extendedglob nomatch menucomplete
@@ -25,12 +26,17 @@ source "$ZDOTDIR/zsh-functions"
 # zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "marlonrichert/zsh-autocomplete"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
-# zsh_add_plugin "chitoku-k/fzf-zsh-completions"
+#zsh_add_plugin "chitoku-k/fzf-zsh-completions"
+
 
 # sourced files
 zsh_add_file "zsh-aliases"
 zsh_add_file "zsh-exports"
 zsh_add_file "zsh-prompt"
+
+#binds
+bindkey '^[[3~' delete-char
+bindkey -s '^F' 'fzf^M'
 
 # completions
 # autoload -Uz compinit
@@ -48,7 +54,7 @@ zsh_add_file "zsh-prompt"
 # variables
 export EDITOR=nvim
 export VISUAL=nvim
-export BROWSER="brave"
+export BROWSER=brave
 
 # startup
 #pokemon-colorscripts -r
