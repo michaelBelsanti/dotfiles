@@ -29,9 +29,7 @@ exec        --no-startup-id $scratchpad
 exec        --no-startup-id $compositor
 exec        --no-startup-id $polkit
 exec        --no-startup-id $screenshot
-#exec        --no-startup-id $texteditor --daemon
-# Currently disabled because tabnine is using too much ram.
-# Might find a way to deal with this or might just leave the server off and let it start when I first use emacs.
+exec        --no-startup-id $texteditor --daemon
 
 exec        --no-startup-id teamviewer -daemon start
 exec        --no-startup-id replay-sorcery
@@ -39,6 +37,7 @@ exec        --no-startup-id nyrna
 # program for increasing saturation in csgo
 exec        --no-startup-id vibrantLinux --hidden
 #exec       --no-startup-id flashfocus
+# commented because i now have borders on windows
 exec        --no-startup-id spotifyd
 # Script that delays easy effects launch to prevent it from breaking
 exec        --no-startup-id $HOME/.scripts/easyeffects.sh
@@ -50,12 +49,12 @@ exec_always --no-startup-id pamixer --source $(pamixer --list-sources | awk '/Bl
 
 #================================= Appearance ================================#
 #------------------------------- Colors & font -------------------------------#
-set $bg-color            #e06c75
+set $bg-color            #E06C75
 set $inactive-bg-color   #1E222A
-set $text-color          #f3f4f5
+set $text-color          #F3F4F5
 set $inactive-text-color #3E4451
 set $urgent-bg-color     #D472A9
-set $indicator-color	 #61AFEF
+set $indicator-color     #61AFEF
 
 #                       border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          $indicator-color
@@ -246,6 +245,7 @@ mode "resize" {
         bindsym k resize grow height 10 px or 10 ppt
         bindsym j resize shrink height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
+
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
