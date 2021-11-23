@@ -61,3 +61,5 @@ export BROWSER=brave
 colorscript -r
 
 eval "$(zoxide init zsh)"
+
+source /home/quasigod/.config/broot/launcher/bash/br

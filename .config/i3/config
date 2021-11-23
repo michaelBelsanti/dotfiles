@@ -17,7 +17,7 @@ set $screenshot     flameshot
 set $notifications  dunst
 set $scratchpad     tilda
 set $polkit         lxpolkit
-set $discordClient  discord-canary
+set $discordClient  powercord
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
