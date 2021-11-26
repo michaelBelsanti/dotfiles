@@ -154,10 +154,13 @@
       (message "TabNine disabled.")))
   :hook
   (kill-emacs . company-tabnine-kill-process)
-  :config
-  (company-tabnine-toggle t))
-(use-package! websocket
-    :after org-roam)
+   :config
+   (company-tabnine-toggle t))
+
+(company-tabnine-toggle)
+
+;; (use-package! websocket
+;;     :after org-roam)
 
 ;; (use-package! org-roam-ui
 ;;     ;; :after org-roam ;; or :after org

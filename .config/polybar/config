@@ -223,7 +223,7 @@ format-prefix = "   "
 label = "%output% MB "
 label-padding = 0
 format-prefix-foreground = ${colors.yellow}
-click-left = alacritty -e btop
+click-left = alacritty -e 'btop'
 format-foreground = ${colors.yellow} 
 
 [module/powermenu]
