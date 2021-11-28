@@ -1,4 +1,3 @@
+#!/bin/sh
 export ZDOTDIR=$HOME/.config/zsh
-source "$HOME/.config/zsh/.zshrc"
-
-eval $(thefuck --alias)
+source $HOME/.config/zsh/.zshrc
