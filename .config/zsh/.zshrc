@@ -53,8 +53,8 @@ bindkey -s '^F' 'fzf^M'
 # zle -N down-line-or-beginning-search
 
 # variables
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR="emacsclient -c -a ''"
+export VISUAL="emacsclient -c -a ''"
 export BROWSER=brave
 
 # startup

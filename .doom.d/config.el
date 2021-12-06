@@ -113,6 +113,7 @@
   (company-tabnine-max-num-results 9)
   :bind
   (("M-q" . company-other-backend))
+  ;; ("C-z t" . company-tabnine))
   :init
   (defun company//sort-by-tabnine (candidates)
     "Integrate company-tabnine with lsp-mode"
@@ -154,10 +155,15 @@
       (message "TabNine disabled.")))
   :hook
   (kill-emacs . company-tabnine-kill-process)
-   :config
-   (company-tabnine-toggle t))
+  :config
+  (company-tabnine-toggle nil))
 
-(company-tabnine-toggle)
+(add-hook 'c++-mode-hook
+          (lambda()
+            (local-unset-key (kbd "C-h"))
+            (local-unset-key (kbd "C-j"))
+            (local-unset-key (kbd "C-k"))
+            (local-unset-key (kbd "C-l"))))
 
 ;; (use-package! websocket
 ;;     :after org-roam)

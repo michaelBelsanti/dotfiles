@@ -31,6 +31,7 @@ exec        --no-startup-id $polkit
 exec        --no-startup-id $screenshot
 exec        --no-startup-id $texteditor --daemon
 
+exec        --no-startup-id betterlockscreen -u $HOME/wallpapers/lockscreen.png
 exec        --no-startup-id teamviewer -daemon start
 exec        --no-startup-id replay-sorcery
 exec        --no-startup-id nyrna
@@ -42,7 +43,7 @@ exec        --no-startup-id spotifyd
 # Script that delays easy effects launch to prevent it from breaking
 exec        --no-startup-id $HOME/.scripts/easyeffects.sh
 # Sets volume using pamixer. Replace 'Blue' with a unique portion of your mikes
-exec_always --no-startup-id pamixer --source $(pamixer --list-sources | awk '/Blue/ {print $1}') --set-volume 40
+exec_always --no-startup-id pamixer --source $(pamixer --list-sources | awk '/Blue/ {print $1}') --set-volume 38
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
@@ -83,6 +84,7 @@ bindsym $mod+Return     exec $terminal
 bindsym $mod+n          exec $files
 bindsym $mod+b          exec $browser
 bindsym $mod+s          exec $screenshot gui
+bindsym $mod+ctrl+s     exec $screenshot screen -c
 bindsym $mod+e          exec emacsclient -c -a ''
 bindsym $mod+d          exec $discordClient
 
