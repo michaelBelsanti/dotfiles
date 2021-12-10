@@ -200,7 +200,7 @@ bar-volume-fill-font = 2
 bar-volume-empty = ━
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.text}
-format-volume-padding = 1
+format-volume-padding = 0
 
 [module/time]
 type = internal/date
@@ -208,7 +208,7 @@ interval = 1
 format = "<label>"
 format-background = ${colors.lightBack}
 date = %{F${colors.blue}󰥔 %H:%M%{F-}
-time-alt = %{F${colors.blue} %a, %b %d%{F-}
+time-alt = %{F${colors.blue}%a, %b %d%{F-}
 format-padding = 0
 label = %date%%time%
 label-padding = 1
@@ -227,7 +227,7 @@ format-foreground = ${colors.yellow}
 [module/powermenu]
 type = custom/text 
 content =" "
-content-padding =0
+content-padding = 0
 click-left = /home/quasigod/.config/rofi/scripts/rofi-options-menu.sh &
 content-foreground = ${colors.red}
 content-background = ${colors.lightBack}

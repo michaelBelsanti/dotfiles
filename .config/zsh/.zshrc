@@ -1,7 +1,7 @@
 #!/bin/sh
 
 export ZDOTDIR=$HOME/.config/zsh
-export PATH=/home/quasigod/.nimble/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/home/quasigod/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+export PATH=/home/quasigod/.nimble/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/home/quasigod/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/quasigod/.local/bin
 HISTFILE=~/.config/zsh/.zsh_history
 HISTSIZE=10000
 SAVEHIST=1000

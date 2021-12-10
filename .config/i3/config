@@ -31,7 +31,7 @@ exec        --no-startup-id $polkit
 exec        --no-startup-id $screenshot
 exec        --no-startup-id $texteditor --daemon
 
-exec        --no-startup-id betterlockscreen -u $HOME/wallpapers/lockscreen.png
+exec        --no-startup-id betterlockscreen -u ~/wallpapers/lockscreen.png
 exec        --no-startup-id teamviewer -daemon start
 exec        --no-startup-id replay-sorcery
 exec        --no-startup-id nyrna
