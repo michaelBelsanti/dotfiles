@@ -42,7 +42,7 @@ exec        --no-startup-id vibrantLinux --hidden
 exec        --no-startup-id spotifyd
 # Script that delays easy effects launch to prevent it from breaking
 exec        --no-startup-id $HOME/.scripts/easyeffects.sh
-# Sets volume using pamixer. Replace 'Blue' with a unique portion of your mikes
+# Sets volume using pamixer. Replace 'Blue' with a unique portion of your mics
 exec_always --no-startup-id pamixer --source $(pamixer --list-sources | awk '/Blue/ {print $1}') --set-volume 38
 #-----------------------------------------------------------------------------#
 #=============================================================================#
@@ -68,7 +68,7 @@ font pango:JetBrains Mono 10
 
 #----------------------------- Window appearance -----------------------------#
 # Removes titlebars
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
  hide_edge_borders both
 gaps inner 8
 smart_gaps on
