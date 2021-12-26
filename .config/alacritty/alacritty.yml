@@ -1,11 +1,9 @@
 # Opacity
 background_opacity: 1.0
 
-## JetBrains Mono best terminal font (https://www.jetbrains.com/lp/mono/)
-# Ok now it's Iosevka (https://typeof.net/Iosevka/)
 font:
     normal:
-        family: Iosevka
+        family: JetBrains Mono
     size: 12
 
 window:
@@ -30,7 +28,7 @@ colors:
     blue:    '#51afef'
     magenta: '#c678dd'
     cyan:    '#5699af'
-    white:   '#202328'
+    white:   '#bbc2cf'
   bright:
     black:   '#5b6268'
     red:     '#da8548'

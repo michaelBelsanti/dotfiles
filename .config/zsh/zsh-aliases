@@ -22,7 +22,6 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias hw='hwinfo --short'                                   # Hardware Info
 alias big="expac -H M '%m\t%n' | sort -h | nl"              # Sort installed packages according to size in MB (expac must be installed)
-alias code='vscodium'
 alias vim='nvim'
 alias please='sudo'
 alias cleanup='paru -Rns $(paru -Qtdq)'
@@ -36,5 +35,6 @@ alias gitup='git add . && git commit -m "Update" && git push'
 alias untar='tar xvf'
 alias e="emacsclient -c -a ''"
 alias ed="emacsclient -t -c -a ''"
+alias se="sudoedit"
 alias rm='trash'
 alias empty='trash-empty'

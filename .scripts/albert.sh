@@ -6,6 +6,6 @@ then
     albert show
 else
     albert &
-    sleep .1
+    sleep .2
     albert show
 fi

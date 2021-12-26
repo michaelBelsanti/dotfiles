@@ -7,8 +7,7 @@
 (menu-bar-mode -1)
 
 ;; Basic visual shits
-(set-face-attribute 'default nil :font "Cascadia Code" :height 110)
-
+(set-face-attribute 'default nil :font "JetBrains Mono" :height 125 :weight 'normal)
 (global-display-line-numbers-mode 1)
 (setq display-line-numbers-type 'relative)
 
@@ -112,6 +111,7 @@
   (evil-mode 1)
   (define-key evil-insert-state-map (kbd "C-g") 'evil-normal-state)
   (define-key evil-insert-state-map (kbd "C-h") 'evil-delete-backward-char-and-join)
+  (setq evil-undo-system 'undo-redo)
 
   ;; Use visual line motions even outside of visual-line-mode buffers
   (evil-global-set-key 'motion "j" 'evil-next-visual-line)
@@ -136,9 +136,19 @@
   (quasi/leader-keys
     "." '(counsel-find-file :which-key "find file")
     "," '(counsel-switch-buffer :which-key "switch buffer")
+    ;; bookmarks
+    "RET" '(:ignore t :which-key "bookmarks")
+    "RET l" '(bookmark-bmenu-list :which-key "list bookmarks")
+    "RET a" '(bookmark-set :which-key "add bookmark")
+    "RET d" '(bookmark-delete :which-key "add bookmark")
+    "RET RET" '(counsel-bookmark :Which-key "bookmarks")
+    ;; buffers
     "b" '(:ignore t :which-key "buffers")
     "bs" '(save-buffer :which-key "save buffer")
-    "bk" '(kill-buffer :which-key "kill buffer")
+    "bk" '(kill-current-buffer :which-key "kill current buffer")
+    "bK" '(kill-buffer :which-key "kill buffer")
+    "bw" '(kill-buffer-and-window :which-key "kill buffer and window")
+    ;; help
     "h" '(:ignore t :which-key "help")
     "hp" '(describe-package :which-key "describe package")
     "hf" '(describe-function :which-key "describe function")
@@ -146,11 +156,11 @@
     "hs" '(describe-symbol :which-key "describe symbol")
     "hm" '(describe-mode :which-key "describe mode")
     "hk" '(describe-mode :which-key "describe keymap")
-    "p" '(:ignore t :which-key "projects")
-    "pp" '(project-switch-project :which-key "switch projects")
-    "pb" '(project-switch-to-buffer :which-key "switch project buffer")
-    "pd" '(project-dired :which-key "dired")
-    "pk" '(project-kill-buffers :which-key "kill project buffers")
+    ;; quit
+    "q" '(:ignore t :which-key "quit")
+    "qq" '(save-buffers-kill-terminal :which-key "save+quit client")
+    "qQ" '(save-buffers-kill-emacs :which-key "save+quit emacs")
+    ;; toggle
     "t"  '(:ignore t :which-key "toggles")
     "tt" '(counsel-load-theme :which-key "choose theme")
     "fde" '(lambda () (interactive) (find-file (expand-file-name "~/.emacs.d/Emacs.org")))))
@@ -161,6 +171,7 @@
   :commands magit-status
   :custom
   (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
+
 
 (quasi/leader-keys
   "g" '(:ignore t :which-key "git")
@@ -176,16 +187,57 @@
   "gf" '(magit-fetch :which-key "fetch")
   "gF" '(magit-fetch-all :which-key "fetch all")
   "gr" '(magit-rebase :which-key "rebase"))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(magit general evil-collection which-key use-package rainbow-delimiters ivy-rich helpful evil doom-themes doom-modeline counsel command-log-mode)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
+(defconst jetbrains-ligature-mode--ligatures
+   '("-->" "//" "/**" "/*" "*/" "<!--" ":=" "->>" "<<-" "->" "<-"
+     "<=>" "==" "!=" "<=" ">=" "=:=" "!==" "&&" "||" "..." ".."
+     "|||" "///" "&&&" "===" "++" "--" "=>" "|>" "<|" "||>" "<||"
+     "|||>" "<|||" ">>" "<<" "::=" "|]" "[|" "{|" "|}"
+     "[<" ">]" ":?>" ":?" "/=" "[||]" "!!" "?:" "?." "::"
+     "+++" "??" "###" "##" ":::" "####" ".?" "?=" "=!=" "<|>"
+     "<:" ":<" ":>" ">:" "<>" "***" ";;" "/==" ".=" ".-" "__"
+     "=/=" "<-<" "<<<" ">>>" "<=<" "<<=" "<==" "<==>" "==>" "=>>"
+     ">=>" ">>=" ">>-" ">-" "<~>" "-<" "-<<" "=<<" "---" "<-|"
+     "<=|" "/\\" "\\/" "|=>" "|~>" "<~~" "<~" "~~" "~~>" "~>"
+     "<$>" "<$" "$>" "<+>" "<+" "+>" "<*>" "<*" "*>" "</>" "</" "/>"
+     "<->" "..<" "~=" "~-" "-~" "~@" "^=" "-|" "_|_" "|-" "||-"
+     "|=" "||=" "#{" "#[" "]#" "#(" "#?" "#_" "#_(" "#:" "#!" "#="
+     "&="))
+
+(sort jetbrains-ligature-mode--ligatures (lambda (x y) (> (length x) (length y))))
+
+(dolist (pat jetbrains-ligature-mode--ligatures)
+  (set-char-table-range composition-function-table
+                      (aref pat 0)
+                      (nconc (char-table-range composition-function-table (aref pat 0))
+                             (list (vector (regexp-quote pat)
+                                           0
+                                    'compose-gstring-for-graphic)))))
+
+
+(use-package projectile
+  :diminish projectile-mode
+  :config (projectile-mode)
+  :bind-keymap
+  ("C-c p" . projectile-command-map)
+  :init
+  (when (file-directory-p "~/projects")
+    (setq projectile-project-search-path '("~/projects")))
+  (setq projectile-switch-project-action #'projectile-dired))
+
+(use-package counsel-projectile
+  :config (counsel-projectile-mode))
+
+(quasi/leader-keys
+  "p" '(:ignore t :which-key "projects")
+  "pp" '(counsel-projectile-switch-project :which-key "switch projects")
+  "pf" '(counsel-projectile-find-file :which-key "find project file")
+  "pd" '(counsel-projectile-find-dir :which-key "find project file")
+  "pb" '(counsel-projectile-switch-to-buffer :which-key "switch project buffer")
+  "pd" '(project-dired :which-key "dired")
+  "pk" '(project-kill-buffers :which-key "kill project buffers")
+  "pr" '(counsel-projectile-rg :which-key "search project directory"))
+
+(use-package evil-collection)
+
+(evil-collection-init)

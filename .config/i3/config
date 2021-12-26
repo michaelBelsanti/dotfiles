@@ -2,7 +2,7 @@
 #---------------------------- Default applications ---------------------------#
 set $terminal       alacritty
 set $files          nautilus
-set $browser        brave
+set $browser        vivaldi-stable
 set $texteditor     emacs
 set $applauncher    albert
 set $applaunchersh  $HOME/.scripts/albert.sh
@@ -16,7 +16,7 @@ set $lockscreen     betterlockscreen -l
 set $screenshot     flameshot
 set $notifications  dunst
 set $scratchpad     tilda
-set $polkit         lxpolkit
+set $session        lxsession
 set $discordClient  powercord
 #-----------------------------------------------------------------------------#
 
@@ -27,23 +27,14 @@ exec        --no-startup-id $wallpaper
 exec        --no-startup-id $notifications
 exec        --no-startup-id $scratchpad
 exec        --no-startup-id $compositor
-exec        --no-startup-id $polkit
-exec        --no-startup-id $screenshot
+exec        --no-startup-id $session
 exec        --no-startup-id $texteditor --daemon
 
 exec        --no-startup-id betterlockscreen -u ~/wallpapers/lockscreen.png
-exec        --no-startup-id teamviewer -daemon start
-exec        --no-startup-id replay-sorcery
 exec        --no-startup-id nyrna
-# program for increasing saturation in csgo
-exec        --no-startup-id vibrantLinux --hidden
-#exec       --no-startup-id flashfocus
-# commented because i now have borders on windows
 exec        --no-startup-id spotifyd
-# Script that delays easy effects launch to prevent it from breaking
-exec        --no-startup-id $HOME/.scripts/easyeffects.sh
-# Sets volume using pamixer. Replace 'Blue' with a unique portion of your mics
-exec_always --no-startup-id pamixer --source $(pamixer --list-sources | awk '/Blue/ {print $1}') --set-volume 38
+# exec        --no-startup-id $HOME/.scripts/easyeffects.sh
+# exec_always --no-startup-id pamixer --source $(pamixer --list-sources | awk '/Blue/ {print $1}') --set-volume 38
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 

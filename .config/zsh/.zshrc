@@ -32,6 +32,7 @@ zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 
 # sourced files
 zsh_add_file "zsh-aliases"
+zsh_add_file "zsh-paliases"
 zsh_add_file "zsh-exports"
 zsh_add_file "zsh-prompt"
 
