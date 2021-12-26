@@ -20,14 +20,14 @@ Applications that I have made or edited configs for.
 - Goverlay
 - i3-gaps
 - Paru
-- Jonaburg Picom Fork
+- Picom
 - Polybar
 - Rofi
 - Tilda
 - Replay Sorcery
 
 ``` sh
-paru -S --needed alacritty dunst fish flashfocus-git goverlay i3-gaps picom-jonaburg-git polybar rofi tilda replay-sorcery
+paru -S --needed alacritty dunst fish flashfocus-git goverlay i3-gaps picom polybar rofi tilda replay-sorcery
 ```
 
 # Optional Dependencies
