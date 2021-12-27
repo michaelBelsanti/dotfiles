@@ -13,10 +13,8 @@ yadm clone https://github.com/quasigod-io/dotfiles.git
 Applications that I have made or edited configs for.
 
 - Alacritty
-- Doom Emacs
 - Dunst
-- Fish
-- Flashfocus
+- Emacs
 - Goverlay
 - i3-gaps
 - Paru
@@ -25,36 +23,43 @@ Applications that I have made or edited configs for.
 - Rofi
 - Tilda
 - Replay Sorcery
+- Zsh
 
 ``` sh
-paru -S --needed alacritty dunst fish flashfocus-git goverlay i3-gaps picom polybar rofi tilda replay-sorcery
+paru -S --needed alacritty dunst emacs goverlay i3-gaps picom polybar rofi tilda replay-sorcery zsh
 ```
 
-# Optional Dependencies
-These are programs that are launched on starup or have keybinds in my i3 config. They are not necessary.
+# Other Programs
+
+## i3
+These are programs that are launched on starup or have keybinds in my i3 config. Remember to remove the one you don't use from the config.
 
 - Albert
 - Betterlockscreen
-- Brave
-- Easy Effects
+- Vivaldi
 - Flameshot
 - Nitrogen
-- Nyrna
-- Lxpolkit
-- Pamixer
+- Lxsession
 - Powercord
 - Replay Sorcery
 - Spotifyd
-- VibrantLinux
 
 ``` sh
-paru -S --needed albert betterlockscreen brave-bin easyeffects flameshot nitrogen nyrna lxpolkit pamixer powercord-electron-git spotifyd vibrantlinux-git
+paru -S --needed albert betterlockscreen vivaldi easyeffects flameshot nitrogen nyrna lxpolkit powercord-electron-git spotifyd
 ```
 
-# Neovim and Emacs
-Both of these configs are premade ones. [NvChad](https://github.com/NvChad/NvChad) and [Doom Emacs](https://github.com/hlissner/doom-emacs) respectively.
+## Zsh
+Packages used in my .zshrc
 
-Any changes I've made are included, but you'll need to install these for them to look like mine.
+- Broot
+- Thefuck
+- Shell-color-scripts
+
+``` sh
+paru -S --needed broot thefuck shell-color-scripts
+```
+
+Note: You'll get a message each time you start a shell until you run broot to create the missing files.
 
 # Fonts
 - Cascadia Code
@@ -67,3 +72,15 @@ Any changes I've made are included, but you'll need to install these for them to
 ``` sh
 paru -S --needed --needed otf-cascadia-code otf-font-awesome ttf-material-design-icons-extended ttf-material-design-icons-webfont ttf-twemoji ttf-unifont
 ```
+
+# Display Manager
+
+I use LightDM as my display manager, along with with the webkit2 greeter and the aether theme.
+
+``` sh
+paru -S --needed lightdm lightdm-webkit2-greeter lightdm-webkit-theme-aether
+```
+
+# Warning
+
+These dotfiles are made only for myself, but I include this README in case anyone else wants to try them. Many things in these may not work out of the box for you, such as my polybar script since it uses monitor names. Use at your own risk.
