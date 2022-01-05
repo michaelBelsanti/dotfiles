@@ -4,8 +4,7 @@ set $terminal       alacritty
 set $files          nautilus
 set $browser        vivaldi-stable
 set $texteditor     emacs
-set $applauncher    albert
-set $applaunchersh  $HOME/.scripts/albert.sh
+set $applauncher    $HOME/.scripts/albert.sh
 set $gamelauncher   $HOME/.config/rofi/scripts/rofi-wrapper.sh games
 set $windowsearch   $HOME/.config/rofi/scripts/rofi-wrapper.sh windows
 set $optionsmenu    $HOME/.config/rofi/scripts/rofi-wrapper.sh options
@@ -22,7 +21,7 @@ set $discordClient  powercord
 
 #----------------------------- Startup applications --------------------------#
 exec_always --no-startup-id $taskbar
-exec_always --no-startup-id $applauncher
+exec        --no-startup-id albert
 exec        --no-startup-id $wallpaper
 exec        --no-startup-id $notifications
 exec        --no-startup-id $scratchpad
@@ -90,7 +89,7 @@ bindsym $mod+c          exec $compositor
 bindsym --release $mod+shift+c exec pkill picom
 
 # popup launcher binds
-bindsym $mod+space      exec --no-startup-id $applaunchersh
+bindsym $mod+space      exec --no-startup-id $applauncher
 bindsym $mod+Tab        exec --no-startup-id $windowsearch
 bindsym Mod1+Tab        exec --no-startup-id $windowsearch
 bindsym $mod+g          exec --no-startup-id $gamelauncher

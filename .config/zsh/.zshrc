@@ -40,6 +40,9 @@ zsh_add_file "zsh-prompt"
 bindkey '^[[3~' delete-char
 bindkey -s '^F' 'fzf^M'
 
+# bindkey '^K' up-line-or-search
+# bindkey '^J' down-line-or-select
+
 # completions
 # autoload -Uz compinit
 # # zstyle ':completion:*' menu select
