@@ -37,7 +37,14 @@ zsh_add_file "zsh-exports"
 zsh_add_file "zsh-prompt"
 
 #binds
+# ctrl del to delete word
+bindkey '^[[3;5~' kill-word
+# ctrl bckspc to delete word
 bindkey '^[[3~' delete-char
+# ctrl -> to move right one word
+bindkey '^[[1;5C' forward-word
+# ctrl <- to move left one word
+bindkey '^[[1;5D' backward-word
 bindkey -s '^F' 'fzf^M'
 
 # bindkey '^K' up-line-or-search
