@@ -1,0 +1,167 @@
+---
+Bars launched...
+polybar|notice:  Parsing config file: /home/quasigod/.config/polybar/config
+polybar|notice:  Parsing config file: /home/quasigod/.config/polybar/config
+polybar|error: Invalid value for "module/i3.label-separator-background", using default value (reason: The reference ${colors.Background} does not exist (no fallback set))
+polybar|error: Invalid value for "module/i3.label-separator-background", using default value (reason: The reference ${colors.Background} does not exist (no fallback set))
+polybar|notice:  Loaded font "Cascadia Code:style=Bold:pixelsize=12" (name=Cascadia Code, offset=3, file=/usr/share/fonts/OTF/CascadiaCode-Bold.otf)
+polybar|notice:  Loaded font "Cascadia Code:style=Bold:pixelsize=12" (name=Cascadia Code, offset=3, file=/usr/share/fonts/OTF/CascadiaCode-Bold.otf)
+polybar|notice:  Loaded font "Font Awesome 5 Free Solid:size=11" (name=Font Awesome 5 Free, offset=2, file=/usr/share/fonts/OTF/Font Awesome 5 Free-Solid-900.otf)
+polybar|notice:  Loaded font "Font Awesome 5 Free Solid:size=11" (name=Font Awesome 5 Free, offset=2, file=/usr/share/fonts/OTF/Font Awesome 5 Free-Solid-900.otf)
+polybar|notice:  Loaded font "Material Design Icons:style=Bold:size=14" (name=Material Design Icons, offset=4, file=/usr/share/fonts/TTF/material-design-icons-extended.ttf)
+polybar|notice:  Loaded font "Material Design Icons:style=Bold:size=14" (name=Material Design Icons, offset=4, file=/usr/share/fonts/TTF/material-design-icons-extended.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=11:antialias=true" (name=Unifont, offset=3, file=/usr/share/fonts/Unifont/Unifont.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=11:antialias=true" (name=Unifont, offset=3, file=/usr/share/fonts/Unifont/Unifont.ttf)
+polybar|notice:  Loaded font "Weather Icons:size=12" (name=Weather Icons, offset=1, file=/home/quasigod/.local/share/fonts/weathericons.ttf)
+polybar|notice:  Loaded font "Weather Icons:size=12" (name=Weather Icons, offset=1, file=/home/quasigod/.local/share/fonts/weathericons.ttf)
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|warn:  Invalid color in formatting tag detected: "${colors.blue", using fallback "#ffbbc2cf". This is an issue with one of your formatting tags. If it is not, please report this as a bug.
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)

@@ -47,21 +47,9 @@ bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
 bindkey -s '^F' 'fzf^M'
 
-# bindkey '^K' up-line-or-search
-# bindkey '^J' down-line-or-select
-
-# completions
-# autoload -Uz compinit
-# # zstyle ':completion:*' menu select
-# zstyle ':completion::complete:lsof:*' menu yes select
-# zmodload zsh/complist
-# # compinit
-# _comp_options+=(globdots)       # Include hidden files.
-
-# autoload -U up-line-or-beginning-search
-# autoload -U down-line-or-beginning-search
-# zle -N up-line-or-beginning-search
-# zle -N down-line-or-beginning-search
+# fix annoying fzf "do you wish..." shit
+zstyle ':completion:*' list-prompt   ''
+zstyle ':completion:*' select-prompt ''
 
 # variables
 export EDITOR="emacsclient -c -a ''"

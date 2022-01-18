@@ -2,7 +2,7 @@
 #---------------------------- Default applications ---------------------------#
 set $terminal       alacritty
 set $files          nautilus
-set $browser        vivaldi-stable
+set $browser        librewolf
 set $texteditor     emacs
 set $applauncher    $HOME/.scripts/albert.sh
 set $gamelauncher   $HOME/.config/rofi/scripts/rofi-wrapper.sh games
@@ -40,7 +40,7 @@ exec        --no-startup-id spotifyd
 
 #================================= Appearance ================================#
 #------------------------------- Colors & font -------------------------------#
-set $bg-color            #E06C75
+set $bg-color            #f28fad
 set $inactive-bg-color   #1E222A
 set $text-color          #F3F4F5
 set $inactive-text-color #3E4451
