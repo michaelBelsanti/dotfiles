@@ -22,19 +22,16 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias hw='hwinfo --short'                                   # Hardware Info
 alias big="expac -H M '%m\t%n' | sort -h | nl"              # Sort installed packages according to size in MB (expac must be installed)
-alias vim='nvim'
 alias please='sudo'
 alias cleanup='paru -Rns $(paru -Qtdq)'
 alias rmcache='paru -Scc'
 alias yay='paru'
 alias nnn='nnn -H'
-alias aura='sudo aura'
-alias wing++='i686-w64-mingw32-g++ -static-libgcc -static-libstdc++ -static'
-alias LinuxGames='cd /run/media/quasigod/LinuxGames'
 alias gitup='git add . && git commit -m "Update" && git push'
 alias untar='tar xvf'
+alias code='vscodium'
 alias e="emacsclient -c -a ''"
 alias ed="emacsclient -t -c -a ''"
-alias se="sudoedit"
+alias delete='rm'
 alias rm='trash'
 alias empty='trash-empty'

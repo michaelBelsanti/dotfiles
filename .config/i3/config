@@ -3,7 +3,7 @@
 set $terminal       alacritty
 set $files          nautilus
 set $browser        librewolf
-set $texteditor     emacs
+set $texteditor     vscodium
 set $applauncher    $HOME/.scripts/albert.sh
 set $gamelauncher   $HOME/.config/rofi/scripts/rofi-wrapper.sh games
 set $windowsearch   $HOME/.config/rofi/scripts/rofi-wrapper.sh windows
@@ -27,7 +27,6 @@ exec        --no-startup-id $notifications
 exec        --no-startup-id $scratchpad
 exec        --no-startup-id $compositor
 exec        --no-startup-id $session
-exec        --no-startup-id $texteditor --daemon
 
 exec        --no-startup-id betterlockscreen -u ~/wallpapers/lockscreen.png
 exec        --no-startup-id nyrna
@@ -75,7 +74,7 @@ bindsym $mod+n          exec $files
 bindsym $mod+b          exec $browser
 bindsym $mod+s          exec $screenshot gui
 bindsym $mod+ctrl+s     exec $screenshot screen -c
-bindsym $mod+e          exec emacsclient -c -a ''
+bindsym $mod+e          exec $texteditor
 bindsym $mod+d          exec $discordClient
 
 bindsym $mod+shift+d    exec $HOME/.scripts/discover.sh

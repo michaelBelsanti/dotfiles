@@ -50,12 +50,7 @@ bindkey -s '^F' 'fzf^M'
 # fix annoying fzf "do you wish..." shit
 zstyle ':completion:*' list-prompt   ''
 zstyle ':completion:*' select-prompt ''
-
-# variables
-export EDITOR="emacsclient -c -a ''"
-export VISUAL="emacsclient -c -a ''"
-export BROWSER=brave
-
+#
 # startup
 #pokemon-colorscripts -r
 colorscript -r
