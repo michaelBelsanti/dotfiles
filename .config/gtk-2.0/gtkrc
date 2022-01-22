@@ -2,9 +2,9 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/quasigod/.gtkrc-2.0.mine"
-gtk-theme-name="Qogir-dark"
-gtk-icon-theme-name="OneDark"
-gtk-font-name="Inter 11"
+gtk-theme-name="Catppuccin-pink"
+gtk-icon-theme-name="tela-pink"
+gtk-font-name="Montserrat 11"
 gtk-cursor-theme-name="Vimix-cursors"
 gtk-cursor-theme-size=0
 gtk-toolbar-style=GTK_TOOLBAR_BOTH
