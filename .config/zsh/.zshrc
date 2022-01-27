@@ -52,10 +52,12 @@ zstyle ':completion:*' list-prompt   ''
 zstyle ':completion:*' select-prompt ''
 #
 # startup
-#pokemon-colorscripts -r
-colorscript -r
+#pokemon-colorscripts -r # requires pokemon-colorscripts be installed
+colorscript -r # requires dt's color scripts be installed
 
-eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh)" #requires zoxide be installed
 
-source /home/quasigod/.config/broot/launcher/bash/br
-eval $(thefuck --alias)
+source /home/quasigod/.config/broot/launcher/bash/br #requires broot be installed
+eval $(thefuck --alias) # requires thefuck be installed
+
+source /usr/share/undistract-me/long-running.bash;notify_when_long_running_commands_finish_install # requires undistract-me be installed

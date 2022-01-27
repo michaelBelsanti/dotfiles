@@ -18,8 +18,11 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
+#export XDG_DATA_DIRS=$HOME/.local/share/applications:$HOME/.local/share/flatpak/exports/share/applications:/usr/local/share/applications:/usr/share/applications:/var/lib/flatpak/exports/share/applications
 
 # Keep ~ clean
+export OCTAVE_HISTFILE="$XDG_CACHE_HOME/octave-hsts"
+export OCTAVE_SITE_INITFILE="$XDG_CONFIG_HOME/octave/octaverc"
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
 export WINEPREFIX="$XDG_DATA_HOME"/wineprefixes/default

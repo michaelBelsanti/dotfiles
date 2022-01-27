@@ -28,11 +28,9 @@ exec        --no-startup-id $scratchpad
 exec        --no-startup-id $compositor
 exec        --no-startup-id $session
 
+exec        --no-startup-id obs --startreplaybuffer
 exec        --no-startup-id betterlockscreen -u ~/wallpapers/lockscreen.png
 exec        --no-startup-id nyrna
-exec        --no-startup-id spotifyd
-# exec        --no-startup-id $HOME/.scripts/easyeffects.sh
-# exec_always --no-startup-id pamixer --source $(pamixer --list-sources | awk '/Blue/ {print $1}') --set-volume 38
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 

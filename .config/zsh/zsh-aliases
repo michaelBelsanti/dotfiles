@@ -32,6 +32,6 @@ alias untar='tar xvf'
 alias code='vscodium'
 alias e="emacsclient -c -a ''"
 alias ed="emacsclient -t -c -a ''"
-alias delete='rm'
+alias del='rm'
 alias rm='trash'
 alias empty='trash-empty'
