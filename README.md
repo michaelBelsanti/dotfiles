@@ -14,7 +14,7 @@ Applications that I have made or edited configs for.
 
 - Alacritty
 - Dunst
-- Emacs
+- Emacs (barely functions)
 - Goverlay
 - i3-gaps
 - Paru
@@ -22,11 +22,11 @@ Applications that I have made or edited configs for.
 - Polybar
 - Rofi
 - Tilda
-- Replay Sorcery
+- VSCodium
 - Zsh
 
 ``` sh
-paru -S --needed alacritty dunst emacs goverlay i3-gaps picom polybar rofi tilda replay-sorcery zsh
+paru -S --needed alacritty dunst emacs goverlay i3-gaps picom polybar rofi tilda vscodium zsh
 ```
 
 # Other Programs
@@ -52,25 +52,25 @@ paru -S --needed albert betterlockscreen vivaldi easyeffects flameshot nitrogen 
 Packages used in my .zshrc
 
 - Broot
+- fzf
 - Thefuck
 - Shell-color-scripts
+- Zoxide
 
 ``` sh
-paru -S --needed broot thefuck shell-color-scripts
-```
+paru -S --needed broot fzf fzf-tab-bin-git thefuck shell-color-scripts
 
-Note: You'll get a message each time you start a shell until you run broot to create the missing files.
 
 # Fonts
-- Cascadia Code
+- JetBrains Mono
 - Inter
-- Awesome Font 5
 - Twemoji
+- Awesome Font 5
 - Material Design Icons
 - Unifont
 
 ``` sh
-paru -S --needed --needed otf-cascadia-code otf-font-awesome ttf-material-design-icons-extended ttf-material-design-icons-webfont ttf-twemoji ttf-unifont
+paru -S --needed --needed ttf-jetbrains-mono inter-font ttf-twemoji otf-font-awesome ttf-material-design-icons-extended ttf-material-design-icons-webfont ttf-unifont
 ```
 
 # Display Manager
@@ -83,4 +83,4 @@ paru -S --needed lightdm lightdm-webkit2-greeter lightdm-webkit-theme-aether
 
 # Warning
 
-These dotfiles are made only for myself, but I include this README in case anyone else wants to try them. Many things in these may not work out of the box for you, such as my polybar script since it uses monitor names. Use at your own risk.
+These dotfiles are made for my setup and will need configuring for any other. Make sure to read through the i3, polybar, picom, and zsh configs, as these will depend on your setup and which tools you use.

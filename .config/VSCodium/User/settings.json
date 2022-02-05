@@ -2,5 +2,21 @@
     "workbench.colorTheme": "Catppuccin",
     "editor.fontFamily": "'JetBrains Mono'",
     "editor.fontLigatures": true,
-    "window.zoomLevel": 1
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.linkedEditing": true,
+    "sync.gist": "768e3973386a91012c5600e725138882",
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.quietSync": true,
+    "sync.removeExtensions": false,
+    "sync.forceUpload": true,
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.defaultDateShortFormat": "YYYY MM DD",
+    "gitlens.defaultDateFormat": null,
+    "gitlens.defaultTimeFormat": null,
+    "security.workspace.trust.untrustedFiles": "open"
 }

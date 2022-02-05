@@ -10,7 +10,6 @@
     #   mouse: follow mouse pointer
     #   keyboard: follow window with keyboard focus
     #   none: don't follow anything
-    #
     # "keyboard" needs a window manager that exports the
     # _NET_ACTIVE_WINDOW property.
     # This should be the case for almost all modern window managers.
@@ -151,7 +150,7 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "%a\n<b>%s</b>\n%b\n%p"
+    format = "<b>%a: %s</b>\n%b\n%p"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".

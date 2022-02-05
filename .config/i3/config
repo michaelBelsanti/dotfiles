@@ -10,13 +10,14 @@ set $windowsearch   $HOME/.config/rofi/scripts/rofi-wrapper.sh windows
 set $optionsmenu    $HOME/.config/rofi/scripts/rofi-wrapper.sh options
 set $taskbar        $HOME/.config/polybar/launch.sh
 set $wallpaper      nitrogen --restore
-set $compositor     picom  --experimental-backends --unredir-if-possible
-set $lockscreen     betterlockscreen -l 
+set $compositor     picom  --unredir-if-possible
+set $lockscreen     betterlockscreen -l --off 5
 set $screenshot     flameshot
 set $notifications  dunst
 set $scratchpad     tilda
 set $session        lxsession
 set $discordClient  powercord
+set $emoji          emote
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
@@ -29,7 +30,7 @@ exec        --no-startup-id $compositor
 exec        --no-startup-id $session
 
 exec        --no-startup-id obs --startreplaybuffer
-exec        --no-startup-id betterlockscreen -u ~/wallpapers/lockscreen.png
+exec        --no-startup-id betterlockscreen -u ~/wallpapers/lockscreen.png --off 5
 exec        --no-startup-id nyrna
 #-----------------------------------------------------------------------------#
 #=============================================================================#
@@ -57,7 +58,7 @@ font pango:JetBrains Mono 10
 # Removes titlebars
 for_window [class="^.*"] border pixel 2
  hide_edge_borders both
-gaps inner 8
+gaps inner 6
 smart_gaps on
 #-----------------------------------------------------------------------------#
 #=============================================================================#
@@ -91,6 +92,7 @@ bindsym $mod+Tab        exec --no-startup-id $windowsearch
 bindsym Mod1+Tab        exec --no-startup-id $windowsearch
 bindsym $mod+g          exec --no-startup-id $gamelauncher
 bindsym $mod+o          exec --no-startup-id $optionsmenu
+bindsym $mod+m    exec --no-startup-id $emoji
 
 # floating applications
 for_window [instance="origin.exe"] floating enable
@@ -226,10 +228,10 @@ bindsym $mod+Shift+e exec $lockscreen
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
+        # Pressing left will shrink the window's width.
+        # Pressing right will grow the window's width.
+        # Pressing up will shrink the window's height.
+        # Pressing down will grow the window's height.
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym j resize shrink height 10 px or 10 ppt

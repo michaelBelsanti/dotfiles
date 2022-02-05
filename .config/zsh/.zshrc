@@ -9,8 +9,9 @@ setopt SHARE_HISTORY
 bindkey -e
 
 # some useful options (man zshoptions)
-setopt autocd extendedglob nomatch menucomplete
-setopt interactive_comments
+setopt autocd autopushd 
+setopt extendedglob nomatch menucomplete interactive_comments
+
 stty stop undef     # Disable ctrl-s to freeze terminal.
 # zle_highlight=('paste:none')
 
@@ -24,11 +25,15 @@ autoload -Uz colors && colors
 source "$ZDOTDIR/zsh-functions"
 
 # plugins
-# zsh_add_plugin "zsh-users/zsh-autosuggestions"
-zsh_add_plugin "marlonrichert/zsh-autocomplete"
+zsh_add_plugin "zsh-users/zsh-autosuggestions"
+zsh_add_plugin "zsh-users/zsh-completions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
-#zsh_add_plugin "chitoku-k/fzf-zsh-completions"
+# fzf
+source "/usr/share/fzf/key-bindings.zsh"
+source "/usr/share/fzf/completion.zsh"
 
+autoload -U compinit
+compinit
 
 # sourced files
 zsh_add_file "zsh-aliases"
@@ -45,19 +50,26 @@ bindkey '^[[3~' delete-char
 bindkey '^[[1;5C' forward-word
 # ctrl <- to move left one word
 bindkey '^[[1;5D' backward-word
-bindkey -s '^F' 'fzf^M'
 
 # fix annoying fzf "do you wish..." shit
 zstyle ':completion:*' list-prompt   ''
 zstyle ':completion:*' select-prompt ''
-#
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+# set descriptions format to enable group support
+zstyle ':completion:*:descriptions' format '[%d]'
+# set list-colors to enable filename colorizing
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# # preview directory's content with exa when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+# # switch group using `,` and `.`
+zstyle ':fzf-tab:*' switch-group ',' '.'
+
 # startup
 #pokemon-colorscripts -r # requires pokemon-colorscripts be installed
 colorscript -r # requires dt's color scripts be installed
 
 eval "$(zoxide init zsh)" #requires zoxide be installed
-
 source /home/quasigod/.config/broot/launcher/bash/br #requires broot be installed
 eval $(thefuck --alias) # requires thefuck be installed
-
 source /usr/share/undistract-me/long-running.bash;notify_when_long_running_commands_finish_install # requires undistract-me be installed

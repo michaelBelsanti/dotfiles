@@ -4,9 +4,10 @@ SHELL=/usr/bin/zsh
 export EDITOR="nvim"
 export VISUAL="vscodium"
 export BROWSER=brave
+export FZF_DEFAULT_OPTS='--hidden'
 
 # Useful settings
-export MANGOHUD=1
+export MANGOHUD=0
 export ENABLE_VKBASALT=1
 
 # Consistent theming
@@ -18,7 +19,6 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
-#export XDG_DATA_DIRS=$HOME/.local/share/applications:$HOME/.local/share/flatpak/exports/share/applications:/usr/local/share/applications:/usr/share/applications:/var/lib/flatpak/exports/share/applications
 
 # Keep ~ clean
 export OCTAVE_HISTFILE="$XDG_CACHE_HOME/octave-hsts"

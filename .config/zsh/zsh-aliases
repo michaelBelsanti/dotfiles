@@ -25,6 +25,7 @@ alias big="expac -H M '%m\t%n' | sort -h | nl"              # Sort installed pac
 alias please='sudo'
 alias cleanup='paru -Rns $(paru -Qtdq)'
 alias rmcache='paru -Scc'
+alias update-mirrors='sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist'
 alias yay='paru'
 alias nnn='nnn -H'
 alias gitup='git add . && git commit -m "Update" && git push'
