@@ -18,5 +18,8 @@
     "gitlens.defaultDateShortFormat": "YYYY MM DD",
     "gitlens.defaultDateFormat": null,
     "gitlens.defaultTimeFormat": null,
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "window.zoomLevel": -1,
 }

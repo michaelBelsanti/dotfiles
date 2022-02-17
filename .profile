@@ -4,7 +4,12 @@ SHELL=/usr/bin/zsh
 export EDITOR="nvim"
 export VISUAL="vscodium"
 export BROWSER=brave
-export FZF_DEFAULT_OPTS='--hidden'
+export FZF_DEFAULT_COMMAND='find .'
+
+# Better DXVK Shader Caching
+export __GL_SHADER_DISK_CACHE=1     
+export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1
+export __GL_SHADER_DISK_CACHE_PATH='$HOME/Games/cache'
 
 # Useful settings
 export MANGOHUD=0
@@ -21,6 +26,11 @@ export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 
 # Keep ~ clean
+rm $HOME/.xsession-errors.old
+export WGETRC="$XDG_CONFIG_HOME/wgetrc"
+nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings
+export _JAVA_OPTIONS=-
+Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export OCTAVE_HISTFILE="$XDG_CACHE_HOME/octave-hsts"
 export OCTAVE_SITE_INITFILE="$XDG_CONFIG_HOME/octave/octaverc"
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv

@@ -36,3 +36,14 @@ alias ed="emacsclient -t -c -a ''"
 alias del='rm'
 alias rm='trash'
 alias empty='trash-empty'
+alias diskapp='gdu'
+
+# functions
+
+pacsearch() {
+	paru -Qqe | grep $1
+}
+
+pacpurge() {
+	paru -R $(pacsearch $1)
+}
