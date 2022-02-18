@@ -44,7 +44,6 @@ export XMONAD_CONFIG_DIR=$HOME/.config/xmonad
 export XMONAD_DATA_DIR=$HOME/.config/xmonad
 export ZDOTDIR="$HOME/.config/zsh"
 export _JAVA_OPTIONS=-
-export _Z_DATA="$XDG_DATA_HOME/z"
 Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
-nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings
+export _Z_DATA="$XDG_DATA_HOME/z"
 rm $HOME/.xsession-errors.old

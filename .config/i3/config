@@ -16,7 +16,7 @@ set $screenshot     flameshot
 set $notifications  dunst
 set $scratchpad     tilda
 set $session        lxsession
-set $discordClient  powercord
+set $discordClient  flatpak run com.discordapp.Discord
 set $emoji          emote
 #-----------------------------------------------------------------------------#
 

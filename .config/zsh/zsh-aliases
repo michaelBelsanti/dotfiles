@@ -3,47 +3,50 @@ alias ls='exa -al --color=always --group-directories-first --icons' # preferred 
 alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
 alias ll='exa -l --color=always --group-directories-first --icons'  # long format
 alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
-alias l.="exa -a | egrep '^\.'"                                     # show only dotfiles
+alias l="exa -a | egrep '^\.'"                                     # show only dotfiles
 
 # bat > cat
 alias cat='bat --style header --style rules --style snip --style changes --style header'
 
 # Common use
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
-alias dir='dir --color=auto'
-alias broot='broot -h'
-alias vdir='vdir --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias hw='hwinfo --short'                                   # Hardware Info
+alias .....='cd ../../../..'
+alias ....='cd ../../..'
+alias ...='cd ../..'
+alias ..='cd ..'
 alias big="expac -H M '%m\t%n' | sort -h | nl"              # Sort installed packages according to size in MB (expac must be installed)
-alias please='sudo'
+alias broot='broot -h'
 alias cleanup='paru -Rns $(paru -Qtdq)'
-alias rmcache='paru -Scc'
-alias update-mirrors='sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist'
-alias yay='paru'
-alias nnn='nnn -H'
-alias gitup='git add . && git commit -m "Update" && git push'
-alias untar='tar xvf'
+alias clip='xclip -sel clip'
 alias code='vscodium'
+alias cpwd='pwd | clip'
+alias del='rm'
+alias dir='dir --color=auto'
+alias diskapp='gdu'
 alias e="emacsclient -c -a ''"
 alias ed="emacsclient -t -c -a ''"
-alias del='rm'
-alias rm='trash'
+alias egrep='egrep --color=auto'
 alias empty='trash-empty'
-alias diskapp='gdu'
+alias fgrep='fgrep --color=auto'
+alias gitup='git add . && git commit -m "Update" && git push'
+alias grep='grep --color=auto'
+alias hw='hwinfo --short'                                   # Hardware Info
+alias nnn='nnn -H'
+alias nsxiv='nsxiv -a'
+alias please='sudo'
+alias rm='trash'
+alias rmcache='paru -Scc'
+alias untar='tar xvf'
+alias update-mirrors='sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist'
+alias vdir='vdir --color=auto'
+alias yay='paru'
 
 # functions
 
-pacsearch() {
+parus() {
 	paru -Qqe | grep $1
 }
 
-pacpurge() {
-	paru -R $(pacsearch $1)
+parur() {
+	paru -R $(parus $1)
 }

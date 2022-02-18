@@ -5,10 +5,10 @@ export PATH=/home/quasigod/.nimble/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/s
 HISTFILE=~/.config/zsh/.zsh_history
 HISTSIZE=10000
 SAVEHIST=1000
-setopt SHARE_HISTORY
 bindkey -e
 
 # some useful options (man zshoptions)
+setopt SHARE_HISTORY
 setopt autocd autopushd 
 setopt extendedglob nomatch menucomplete interactive_comments
 
@@ -28,6 +28,12 @@ source "$ZDOTDIR/zsh-functions"
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-completions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
+zsh_add_plugin "Aloxaf/fzf-tab"
+
+zsh_add_file "plugins/sudo.zsh"
+zsh_add_file "plugins/copybuffer.zsh"
+zsh_add_file "plugins/dirhistory.zsh"
+
 # fzf
 source "/usr/share/fzf/key-bindings.zsh"
 source "/usr/share/fzf/completion.zsh"
@@ -61,7 +67,7 @@ zstyle ':completion:*:descriptions' format '[%d]'
 # set list-colors to enable filename colorizing
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # # preview directory's content with exa when completing cd
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1a --color=always $realpath'
 # # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
