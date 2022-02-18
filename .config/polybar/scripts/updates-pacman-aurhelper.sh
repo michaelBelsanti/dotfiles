@@ -17,6 +17,7 @@ updates=$((updates_arch + updates_aur))
 
 if [ "$updates" -gt 0 ]; then
     echo " $updates"
+    notify-send --app-name=Updates "$updates update(s) are available to install"
 else
     echo ""
 fi

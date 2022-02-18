@@ -1,7 +1,5 @@
 # See dunst(5) for all configuration options
-
-[global]
-    ### Display ###
+[global] ### Display ###
 
     # Which monitor should the notifications be displayed on.
     # monitor = 0
@@ -362,6 +360,18 @@
 #
 # NOTE: It might be helpful to run dunst -print in a terminal in order
 # to find fitting options for rules.
+
+[main_sound]
+    summary = "*"
+    script = ~/.config/dunst/main.sh
+
+[discord_sound]
+    summary = "*Discord*"
+    script = ~/.config/dunst/message.sh
+
+[text_sound]
+    summary = "*Signal*"
+    script = ~/.config/dunst/message.sh
 
 # Disable the transient hint so that idle_threshold cannot be bypassed from the
 # client
