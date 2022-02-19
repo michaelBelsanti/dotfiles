@@ -15,13 +15,11 @@ alias ....='cd ../../..'
 alias ...='cd ../..'
 alias ..='cd ..'
 alias big="expac -H M '%m\t%n' | sort -h | nl"              # Sort installed packages according to size in MB (expac must be installed)
-alias broot='broot -h'
 alias cleanup='paru -Rns $(paru -Qtdq)'
 alias clip='xclip -sel clip'
 alias code='vscodium'
 alias cpwd='pwd | clip'
 alias del='rm'
-alias dir='dir --color=auto'
 alias diskapp='gdu'
 alias e="emacsclient -c -a ''"
 alias ed="emacsclient -t -c -a ''"
@@ -38,8 +36,6 @@ alias rm='trash'
 alias rmcache='paru -Scc'
 alias untar='tar xvf'
 alias update-mirrors='sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist'
-alias vdir='vdir --color=auto'
-alias yay='paru'
 
 # functions
 

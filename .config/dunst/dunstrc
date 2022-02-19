@@ -366,12 +366,16 @@
     script = ~/.config/dunst/main.sh
 
 [discord_sound]
-    summary = "*Discord*"
+    summary = "*discord*"
     script = ~/.config/dunst/message.sh
 
 [text_sound]
     summary = "*Signal*"
     script = ~/.config/dunst/message.sh
+
+[done_sound]
+    summary = "*Updates*"
+    script = ~/.config/dunst/done.sh
 
 # Disable the transient hint so that idle_threshold cannot be bypassed from the
 # client
