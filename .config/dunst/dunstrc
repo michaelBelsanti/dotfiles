@@ -373,6 +373,10 @@
     summary = "*Signal*"
     script = ~/.config/dunst/message.sh
 
+[sc_sound]
+    summary = "*Snapchat*"
+    script = ~/.config/dunst/message.sh
+
 [done_sound]
     summary = "*Updates*"
     script = ~/.config/dunst/done.sh

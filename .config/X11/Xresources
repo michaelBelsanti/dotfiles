@@ -36,3 +36,8 @@
 ! Cursors
 Xcursor.theme: phinger-cursors
 Xcursor.size: 16
+
+! Other (really just for nsxiv)
+window.background: #1E1E28
+window.foreground: #DADAE8
+bar.font: Montserrat 11

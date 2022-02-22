@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 
-running=$(pgrep -l albert | awk '/albert$/ {printf $2; exit}')
-if [[ $running == 'albert' ]]
+pgrep -x albert
+if [ $? -ne 0 ]
 then
-    albert show
-else
-    albert &
-    sleep .2
-    albert show
+    albert
+    sleep 1
 fi
+
+albert show

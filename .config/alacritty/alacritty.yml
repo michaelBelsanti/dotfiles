@@ -9,7 +9,7 @@ font:
 window:
     padding:
         x: 6
-        y: 2
+        y: 3
 
 
 # Catppuccin!

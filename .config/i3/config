@@ -76,15 +76,11 @@ bindsym $mod+ctrl+s     exec $screenshot screen -c
 bindsym $mod+e          exec $texteditor
 bindsym $mod+d          exec $discordClient
 
-bindsym $mod+shift+d    exec $HOME/.scripts/discover.sh
 # bind to reset easy effects in case of breakage
 bindsym $mod+ctrl+shift+e       exec $HOME/.scripts/eerestart.sh
-# flash active window with flashfocus
-bindsym $mod+y          exec --no-startup-id flash_window
 
 # start and kill compositor 
-bindsym $mod+c          exec $compositor
-bindsym --release $mod+shift+c exec pkill picom
+bindsym $mod+c          exec $HOME/.scripts/picom.sh
 
 # popup launcher binds
 bindsym $mod+space      exec --no-startup-id $applauncher

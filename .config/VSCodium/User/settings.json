@@ -21,4 +21,6 @@
     "security.workspace.trust.untrustedFiles": "open",
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
+    "window.zoomLevel": 1,
+    "editor.minimap.enabled": false,
 }
