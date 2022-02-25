@@ -1,0 +1,51 @@
+## APPLICATIONS ##
+
+# albert
+super + space
+	~/.scripts/albert.sh
+
+# rofi
+super + {g,o,tab}
+	~/.config/rofi/scripts/rofi-wrapper.sh {games,options,windows}
+alt + tab 
+	~/.config/rofi/scripts/rofi-wrapper.sh options
+
+# term
+super + Return
+	alacritty
+
+# browser 
+super + b
+	librewolf
+
+# files
+super + n
+	nautilus
+
+# editor
+super + e
+	vscodium
+
+# discord
+super + d
+	flatpak run com.discordapp.Discord
+
+# emoji
+super + g
+	emote
+
+# screenshots
+super + {ctrl + s, s}
+	flameshot {screen -c,gui}
+
+# restart easyeffects
+super + shift + ctrl + e
+	~/.scripts/eerestart.sh
+
+# toggle picom
+super + c
+	~/.scripts/picom.sh
+
+# lock
+super + shift + delete
+	betterlockscreen -l -off 5

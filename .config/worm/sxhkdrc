@@ -1,0 +1,84 @@
+## APPLICATION ##
+
+# albert
+super + space
+	~/.scripts/albert.sh
+
+# rofi
+super + {g,o,tab}
+	~/.config/rofi/scripts/rofi-wrapper.sh {games,options,windows}
+
+# term
+super + Return
+	alacritty
+
+# browser 
+super + b
+	librewolf
+
+# files
+super + n
+	nautilus
+
+# editor
+super + e
+	vscodium
+
+# discord
+super + d
+	flatpak run com.discordapp.Discord
+
+# emoji
+super + g
+	emote
+
+# screenshots
+super + {ctrl + s, s}
+	flameshot {screen -c,gui}
+
+# restart easyeffects
+super + shift + ctrl + e
+	~/.scripts/eerestart.sh
+
+# toggle picom
+super + c
+	~/.scripts/picom.sh
+
+# lock
+super + shift + delete
+	betterlockscreen -l -off 5
+
+#################
+
+#####  WORM  #####
+# restart
+super + ctrl + r
+	worm
+
+# close window
+super + q
+	wormc close-active-client
+
+# fullscreen
+super + f 
+	wormc maximize-active-client
+
+# switch tag
+super + {1,2,3,4,5,6,7,8,9,0}
+	wormc switch-tag {1,2,3,4,5,6,7,8,9,10}
+
+# move window to tag
+super + shift + {1,2,3,4,5,6,7,8,9,0}
+	wormc move-active-tag {1,2,3,4,5,6,7,8,9,0}
+
+# set main
+super + m
+	super master-active
+
+# set floating
+super + shift + space
+	wormc float-active
+
+# float/tile all
+super + shift + {f,t}
+	wormc layout {floating,tiling}

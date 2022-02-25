@@ -14,21 +14,22 @@ alias .....='cd ../../../..'
 alias ....='cd ../../..'
 alias ...='cd ../..'
 alias ..='cd ..'
-alias big="expac -H M '%m\t%n' | sort -h | nl"              # Sort installed packages according to size in MB (expac must be installed)
+alias big='expac -H M '%m\t%n' | sort -h | nl'              # Sort installed packages according to size in MB (expac must be installed)
 alias cleanup='paru -Rns $(paru -Qtdq)'
 alias clip='xclip -sel clip'
 alias code='vscodium'
 alias cpwd='pwd | clip'
 alias del='rm'
 alias diskapp='gdu'
-alias e="emacsclient -c -a ''"
-alias ed="emacsclient -t -c -a ''"
+alias e='emacsclient -c -a '''
+alias ed='emacsclient -t -c -a '''
 alias egrep='egrep --color=auto'
 alias empty='trash-empty'
 alias fgrep='fgrep --color=auto'
-alias gitup='git add . && git commit -m "Update" && git push'
+alias gitup='git add . && git commit -m 'Update' && git push'
 alias grep='grep --color=auto'
 alias hw='hwinfo --short'                                   # Hardware Info
+alias mkdir='mkdir -p'
 alias nnn='nnn -H'
 alias nsxiv='nsxiv -a'
 alias please='sudo'
@@ -45,4 +46,8 @@ parus() {
 
 parur() {
 	paru -R $(parus $1)
+}
+
+paruz() {
+	paru -Qqe | fzf
 }

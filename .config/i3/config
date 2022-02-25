@@ -8,7 +8,7 @@ set $applauncher    $HOME/.scripts/albert.sh
 set $gamelauncher   $HOME/.config/rofi/scripts/rofi-wrapper.sh games
 set $windowsearch   $HOME/.config/rofi/scripts/rofi-wrapper.sh windows
 set $optionsmenu    $HOME/.config/rofi/scripts/rofi-wrapper.sh options
-set $taskbar        $HOME/.config/polybar/launch.sh
+set $taskbar        $HOME/.config/polybar/i3.sh
 set $wallpaper      nitrogen --restore
 set $compositor     picom  --unredir-if-possible
 set $lockscreen     betterlockscreen -l --off 5
@@ -18,10 +18,12 @@ set $scratchpad     tilda
 set $session        lxsession
 set $discordClient  flatpak run com.discordapp.Discord
 set $emoji          emote
+set $keys	    sxhkd
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
 exec_always --no-startup-id $taskbar
+exec_always --no-startup-id $keys
 exec        --no-startup-id albert
 exec        --no-startup-id $wallpaper
 exec        --no-startup-id $notifications
@@ -67,43 +69,8 @@ smart_gaps on
 #================================= Controls ==================================#
 set $mod Mod4
 floating_modifier $mod
-#------------------------------- Applications --------------------------------#
-bindsym $mod+Return     exec $terminal
-bindsym $mod+n          exec $files
-bindsym $mod+b          exec $browser
-bindsym $mod+s          exec $screenshot gui
-bindsym $mod+ctrl+s     exec $screenshot screen -c
-bindsym $mod+e          exec $texteditor
-bindsym $mod+d          exec $discordClient
-
-# bind to reset easy effects in case of breakage
-bindsym $mod+ctrl+shift+e       exec $HOME/.scripts/eerestart.sh
-
-# start and kill compositor 
-bindsym $mod+c          exec $HOME/.scripts/picom.sh
-
-# popup launcher binds
-bindsym $mod+space      exec --no-startup-id $applauncher
-bindsym $mod+Tab        exec --no-startup-id $windowsearch
-bindsym Mod1+Tab        exec --no-startup-id $windowsearch
-bindsym $mod+g          exec --no-startup-id $gamelauncher
-bindsym $mod+o          exec --no-startup-id $optionsmenu
-bindsym $mod+m    exec --no-startup-id $emoji
-
-# floating applications
-for_window [instance="origin.exe"] floating enable
-for_window [instance="EADesktop.exe"] floating enable
-for_window [instance="pavucontrol"] floating enable
-for_window [instance="$scratchpad"] floating enable
-for_window [instance="TeamViewer"] floating enable
-for_window [instance="qalculate-gtk"] floating enable
-for_window [instance="yuzu"] floating enable
-for_window [instance="steam"] floating enable
-for_window [instance="steamwebhelper"] floating enable
-for_window [instance="nvidia-settings"] floating enable
-for_window [instance="lxappearance"] floating enable
-for_window [instance="vibrantLinux"] floating enable
-
+# Note:
+# Application keybinds are set using sxhkd which is launched by i3 on startup.
 #-----------------------------------------------------------------------------#
 
 #---------------------------- Workspace navigation ---------------------------#
@@ -297,6 +264,19 @@ workspace $ws18 output  HDMI-0
 workspace $ws19 output  HDMI-0
 workspace $ws20 output  HDMI-0
 
+# floating applications
+for_window [instance="origin.exe"] floating enable
+for_window [instance="EADesktop.exe"] floating enable
+for_window [instance="pavucontrol"] floating enable
+for_window [instance="$scratchpad"] floating enable
+for_window [instance="TeamViewer"] floating enable
+for_window [instance="qalculate-gtk"] floating enable
+for_window [instance="yuzu"] floating enable
+for_window [instance="steam"] floating enable
+for_window [instance="steamwebhelper"] floating enable
+for_window [instance="nvidia-settings"] floating enable
+for_window [instance="lxappearance"] floating enable
+for_window [instance="vibrantLinux"] floating enable
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+exec nitrogen --restore &
+exec ~/.config/polybar/worm.sh &
+exec ~/.scripts/albert.sh &
+exec dunst -d &
+exec tilda &
+exec picom --unredir-if-possible &
+exec lxsession &
+
+exec obs --startreplaybuffer &
+exec betterlockscreen -u ~/wallpapers/lockscreen.png --off 5 &
+exec nyrna &
+exec sxhkd -c ~/.config/worm/sxhkdrc &
+
+wormc layout tiling
+
+wormc frame-height 0
+wormc decoration-disable '.'
+
+wormc border-active-pixel $((16#f28fad))
+wormc border-active-pixel $((16##1E222A))
+wormc gaps 6
+
+wormc root-menu ~/.config/worm/jgmenu_run
+
+
