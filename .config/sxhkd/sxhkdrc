@@ -5,10 +5,8 @@ super + space
 	~/.scripts/albert.sh
 
 # rofi
-super + {g,o,tab}
+super + {g,o,Tab}
 	~/.config/rofi/scripts/rofi-wrapper.sh {games,options,windows}
-alt + tab 
-	~/.config/rofi/scripts/rofi-wrapper.sh options
 
 # term
 super + Return
@@ -20,7 +18,7 @@ super + b
 
 # files
 super + n
-	nautilus
+	pcmanfm
 
 # editor
 super + e
@@ -47,5 +45,5 @@ super + c
 	~/.scripts/picom.sh
 
 # lock
-super + shift + delete
+super + shift + Delete
 	betterlockscreen -l -off 5

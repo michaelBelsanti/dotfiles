@@ -36,7 +36,7 @@ alias please='sudo'
 alias rm='trash'
 alias rmcache='paru -Scc'
 alias untar='tar xvf'
-alias update-mirrors='sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist'
+alias um='sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist'
 
 # functions
 
