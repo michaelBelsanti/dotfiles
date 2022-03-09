@@ -1,6 +1,5 @@
 @import "launcher"
 
-
 window {
     // This height should match the height used in scripts/game-splash-menu.sh
     height:                         360;
@@ -88,7 +87,7 @@ element {
 }
 
 element selected {
-    background-color:               @primary;
+    background-color:               @bg-col-light;
     border-radius:                  16px;
 }
 
@@ -98,5 +97,5 @@ element-text {
 
 element-text selected {
     horizontal-align:               0.5;
-    color:                          @background;
+    color:                          @fg-col2;
 }

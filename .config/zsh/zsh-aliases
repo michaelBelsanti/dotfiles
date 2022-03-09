@@ -17,7 +17,7 @@ alias ..='cd ..'
 alias big='expac -H M '%m\t%n' | sort -h | nl'              # Sort installed packages according to size in MB (expac must be installed)
 alias cleanup='paru -Rns $(paru -Qtdq)'
 alias clip='xclip -sel clip'
-alias code='vscodium'
+#alias code='vscodium'
 alias cpwd='pwd | clip'
 alias del='rm'
 alias diskapp='gdu'
@@ -50,4 +50,8 @@ parur() {
 
 paruz() {
 	paru -Qq | fzf
+}
+
+code() {
+	vscodium $1 && quit
 }

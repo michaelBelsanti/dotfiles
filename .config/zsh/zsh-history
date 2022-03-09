@@ -1,205 +1,3 @@
-cd libvirt/hooks/qemu.d/win10
-lt
-..
-ls
-rmdir win10
-cp -r /etc/libvirt/hooks/qemu.d/win10 .
-ls
-lt
-..
-ls
-..
-ls
-..
-ls
-..
-ls
-nautilus
-wget https://mycourses.rcsj.edu/webapps/assignment/download?course_id=_18868_1&attempt_id=_4945283_1&file_id=_1791606_1&fileName=Forces%20and%20Motion%20Lab.docx
-wget 'https://mycourses.rcsj.edu/webapps/assignment/download?course_id=_18868_1&attempt_id=_4945283_1&file_id=_1791606_1&fileName=Forces%20and%20Motion%20Lab.docx'
-paru -R web-greeter
-su
-paru -Rns lightdm
-paru -Rns lightdm lightdm-slick-greeter
-cd /etc/lightdm
-paru lightdm
-systemctl start lightdm
-systemctl restart lightdm
-whoami
-sudo systemctl restart lightdm
-systemctl status lightdm
-nvim /var/log/lightdm
-cd /var/log/lightdm
-ls
-su
-paru -Rns nautilus
-paru -Rns nautilus python-nautilus
-paru -Rns nautilus python-nautilus nautilus-terminal
-paru pcmanfm
-nvim .config/sxhkd/sxhkdrc
-pcmanfm
-sxhkd -h
-systemctl restart sxhkd
-pkill sxhkd
-systemctl enable sxhkd
-sxhkdd -d
-sxhkd -d
-sxhkd 
-nvim .config/sxhkd/sxhkdrc
-xev
-sxhkd 
-nvim .config/sxhkd/sxhkdrc
-sxhkd 
-nohup sxhkd
-nohup sxhkd
-nvim .config/i3/config
-pkill alacritty
-lxsessio
-lxsession
-nvim .config/i3/config
-lxsession
-lxsession-default-apps
-nvim .cache/lxsession-default-apps/run.log
-neofetch
-paru -R worm
-nvim .config/mimeapps.list
-cd /usr/share/applications
-fzf
-xdg-mime query default inode/directory
-tldr xdg-mime
-xdg-mime default pcmanfm.desktop inode/directory
-paru xdg-desktop-portal
-paru -R xdg-desktop-portal-gtk
-parur xdg
-parur xdg-desktop-portal
-paru xdg-desktop-portal
-paru -R xdg-desktop-portal-gtk
-flatpak list
-flatpak run org.chromium.Chromium
-parur nautilus
-parur naut
-xdg-mime query default inode/directory
-xdg-open .
-paru ventoy
-ventoy
-ls
-cd Games
-ls
-..
-ls
-cd Desktop
-ls
-cd appImages
-ls
-..
-..
-ls
-cd Pictures
-ls
-..
-cd .config
-ls
-yadm remove --stached .config/vscodium
-yadm rm --cached .config/vscodium
-ls
-yadm rm --cached .config/VSCodium
-yadm rm -r --cached .config/VSCodium
-cd easyeffects
-ls
-cd input
-ls
-nvim Main.json
-..
-ls
-cd repos/otherConfigs
-ls
-mkdir home/config
-ls
-cd home/config
-ls
-cp -r ~/.config/easyeffects .
-ls
-..
-cd Nathan\ Osman
-ls
-cd /etc
-ls
-..
-..
-ls
-cd etc
-ls
-cp -r /etc/doas.conf .
-ls
-ventoy
-lsblk
-ventoy -i /dev/sdd
-sudo ventoy -i /dev/sdd
-paru osget
-paru os get
-cd Downloads
-ls
-..
-cd Documents
-ls
-nvim nightTab\ backup\ -\ 2022.03.02\ -\ 04\ 18\ 36.json
-code nightTab\ backup\ -\ 2022.03.02\ -\ 04\ 18\ 36.json
-code nightTab\ backup\ -\ 2022.03.02\ -\ 04\ 18\ 36.json
-cd /run/media/quasigod
-ls
-cd ~
-cd /
-ls
-lsblk
-mount /dev/sdd1 /run/media/quasigod/Ventoy
-sudo mkdir /run/media/quasigod/Ventoy
-mount /dev/sdd1 /run/media/quasigod/Ventoy
-sudo mount /dev/sdd1 /run/media/quasigod/Ventoy
-cd /run/media/quasigod/Ventoy
-ls
-wget http://ca.gate.endeavouros.com/endeavouros/iso/EndeavourOS_Atlantis_neo-21_5.iso
-sudo wget http://ca.gate.endeavouros.com/endeavouros/iso/EndeavourOS_Atlantis_neo-21_5.iso
-cd repos/otherConfigs
-git commit -am "Initial additions" 
-git add *
-ls
-git commit -am "Initial additions" 
-git push
-sha512sum -c EndeavourOS_Atlantis_neo-21_5.iso.sha512sum
-ls
-sha512sum -c EndeavourOS_Atlantis_neo-21_5.iso
-sha512sum -c EndeavourOS_Atlantis_neo-21_5.iso EndeavourOS_Atlantis_neo-21_5.iso EndeavourOS_Atlantis_neo-21_5.iso EndeavourOS_Atlantis_neo-21_5.iso EndeavourOS_Atlantis_neo-21_5.iso
-cd .config/zsh/plugins
-ls
-yadm add copybuffer.zsh
-yadm add -f copybuffer.zsh
-yadm add -f dirhistory.zsh
-yadm add -f sudo.zsh
-yadm commit -am "Added customized version of omz plugins"
-yadm status
-yadm push
-cd .local/share/icons
-ls
-cd hicolor
-ls
-..
-ls
-..
-ls
-yadm rm -r --cached icons
-yadm add .config/gamemode.ini
-yadm add .config/dunst
-yadm add .config/pol
-yadm add .config/polybar
-cd .config/i3
-ls
-yadm add config
-..
-cd polybar
-ls
-..
-..
-ls
 yadm add .config/X11 .config/albert .config/alacritty .config/fontconfig .config/goverlay/ .config/gtk-3.0/ .config/gtk-4.0/ .config/paru .config/picom .config/rofi .config/polybar .config/tilda .config/vkBasalt .config/tmux .config/zsh .config/rep
 yadm add .config/X11 .config/albert .config/alacritty .config/fontconfig .config/goverlay/ .config/gtk-3.0/ .config/gtk-4.0/ .config/paru .config/picom .config/rofi .config/polybar .config/tilda .config/vkBasalt .config/tmux .config/zsh 
 yadm commit -am "Double checking backup before fresh installing"
@@ -1008,191 +806,288 @@ parur flatseal flatpak xdg-desktop
 firefox
 parur xdg-desktop
 parur flatpak
-: 1646791520:0;parur xdg-desktop
-: 1646791525:0;firefox
-: 1646791539:0;paru xdg-desktop-portal
-: 1646791549:0;firefox
-: 1646791597:0;librewolf | echo
-: 1646791603:0;librewolf > debug
-: 1646791607:0;nvim debug
-: 1646791611:0;nvim debug
-: 1646791616:0;rm debug
-: 1646791678:0;paru glib2
-: 1646791685:0;gio trash
-: 1646791688:0;gio trash --empty
-: 1646791708:0;sudo nvim /etc/fstab
-: 1646791756:0;id
-: 1646791822:0;cd .local/share/Trash
-: 1646791823:0;ls
-: 1646791824:0;..
-: 1646791825:0;ls
-: 1646791828:0;ls | grep trash
-: 1646791830:0;ls | grep Trash
-: 1646791832:0;cd ~
-: 1646791835:0;rm -rf Tr
-: 1646791841:0;rm -rf .Trash
-: 1646791841:0;ls
-: 1646791850:0;rm dfvdjmoflkjhas
-: 1646791859:0;firefox
-: 1646791882:0;paru -Rns xdg-desktop-portal-gnome
-: 1646791890:0;paru freedesktop
-: 1646791968:0;paru -Rns flatpak
-: 1646791971:0;paru -Rns xdg-desktop-portal
-: 1646792043:0;nvim /etc/fstab
-: 1646792052:0;sudo nvim /etc/fstab
-: 1646792071:0;parur lxdm
-: 1646792075:0;paru sddm
-: 1646792082:0;systemctl restart sddm
-: 1646792093:0;systemctl enable sddm
-: 1646792104:0;systemctl disable lgihtdm
-: 1646792108:0;systemctl disable lightdm
-: 1646792116:0;parus polkit
-: 1646792125:0;lxsession
-: 1646792139:0;systemctl disable lightdm
-: 1646792160:0;lxsession
-: 1646792175:0;parur lxsession
-: 1646792193:0;paru -R lxmenu-data
-: 1646792264:0;systemctl enable sddm
-: 1646792270:0;systemctl restart
-: 1646792272:0;systemctl reboot
-: 1646792327:0;systemctl restart lightdm
-: 1646792334:0;lxsession
-: 1646792355:0;firefox
-: 1646792445:0;cd /var/log/
-: 1646792446:0;ls
-: 1646792456:0;nvim fail2ban.log
-: 1646792459:0;..
-: 1646792464:0;systemctl status fail2ban
-: 1646792467:0;systemctl status ssdh
-: 1646792468:0;systemctl status sshd
-: 1646792512:0;cd .mozilla
-: 1646792512:0;ls
-: 1646792513:0;..
-: 1646792513:0;ls
-: 1646792515:0;cd .librewolf
-: 1646792515:0;ls
-: 1646792527:0;cd tlfd8xyz.default-release
-: 1646792528:0;ls
-: 1646792533:0;fzf
-: 1646792611:0;firefox
-: 1646792614:0;firefox
-: 1646792617:0;firefox
-: 1646792629:0;firefox
-: 1646792636:0;firefox -help
-: 1646792643:0;firefox --safe-mode
-: 1646792695:0;paru xdg-desktop-portal
-: 1646792705:0;firefox
-: 1646792884:0;firefox
-: 1646793175:0;systemctl start lightdm
-: 1646793179:0;systemctl restart sddm
-: 1646793188:0;gparted
-: 1646793194:0;paru lxsession
-: 1646793533:0;lxsession
-: 1646793624:0;parur sddm
-: 1646793627:0;paru ly
-: 1646793658:0;paru -S ly
-: 1646793683:0;paru -S ly
-: 1646793729:0;sudo systemctl disable getty@tty2.service
-: 1646793740:0;sudo systemctl enable ly.service
-: 1646793748:0;sudo systemctl disable sddm
-: 1646793750:0;sudo systemctl disable ly
-: 1646793753:0;sudo systemctl enable ly
-: 1646793766:0;nvim /etc/ly
-: 1646793782:0;sudo nvim /etc/ly
-: 1646793801:0;nvim .config/alacritty/alacritty.yml
-: 1646793864:0;lxsession --help
-: 1646793873:0;lxsession quit
-: 1646793961:0;i3-msg exit
-: 1646793975:0;systemctl restart ly
-: 1646793992:0;cd .config/rofi
-: 1646794005:0;neofetch
-: 1646794017:0;paru -R bpswn
-: 1646794018:0;paru -R bpswm
-: 1646794021:0;paru -R bspwm
-: 1646794031:0;cd /usr/share/xsessions
-: 1646794031:0;ls
-: 1646794034:0;rm dwm
-: 1646794050:0;cd repos/
-: 1646794051:0;ls
-: 1646794054:0;..
-: 1646794055:0;ls
-: 1646794057:0;cd repos
-: 1646794058:0;cd projects
-: 1646794059:0;ls
-: 1646794060:0;..
-: 1646794061:0;ls
-: 1646794062:0;..
-: 1646794062:0;ls
-: 1646794069:0;cd Documents
-: 1646794069:0;ls
-: 1646794079:0;rm dwm
-: 1646794080:0;ls
-: 1646794085:0;rm dwm.desktop
-: 1646794086:0;sudo rm dwm.desktop
-: 1646794111:0;nvim /etc/X11
-: 1646794124:0;cd /etc/X11
-: 1646794124:0;ls
-: 1646794127:0;cd xinit
-: 1646794128:0;ls
-: 1646794132:0;nvim xinitrc
-: 1646794139:0;cd xinitrc.d
-: 1646794140:0;ls
-: 1646794142:0;nvim 90xbrlapi
-: 1646794144:0;..
-: 1646794144:0;ls
-: 1646794148:0;cd .config/X11/
-: 1646794149:0;ls
-: 1646794150:0;nvim xinitrc
-: 1646794160:0;nvim .config/i3/config
-: 1646794201:0;nvim .config/i3/config
-: 1646794215:0;cp .config/X11/xinitrc ~/.xinitrc
-: 1646794322:0;man pkill
-: 1646794328:0;pkill -x X\
+parur xdg-desktop
+firefox
+paru xdg-desktop-portal
+firefox
+librewolf | echo
+librewolf > debug
+nvim debug
+nvim debug
+rm debug
+paru glib2
+gio trash
+gio trash --empty
+sudo nvim /etc/fstab
+id
+cd .local/share/Trash
+ls
+..
+ls
+ls | grep trash
+ls | grep Trash
+cd ~
+rm -rf Tr
+rm -rf .Trash
+ls
+rm dfvdjmoflkjhas
+firefox
+paru -Rns xdg-desktop-portal-gnome
+paru freedesktop
+paru -Rns flatpak
+paru -Rns xdg-desktop-portal
+nvim /etc/fstab
+sudo nvim /etc/fstab
+parur lxdm
+paru sddm
+systemctl restart sddm
+systemctl enable sddm
+systemctl disable lgihtdm
+systemctl disable lightdm
+parus polkit
+lxsession
+systemctl disable lightdm
+lxsession
+parur lxsession
+paru -R lxmenu-data
+systemctl enable sddm
+systemctl restart
+systemctl reboot
+systemctl restart lightdm
+lxsession
+firefox
+cd /var/log/
+ls
+nvim fail2ban.log
+..
+systemctl status fail2ban
+systemctl status ssdh
+systemctl status sshd
+cd .mozilla
+ls
+..
+ls
+cd .librewolf
+ls
+cd tlfd8xyz.default-release
+ls
+fzf
+firefox
+firefox
+firefox
+firefox
+firefox -help
+firefox --safe-mode
+paru xdg-desktop-portal
+firefox
+firefox
+systemctl start lightdm
+systemctl restart sddm
+gparted
+paru lxsession
+lxsession
+parur sddm
+paru ly
+paru -S ly
+paru -S ly
+sudo systemctl disable getty@tty2.service
+sudo systemctl enable ly.service
+sudo systemctl disable sddm
+sudo systemctl disable ly
+sudo systemctl enable ly
+nvim /etc/ly
+sudo nvim /etc/ly
+nvim .config/alacritty/alacritty.yml
+lxsession --help
+lxsession quit
+i3-msg exit
+systemctl restart ly
+cd .config/rofi
+neofetch
+paru -R bpswn
+paru -R bpswm
+paru -R bspwm
+cd /usr/share/xsessions
+ls
+rm dwm
+cd repos/
+ls
+..
+ls
+cd repos
+cd projects
+ls
+..
+ls
+..
+ls
+cd Documents
+ls
+rm dwm
+ls
+rm dwm.desktop
+sudo rm dwm.desktop
+nvim /etc/X11
+cd /etc/X11
+ls
+cd xinit
+ls
+nvim xinitrc
+cd xinitrc.d
+ls
+nvim 90xbrlapi
+..
+ls
+cd .config/X11/
+ls
+nvim xinitrc
+nvim .config/i3/config
+nvim .config/i3/config
+cp .config/X11/xinitrc ~/.xinitrc
+man pkill
+pkill -x X\
 
-: 1646794329:0;pkill -x X\
+pkill -x X\
 
-: 1646794331:0;sudo pkill -x X\
+sudo pkill -x X\
 
-: 1646794337:0;loginctl terminate-user $USER
-: 1646794353:0;systemctl restart ly
-: 1646794356:0;systemctl restart ly
-: 1646794408:0;sudo systemctl enable getty@tty2.service
-: 1646794412:0;systemctl restart ly
-: 1646794416:0;systemctl reboot
-: 1646794484:0;loginctl terminate-user $USER
-: 1646794498:0;systemctl restart ly
-: 1646794503:0;systemctl restart ly
-: 1646794508:0;ly
-: 1646794535:0;systemctl stop ly
-: 1646794540:0;systemctl restart ly
-: 1646794546:0;ly
-: 1646794623:0;sudo systemctl disable getty@tty2.service
-: 1646794626:0;systemctl restart ly
-: 1646794628:0;ly
-: 1646794867:0;sudo nvim /etc/ly
-: 1646794974:0;cd .config/rofi/
-: 1646794974:0;ls
-: 1646794977:0;code .
-: 1646794982:0;code .config/rofi.bak
-: 1646795309:0;nvim .config/sxhkd/sxhkdrc
-: 1646795531:0;./games.sh
-: 1646795540:0;chmod +x games.sh
-: 1646795548:0;./games.sh
-: 1646795572:0;w
-: 1646795625:0;w
-: 1646795627:0;./games.sh
-: 1646795675:0;pkill -USR1 "sxhkd"
-: 1646795754:0;nvim .config/polybar/modules/gamemode.ini
-: 1646795758:0;..
-: 1646795760:0;cd
-: 1646795766:0;nvim .config/polybar/scripts/gamemoded.sh
-: 1646796034:0;rofi -show drun calc
-: 1646796038:0;rofi -show calc
-: 1646796052:0;rofi -theme .config/rofi/calc.rasi -show calc
-: 1646796151:0;yadm status
-: 1646796159:0;yadm add .config/X11
-: 1646796162:0;yadm add .config/rofi
-: 1646796168:0;yadm add .config/zsh
-: 1646796192:0;yadm commit -am "Updated polybar a little and new rofi scripts in progress
-: 1646796195:0;yadm commit -am "Updated polybar a little and new rofi scripts in progress\
+loginctl terminate-user $USER
+systemctl restart ly
+systemctl restart ly
+sudo systemctl enable getty@tty2.service
+systemctl restart ly
+systemctl reboot
+loginctl terminate-user $USER
+systemctl restart ly
+systemctl restart ly
+ly
+systemctl stop ly
+systemctl restart ly
+ly
+sudo systemctl disable getty@tty2.service
+systemctl restart ly
+ly
+sudo nvim /etc/ly
+cd .config/rofi/
+ls
+code .
+code .config/rofi.bak
+nvim .config/sxhkd/sxhkdrc
+./games.sh
+chmod +x games.sh
+./games.sh
+w
+w
+./games.sh
+pkill -USR1 "sxhkd"
+nvim .config/polybar/modules/gamemode.ini
+..
+cd
+nvim .config/polybar/scripts/gamemoded.sh
+rofi -show drun calc
+rofi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+yadm status
+yadm add .config/X11
+yadm add .config/rofi
+yadm add .config/zsh
+yadm commit -am "Updated polybar a little and new rofi scripts in progress
+yadm commit -am "Updated polybar a little and new rofi scripts in progress\
 "
+yadm push
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+cd
+cd
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+: 1646796724:0;rofi -theme .config/rofi/calc.rasi -show calc
+: 1646796782:0;rofi -theme .config/rofi/calc.rasi -show calc
+: 1646796787:0;rofi -theme .config/rofi/calc.rasi -show calc
+: 1646796795:0;rofi -theme .config/rofi/calc.rasi -show calc
+: 1646796814:0;rofi -theme .config/rofi/calc.rasi -show calc
+: 1646796853:0;rofi -theme .config/rofi/calc.rasi -show calc
+: 1646796870:0;rofi -theme .config/rofi/calc.rasi -show calc
+: 1646796878:0;rofi -theme .config/rofi/calc.rasi -show calc
+: 1646796887:0;:w
+: 1646797559:0;cd /usr/share/applications/ls
+: 1646797560:0;cd /usr/share/applications/
+: 1646797560:0;ls
+: 1646797565:0;nvim mimeinfo.cache
+: 1646797610:0;firefox
+: 1646797614:0;firefox
+: 1646797631:0;nvim /usr/share/applications/mimeinfo.cache
+: 1646797641:0;cd /usr/share/applications/
+: 1646797641:0;ls
+: 1646797646:0;nvim mimeinfo.cache
+: 1646797655:0;sudo nvim mimeinfo.cache
+: 1646797700:0;firefox
+: 1646797714:0;nvim mimeinfo.cache
+: 1646797721:0;pcmanfm.desktop
+: 1646797723:0;cd /usr/share/applications/
+: 1646797723:0;ls
+: 1646797729:0;nvim pcmanfm.desktop
+: 1646797754:0;cd
+: 1646797759:0;cd .local/share/applications/
+: 1646797762:0;nvim mimeapps.list
+: 1646797803:0;xdg-open .
+: 1646797809:0;xdg-open .
+: 1646797815:0;..
+: 1646797819:0;cd ~/.config
+: 1646797819:0;ls
+: 1646797822:0;nvim mimeapps.list
+: 1646797837:0;rm mimeapps.list\~
+: 1646797861:0;firefox
+: 1646797904:0;cd /usr/share/applications
+: 1646797904:0;ls
+: 1646797906:0;nvim mimeinfo.cache
+: 1646797913:0;sudo rm mimeinfo.cache
+: 1646797919:0;firefox
+: 1646797960:0;cd .local/share/applications/
+: 1646797961:0;ls
+: 1646797964:0;nvim mimeinfo.cache
+: 1646797980:0;nvim mimeinfo.cache
+: 1646798001:0;firefox
+: 1646798102:0;fzf
+: 1646798111:0;cd /var/lib
+: 1646798112:0;ls
+: 1646798114:0;rm -rf flatpak
+: 1646798142:0;del -rf flatpak
+: 1646798165:0;'rm' -rf flatpak
+: 1646798171:0;sudo rm flatpak
+: 1646798174:0;sudo rm -rf flatpak
+: 1646798179:0;trash-restore
+: 1646798183:0;trash-empty
+: 1646798196:0;firefox
+: 1646798252:0;paru -R xdg-desktop-portal-gtk
+: 1646798348:0;firefox
+: 1646798360:0;firefox
+: 1646798366:0;paru -Rns firefox
+: 1646798370:0;paru firefox
+: 1646798386:0;rm -rf .mozilla
+: 1646798475:0;paru xdg-desktop-portal
+: 1646798487:0;firefox
+: 1646798574:0;paru -Rns nautilus
+: 1646798577:0;firefox
+: 1646798647:0;GTK_USE_PORTAL=1 librewolf
+: 1646798719:0;paru nautilus
+: 1646798731:0;nautilus
+: 1646798747:0;nautilus
+: 1646799955:0;nvim .config/sxhkd/sxhkdrc
+: 1646799990:0;pkill -USR1 "sxhkd"
+: 1646800034:0;lutris
+: 1646800045:0;nvim .config/zsh/zsh-aliases 
+: 1646800097:0;yadm status
+: 1646800107:0;yadm commit -am ""
+: 1646800109:0;yadm commit -am "."

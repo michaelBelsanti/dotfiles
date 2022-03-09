@@ -27,7 +27,7 @@ super + e
 
 # discord
 super + d
-	flatpak run com.discordapp.Discord
+	firejail discord-canary
 
 # screenshots
 super + {ctrl + s, s}

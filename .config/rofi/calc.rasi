@@ -1,5 +1,18 @@
 @theme "main"
 
+* {
+    background: @bg-col;
+    text: @fg-col;
+    selected: @fg-col;
+    background-color: rgba ( 0, 0, 0, 0 %);
+    text-color: @fg-col;
+}
+
 window {
     height: 20%;
+    background-color: @bg-col;
+}
+
+message {
+    padding: 10px 30px 10px 30px;
 }
