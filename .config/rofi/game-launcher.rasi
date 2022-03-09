@@ -1,13 +1,9 @@
 @import "main"
 
-configuration {
-    display-drun: "   Games ";
-}
-
-
 window {
-    height: 33%;
+    height: 360;
     width: 100%;
     location: south;
     anchor: south;
+    transparency: "real";
 }

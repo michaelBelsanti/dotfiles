@@ -2,7 +2,7 @@
 
 export ZDOTDIR=$HOME/.config/zsh
 export PATH=/home/quasigod/.nimble/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/home/quasigod/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/quasigod/.local/bin
-HISTFILE=~/.config/zsh/.zsh_history
+HISTFILE=~/.config/zsh/zsh-history
 HISTSIZE=10000
 SAVEHIST=1000
 bindkey -e
@@ -33,6 +33,7 @@ zsh_add_plugin "Aloxaf/fzf-tab"
 zsh_add_file "plugins/sudo.zsh"
 zsh_add_file "plugins/copybuffer.zsh"
 zsh_add_file "plugins/dirhistory.zsh"
+zsh_add_file "plugins/colorful-man.zsh"
 
 # fzf
 source "/usr/share/fzf/key-bindings.zsh"

@@ -11,6 +11,9 @@ export __GL_SHADER_DISK_CACHE=1
 export __GL_SHADER_DISK_CACHE_PATH='$HOME/Games/cache'
 export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1
 
+# Less Latency
+export __GL_MaxFramesAllowed=1
+
 # Useful settings
 export ENABLE_VKBASALT=1
 export MANGOHUD=0

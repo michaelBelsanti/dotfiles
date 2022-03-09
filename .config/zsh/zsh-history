@@ -1,0 +1,1198 @@
+cd libvirt/hooks/qemu.d/win10
+lt
+..
+ls
+rmdir win10
+cp -r /etc/libvirt/hooks/qemu.d/win10 .
+ls
+lt
+..
+ls
+..
+ls
+..
+ls
+..
+ls
+nautilus
+wget https://mycourses.rcsj.edu/webapps/assignment/download?course_id=_18868_1&attempt_id=_4945283_1&file_id=_1791606_1&fileName=Forces%20and%20Motion%20Lab.docx
+wget 'https://mycourses.rcsj.edu/webapps/assignment/download?course_id=_18868_1&attempt_id=_4945283_1&file_id=_1791606_1&fileName=Forces%20and%20Motion%20Lab.docx'
+paru -R web-greeter
+su
+paru -Rns lightdm
+paru -Rns lightdm lightdm-slick-greeter
+cd /etc/lightdm
+paru lightdm
+systemctl start lightdm
+systemctl restart lightdm
+whoami
+sudo systemctl restart lightdm
+systemctl status lightdm
+nvim /var/log/lightdm
+cd /var/log/lightdm
+ls
+su
+paru -Rns nautilus
+paru -Rns nautilus python-nautilus
+paru -Rns nautilus python-nautilus nautilus-terminal
+paru pcmanfm
+nvim .config/sxhkd/sxhkdrc
+pcmanfm
+sxhkd -h
+systemctl restart sxhkd
+pkill sxhkd
+systemctl enable sxhkd
+sxhkdd -d
+sxhkd -d
+sxhkd 
+nvim .config/sxhkd/sxhkdrc
+xev
+sxhkd 
+nvim .config/sxhkd/sxhkdrc
+sxhkd 
+nohup sxhkd
+nohup sxhkd
+nvim .config/i3/config
+pkill alacritty
+lxsessio
+lxsession
+nvim .config/i3/config
+lxsession
+lxsession-default-apps
+nvim .cache/lxsession-default-apps/run.log
+neofetch
+paru -R worm
+nvim .config/mimeapps.list
+cd /usr/share/applications
+fzf
+xdg-mime query default inode/directory
+tldr xdg-mime
+xdg-mime default pcmanfm.desktop inode/directory
+paru xdg-desktop-portal
+paru -R xdg-desktop-portal-gtk
+parur xdg
+parur xdg-desktop-portal
+paru xdg-desktop-portal
+paru -R xdg-desktop-portal-gtk
+flatpak list
+flatpak run org.chromium.Chromium
+parur nautilus
+parur naut
+xdg-mime query default inode/directory
+xdg-open .
+paru ventoy
+ventoy
+ls
+cd Games
+ls
+..
+ls
+cd Desktop
+ls
+cd appImages
+ls
+..
+..
+ls
+cd Pictures
+ls
+..
+cd .config
+ls
+yadm remove --stached .config/vscodium
+yadm rm --cached .config/vscodium
+ls
+yadm rm --cached .config/VSCodium
+yadm rm -r --cached .config/VSCodium
+cd easyeffects
+ls
+cd input
+ls
+nvim Main.json
+..
+ls
+cd repos/otherConfigs
+ls
+mkdir home/config
+ls
+cd home/config
+ls
+cp -r ~/.config/easyeffects .
+ls
+..
+cd Nathan\ Osman
+ls
+cd /etc
+ls
+..
+..
+ls
+cd etc
+ls
+cp -r /etc/doas.conf .
+ls
+ventoy
+lsblk
+ventoy -i /dev/sdd
+sudo ventoy -i /dev/sdd
+paru osget
+paru os get
+cd Downloads
+ls
+..
+cd Documents
+ls
+nvim nightTab\ backup\ -\ 2022.03.02\ -\ 04\ 18\ 36.json
+code nightTab\ backup\ -\ 2022.03.02\ -\ 04\ 18\ 36.json
+code nightTab\ backup\ -\ 2022.03.02\ -\ 04\ 18\ 36.json
+cd /run/media/quasigod
+ls
+cd ~
+cd /
+ls
+lsblk
+mount /dev/sdd1 /run/media/quasigod/Ventoy
+sudo mkdir /run/media/quasigod/Ventoy
+mount /dev/sdd1 /run/media/quasigod/Ventoy
+sudo mount /dev/sdd1 /run/media/quasigod/Ventoy
+cd /run/media/quasigod/Ventoy
+ls
+wget http://ca.gate.endeavouros.com/endeavouros/iso/EndeavourOS_Atlantis_neo-21_5.iso
+sudo wget http://ca.gate.endeavouros.com/endeavouros/iso/EndeavourOS_Atlantis_neo-21_5.iso
+cd repos/otherConfigs
+git commit -am "Initial additions" 
+git add *
+ls
+git commit -am "Initial additions" 
+git push
+sha512sum -c EndeavourOS_Atlantis_neo-21_5.iso.sha512sum
+ls
+sha512sum -c EndeavourOS_Atlantis_neo-21_5.iso
+sha512sum -c EndeavourOS_Atlantis_neo-21_5.iso EndeavourOS_Atlantis_neo-21_5.iso EndeavourOS_Atlantis_neo-21_5.iso EndeavourOS_Atlantis_neo-21_5.iso EndeavourOS_Atlantis_neo-21_5.iso
+cd .config/zsh/plugins
+ls
+yadm add copybuffer.zsh
+yadm add -f copybuffer.zsh
+yadm add -f dirhistory.zsh
+yadm add -f sudo.zsh
+yadm commit -am "Added customized version of omz plugins"
+yadm status
+yadm push
+cd .local/share/icons
+ls
+cd hicolor
+ls
+..
+ls
+..
+ls
+yadm rm -r --cached icons
+yadm add .config/gamemode.ini
+yadm add .config/dunst
+yadm add .config/pol
+yadm add .config/polybar
+cd .config/i3
+ls
+yadm add config
+..
+cd polybar
+ls
+..
+..
+ls
+yadm add .config/X11 .config/albert .config/alacritty .config/fontconfig .config/goverlay/ .config/gtk-3.0/ .config/gtk-4.0/ .config/paru .config/picom .config/rofi .config/polybar .config/tilda .config/vkBasalt .config/tmux .config/zsh .config/rep
+yadm add .config/X11 .config/albert .config/alacritty .config/fontconfig .config/goverlay/ .config/gtk-3.0/ .config/gtk-4.0/ .config/paru .config/picom .config/rofi .config/polybar .config/tilda .config/vkBasalt .config/tmux .config/zsh 
+yadm commit -am "Double checking backup before fresh installing"
+yadm push
+cp .nvidia-settings-rc repos/otherConfigs
+z otherConfigs
+git add .nvidia-settings-rc
+git commit -am "Added nvidia settings"
+git push
+btop
+cd Games
+ls
+ls
+cp overwatch /run/media/quasigod/LinuxGames/games/overwatch
+cp -r overwatch /run/media/quasigod/LinuxGames/games/overwatch
+pkill steam
+z LinuxGames
+ls
+cd games/SteamLibrary/steamapps/common
+rm -rf ELDEN\ RING
+cd /run/media/quasigod/
+ls
+chown quasigod:quasigod Ventoy
+sudo chown quasigod:quasigod Ventoy
+sudo chown quasigod:quasigod Ventoy
+su
+cd /run/media/quasigod/
+ls
+su
+
+
+yadm add wallpapers
+yadm commit -am "Added wallpapers"
+yadm push
+yadm pull
+yadm push
+trash-empty
+paru -Qqem
+paru -Qqem > aur.txt
+paru -Qqen > pkg.txt
+tldr xclip
+xclip -sel clip pkg.txt
+paru -Qqen > pkg.txt
+paru -Qqem > aur.txt
+xclip -sel clip pkg.txt
+xclip -sel clip aur.txt
+ls
+trash-restore
+mkdir wallpapers
+cd wallpapers
+ls
+chmod 777 /home/quasigod/.local/share/zoxide/db.zo
+sudo chmod 777 /home/quasigod/.local/share/zoxide/db.zo
+wget https://raw.githubusercontent.com/quasigod-io/dotfiles/bfb651cd3ee52f4e3fb27b385d4cfb7f3011da0d/wallpapers/starwars.png
+wget https://raw.githubusercontent.com/quasigod-io/dotfiles/bfb651cd3ee52f4e3fb27b385d4cfb7f3011da0d/wallpapers/pastel.png
+wget https://raw.githubusercontent.com/quasigod-io/dotfiles/bfb651cd3ee52f4e3fb27b385d4cfb7f3011da0d/wallpapers/nightcity.png
+wget https://raw.githubusercontent.com/quasigod-io/dotfiles/bfb651cd3ee52f4e3fb27b385d4cfb7f3011da0d/wallpapers/lockscreen.png
+ls
+..
+ls
+yadm add wallpapers 
+yadm pull
+yadm status
+yadm commit -am "Somehow deleted wallpapers in commit 616c3e"
+yadm push
+systemctl restart lightdm
+gamemoded -s
+gamemoded -s
+w
+w
+w
+ls
+neofetch
+pfetch
+cd /usr/share/applications
+ls
+fzf
+sudo nvim steam.desktop
+pkill steam
+pkill steam
+xev
+xev
+flatpak run org.chromium.Chromium
+flatpak run com.discordapp.Discord
+flatpak install librewolf
+flatpak install flathub io.gitlab.librewolf-community
+flatpak list
+paru xdg-desktop-portal
+paru -R lxsession
+paru -R lxsession-gtk3
+paru lxsession
+paru -R rambox-bin
+nsxiv
+paru -Rns xdg-desktop-portal-kde
+paru xdg-desktop-portal
+paru -Rns xdg-desktop-portal-kde
+xdg-mime query default .
+xdg-mime query default inode/directory
+xdg-open .
+paru element-desktop
+element-desktop
+element-desktop
+cd Downloads
+s
+ls
+wget https://github.com/the-via/releases/releases/download/v1.3.1/via-1.3.1-linux.AppImage
+cd Downloads
+ls
+wget https://github.com/vial-kb/vial-gui/releases/download/v0.4.2/Vial-v0.4.2-x86_64.AppImage
+cd ~/Applications
+ls
+rm via-1.3.1-linux_757e184e566f97b0bf1df47839d99a5a.AppImage
+cd Downloads
+cd ~/Downloads
+ls
+sudo mkdir -p /etc/udev/rules.d/\
+echo 'KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0666", TAG+="uaccess", TAG+="udev-acl"' | sudo tee /etc/udev/rules.d/92-viia.rules\
+sudo udevadm control --reload-rules\
+sudo udevadm trigger\
+
+sudo mkdir -p /etc/udev/rules.d/\
+echo 'KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0666", TAG+="uaccess", TAG+="udev-acl"' | sudo tee /etc/udev/rules.d/92-viia.rules\
+sudo udevadm control --reload-rules\
+sudo udevadm trigger\
+
+nvim /etc/udev/rules.d/92-viia.rules
+sudo udevadm control --reload-rules\
+sudo udevadm trigger
+paru vial
+cd Applications
+ls
+rm Vial-v0.4.2-x86_64_ef9381170f973ab94919e4c590fc23ec.AppImage
+ls
+paru Vial
+paru -R element-desktop
+sudo vial
+cd Downloads
+paru -R vial-appimage
+ls
+wget https://github.com/vial-kb/vial-gui/releases/download/v0.4.2/Vial-v0.4.2-x86_64.AppImage
+ls
+mv Vial-v0.4.2-x86_64.AppImage Downloads
+cd Downloads
+chmod +x Vial-v0.4.2-x86_64.AppImage
+sudo ./Vial-v0.4.2-x86_64.AppImage
+./Vial-v0.4.2-x86_64.AppImage
+via
+via
+lxpolkit
+cd Applications
+s
+ls
+via
+via
+via
+lxpolkit
+wget https://github.com/the-via/releases/releases/download/v1.3.1/via-1.3.1-linux.AppImage
+ls
+chmod +x via-1.3.1-linux.AppImage
+./via-1.3.1-linux.AppImage
+./via-1.3.1-linux.AppImage
+ls
+./via-1.3.1-linux.AppImage
+paru -R via-bin
+sudo via
+paru via
+paru via-bin
+sudo via
+sudo via --no-sandbox
+sudo via --no-sandbox
+sudo via
+via
+paru -R via-bin
+cd ~/Applications
+ls
+rm via-1.3.1-linux.AppImage
+virt-manager
+nvim .config/i3/config
+xev
+flatpak run com.discordapp.Discord
+xev
+pavucontrol
+virt-manager
+virt
+virt-manager
+z LinuxGames
+z steamappas
+z steamapps
+cd shadercache/1172470/
+ls
+cd DXVK_state_cache
+ls
+ls
+rm *
+wget https://cdn.discordapp.com/attachments/483946408676818974/949121974041456642/r5apex.dxvk-cache
+ls
+paru
+paru 
+paru 
+paru -R spicetify-cli
+albert show
+xournalpp
+cd Downloads
+ls
+wget https://learn-us-east-1-prod-fleet02-xythos.content.blackboardcdn.com/5cd4476807909/4486107?X-Blackboard-Expiration=1646384400000&X-Blackboard-Signature=AN4SvJiOwwgRj0RuJQt4aREtOZwXn1aYjyy%2BeMKdS3I%3D&X-Blackboard-Client-Id=305311&response-cache-control=private%2C%20max-age%3D21600&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27homeworkassignment7.pdf&response-content-type=application%2Fpdf&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIBnxt0wakskIsfIZ8vvffxpklYeOQd9CimXQrd71vCbWAiEA4psPgideLnMPa9S8apbZttokJoQZLv8MLIJxmB2Kfhoq%2BgMIUxACGgw2MzU1Njc5MjQxODMiDPQ5OqTvlqZt3t%2B0JyrXA0P0poNsRAtjvLqiJjFl1ptATjzgRzS%2BqC76RWIf%2FCh%2BRwx3RF5OIcusY7PekVPwDe%2F3sS%2FyKRmXc2uZYEuSOFaBHVetXMAz7D7VI1EBPndy8%2Fc9fL4BJRFeR91H0oKdyc2AVqd4d6MC%2Fg7gxZE6evgz0ZpddwAwSPFX%2FT%2FEwWY0t56LgEEBjsfXkn8aquVu8ETPjtm3WgJNyxSFXH7BR7OZw8EHWQ6wTzmwI2K735rmHZgETz49OA2xpOIrSBMtE6QbO73nWsWp7rS4GJIeg2lAGGFLLhfb2f%2B%2B0a8ryv4G4VEXTfHnxC49de6sNuIDXb%2BrpPboh%2Bny8NOnO%2BVpOYLoFQ01JVJeUMutLaoK7LEQt8rFsEr1QMEofqh9qVQ9ggN26BnEkvoxeQVxldFkqkvVz6%2B6lhCCZ6x1uXucH%2F0AHTQ8rkhb02DFKkO5c2tD069pW%2F%2BAp%2F7zkxxpqUtmCZEupdy3hqadr0xjtHfvTc9lf%2FjlYbHZtb9bRGkPxRxT%2BucOlo6oclmrUIsfsvmd9sdzp%2BD4bZRXFOJmezilOICrZDeokjbiCPUX20Wznru1%2BQ3a%2FbSLNzPbYgv5NH7VZBT%2FF56wDIioauwv5krGbSQff1Hh0dC0%2FzD17IWRBjqlATsRLTXST6z7lYWasoN3G%2FCVCxPCat1z5UloIqynGtucHflwWUvv2B84syHTeo2A7Szg2KW3hTVhShr1xP%2FhF%2FKkbhDkKP1R0whB3X3elriCOvQsvODr%2Bjfa42UtzCZge0a8x2rkgnnct9GlpG9jfN%2F%2BQUkYVWleJ7dHZeKUy7xo5hr%2B2MkJndQEdZPEW%2F%2FjP60gOKB4ITqLR1G9jC%2F3g7Lt9R7jKQ%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220304T030000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=ASIAZH6WM4PLUIHQWXBJ%2F20220304%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e3fc405126ab616c0fc5fd321717bf7e6d5ec263d5ad47e85a102640a24969d4#page=1&zoom=auto,-124,604
+wget 'https://learn-us-east-1-prod-fleet02-xythos.content.blackboardcdn.com/5cd4476807909/4486107?X-Blackboard-Expiration=1646384400000&X-Blackboard-Signature=AN4SvJiOwwgRj0RuJQt4aREtOZwXn1aYjyy%2BeMKdS3I%3D&X-Blackboard-Client-Id=305311&response-cache-control=private%2C%20max-age%3D21600&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27homeworkassignment7.pdf&response-content-type=application%2Fpdf&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIBnxt0wakskIsfIZ8vvffxpklYeOQd9CimXQrd71vCbWAiEA4psPgideLnMPa9S8apbZttokJoQZLv8MLIJxmB2Kfhoq%2BgMIUxACGgw2MzU1Njc5MjQxODMiDPQ5OqTvlqZt3t%2B0JyrXA0P0poNsRAtjvLqiJjFl1ptATjzgRzS%2BqC76RWIf%2FCh%2BRwx3RF5OIcusY7PekVPwDe%2F3sS%2FyKRmXc2uZYEuSOFaBHVetXMAz7D7VI1EBPndy8%2Fc9fL4BJRFeR91H0oKdyc2AVqd4d6MC%2Fg7gxZE6evgz0ZpddwAwSPFX%2FT%2FEwWY0t56LgEEBjsfXkn8aquVu8ETPjtm3WgJNyxSFXH7BR7OZw8EHWQ6wTzmwI2K735rmHZgETz49OA2xpOIrSBMtE6QbO73nWsWp7rS4GJIeg2lAGGFLLhfb2f%2B%2B0a8ryv4G4VEXTfHnxC49de6sNuIDXb%2BrpPboh%2Bny8NOnO%2BVpOYLoFQ01JVJeUMutLaoK7LEQt8rFsEr1QMEofqh9qVQ9ggN26BnEkvoxeQVxldFkqkvVz6%2B6lhCCZ6x1uXucH%2F0AHTQ8rkhb02DFKkO5c2tD069pW%2F%2BAp%2F7zkxxpqUtmCZEupdy3hqadr0xjtHfvTc9lf%2FjlYbHZtb9bRGkPxRxT%2BucOlo6oclmrUIsfsvmd9sdzp%2BD4bZRXFOJmezilOICrZDeokjbiCPUX20Wznru1%2BQ3a%2FbSLNzPbYgv5NH7VZBT%2FF56wDIioauwv5krGbSQff1Hh0dC0%2FzD17IWRBjqlATsRLTXST6z7lYWasoN3G%2FCVCxPCat1z5UloIqynGtucHflwWUvv2B84syHTeo2A7Szg2KW3hTVhShr1xP%2FhF%2FKkbhDkKP1R0whB3X3elriCOvQsvODr%2Bjfa42UtzCZge0a8x2rkgnnct9GlpG9jfN%2F%2BQUkYVWleJ7dHZeKUy7xo5hr%2B2MkJndQEdZPEW%2F%2FjP60gOKB4ITqLR1G9jC%2F3g7Lt9R7jKQ%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220304T030000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=ASIAZH6WM4PLUIHQWXBJ%2F20220304%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e3fc405126ab616c0fc5fd321717bf7e6d5ec263d5ad47e85a102640a24969d4#page=1&zoom=auto,-124,604'
+ls
+mv 4486107\?X-Blackboard-Expiration=1646384400000\&X-Blackboard-Signature=AN4SvJiOwwgRj0RuJQt4aREtOZwXn1aYjyy+eMKdS3I=\&X-Blackboard-Client-Id=305311\&response-cache-control=private,\ max-age=21600\&response-content-disposition=inline\;\ filename\* hw6.pdf
+./hw6
+./hw6.pdf
+otd
+systemctl enable 
+otd
+onedriver
+onedrive 
+stacer
+paru 
+paru stacer
+paru 
+paru -R stacer
+paru -R stacer-bin
+paru stacer
+btop
+paru 
+paru -R spotify
+paru -R spotify-tui
+virt-manager
+virt-manager
+virt-manager
+virt-manager
+virt
+btop
+xournalpp
+paru xournal
+strace 
+strace -tt -ff xournalpp
+systemctl --user import-environment
+systemctl xdg
+paru xdg
+paru 
+paru -Rdd xdg-desktop-portal-gtk
+paru -Rdd xdg-desktop-portal
+paru xdg-desktop-portal
+paru -Rdd xdg-desktop-portal xdg-desktop-portal-wlr
+paru -Rdd xdg-desktop-portal
+paru -S xdg-desktop-portal
+nvim .profile
+sudo systemctl enable xdg-desktop-portal.desktop
+sudo systemctl start xdg-desktop-portal.desktop
+paru -R xdg-desktop-portal-gtk
+paru -R xdg-desktop-portal-gnome
+paru -R xdg-desktop-portal-gnome
+paru -R xdg-desktop-portal
+nvim .config/mimeapps.list
+paru nautilus
+paru firefox
+nvim .local/share/applications/mimeapps.list
+sudo rm .local/share/applications/mimeapps.list /usr/local/share/applications/mimeapps.list /usr/share/application/mimeapps.list
+sudo rm .local/share/applications/mimeapps.list 
+sudo rm .local/share/applications/mimeapps.list
+man xdg-settings
+xdg-settings --list
+paru lsdesktop
+lsdesktopf
+paru selectedefault
+paru selectdefautl
+paru selectdefault
+nvim .local/share/applications/mimeapps.list
+nvim .config/mimeapps.list
+nvim .config/mimeapps.list
+nvim /usr/share/applications/mimeinfo.cache
+sudo rm /usr/share/applications/mimeinfo.cache
+xev
+cd .config/polybar
+ls
+cd scripts
+ls
+rm lsdesktopf
+paru -R lsdesktopf
+nvim gamemoded.sh
+gamemoded -s
+nvim .config/polybar/scripts/updates-pacman-aurhelper.sh
+nvim .config/polybar/scripts/runupdate.sh
+nvim .scripts
+nvim .scripts
+gamemoded -s
+awk
+gamemoded -s | awk { print $3
+gamemoded -s | awk { print $3}
+gamemoded -s | awk { print $3 }
+gamemoded -s | awk (print $3)
+gamemoded -s | awk print $3
+gamemoded -s | awk 'print $?'
+gamemoded -s | awk '{ print $? }'
+gamemoded -s | awk '{ print $? }'
+gamemoded -s | awk '{ print $? }'
+gamemoded -s | awk '{ print $3 }'
+chmod +x gamemoded.sh
+./gamemoded.sh
+nvim gamemoded.sh
+nvim gamemoded.sh
+./gamemoded.sh
+nvim gamemoded.sh
+./gamemoded.sh
+nvim gamemoded.sh
+\:w
+nvim .scripts/albert.sh
+cd z scripts
+z scripts
+./gaf
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+nvim gamemoded.sh
+./gamemoded.sh
+ls
+cd scripts
+ls
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+nvim gamemoded.sh
+./gamemoded.sh
+./gamemoded.sh
+null
+$
+""
+.
+..
+..
+cd
+cd
+cd
+c
+skip
+sleep 0
+nvim .config/polybar/config.ini
+./gamemoded.sh
+./gamemoded.sh
+nvim .config/polybar/config.ini
+nvim gamemoded.sh
+\:w
+nvim gamemoded.sh
+nvim .config/polybar/config.ini
+man gamemode
+man gamemoderun
+man gamemodd
+man gamemoded
+ls
+nvim .config/polybar/scripts/runupdate.sh
+nvim .config/polybar/scripts/gamemoded.sh
+pkill polybar
+pkill polybar
+cd .config/polybar
+ls
+./i3
+./i3.sh
+pkill polybar
+./i3.sh
+pkill polybar
+./i3.sh
+pkill polybar
+pkill polybar
+pkill polybar
+./i3.sh
+pkil 
+pkill polybar
+./i3.sh
+neofetch
+paru -R xmonad
+paru -Rns xmonad xmonad-contrib xmonad-utils
+sudo systemctl restart lightdm
+mediaserver
+nvim .profile 
+exit
+nvim .config/sxhkd/sxhkdrc
+nvim .config/sxhkd/sxhkdrc
+betterlockscreen -l -off 5
+betterlockscreen -l --blur 0.8 -off 5
+betterlockscreen -l --blur 0.8 -off 5
+betterlockscreen -l --blur 0.8 -off 5
+betterlockscreen -l --blur 0.8 -off 5
+betterlockscreen -l --blur 0.8 -off 5
+betterlockscreen -l --blur 0.8
+betterlockscreen -l --blur 0.8
+betterlockscreen -l --blur 0.8
+sudo systemctl restart sxhkd
+sudo systemctl restart sxhkd
+sudo systemctl restart sxhkd
+discord
+disco
+nvim .config/sxhkd/sxhkdrc
+code .config/polybar
+nvim .config/X11/Xresources
+xrdb -load ~/.config/X11/xresources
+cd .config/X11
+ls
+mv Xresources xresources
+nvim .config/X11/xresources
+xrdb -load ~/.config/X11/xresources
+nvim .config/i3/config
+pfetch
+neofetch
+nvim .config/alacritty/alacritty.yml
+xrdb -load ~/.config/X11/xresources
+\:w
+xdg-mime query default inode/directory
+xdg-open .
+code .config/polybar
+nvim .config/polybar/config.ini
+nvim .config/polybar/modules/i3.ini
+nvim .config/X11/xresources
+nvim .config/alacritty/alacritty.yml
+nvim .config/polybar/config.ini
+neofetch
+nvim .config/alacritty/alacritty.yml
+nvim .config/X11/xresources
+nvim .config/X11/xresources
+nvim .config/X11/xresources
+cd
+nvim .config/X11/xresources
+nvim .config/alacritty/alacritty.yml
+nvim .config/polybar/config.ini
+colorpicker
+\:wq
+nvim .config/polybar/config.ini
+xrdb -load ~/.config/X11/xresources
+\:w
+\:Wq
+flatpak run com.discordapp.Discord
+flatpak run com.discordapp.Discord
+pkill discord
+flatpak run com.discordapp.Discord
+pkill discord
+pkill electron
+btop
+pkill Discord
+pkill Discord
+pkill Discord
+pkill Discord
+pkill Discord
+btop
+pkill Discord
+pkill Discord
+pkill Discord
+pkill Discord
+pkill Discord
+pkill Discord
+pkill Discord
+pkill Discord
+picom --version
+picom -ver
+picom -v
+nvim .scripts/picom.sh
+nvim .config/picom/picom.conf
+nvim .config/alacritty/alacritty.yml
+lutris
+parus xdg
+parus gtk
+bto
+btop
+pkill Discord
+pkill Discord
+pkill Discord
+pkill Discord
+paru discord
+firejail discord
+discord
+firejail discord-canary
+paru -R nautilus
+parus gtk
+parus gnome
+parur gnome
+cleanup
+nvim .config/polybar/config.ini
+nvim .config/polybar/config.ini
+nvim .config/polybar/config.ini
+nvim .config/polybar/config.ini
+cd .config/rofi
+cd .config/zsh
+cd plugins
+ls
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/colored-man-pages/colored-man-pages.plugin.zsh
+ls
+mv colored-man-pages.plugin.zsh colorful-man.zsh
+nvim colorful-man.zsh
+nvim ../.zshrc
+nvim .zshrc
+..
+mv .zshrc zshrc
+ls
+nvim zshrc
+nvim zshrc
+ls
+mv .zsh_history zsh-history
+man ls
+code .config/rofi
+nvim .config/i3/config
+nvim .config/sxhkd/sxhkdrc
+cp -r .config/rofi .config/rofi.bak
+celluloid
+strace -tt -ff celluloid
+strace -tt -ff celluloid
+paru xdg-desktop-portal-gtk
+parus xdg-desktop-
+parus xdg-desktop-gtk
+nvim .config/zsh/zsh-aliases 
+rofi -dump-confi
+rofi -dump-config
+rofi -config test.config -dump-config
+rofi -config test.config -dump-config
+rofi -config test.config -dump-config
+rofi -config ~/.config/rofi/test.config -dump-config
+wget https://raw.githubusercontent.com/catppuccin/rofi/main/.local/share/rofi/themes/catppuccin.rasi
+cd .config/rofi
+mkdir ~/rofi
+mv catppuccin.rasi config.rasi ~/rofi
+rm *
+ls
+mv ~/rofi/{catppuccin.rasi,config.rasi} .
+ls
+rofi -show run
+rofi -show run
+rofi -show drun
+nvim .config/rofi/catppuccin.rasi
+nvim .config/sxhkd/sxhkdrc
+rofi -show window
+rofi -show
+rofi 
+rofi
+rofi -show
+\:w
+pkill -s USR1 3699\
+
+pkill -s USR1 
+pkill -s USR1
+man pkill
+pkill -signal USR1
+pkill -signal USR1
+pkill -signal USR1 sxhkd
+pkill -USR1 "sxhkd"
+nvim .config/i3/config
+nvim .config/i3/config
+nvim .config/sxhkd/sxhkdrc
+pkill -USR1 "sxhkd"
+pkill -USR1 "sxhkd"
+pkill -USR1 "sxhkd"
+pkill -USR1 "sxhkd"
+nvim .config/i3/config
+rofi -show window
+nvim .config/sxhkd/sxhkdrc
+pkill -USR1 "sxhkd"
+cd .local/share/icons
+..
+cd .local/share/applications
+ls
+..
+cd share/applications
+ls
+fzf
+grep steam
+grep Steam
+rm Valheim.desktop The\ Cycle\ Playtest.desktop Splitgate\ \(Beta\).desktop Prey.desktop PROMOD\ Playtest.desktop
+ls
+rm Proton\ BattlEye\ Runtime.desktop Proton\ EasyAntiCheat\ Runtime.desktop
+ls
+rm Gamemode.desktop Ghostrunner.desktop Golf\ It\!.desktop Hades.desktop Hollow\ Knight.desktop Hades.desktop Hollow\ Knight.desktop Hyper\ Light\ Drifter.desktop KovaaK\ 2.0.desktop Krunker.desktop N++.desktop Krunker.desktop
+ls
+rm DOOM\ Eternal.desktop ELDEN\ RING.desktop Enter\ the\ Gungeon.desktop Phasmophobia.desktop Celeste.desktop Cities\ Skylines.desktop Black\ Squad.desktop Aimbeast.desktop Apex\ Legends.desktop
+ls
+rm Counter-Strike\ Global\ Offensive.desktop Devil\ Daggers.desktop
+nvim .config/X11/xresources
+nvim .config/polybar/config.ini
+nvim .config/X11/xresources
+xrdb -load ~/.config/X11/xresources
+xrdb -load ~/.config/X11/xresources
+nvim .config/X11/xresources
+code .config/polybar/
+nvim .config/X11/xresources
+paru oranchelo-icon
+gtk-update-icon-cache
+gtk4-update-icon-cache
+wget https://raw.githubusercontent.com/thewickedkarma/Adrenaline/main/.config/tint2/rofi/launch-rofi
+ls
+nvim launch-rofi
+wget https://raw.githubusercontent.com/thewickedkarma/Adrenaline/main/.config/tint2/rofi/shutdown.sh
+./shutdown.sh
+ls
+cd rofi
+ls
+chmod -x config.rasi
+chmod +x shutdown.sh
+ls
+./shutdown.sh
+./shutdown.sh
+./shutdown.sh
+code .config/rofi
+nvim .config/rofi.bak/options-menu.rasi
+cd .config/rofi.bak
+ls
+nvim scripts/rofi-options-menu.sh
+./shutdown.sh
+./shutdown.sh
+nvim .config/sxhkd/sxhkdrc
+..
+nvim sxhkd/sxhkdrc
+man rofi-theme
+rofi 
+man rofi
+nvim .config/sxhkd/sxhkdrc
+rofi -theme .config/rofi/main.rasi -show drun
+rofi -show drun -theme ~/.config/rofi/main.rasi
+\:w
+pkill -USR1 "sxhkd"
+nvim .config/sxhkd/sxhkdrc
+./shutdown.sh
+cd rofi
+./shutdown.sh
+./options.sh
+bett:w
+nvim .config/rofi.bak/options-menu.rasi
+nvim .config/rofi.bak/scripts/rofi-options-menu.sh
+paru rofi-calc
+rofi -show calc -theme .config/rofi/main.rasi
+rofi -show 
+rofi -show
+rofi -show drun,calc
+rofi -show drun calc
+rofi -theme .config/rofi/main.rasi -show drun
+rofi -theme .config/rofi/main.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+rofi -theme .config/rofi/calc.rasi -show calc
+i3-msg exit
+neofetch
+nvim .config/i3/config
+i3-msg exit
+i3-msg exit
+i3-msg exit
+i3-msg exit
+i3-msg exit
+i3-msg exit
+w
+w
+w
+selectdefaultapplication
+nvim .config/rofi/options.sh
+sudo systemctl restart lightdm
+/etc/X11
+ls
+nvim xorg.conf
+cd xinit
+ls
+nvim xinitrc
+sudo nvim xinitrc
+cd xinitrc.d
+ls
+nvim 90xbrlapi
+..
+ls
+nvim Xresources
+rm Xresources
+sudo rm Xresources
+..
+ls
+cd xorg.conf.d
+ls
+..
+ls
+rm xorg.conf.bak
+sudo rm xorg.conf.bak
+..
+cd .config/X11
+ls
+cd ~/.config/X11
+ls
+nvim xinitrc
+nvim .config/rofi/options.sh
+pkill i3
+nvim .config/rofi/options.sh
+pkill i3
+pkill i3
+loginctl
+pkill x
+pkill i3
+loginctl
+pkill lightdm
+sudo pkill lightdm
+loginctl
+systemctl stop lightdm
+loginctl
+pkill xorg
+sudo pkill xorg
+reboot now
+systemctl start lightdm
+nvim .config/polybar/modules/powermenu.ini
+ls
+nvim .config/polybar/modules/powermenu.ini
+nvim .config/i3/config
+nvim .config/i3/config
+nvim .config/polybar/modules/i3.ini
+paru -Rns lightdm lightdm-slick-greeter
+paru -Rns lightdm lightdm-gtk-greeter
+paru lxdm
+paru lxdm
+sudo nvim /etc/lxdm/lxdm.conf
+sudo nvim /etc/lxdm/lxdm.conf
+systemctl restart lightdm
+systemctl stop lightdm
+systemctl restart lxdm
+sudo nvim /etc/lxdm/lxdm.conf
+nvim .config/rofi/options.sh
+systemctl restart lxdm
+nvim .config/rofi/options.sh
+cd .config/rofi
+ls
+./options.sh
+./options.sh
+./options.sh
+./options.sh
+./options.sh
+./options.sh
+..
+cd rofi
+ls
+nvim options.sh
+nvim options.rasi
+nvim message.rasi
+mv message.rasi confirm.rasi
+nvim confirm.rasi
+discord-canary
+paru discord-canary
+nvim .local/share/applications/discord-canary.desktop
+firejail discord-canary
+selectdefaultapplication
+selectdefaultapplication
+selectdefaultapplication
+selectdefaultapplication
+selectdefaultapplication
+paru qt
+paru qt5
+cd Documents
+ls
+wget https://mycourses.rcsj.edu/webapps/assignment/download?course_id=_18868_1&attempt_id=_4967526_1&file_id=_1798936_1&fileName=Lab6.docx
+wget 'https://mycourses.rcsj.edu/webapps/assignment/download?course_id=_18868_1&attempt_id=_4967526_1&file_id=_1798936_1&fileName=Lab6.docx'
+flatpak list
+flatpak run Chromium
+xdg-open 'https://vm.tiktok.com/ZTdD7SS5V/?k=1'
+mkdir .Trash
+paru nautilus
+paru -Rns xdg-desktop-portal xdg
+paru -Rns xdg-desktop-portal xdg-desktop-portal-gtk
+paru -Rns xdg-desktop-portal xdg-desktop-portal-gtk flatpak
+paru -Rnsdd xdg-desktop-portal xdg-desktop-portal-gtk 
+paru xdg-desktop-portal-gtk
+librewolf
+man librewolf
+librewolf -help
+firefox
+firefox
+xdg-settings
+xdg-settings --help
+xdg-desktop-menu
+nvim .config/zsh/zsh-aliases 
+parur xdg-desktop
+paru xdg-desktop-portal-gtk
+paru xdg-desktop-portal
+firefox
+strace -tt -ff firefox
+firefox
+pkill firefox
+strace -tt -ff firefox
+parur xdg-desktop
+parur flatpak flatseal xdg-desktop
+parur flatseal flatpak xdg-desktop
+firefox
+parur xdg-desktop
+parur flatpak
+: 1646791520:0;parur xdg-desktop
+: 1646791525:0;firefox
+: 1646791539:0;paru xdg-desktop-portal
+: 1646791549:0;firefox
+: 1646791597:0;librewolf | echo
+: 1646791603:0;librewolf > debug
+: 1646791607:0;nvim debug
+: 1646791611:0;nvim debug
+: 1646791616:0;rm debug
+: 1646791678:0;paru glib2
+: 1646791685:0;gio trash
+: 1646791688:0;gio trash --empty
+: 1646791708:0;sudo nvim /etc/fstab
+: 1646791756:0;id
+: 1646791822:0;cd .local/share/Trash
+: 1646791823:0;ls
+: 1646791824:0;..
+: 1646791825:0;ls
+: 1646791828:0;ls | grep trash
+: 1646791830:0;ls | grep Trash
+: 1646791832:0;cd ~
+: 1646791835:0;rm -rf Tr
+: 1646791841:0;rm -rf .Trash
+: 1646791841:0;ls
+: 1646791850:0;rm dfvdjmoflkjhas
+: 1646791859:0;firefox
+: 1646791882:0;paru -Rns xdg-desktop-portal-gnome
+: 1646791890:0;paru freedesktop
+: 1646791968:0;paru -Rns flatpak
+: 1646791971:0;paru -Rns xdg-desktop-portal
+: 1646792043:0;nvim /etc/fstab
+: 1646792052:0;sudo nvim /etc/fstab
+: 1646792071:0;parur lxdm
+: 1646792075:0;paru sddm
+: 1646792082:0;systemctl restart sddm
+: 1646792093:0;systemctl enable sddm
+: 1646792104:0;systemctl disable lgihtdm
+: 1646792108:0;systemctl disable lightdm
+: 1646792116:0;parus polkit
+: 1646792125:0;lxsession
+: 1646792139:0;systemctl disable lightdm
+: 1646792160:0;lxsession
+: 1646792175:0;parur lxsession
+: 1646792193:0;paru -R lxmenu-data
+: 1646792264:0;systemctl enable sddm
+: 1646792270:0;systemctl restart
+: 1646792272:0;systemctl reboot
+: 1646792327:0;systemctl restart lightdm
+: 1646792334:0;lxsession
+: 1646792355:0;firefox
+: 1646792445:0;cd /var/log/
+: 1646792446:0;ls
+: 1646792456:0;nvim fail2ban.log
+: 1646792459:0;..
+: 1646792464:0;systemctl status fail2ban
+: 1646792467:0;systemctl status ssdh
+: 1646792468:0;systemctl status sshd
+: 1646792512:0;cd .mozilla
+: 1646792512:0;ls
+: 1646792513:0;..
+: 1646792513:0;ls
+: 1646792515:0;cd .librewolf
+: 1646792515:0;ls
+: 1646792527:0;cd tlfd8xyz.default-release
+: 1646792528:0;ls
+: 1646792533:0;fzf
+: 1646792611:0;firefox
+: 1646792614:0;firefox
+: 1646792617:0;firefox
+: 1646792629:0;firefox
+: 1646792636:0;firefox -help
+: 1646792643:0;firefox --safe-mode
+: 1646792695:0;paru xdg-desktop-portal
+: 1646792705:0;firefox
+: 1646792884:0;firefox
+: 1646793175:0;systemctl start lightdm
+: 1646793179:0;systemctl restart sddm
+: 1646793188:0;gparted
+: 1646793194:0;paru lxsession
+: 1646793533:0;lxsession
+: 1646793624:0;parur sddm
+: 1646793627:0;paru ly
+: 1646793658:0;paru -S ly
+: 1646793683:0;paru -S ly
+: 1646793729:0;sudo systemctl disable getty@tty2.service
+: 1646793740:0;sudo systemctl enable ly.service
+: 1646793748:0;sudo systemctl disable sddm
+: 1646793750:0;sudo systemctl disable ly
+: 1646793753:0;sudo systemctl enable ly
+: 1646793766:0;nvim /etc/ly
+: 1646793782:0;sudo nvim /etc/ly
+: 1646793801:0;nvim .config/alacritty/alacritty.yml
+: 1646793864:0;lxsession --help
+: 1646793873:0;lxsession quit
+: 1646793961:0;i3-msg exit
+: 1646793975:0;systemctl restart ly
+: 1646793992:0;cd .config/rofi
+: 1646794005:0;neofetch
+: 1646794017:0;paru -R bpswn
+: 1646794018:0;paru -R bpswm
+: 1646794021:0;paru -R bspwm
+: 1646794031:0;cd /usr/share/xsessions
+: 1646794031:0;ls
+: 1646794034:0;rm dwm
+: 1646794050:0;cd repos/
+: 1646794051:0;ls
+: 1646794054:0;..
+: 1646794055:0;ls
+: 1646794057:0;cd repos
+: 1646794058:0;cd projects
+: 1646794059:0;ls
+: 1646794060:0;..
+: 1646794061:0;ls
+: 1646794062:0;..
+: 1646794062:0;ls
+: 1646794069:0;cd Documents
+: 1646794069:0;ls
+: 1646794079:0;rm dwm
+: 1646794080:0;ls
+: 1646794085:0;rm dwm.desktop
+: 1646794086:0;sudo rm dwm.desktop
+: 1646794111:0;nvim /etc/X11
+: 1646794124:0;cd /etc/X11
+: 1646794124:0;ls
+: 1646794127:0;cd xinit
+: 1646794128:0;ls
+: 1646794132:0;nvim xinitrc
+: 1646794139:0;cd xinitrc.d
+: 1646794140:0;ls
+: 1646794142:0;nvim 90xbrlapi
+: 1646794144:0;..
+: 1646794144:0;ls
+: 1646794148:0;cd .config/X11/
+: 1646794149:0;ls
+: 1646794150:0;nvim xinitrc
+: 1646794160:0;nvim .config/i3/config
+: 1646794201:0;nvim .config/i3/config
+: 1646794215:0;cp .config/X11/xinitrc ~/.xinitrc
+: 1646794322:0;man pkill
+: 1646794328:0;pkill -x X\
+
+: 1646794329:0;pkill -x X\
+
+: 1646794331:0;sudo pkill -x X\
+
+: 1646794337:0;loginctl terminate-user $USER
+: 1646794353:0;systemctl restart ly
+: 1646794356:0;systemctl restart ly
+: 1646794408:0;sudo systemctl enable getty@tty2.service
+: 1646794412:0;systemctl restart ly
+: 1646794416:0;systemctl reboot
+: 1646794484:0;loginctl terminate-user $USER
+: 1646794498:0;systemctl restart ly
+: 1646794503:0;systemctl restart ly
+: 1646794508:0;ly
+: 1646794535:0;systemctl stop ly
+: 1646794540:0;systemctl restart ly
+: 1646794546:0;ly
+: 1646794623:0;sudo systemctl disable getty@tty2.service
+: 1646794626:0;systemctl restart ly
+: 1646794628:0;ly
+: 1646794867:0;sudo nvim /etc/ly
+: 1646794974:0;cd .config/rofi/
+: 1646794974:0;ls
+: 1646794977:0;code .
+: 1646794982:0;code .config/rofi.bak
+: 1646795309:0;nvim .config/sxhkd/sxhkdrc
+: 1646795531:0;./games.sh
+: 1646795540:0;chmod +x games.sh
+: 1646795548:0;./games.sh
+: 1646795572:0;w
+: 1646795625:0;w
+: 1646795627:0;./games.sh
+: 1646795675:0;pkill -USR1 "sxhkd"
+: 1646795754:0;nvim .config/polybar/modules/gamemode.ini
+: 1646795758:0;..
+: 1646795760:0;cd
+: 1646795766:0;nvim .config/polybar/scripts/gamemoded.sh
+: 1646796034:0;rofi -show drun calc
+: 1646796038:0;rofi -show calc
+: 1646796052:0;rofi -theme .config/rofi/calc.rasi -show calc
+: 1646796151:0;yadm status
+: 1646796159:0;yadm add .config/X11
+: 1646796162:0;yadm add .config/rofi
+: 1646796168:0;yadm add .config/zsh
+: 1646796192:0;yadm commit -am "Updated polybar a little and new rofi scripts in progress
+: 1646796195:0;yadm commit -am "Updated polybar a little and new rofi scripts in progress\
+"

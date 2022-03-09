@@ -1,13 +1,14 @@
 ## APPLICATIONS ##
 
-# albert
-super + space
 	~/.scripts/albert.sh
 
 # rofi
-super + {g,o,Tab}
-	~/.config/rofi/scripts/rofi-wrapper.sh {games,options,windows}
+super + {space,Tab}
+	rofi -show {drun,window} -theme ~/.config/rofi/main.rasi
 
+super + {o,g}
+	~/.config/rofi/{options.sh,games.sh}
+	
 # term
 super + Return
 	alacritty
@@ -28,13 +29,13 @@ super + e
 super + d
 	flatpak run com.discordapp.Discord
 
-# emoji
-super + g
-	emote
-
 # screenshots
 super + {ctrl + s, s}
 	flameshot {screen -c,gui}
+
+# xkill
+super + shift + q
+	xkill
 
 # restart easyeffects
 super + shift + ctrl + e
@@ -46,4 +47,4 @@ super + c
 
 # lock
 super + shift + Delete
-	betterlockscreen -l -off 5
+	betterlockscreen -l

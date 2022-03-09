@@ -41,13 +41,13 @@ alias um='sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && rate-
 # functions
 
 parus() {
-	paru -Qqe | grep $1
+	paru -Qq | grep $1
 }
 
 parur() {
-	paru -R $(parus $1)
+	paru -Rns $(parus $1)
 }
 
 paruz() {
-	paru -Qqe | fzf
+	paru -Qq | fzf
 }

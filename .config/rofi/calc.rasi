@@ -1,0 +1,5 @@
+@theme "main"
+
+window {
+    height: 20%;
+}

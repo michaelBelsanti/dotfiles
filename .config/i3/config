@@ -1,29 +1,18 @@
 #=============================== Applications ================================#
 #---------------------------- Default applications ---------------------------#
-set $terminal       alacritty
-set $files          nautilus
-set $browser        librewolf
-set $texteditor     vscodium
-set $applauncher    $HOME/.scripts/albert.sh
-set $gamelauncher   $HOME/.config/rofi/scripts/rofi-wrapper.sh games
-set $windowsearch   $HOME/.config/rofi/scripts/rofi-wrapper.sh windows
-set $optionsmenu    $HOME/.config/rofi/scripts/rofi-wrapper.sh options
 set $taskbar        $HOME/.config/polybar/i3.sh
 set $wallpaper      nitrogen --restore
 set $compositor     picom  --unredir-if-possible
-set $lockscreen     betterlockscreen -l --off 5
-set $screenshot     flameshot
 set $notifications  dunst
 set $scratchpad     tilda
 set $session        lxsession
-set $discordClient  flatpak run com.discordapp.Discord
-set $emoji          emote
-set $keys	    sxhkd
+set $keybinds	    sxhkd
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
+exec_always --no-startup-id xrdb -load ~/.config/X11/xresources 
 exec_always --no-startup-id $taskbar
-exec_always --no-startup-id $keys
+exec_always --no-startup-id $keybinds
 exec        --no-startup-id albert
 exec        --no-startup-id $wallpaper
 exec        --no-startup-id $notifications
@@ -41,7 +30,7 @@ exec        --no-startup-id nyrna
 
 #================================= Appearance ================================#
 #------------------------------- Colors & font -------------------------------#
-set $bg-color            #f28fad
+set $bg-color            #F28FAD
 set $inactive-bg-color   #1E222A
 set $text-color          #F3F4F5
 set $inactive-text-color #3E4451
@@ -147,7 +136,6 @@ bindsym $mod+ctrl+mod1+0 move container to workspace number $ws20; workspace $ws
 #--------------------------- Container manipulation --------------------------#
 # app killers
 bindsym $mod+q kill
-bindsym --release $mod+shift+q exec xkill
 # change focused window
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -185,9 +173,7 @@ bindsym $mod+a focus child
 
 #------------------------------ Miscellaneous --------------------------------#
 # refresh i3
-bindsym $mod+Shift+r restart
-# lock i3
-bindsym $mod+Shift+e exec $lockscreen
+bindsym $mod+Shift+r restart; exec pkill -USR1 "sxhkd"
 
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -278,16 +264,5 @@ for_window [instance="steamwebhelper"] floating enable
 for_window [instance="nvidia-settings"] floating enable
 for_window [instance="lxappearance"] floating enable
 for_window [instance="vibrantLinux"] floating enable
-#-----------------------------------------------------------------------------#
-#=============================================================================#
-
-
-#=================================== Shit ====================================#
-#-----------------------------------------------------------------------------#
-# # set $refresh_i3status killall -SIGUSR1 i3status
-# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-# bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-# bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 #-----------------------------------------------------------------------------#
 #=============================================================================#

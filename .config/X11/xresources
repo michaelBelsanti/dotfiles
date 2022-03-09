@@ -1,0 +1,44 @@
+*background: #1E1D2F
+*foreground: #D9E0EE
+*lightbg: #2F2F4C
+
+! Black
+*color0:  #6E6C7E
+*color8:  #977BA2
+
+! Red
+*color1:  #F28FAD
+*color9:  #F28FAD
+
+! Green
+*color2:  #ABE9B3
+*color10: #ABE9B3
+
+! Yellow
+*color3:  #FAE3B0
+*color11: #FAE3B0
+
+! Blue
+*color4:  #96CDFB
+*color12: #96CDFB
+
+! Magenta
+*color5:  #F5C2E7
+*color13: #F5C2E7
+
+! Pink
+*color6:  #89DCEB
+*color14: #89DCEB
+
+! Whites
+*color7:  #D9E0EE
+*color15: #D9E0EE
+
+! Cursors
+Xcursor.theme: phinger-cursors
+Xcursor.size: 16
+
+! Other (really just for nsxiv)
+window.background: #1E1D2F
+window.foreground: #DADAE8
+bar.font: Montserrat 11
