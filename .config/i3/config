@@ -2,7 +2,7 @@
 #---------------------------- Default applications ---------------------------#
 set $taskbar        $HOME/.config/polybar/i3.sh
 set $wallpaper      nitrogen --restore
-set $compositor     picom  --unredir-if-possible
+set $compositor     picom  --unredir-if-possible --experimental-backends
 set $notifications  dunst
 set $scratchpad     tilda
 set $session        lxsession
@@ -13,8 +13,7 @@ set $keybinds	    sxhkd
 exec_always --no-startup-id xrdb -load ~/.config/X11/xresources 
 exec_always --no-startup-id $taskbar
 exec_always --no-startup-id $keybinds
-exec        --no-startup-id albert
-exec        --no-startup-id $wallpaper
+exec        --no-startup-id $wallpaper 
 exec        --no-startup-id $notifications
 exec        --no-startup-id $scratchpad
 exec        --no-startup-id $compositor
@@ -23,25 +22,23 @@ exec	    --no-startup-id xrandr --output DP-4 -r 240
 
 exec        --no-startup-id obs --startreplaybuffer
 exec        --no-startup-id betterlockscreen -u ~/wallpapers/lockscreen.png --off 5
-exec        --no-startup-id nyrna
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
 
 #================================= Appearance ================================#
 #------------------------------- Colors & font -------------------------------#
-set $bg-color            #F28FAD
-set $inactive-bg-color   #1E222A
-set $text-color          #F3F4F5
-set $inactive-text-color #3E4451
-set $urgent-bg-color     #D472A9
-set $indicator-color     #61AFEF
+set $border     #F28FAD
+set $bg         #1E1D2F
+set $fg         #D9E0EE
+set $indicator  #96CDFB
 
-#                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          $indicator-color
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color  $indicator-color
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color  $indicator-color
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator-color
+#                       border    background  text  indicator
+client.focused          $border   $border     $fg   $indicator  
+client.unfocused        $bg       $bg         $fg   $indicator   
+client.focused_inactive $border   $bg         $fg   $indicator   
+client.urgent           $border   $bg         $fg   $indicator   
+
 
 font pango:JetBrains Mono 10
 #-----------------------------------------------------------------------------#
@@ -134,7 +131,7 @@ bindsym $mod+ctrl+mod1+0 move container to workspace number $ws20; workspace $ws
 #-----------------------------------------------------------------------------#
 
 #--------------------------- Container manipulation --------------------------#
-# app killers
+# kill
 bindsym $mod+q kill
 # change focused window
 bindsym $mod+h focus left
@@ -176,25 +173,20 @@ bindsym $mod+a focus child
 bindsym $mod+Shift+r restart; exec pkill -USR1 "sxhkd"
 
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window's width.
-        # Pressing right will grow the window's width.
-        # Pressing up will shrink the window's height.
-        # Pressing down will grow the window's height.
+        # Vim keys
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym j resize shrink height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
 
 
-        # same bindings, but for the arrow keys
+        # Arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
+        # Leave resize mode
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"

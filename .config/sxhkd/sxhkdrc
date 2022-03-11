@@ -27,7 +27,7 @@ super + e
 
 # discord
 super + d
-	firejail discord-canary
+	firejail discord
 
 # screenshots
 super + {ctrl + s, s}

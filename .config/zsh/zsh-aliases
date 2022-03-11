@@ -33,25 +33,47 @@ alias mkdir='mkdir -p'
 alias nnn='nnn -H'
 alias nsxiv='nsxiv -a'
 alias please='sudo'
+alias rfzsh='source ~/.config/zsh/.zshrc'
 alias rm='trash'
 alias rmcache='paru -Scc'
-alias untar='tar xvf'
+#alias untar='tar xvf'
 alias um='sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist'
 
 # functions
 
+# Works like unzip but for .tar, because fuck tar
+untar() {
+	tar_cache=${1%%.*}
+	mkdir $tar_cache
+	tar xf $1 --directory=${tar_cache%%.*}
+}
+
+# List packages by search
 parus() {
 	paru -Qq | grep $1
 }
 
+# List unneeded packages by search
+paruss() {
+	paru -Qqt | grep $1
+}
+
+# Remove backages that include string
 parur() {
 	paru -Rns $(parus $1)
 }
 
+# Remove uneeded packages that include string
+parurs() {
+	paru -Rns $(paruss $1)
+}
+
+# Browse installed packges with fzf
 paruz() {
 	paru -Qq | fzf
 }
 
+# Makes opening a directory with vscodium nicer
 code() {
-	vscodium $1 && quit
+	vscodium $1 && exit
 }

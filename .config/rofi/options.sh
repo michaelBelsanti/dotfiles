@@ -20,7 +20,7 @@ confirm_exit() {
 }
 
 # Variable passed to rofi
-options="$shutdown\n$reboot\n$logout\n$suspend\n$lock"
+options="$shutdown\n$reboot\n$logout\n$lock\n$suspend"
 
 chosen="$(echo -e "$options" | $rofi_command -p "Uptime: $uptime" -dmenu -selected-row 2)"
 case $chosen in
@@ -37,10 +37,7 @@ case $chosen in
 		fi
         ;;
     $lock)
-		ans=$(confirm_exit &)
-		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
-			betterlockscreen -l
-		fi
+		betterlockscreen -l
         ;;
     $suspend)
 		ans=$(confirm_exit &)
@@ -51,15 +48,7 @@ case $chosen in
     $logout)
 		ans=$(confirm_exit &)
 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
-			if [[ "$DESKTOP_SESSION" == "Openbox" ]]; then
-				openbox --exit
-			elif [[ "$DESKTOP_SESSION" == "bspwm" ]]; then
-				bspc quit
-			elif [[ "$DESKTOP_SESSION" == "i3" ]]; then
-				i3-msg exit
-			fi
-		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
-			exit 0
+			pkill $(wmctrl -m | awk 'NR == 1 { print $2 }')
         fi
         ;;
 esac

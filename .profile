@@ -1,5 +1,3 @@
-SHELL=/usr/bin/zsh
-
 # Preferences
 export EDITOR="nvim"
 export VISUAL="vscodium"
