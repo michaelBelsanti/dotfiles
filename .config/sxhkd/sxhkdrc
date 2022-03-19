@@ -5,6 +5,8 @@
 # rofi
 super + {space,Tab}
 	rofi -show {drun,window} -theme ~/.config/rofi/main.rasi
+super + m 
+	rofi -show calc -theme ~/.config/rofi/calc.rasi
 
 super + {o,g}
 	~/.config/rofi/{options.sh,games.sh}
@@ -19,7 +21,7 @@ super + b
 
 # files
 super + n
-	pcmanfm
+	nemo
 
 # editor
 super + e

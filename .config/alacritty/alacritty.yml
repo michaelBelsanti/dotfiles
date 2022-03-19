@@ -10,6 +10,8 @@ window:
     padding:
         x: 6
         y: 3
+env:
+  TERM: xterm-256color
 
 
 # Catppuccin!

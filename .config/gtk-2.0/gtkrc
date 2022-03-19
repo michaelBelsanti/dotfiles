@@ -2,12 +2,12 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/quasigod/.gtkrc-2.0.mine"
-gtk-theme-name="Catppuccin-pink"
-gtk-icon-theme-name="tela-pink"
+gtk-theme-name="Catppuccin"
+gtk-icon-theme-name="Catppuccin"
 gtk-font-name="Montserrat 11"
 gtk-cursor-theme-name="phinger-cursors"
 gtk-cursor-theme-size=0
-gtk-toolbar-style=GTK_TOOLBAR_BOTH
+gtk-toolbar-style=GTK_TOOLBAR_BOTH_HORIZ
 gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
 gtk-button-images=1
 gtk-menu-images=1
@@ -16,3 +16,4 @@ gtk-enable-input-feedback-sounds=1
 gtk-xft-antialias=1
 gtk-xft-hinting=1
 gtk-xft-hintstyle="hintfull"
+gtk-xft-rgba="rgb"

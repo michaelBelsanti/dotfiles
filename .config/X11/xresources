@@ -2,9 +2,9 @@
 *foreground: #D9E0EE
 *lightbg: #2F2F4C
 
-! Black
+! Grey
 *color0:  #6E6C7E
-*color8:  #977BA2
+*color8:  #988BA2
 
 ! Red
 *color1:  #F28FAD
@@ -22,16 +22,16 @@
 *color4:  #96CDFB
 *color12: #96CDFB
 
-! Magenta
-*color5:  #F5C2E7
-*color13: #F5C2E7
+! Maguve
+*color5:  #DDB6F2
+*color13: #DDB6F2
 
 ! Pink
-*color6:  #89DCEB
-*color14: #89DCEB
+*color6:  #F5C2E7
+*color14: #F5C2E7
 
 ! Whites
-*color7:  #D9E0EE
+*color7:  #C3BAC6
 *color15: #D9E0EE
 
 ! Cursors
