@@ -21,7 +21,7 @@ exec        --no-startup-id $session
 exec	    --no-startup-id xrandr --output DP-4 -r 240
 
 exec 	    --no-startup-id udiskie
-exec        --no-startup-id obs --startreplaybuffer
+#exec        --no-startup-id obs --startreplaybuffer
 exec        --no-startup-id betterlockscreen -u ~/wallpapers/lockscreen.png --off 5
 #-----------------------------------------------------------------------------#
 #=============================================================================#
@@ -48,13 +48,13 @@ font pango:JetBrains Mono 10
 # Removes titlebars
 for_window [class="^.*"] border pixel 2
  hide_edge_borders both
-gaps inner 6
+gaps inner 4
 smart_gaps on
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
 
-#================================= Controls ==================================#
+#================================= Keybinds ==================================#
 set $mod Mod4
 floating_modifier $mod
 # Note:
@@ -169,9 +169,9 @@ bindsym $mod+Shift+a focus parent
 bindsym $mod+a focus child
 #-----------------------------------------------------------------------------#
 
-#------------------------------ Miscellaneous --------------------------------#
+#----------------------------------- i3 --------------------------------------#
 # refresh i3
-bindsym $mod+Shift+r restart; exec pkill -USR1 "sxhkd"
+bindsym $mod+Shift+r exec "i3-msg restart && pkill -USR1 'sxhkd'"
 
 mode "resize" {
         # Vim keys

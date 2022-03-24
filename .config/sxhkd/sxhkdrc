@@ -1,7 +1,6 @@
 ## APPLICATIONS ##
 
 	~/.scripts/albert.sh
-
 # rofi
 super + {space,Tab}
 	rofi -show {drun,window} -theme ~/.config/rofi/main.rasi
@@ -39,6 +38,10 @@ super + {ctrl + s, s}
 super + shift + q
 	xkill
 
+# run update
+super + u
+	~/.config/polybar/scripts/runupdate.sh
+
 # restart easyeffects
 super + shift + ctrl + e
 	~/.scripts/eerestart.sh
@@ -48,5 +51,5 @@ super + c
 	~/.scripts/picom.sh
 
 # lock
-super + shift + Delete
+super + Escape
 	betterlockscreen -l
