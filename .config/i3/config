@@ -11,7 +11,6 @@ set $keybinds	    sxhkd
 
 #----------------------------- Startup applications --------------------------#
 exec_always --no-startup-id xrdb -load ~/.config/X11/xresources 
-exec_always --no-startup-id $taskbar
 exec_always --no-startup-id $keybinds
 exec        --no-startup-id $wallpaper 
 exec        --no-startup-id $notifications
@@ -23,6 +22,8 @@ exec	    --no-startup-id xrandr --output DP-4 -r 240
 exec 	    --no-startup-id udiskie
 #exec        --no-startup-id obs --startreplaybuffer
 exec        --no-startup-id betterlockscreen -u ~/wallpapers/lockscreen.png --off 5
+exec_always --no-startup-id $taskbar
+exec	    --no-startup-id $taskbar
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
@@ -48,7 +49,7 @@ font pango:JetBrains Mono 10
 # Removes titlebars
 for_window [class="^.*"] border pixel 2
  hide_edge_borders both
-gaps inner 4
+gaps inner 6
 smart_gaps on
 #-----------------------------------------------------------------------------#
 #=============================================================================#
@@ -252,7 +253,6 @@ for_window [instance="$scratchpad"] floating enable
 for_window [instance="TeamViewer"] floating enable
 for_window [instance="qalculate-gtk"] floating enable
 for_window [instance="yuzu"] floating enable
-for_window [instance="steam"] floating enable
 for_window [instance="steamwebhelper"] floating enable
 for_window [instance="nvidia-settings"] floating enable
 for_window [instance="lxappearance"] floating enable
