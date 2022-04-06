@@ -5,7 +5,7 @@
 super + {space,Tab}
 	rofi -show {drun,window} -theme ~/.config/rofi/main.rasi
 super + m 
-	rofi -show calc -theme ~/.config/rofi/calc.rasi
+	rofi -show calc -theme ~/.config/rofi/calc.rasi -no-show-match -no-sort -calc-command "echo -n '{result}' | xclip"
 
 super + {o,g}
 	~/.config/rofi/{options.sh,games.sh}
@@ -16,7 +16,7 @@ super + Return
 
 # browser 
 super + b
-	librewolf
+	firefox
 
 # files
 super + n
@@ -28,7 +28,7 @@ super + e
 
 # discord
 super + d
-	firejail discord
+	flatpak run com.discordapp.Discord
 
 # screenshots
 super + {ctrl + s, s}
@@ -52,4 +52,4 @@ super + c
 
 # lock
 super + Escape
-	betterlockscreen -l
+	betterlockscreen --off 3 -l dimblur

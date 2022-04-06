@@ -33,7 +33,7 @@ case $chosen in
     $reboot)
 		ans=$(confirm_exit &)
 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
-	   		reboot
+	   		sudo reboot
 		fi
         ;;
     $lock)

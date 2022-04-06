@@ -1,0 +1,36 @@
+# ~/.config/betterlockscreenrc
+
+# default options
+display_on=0
+span_image=false
+lock_timeout=300
+fx_list=(dim blur dimblur pixel dimpixel color)
+dim_level=40
+blur_level=1
+pixel_scale=10,1000
+solid_color=333333
+wallpaper_cmd="feh --bg-fill"
+# i3lockcolor_bin="i3lock-color" # Manually set command for i3lock-color
+
+# default theme
+loginbox=00000066
+loginshadow=00000000
+locktext="Welcome back!"
+font="sans-serif"
+ringcolor=d9e0ee55
+insidecolor=00000000
+separatorcolor=1e1d2fff
+ringvercolor=d9e0ee55
+insidevercolor=d9e0ee55
+ringwrongcolor=d9e0ee55
+insidewrongcolor=f28fadbb
+timecolor=d9e0eecc
+time_format="%H:%M:%S"
+greetercolor=d9e0eecc
+layoutcolor=d9e0eecc
+keyhlcolor=ddb6f2cc
+bshlcolor=f28fadff
+verifcolor=d9e0eecc
+wrongcolor=f28fadbb
+modifcolor=d9e0eecc
+bgcolor=000000ff
