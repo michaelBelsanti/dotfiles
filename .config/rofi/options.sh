@@ -37,7 +37,7 @@ case $chosen in
 		fi
         ;;
     $lock)
-		betterlockscreen -l
+	    	betterlockscreen --off 30 -l dimblur
         ;;
     $suspend)
 		ans=$(confirm_exit &)

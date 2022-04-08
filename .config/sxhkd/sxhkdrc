@@ -52,4 +52,4 @@ super + c
 
 # lock
 super + Escape
-	betterlockscreen --off 3 -l dimblur
+	betterlockscreen --off 20 -l dimblur
