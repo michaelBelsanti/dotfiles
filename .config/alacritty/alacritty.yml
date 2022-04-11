@@ -3,8 +3,21 @@ window.opacity: 1.0
 
 font:
     normal:
-        family: JetBrains Mono
+        family: JetBrainsMono Nerd Font
+        style: regular
+    bold:
+        family: JetBrainsMono Nerd Font
+        style: regular
+    italic:
+        family: JetBrainsMono Nerd Font
+        style: regular
+    bold_italic:
+        family: JetBrainsMono Nerd Font
+        style: regular
     size: 12
+    offset:
+      x: 0
+      y: 1
 
 window:
     padding:
@@ -51,7 +64,7 @@ colors:
   indexed_colors:
     - { index: 16, color: '0xF8BD96' }
     - { index: 17, color: '0xF5E0DC' }
-
+      
 # One Dark! 
 #colors:
 #  primary:
