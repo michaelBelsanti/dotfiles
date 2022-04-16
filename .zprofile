@@ -1,4 +1,5 @@
 # Preferences
+export TERMINAL="alacritty"
 export EDITOR="nvim"
 export VISUAL="vscodium"
 export BROWSER=librewolf
@@ -44,7 +45,5 @@ export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
 export XMONAD_CONFIG_DIR=$HOME/.config/xmonad
 export XMONAD_DATA_DIR=$HOME/.config/xmonad
 export ZDOTDIR="$HOME/.config/zsh"
-export _JAVA_OPTIONS=-
-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export _Z_DATA="$XDG_DATA_HOME/z"
 rm $HOME/.xsession-errors.old

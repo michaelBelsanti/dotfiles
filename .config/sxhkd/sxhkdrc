@@ -6,7 +6,6 @@ super + {space,Tab}
 	rofi -show {drun,window} -theme ~/.config/rofi/main.rasi
 super + m 
 	rofi -show calc -theme ~/.config/rofi/calc.rasi -no-show-match -no-sort -calc-command "echo -n '{result}' | xclip"
-
 super + {o,g}
 	~/.config/rofi/{options.sh,games.sh}
 	
@@ -53,3 +52,7 @@ super + c
 # lock
 super + Escape
 	betterlockscreen --off 20 -l dimblur
+
+# dnd
+super + i
+  ~/.scripts/dunstctl.sh
