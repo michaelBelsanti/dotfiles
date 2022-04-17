@@ -19,7 +19,7 @@ end
 vim.cmd [[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    autocmd BufWritePost plugin.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -62,15 +62,16 @@ return packer.startup(function(use)
   -- Colorschemes
   use "catppuccin/nvim"
 
-  -- cmp plugins
+  -- CMP plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
+  use "abecodes/tabout.nvim"
 
-  -- snippets
+  -- Snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
@@ -92,6 +93,34 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+
+  -- Tabout --
+  -- use {
+  --   'abecodes/tabout.nvim',
+  --   config = function()
+  --     require('tabout').setup {
+  --     tabkey = '<Tab>', -- key to trigger tabout, set to an empty string to disable
+  --     backwards_tabkey = '<S-Tab>', -- key to trigger backwards tabout, set to an empty string to disable
+  --     act_as_tab = true, -- shift content if tab out is not possible
+  --     act_as_shift_tab = false, -- reverse shift content if tab out is not possible (if your keyboard/terminal supports <S-Tab>)
+  --     enable_backwards = true, -- well ...
+  --     completion = true, -- if the tabkey is used in a completion pum
+  --     tabouts = {
+  --       {open = "'", close = "'"},
+  --       {open = '"', close = '"'},
+  --       {open = '`', close = '`'},
+  --       {open = '(', close = ')'},
+  --       {open = '[', close = ']'},
+  --       {open = '{', close = '}'}
+  --     },
+  --     ignore_beginning = true, --[[ if the cursor is at the beginning of a filled element it will rather tab out than shift the content ]]
+  --     exclude = {} -- tabout will ignore these filetypes
+  -- }
+  --   end,
+  --   wants = {'nvim-treesitter'}, -- or require if not used so far
+  --   after = {'completion-nvim'} -- if a completion plugin is using tabs load it before
+  -- }
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

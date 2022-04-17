@@ -18,16 +18,16 @@ super + b
 	firefox
 
 # files
-super + n
-	nemo
-
-# editor
 super + e
-	vscodium
+	nemo
 
 # discord
 super + d
 	flatpak run com.discordapp.Discord
+
+# do not disturb
+super + n
+	~/.scripts/togdnd.sh
 
 # screenshots
 super + {ctrl + s, s}

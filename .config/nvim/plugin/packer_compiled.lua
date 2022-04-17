@@ -219,6 +219,11 @@ _G.packer_plugins = {
     path = "/home/quasigod/.local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
   },
+  ["tabout.nvim"] = {
+    loaded = true,
+    path = "/home/quasigod/.local/share/nvim/site/pack/packer/start/tabout.nvim",
+    url = "https://github.com/abecodes/tabout.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/quasigod/.local/share/nvim/site/pack/packer/start/telescope.nvim",

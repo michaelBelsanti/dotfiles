@@ -1,4 +1,4 @@
-require("packer")
+require("plugin")
 require("options")
 require("colorscheme")
 require("keymaps")
