@@ -120,7 +120,10 @@ cmp.setup {
     select = false,
   },
   window = {
-     documentation = "native"
+     -- documentation = "native",
+     -- completion = "native",
+     completion = cmp.config.window.bordered(),
+     documentation = cmp.config.window.bordered(),
   },
   experimental = {
     ghost_text = false,
