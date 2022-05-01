@@ -1,55 +1,72 @@
---[[
- _____ __ _ __ _____ _____ _____ _______ _____
-|     |  | |  |  ___|  ___|     |       |  ___|
-|  -  |  | |  |  ___|___  |  |  |  | |  |  ___|
-|__|__|_______|_____|_____|_____|__|_|__|_____|
-
---]]
+-- If LuaRocks is installed, make sure that packages installed through it are
+-- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
 
 -- Standard awesome library
-local gfs = require("gears.filesystem")
+local gears = require("gears")
 local awful = require("awful")
-
+require("awful.autofocus")
+-- Widget and layout library
+local wibox = require("wibox")
 -- Theme handling library
 local beautiful = require("beautiful")
-dpi = beautiful.xresources.apply_dpi
-beautiful.init("~/.config/awesome/theme/theme.lua")
+-- Notification library
+local naughty = require("naughty")
+local menubar = require("menubar")
+local hotkeys_popup = require("awful.hotkeys_popup")
+-- Enable hotkeys help widget for VIM and other apps
+-- when client with a matching name is opened:
+require("awful.hotkeys_popup.keys")
 
--- User vars
---------------
-terminal = "alacritty"
-editor = terminal .. " -e " .. os.getenv("EDITOR")
-browser = "librewolf"
-launcher = "rofi -show drun -theme ~/.config/rofi/main.rasi"
-file_manager = "nemo"
+-- Error handling
+require("main.error-handling")
+-- Signals
+require("main.signals")
 
--- openweathermap_key = ""
--- openweathermap_city_id = ""
--- weather_units = "metric" -- metric or imperial
+local RC = {}
 
+-- Importing user defined variables
+RC.vars = require("main.user-variables")
+modkey = RC.vars.modkey
 
--- Load configuration
------------------------
+-- Local libraries
+local main = {
+  layouts = require("main.layouts"),
+  tags = require("main.tags"),
+  menu = require("main.lua"),
+  rules = require("main.rules"),
+}
+local binding = {
+  globalbuttons = require("binds.globalbuttons"),
+  clientbuttons = require("binds.clientbuttons"),
+  globalkeys = require("binds.globalkeys"),
+  clientkeys = require("binds.clientkeys"),
+  bindtotags = require("binds.bindtotags"),
+}
 
--- Sub (signals for battery, volume, brightness, etc)
--- require("sub")
+-- Require layouts
+RC.layouts = main.layouts()
 
--- Misc (bar, titlebar, notification, etc)
-require("misc")
+-- Tags
+RC.tags = main.tags()
 
--- Main (layouts, keybinds, rules, etc)
-require("main")
+-- Menu
+RC.mainmenu = awful.menu({ items = main.menu() })
+RC.launcher = awful.widget.launcher(
+  { image = beautiful.awesome_icon, menu = RC.mainmenu}
+)
 
+-- Binds
+RC.globalkeys = binding.globalkeys()
+
+root.buttons(binding.globalbuttons())
+root.keys(RC.globalkeys)
+
+-- Rules
+awful.rules.rules = main.rules(
+  binding.clientkeys(),
+  binding.clientbuttons()
+)
 
 -- Autostart
---------------
-
-awful.spawn.with_shell("~/.config/awesome/main/autorun.sh")
-
-
--- Garbage Collector
-----------------------
-
-collectgarbage("setpause", 110)
-collectgarbage("setstepmul", 1000)
+require("main.autostart")

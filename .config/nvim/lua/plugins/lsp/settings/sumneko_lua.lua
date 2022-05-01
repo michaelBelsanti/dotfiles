@@ -1,9 +1,9 @@
 return {
 	settings = {
-
 		Lua = {
 			diagnostics = {
-				globals = { "vim" },
+				globals = { "vim", "awesome" },
+        disable = { "lowercase-global" }
 			},
 			workspace = {
 				library = {

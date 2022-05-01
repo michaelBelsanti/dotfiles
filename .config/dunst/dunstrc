@@ -21,10 +21,10 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = 250
+    width = 350
 
     # The maximum height of a single notification, excluding the frame.
-    height = 125
+    height = 250
 
     # Position the notification in the top right corner
     origin = top-right
@@ -226,7 +226,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 3
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -361,25 +361,36 @@
 # NOTE: It might be helpful to run dunst -print in a terminal in order
 # to find fitting options for rules.
 
-[main_sound]
-    summary = "*"
-    script = ~/.config/dunst/main.sh
-
-[discord_sound]
-    summary = "*discord*"
-    script = ~/.config/dunst/message.sh
-
-[text_sound]
-    summary = "*Signal*"
-    script = ~/.config/dunst/message.sh
-
-[sc_sound]
-    summary = "*Snapchat*"
-    script = ~/.config/dunst/message.sh
-
-[done_sound]
-    summary = "*Updates*"
-    script = ~/.config/dunst/done.sh
+# [main_sound]
+#   summary = "*"
+#   script = ~/.config/dunst/main.sh
+#   urgency = low
+#
+# [discord_sound]
+#   summary = "*discord*"
+#   script = ~/.config/dunst/message.sh
+#   urgency = low
+#
+# [text_sound]
+#   summary = "*Signal*"
+#   script = ~/.config/dunst/message.sh
+#   urgency = low
+#
+# [sc_sound]
+#   summary = "*Snapchat*"
+#   script = ~/.config/dunst/message.sh
+#   urgency = low
+#
+# [done_sound]
+#   summary = "*Updates*"
+#   script = ~/.config/dunst/done.sh
+#   urgency = low
+#
+# [music]
+#   appname = Cider
+#   summary = "*Cider*"
+#   urgency = low
+#   script = ~/.config/dunst/null.sh
 
 # Disable the transient hint so that idle_threshold cannot be bypassed from the
 # client

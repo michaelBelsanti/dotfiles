@@ -1,6 +1,5 @@
 ## APPLICATIONS ##
 
-	~/.scripts/albert.sh
 # rofi
 super + {space,Tab}
 	rofi -show {drun,window} -theme ~/.config/rofi/main.rasi
@@ -37,6 +36,10 @@ super + {ctrl + s, s}
 super + shift + q
 	xkill
 
+# nyrna
+super + p
+	nyrna -t
+
 # run update
 super + u
 	~/.config/polybar/scripts/runupdate.sh
@@ -52,7 +55,3 @@ super + c
 # lock
 super + Escape
 	betterlockscreen --off 20 -l dimblur
-
-# dnd
-super + i
-  ~/.scripts/dunstctl.sh

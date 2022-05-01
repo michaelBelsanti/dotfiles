@@ -144,6 +144,13 @@ _G.packer_plugins = {
     path = "/home/quasigod/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  neorg = {
+    load_after = {},
+    loaded = true,
+    needs_bufread = true,
+    path = "/home/quasigod/.local/share/nvim/site/pack/packer/opt/neorg",
+    url = "https://github.com/nvim-neorg/neorg"
+  },
   ["nlsp-settings.nvim"] = {
     loaded = true,
     path = "/home/quasigod/.local/share/nvim/site/pack/packer/start/nlsp-settings.nvim",
@@ -247,6 +254,11 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd nvim-treesitter ]]
+vim.cmd [[ packadd neorg ]]
+time([[Sequenced loading]], false)
 if should_profile then save_profiles() end
 
 end)

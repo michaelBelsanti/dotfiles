@@ -94,6 +94,14 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
 
+  -- Neorg
+  use {
+    "nvim-neorg/neorg",
+    requires = "nvim-lua/plenary.nvim",
+    after = "nvim-treesitter",
+  }
+
+
   -- Tabout --
   -- use {
   --   'abecodes/tabout.nvim',
