@@ -55,3 +55,7 @@ super + c
 # lock
 super + Escape
 	betterlockscreen --off 20 -l dimblur
+
+# save replay
+super + v
+  killall -SIGUSR1 gpu-screen-recorder

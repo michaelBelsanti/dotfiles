@@ -6,7 +6,7 @@ local _M = {
   modkey = "Mod4", -- Super
   wallpaper = home .. "/wallpapers/pastel.png",
   editor = "nvim",
-  editor_cmd = term .. " -e " .. editor,
+  editor_cmd = "alacritty -e nvim",
 
   launcher = "rofi -show drun -theme ~/.config/rofi/main.rasi",
   windows = "~/.config/rofi/options.sh",
@@ -16,7 +16,6 @@ local _M = {
   discord = "flatpak run com.discordapp.Discord",
   files = "nemo",
   screenshot = "flameshot gui",
-
 
 }
 

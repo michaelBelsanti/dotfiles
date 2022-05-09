@@ -10,3 +10,7 @@
     /* width: 600; */
 }
 
+window {
+  anchor: center;
+}
+

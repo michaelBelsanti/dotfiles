@@ -6,7 +6,7 @@ set $compositor     picom  --unredir-if-possible --experimental-backends
 set $notifications  dunst
 set $scratchpad     tilda
 set $session        lxsession
-set $keybinds	    sxhkd
+set $keybinds	      sxhkd
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
@@ -18,9 +18,11 @@ exec        --no-startup-id $scratchpad
 exec        --no-startup-id $compositor
 exec        --no-startup-id $session
 exec        --no-startup-id kdeconnect-indicator
-exec	    --no-startup-id xrandr --output DP-4 -r 240
-
-exec 	    --no-startup-id udiskie
+exec	      --no-startup-id xrandr --output DP-4 -r 240
+exec 	      --no-startup-id udiskie
+exec        --no-startup-id caffeine
+# Awesome replay tool for Nvidia gpus, much more performant than obs
+exec        --no-startup-id gpu-screen-recorder -w DP-4 -c mp4 -f 60 -a "$(pactl get-default-sink).monitor" -r 45 -o ~/Videos/Replays
 #exec        --no-startup-id obs --startreplaybuffer
 exec        --no-startup-id betterlockscreen -u ~/wallpapers/pastel.png
 exec_always --no-startup-id $taskbar
@@ -47,10 +49,15 @@ font pango:JetBrains Mono 10
 
 #----------------------------- Window appearance -----------------------------#
 # Removes titlebars
-for_window [class="^.*"] border pixel 2
- hide_edge_borders both
+for_window [class="^.*"] border pixel 3
+
+hide_edge_borders both
 gaps inner 6
+gaps outer 0
 smart_gaps on
+border_radius 4
+smart_gaps inverse_outer
+
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
@@ -60,6 +67,9 @@ set $mod Mod4
 floating_modifier $mod
 # Note:
 # Application keybinds are set using sxhkd which is launched by i3 on startup.
+
+# except for this one
+bindsym $mod+p exec nyrna -t
 #-----------------------------------------------------------------------------#
 
 #---------------------------- Workspace navigation ---------------------------#
@@ -246,7 +256,7 @@ workspace $ws19 output  HDMI-0
 workspace $ws20 output  HDMI-0
 
 # floating applications
-for_window [instance="origin.exe"] floating enable
+# for_window [instance="origin.exe"] floating enable
 for_window [instance="EADesktop.exe"] floating enable
 for_window [instance="pavucontrol"] floating enable
 for_window [instance="$scratchpad"] floating enable

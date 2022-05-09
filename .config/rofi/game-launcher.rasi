@@ -1,9 +1,0 @@
-@import "main"
-
-window {
-    height: 360;
-    width: 100%;
-    location: south;
-    anchor: south;
-    transparency: "real";
-}

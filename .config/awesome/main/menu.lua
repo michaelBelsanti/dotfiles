@@ -10,13 +10,18 @@ local _M = {} -- module
 -- reading
 -- https://awesomewm.org/apidoc/popups%20and%20bars/awful.menu.html
 
-local terminal = RC.vars.terminal
+--[[ local terminal = RC.vars.terminal
 local editor = RC.vars.editor
-local editor_cmd = RC.vars.editor_cmd
+local editor_cmd = RC.vars.editor_cmd ]]
+
+local terminal = "alacritty"
+local editor = "vscodium"
+local editor_cmd = "alacritty -e nvim"
+
 
 M.awesome = {
-  { "hotkeys", function() 
-      hotkeys_popup.show_help(nil, awful.screen.focused()) 
+  { "hotkeys", function()
+      hotkeys_popup.show_help(nil, awful.screen.focused())
     end },
   { "manual", terminal .. " -e man awesome" },
   { "edit config", editor_cmd .. " " .. awesome.conffile },
@@ -41,9 +46,6 @@ end
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
-return setmetatable(
-  {}, 
-  { __call = function(_, ...) return _M.get(...) end }
-)
+return setmetatable({}, { __call = function(_, ...) return _M.get(...) end })
 
 

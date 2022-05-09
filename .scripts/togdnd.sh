@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env sh
 
 if [ "$(dunstctl is-paused)" = "true" ]; then
   dunstctl set-paused false

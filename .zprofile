@@ -18,7 +18,6 @@ export ENABLE_VKBASALT=1
 export MANGOHUD=0
 
 # Consistent theming
-#export GTK_USE_PORTAL=1
 export QT_QPA_PLATFORMTHEME=gtk2
 
 # XDG Paths

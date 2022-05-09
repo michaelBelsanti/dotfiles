@@ -1,7 +1,7 @@
 #!/bin/sh
 
 export ZDOTDIR=$HOME/.config/zsh
-export PATH=/home/quasigod/.nimble/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/home/quasigod/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/quasigod/.local/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin::/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/quasigod/.local/bin:/home/quasigod/.local/share/cargo/bin
 HISTFILE=~/.config/zsh/zsh-history
 HISTSIZE=10000
 SAVEHIST=1000
@@ -10,7 +10,7 @@ bindkey -e
 # some useful options (man zshoptions)
 setopt SHARE_HISTORY
 setopt autocd autopushd 
-setopt extendedglob nomatch menucomplete interactive_comments
+setopt extendedglob globstarshort nomatch menucomplete interactive_comments
 
 stty stop undef     # Disable ctrl-s to freeze terminal.
 # zle_highlight=('paste:none')

@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/quasigod/.gtkrc-2.0.mine"
-gtk-theme-name="Catppuccin"
-gtk-icon-theme-name="Catppuccin"
+gtk-theme-name="Catppuccin-pink"
+gtk-icon-theme-name="Papirus-Colors-Dark"
 gtk-font-name="Montserrat 11"
 gtk-cursor-theme-name="phinger-cursors"
 gtk-cursor-theme-size=0
