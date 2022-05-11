@@ -10,22 +10,18 @@ set $keybinds	      sxhkd
 #-----------------------------------------------------------------------------#
 
 #----------------------------- Startup applications --------------------------#
-exec_always --no-startup-id xrdb -load ~/.config/X11/xresources 
+exec_always --no-startup-id $taskbar
 exec_always --no-startup-id $keybinds
 exec        --no-startup-id $wallpaper 
 exec        --no-startup-id $notifications
 exec        --no-startup-id $scratchpad
 exec        --no-startup-id $compositor
 exec        --no-startup-id $session
-exec        --no-startup-id kdeconnect-indicator
-exec	      --no-startup-id xrandr --output DP-4 -r 240
-exec 	      --no-startup-id udiskie
-exec        --no-startup-id caffeine
+
 # Awesome replay tool for Nvidia gpus, much more performant than obs
 exec        --no-startup-id gpu-screen-recorder -w DP-4 -c mp4 -f 60 -a "$(pactl get-default-sink).monitor" -r 45 -o ~/Videos/Replays
 #exec        --no-startup-id obs --startreplaybuffer
 exec        --no-startup-id betterlockscreen -u ~/wallpapers/pastel.png
-exec_always --no-startup-id $taskbar
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
@@ -52,9 +48,10 @@ font pango:JetBrains Mono 10
 for_window [class="^.*"] border pixel 3
 
 hide_edge_borders both
+smart_borders on
 gaps inner 6
 gaps outer 0
-smart_gaps on
+# smart_gaps on
 border_radius 4
 smart_gaps inverse_outer
 

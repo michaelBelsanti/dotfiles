@@ -29,6 +29,7 @@ element-text, element-icon {
 
 window {
     height: 33%;
+    width: 40%;
     border: 3px;
     border-color: @border-col;
     background-color: @bg-col;

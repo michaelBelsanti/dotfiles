@@ -29,8 +29,9 @@ super + n
 	~/.scripts/togdnd.sh
 
 # screenshots
-super + {ctrl + s, s}
-	flameshot {screen -c,gui}
+super + {s, shift + s}
+	flameshot {full --region 1920x1080+1920+0 -c, gui}
+
 
 # xkill
 super + shift + q
@@ -54,7 +55,7 @@ super + c
 
 # lock
 super + Escape
-	betterlockscreen --off 20 -l dimblur
+	betterlockscreen --off 15 -l dimblur
 
 # save replay
 super + v

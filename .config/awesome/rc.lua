@@ -7,24 +7,19 @@ local gears = require("gears")
 local awful = require("awful")
 -- require("awful.autofocus")
 
--- Widget and layout library
--- local wibox = require("wibox")
-
 -- Theme handling library
 local beautiful = require("beautiful")
 
 -- Misc libraries
 -- local naughty = require("naughty")
 local menubar = require("menubar")
--- Enable hotkeys help widget for VIM and other apps
--- when client with a matching name is opened:
--- require("awful.hotkeys_popup.keys")
+
+RC = {} -- Global namespace
 
 -- Error handling
 require("main.error-handling")
 
 -- Importing user defined variables
-RC = {}
 RC.vars = require("main.user-variables")
 modkey = RC.vars.modkey
 
@@ -35,6 +30,7 @@ local main = {
   menu = require("main.menu"),
   rules = require("main.rules"),
 }
+
 local binding = {
   globalbuttons = require("binds.globalbuttons"),
   clientbuttons = require("binds.clientbuttons"),

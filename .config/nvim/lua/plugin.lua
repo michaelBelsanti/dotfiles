@@ -19,7 +19,7 @@ end
 vim.cmd [[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    autocmd BufWritePost plugin.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -48,6 +48,10 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
+  use {
+        "luukvbaal/nnn.nvim",
+        config = function() require("nnn").setup() end
+  }
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
