@@ -11,14 +11,23 @@ yadm clone https://github.com/quasigod-io/dotfiles.git
 # Configs
 
 Shell - Zsh
+
 Terminal - Alacritty
+
 WM - i3-gaps (Soon to be AwesomeWM)
+
 Bar - Polybar (Soon to be Awesome's bar)
+
 Compositor - Picom
+
 Menus - Rofi
+
 Keybinds - Sxhkd
+
 Notifications - Dunst
+
 GTK Theme - [Catppuccin](https://github.com/catppuccin/gtk)
+
 Font - JetBrains Mono Nerd Font and Montserrat
 
 # Warning
