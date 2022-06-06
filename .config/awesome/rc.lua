@@ -1,72 +1,18 @@
--- If LuaRocks is installed, make sure that packages installed through it are
--- found (e.g. lgi). If LuaRocks is not installed, do nothing.
-pcall(require, "luarocks.loader")
+-- awesome_mode: api-level=4:screen=on
 
--- Standard awesome library
-local gears = require("gears")
-local awful = require("awful")
--- require("awful.autofocus")
+-- load luarocks if installed
+pcall(require, 'luarocks.loader')
 
--- Theme handling library
-local beautiful = require("beautiful")
+-- load theme
+local beautiful = require'beautiful'
+local gears = require'gears'
+beautiful.init(gears.filesystem.get_themes_dir() .. 'default/theme.lua')
 
--- Misc libraries
--- local naughty = require("naughty")
-local menubar = require("menubar")
+-- load key and mouse bindings
+require'bindings'
 
-RC = {} -- Global namespace
+-- load rules
+require'rules'
 
--- Error handling
-require("main.error-handling")
-
--- Importing user defined variables
-RC.vars = require("main.user-variables")
-modkey = RC.vars.modkey
-
--- Local libraries
-local main = {
-  layouts = require("main.layouts"),
-  tags = require("main.tags"),
-  menu = require("main.menu"),
-  rules = require("main.rules"),
-}
-
-local binding = {
-  globalbuttons = require("binds.globalbuttons"),
-  clientbuttons = require("binds.clientbuttons"),
-  globalkeys = require("binds.globalkeys"),
-  clientkeys = require("binds.clientkeys"),
-  bindtotags = require("binds.bindtotags"),
-}
-
--- Require layouts
-RC.layouts = main.layouts()
-
--- Tags
-RC.tags = main.tags()
-
--- Menu
-RC.mainmenu = awful.menu({ items = main.menu() })
-RC.launcher = awful.widget.launcher(
-  { image = beautiful.awesome_icon, menu = RC.mainmenu}
-)
-
--- Binds
--- RC.globalkeys = binding.globalkeys()
--- RC.globalkeys = binding.bindtotags(RC.globalkeys)
-RC.globalkeys = binding.bindtotags()
-
-root.buttons(binding.globalbuttons())
-root.keys(RC.globalkeys)
-
--- Rules
-awful.rules.rules = main.rules(
-  binding.clientkeys(),
-  binding.clientbuttons()
-)
-
--- Signals
-require("main.signals")
-
--- Autostart
-require("main.autostart")
+-- load signals
+require'signals'

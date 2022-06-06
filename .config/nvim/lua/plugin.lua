@@ -50,7 +50,7 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-tree.lua"
   use {
         "luukvbaal/nnn.nvim",
-        config = function() require("nnn").setup() end
+        -- config = function() require("nnn").setup() end
   }
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"

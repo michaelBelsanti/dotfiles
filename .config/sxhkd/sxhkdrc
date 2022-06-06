@@ -1,12 +1,8 @@
 ## APPLICATIONS ##
 
 # rofi
-super + {space,Tab}
-	rofi -show {drun,window} -theme ~/.config/rofi/main.rasi
-super + m 
-	rofi -show calc -theme ~/.config/rofi/calc.rasi -no-show-match -no-sort -calc-command "echo -n '{result}' | xclip"
-super + {o,g}
-	~/.config/rofi/{options.sh,games.sh}
+super + {space,Tab,o,m,ctrl+v}
+	~/.config/rofi/wrapper.sh -{r,w,o,m,c}
 	
 # term
 super + Return
@@ -26,7 +22,7 @@ super + d
 
 # do not disturb
 super + n
-	~/.scripts/togdnd.sh
+	~/.scripts/togdnd.sh -t
 
 # screenshots
 super + {s, shift + s}
@@ -55,8 +51,8 @@ super + c
 
 # lock
 super + Escape
-	betterlockscreen --off 15 -l dimblur
+	betterlockscreen --off 10 -l dimblur
 
 # save replay
 super + v
-  killall -SIGUSR1 gpu-screen-recorder
+  ~/.scripts/replay.sh

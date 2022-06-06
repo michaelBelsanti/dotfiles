@@ -50,10 +50,10 @@ for_window [class="^.*"] border pixel 3
 hide_edge_borders both
 smart_borders on
 gaps inner 6
-gaps outer 0
+# gaps outer 0
 # smart_gaps on
-border_radius 4
-smart_gaps inverse_outer
+# border_radius 4
+# smart_gaps inverse_outer
 
 #-----------------------------------------------------------------------------#
 #=============================================================================#
@@ -253,8 +253,9 @@ workspace $ws19 output  HDMI-0
 workspace $ws20 output  HDMI-0
 
 # floating applications
-# for_window [instance="origin.exe"] floating enable
+for_window [instance="origin.exe"] floating enable
 for_window [instance="EADesktop.exe"] floating enable
+for_window [instance="rustdesk"] floating enable
 for_window [instance="pavucontrol"] floating enable
 for_window [instance="$scratchpad"] floating enable
 for_window [instance="TeamViewer"] floating enable

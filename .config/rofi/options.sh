@@ -15,7 +15,7 @@ lock=" lock"
 # Confirmation
 confirm_exit() {
 	echo -e "yes\nno" | $msg_command -dmenu\
-		-p "Are You Sure? : "\
+		-p "Are You Sure?"\
 		-theme $msg_theme
 }
 

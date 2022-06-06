@@ -1,8 +1,9 @@
 # Preferences
 export TERMINAL="alacritty"
 export EDITOR="nvim"
-export VISUAL="vscodium"
-export BROWSER=librewolf
+export VISUAL="alacritty -e nvim"
+export EDIR_EDITOR="nvim"
+export BROWSER="librewolf"
 export FZF_DEFAULT_COMMAND='find .'
 
 # Better DXVK Shader Caching
@@ -46,3 +47,7 @@ export XMONAD_DATA_DIR=$HOME/.config/xmonad
 export ZDOTDIR="$HOME/.config/zsh"
 export _Z_DATA="$XDG_DATA_HOME/z"
 rm $HOME/.xsession-errors.old
+
+# Testing
+export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+export ERRFILE="$XDG_CACHE_HOME/X11/xsession-errors"
