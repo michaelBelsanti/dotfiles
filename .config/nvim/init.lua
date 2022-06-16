@@ -1,5 +1,6 @@
-require("plugin")
-require("options")
 require("colorscheme")
 require("keymaps")
+require("neovide")
+require("options")
+require("plugin")
 require("plugins")

@@ -87,6 +87,7 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-dap.nvim" -- Debug
 
   -- Treesitter
   use {
@@ -104,6 +105,10 @@ return packer.startup(function(use)
     requires = "nvim-lua/plenary.nvim",
     after = "nvim-treesitter",
   }
+
+  -- Debugger
+  use 'mfussenegger/nvim-dap'
+  use 'rcarriga/nvim-dap-ui'
 
 
   -- Tabout --

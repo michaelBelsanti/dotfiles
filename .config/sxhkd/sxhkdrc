@@ -51,7 +51,7 @@ super + c
 
 # lock
 super + Escape
-	betterlockscreen --off 10 -l dimblur
+	betterlockscreen --off 20 -l dimblur
 
 # save replay
 super + v

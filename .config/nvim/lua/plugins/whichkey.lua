@@ -94,6 +94,12 @@ local mappings = {
   ["N"] = { "<cmd>new<cr>", "New" },
   ["n"] = {"<cmd>NnnPicker<cr>", "Nnn file picker"},
 
+  d = {
+    name = "Debug",
+    b = {":lua require'dap'.toggle_breakpoint()<CR>", "Toggle breakpoint"},
+    B = {":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", "Conditional breakpoint"},
+  },
+
   p = {
     name = "Packer",
     c = { "<cmd>PackerCompile<cr>", "Compile" },
