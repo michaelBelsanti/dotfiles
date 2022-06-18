@@ -8,8 +8,8 @@ exec_always --no-startup-id $bar
 
 # Awesome replay tool for Nvidia gpus, much more performant than obs
 exec        --no-startup-id gpu-screen-recorder -w DP-4 -c mp4 -f 60 -a "$(pactl get-default-sink).monitor" -r 45 -o ~/Videos/Replays
+
 #exec        --no-startup-id obs --startreplaybuffer
-exec        --no-startup-id betterlockscreen -u ~/wallpapers/pastel.png
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
