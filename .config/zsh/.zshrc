@@ -1,10 +1,11 @@
 #!/bin/sh
 
+source $HOME/.config/zsh/zshenv
 export ZDOTDIR=$HOME/.config/zsh
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin::/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/quasigod/.local/bin:/home/quasigod/.local/share/cargo/bin
 HISTFILE=~/.config/zsh/zsh-history
 HISTSIZE=10000
-SAVEHIST=1000
+SAVEHIST=10000
 bindkey -e
 
 # some useful options (man zshoptions)

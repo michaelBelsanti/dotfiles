@@ -34,6 +34,7 @@ export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export GOPATH="$XDG_DATA_HOME"/go
 export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 export GTK_RC_FILES="$XDG_CONFIG_HOME"/gtk-1.0/gtkrc
+export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 export MPLAYER_HOME="$XDG_CONFIG_HOME"/mplayer
 export NUGET_PACKAGES="$XDG_CACHE_HOME"/NuGetPackages
 export OCTAVE_HISTFILE="$XDG_CACHE_HOME/octave-hsts"
@@ -41,13 +42,9 @@ export OCTAVE_SITE_INITFILE="$XDG_CONFIG_HOME/octave/octaverc"
 export STACK_ROOT="$XDG_DATA_HOME"/stack
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 export WINEPREFIX="$XDG_DATA_HOME"/wineprefixes/default
+export XCURSOR_PATH=/usr/share/icons:${XDG_DATA_HOME}/icons
 export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
 export XMONAD_CONFIG_DIR=$HOME/.config/xmonad
 export XMONAD_DATA_DIR=$HOME/.config/xmonad
 export ZDOTDIR="$HOME/.config/zsh"
 export _Z_DATA="$XDG_DATA_HOME/z"
-rm $HOME/.xsession-errors.old
-
-# Testing
-export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
-export ERRFILE="$XDG_CACHE_HOME/X11/xsession-errors"

@@ -39,6 +39,7 @@ alias rm='trash'
 alias rmcache='paru -Scc'
 #alias untar='tar xvf'
 alias um='sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist'
+alias sssh='mprocs "ssh sidious" "ssh revan" "ssh nihilus"'
 
 # functions
 

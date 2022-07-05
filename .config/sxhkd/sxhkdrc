@@ -25,9 +25,11 @@ super + n
 	~/.scripts/togdnd.sh -t
 
 # screenshots
-super + {s, shift + s}
-	flameshot {full --region 1920x1080+1920+0 -c, gui}
+# super + {s, shift + s}
+	# shutter {a,shotgun $(hacksaw -f "-i %i -g %g") - | xclip -t 'image/png' -selection clipboard}
 
+super + shift + s
+  shotgun $(hacksaw -f "-i %i -g %g") - | xclip -t 'image/png' -selection clipboard
 
 # xkill
 super + shift + q

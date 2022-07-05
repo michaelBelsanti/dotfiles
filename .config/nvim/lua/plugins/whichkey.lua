@@ -92,12 +92,12 @@ local mappings = {
   ["f"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   ["N"] = { "<cmd>new<cr>", "New" },
-  ["n"] = {"<cmd>NnnPicker<cr>", "Nnn file picker"},
+  ["n"] = { "<cmd>NnnPicker<cr>", "Nnn file picker" },
 
   d = {
     name = "Debug",
-    b = {":lua require'dap'.toggle_breakpoint()<CR>", "Toggle breakpoint"},
-    B = {":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", "Conditional breakpoint"},
+    b = { ":lua require'dap'.toggle_breakpoint()<CR>", "Toggle breakpoint" },
+    B = { ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", "Conditional breakpoint" },
   },
 
   p = {
@@ -136,11 +136,11 @@ local mappings = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
     d = {
-      "<cmd>Telescope lsp_document_diagnostics<cr>",
+      "<cmd>Telescope diagnostics bufnr=0 <cr>",
       "Document Diagnostics",
     },
-    w = {
-      "<cmd>Telescope lsp_workspace_diagnostics<cr>",
+    D = {
+      "<cmd>Telescope diagnostics<cr>",
       "Workspace Diagnostics",
     },
     f = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
@@ -177,7 +177,7 @@ local mappings = {
     name = "Terminal",
     n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
     u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
-    t = { "<cmd>term<cr>", "Buffer"},
+    t = { "<cmd>term<cr>", "Buffer" },
     b = { "<cmd>lua _BTOP_TOGGLE()<cr>", "Btop" },
     p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
     f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
