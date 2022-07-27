@@ -1,6 +1,5 @@
 #!/bin/sh
 
-source $HOME/.config/zsh/zshenv
 export ZDOTDIR=$HOME/.config/zsh
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin::/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/quasigod/.local/bin:/home/quasigod/.local/share/cargo/bin
 HISTFILE=~/.config/zsh/zsh-history
@@ -75,7 +74,8 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 
 # startup
 #pokemon-colorscripts -r # requires pokemon-colorscripts be installed
-colorscript -r # requires dt's color scripts be installed
+nitch
+# colorscript -r # requires dt's color scripts be installed
 
 eval "$(zoxide init zsh)" #requires zoxide be installed
 eval $(thefuck --alias) # requires thefuck be installed

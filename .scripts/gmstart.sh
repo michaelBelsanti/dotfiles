@@ -1,4 +1,4 @@
-#!/bin/env sh
+#!/usr/bin/env sh
 
 echo 'always' | sudo tee /sys/kernel/mm/transparent_hugepage/enabled
 # killall picom # I've reached a point in life where I prefer rounded corners to minutely better performance

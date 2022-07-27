@@ -1,4 +1,4 @@
-#!/bin/env sh
+#!/usr/bin/env sh
 
 echo 'madvise' | sudo tee /sys/kernel/mm/transparent_hugepage/enabled
 # picom --experimental-backends --unredir-if-possible

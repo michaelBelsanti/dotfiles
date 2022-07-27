@@ -41,6 +41,8 @@ alias rmcache='paru -Scc'
 alias um='sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist'
 alias sssh='mprocs "ssh sidious" "ssh revan" "ssh nihilus"'
 
+alias parui='paru -Slq | fzf -m --preview '\''cat <(paru -Si {1}) <(paru -Fl {1} | awk "{print $2}")'\'' | xargs -ro paru -S'
+
 # functions
 
 # Works like unzip but for .tar, because fuck tar

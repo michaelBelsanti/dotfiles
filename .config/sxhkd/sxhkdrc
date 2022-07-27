@@ -18,7 +18,7 @@ super + e
 
 # discord
 super + d
-	flatpak run com.discordapp.Discord
+  firejail /usr/bin/discord-canary --enable-blink-features=MiddleClickAutoscroll
 
 # do not disturb
 super + n
@@ -36,8 +36,8 @@ super + shift + q
 	xkill
 
 # nyrna
-super + p
-	nyrna -t
+# super + p
+	# nyrna -t
 
 # run update
 super + u
@@ -58,3 +58,7 @@ super + Escape
 # save replay
 super + v
   ~/.scripts/replay.sh
+
+# mirror phone screen
+super + p
+  ~/.scripts/scrcpy.sh

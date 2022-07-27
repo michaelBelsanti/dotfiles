@@ -241,6 +241,7 @@ workspace $ws19 output  HDMI-0
 workspace $ws20 output  HDMI-0
 
 # floating applications
+for_window [instance="scrcpy"] floating enable
 for_window [instance="origin.exe"] floating enable
 for_window [instance="EADesktop.exe"] floating enable
 for_window [instance="rustdesk"] floating enable
@@ -253,5 +254,6 @@ for_window [instance="steamwebhelper"] floating enable
 for_window [instance="nvidia-settings"] floating enable
 for_window [instance="lxappearance"] floating enable
 for_window [instance="vibrantLinux"] floating enable
+for_window [instance="discord-screenaudio Stream Dialog"] floating enable
 #-----------------------------------------------------------------------------#
 #=============================================================================#
