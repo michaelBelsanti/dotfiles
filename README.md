@@ -1,5 +1,5 @@
 # dotfiles
-My shitty catpdotfiles
+My shitty catppuccin dotfiles
 
 Repo managed using [Yadm](yadm.io/#)
 
