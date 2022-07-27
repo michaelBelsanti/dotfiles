@@ -1,0 +1,7 @@
+# [[language]]
+# name = "zsh"
+# scope= "scope.zsh"
+# injection-regex = "^zsh$"
+# file-types = ["zsh"]
+# comment-token = "#"
+# language-server = { command = "bash-language-server", args = ["start"] }
