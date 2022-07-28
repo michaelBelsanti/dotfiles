@@ -30,6 +30,8 @@ super + n
 
 super + shift + s
   shotgun $(hacksaw -f "-i %i -g %g") - | xclip -t 'image/png' -selection clipboard
+super + ctrl + shift + s
+  shotgun $(hacksaw -f "-i %i -g %g") - > ~/Pictures/screenshot.png
 
 # xkill
 super + shift + q
