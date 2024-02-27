@@ -1,5 +1,5 @@
 # Archived
-This is archived as I've switched to NixOS and manage my dotfiles with [Home Manager](https://github.com/nix-community/home-manager). My NixOS flake can be found [here](github.com/quasigod-io/nixconfig).
+This is archived as I've switched to NixOS and manage my dotfiles with [Home Manager](https://github.com/nix-community/home-manager). My NixOS flake can be found [here](https://github.com/michaelBelsanti/nixconfig).
 
 
 # dotfiles
